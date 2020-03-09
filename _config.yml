@@ -16,7 +16,6 @@ author:
 
 baseurl: "/blog"
 timezone: Asia/Kolkata
-highlighter: none
 
 exclude:
   - .jekyll-cache
