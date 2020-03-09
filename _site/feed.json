@@ -32,25 +32,6 @@
         },
     
         {
-            "id": "http://localhost:4000/blog/sample.html",
-            "title": "Staticman comments on a Jekyll site",
-            "summary": null,
-            "content_text": "Lorem ipsum dolor amet tousled viral art party blue bottle single-origin coffee cardigan, selvage man braid helvetica. Banh mi taxidermy meditation microdosing. Selvage cornhole YOLO, small batch vexillologist raclette VHS prism sustainable 8-bit ugh semiotics letterpress disrupt pop-up. Celiac shabby chic ugh, jianbing whatever kitsch tattooed edison bulb kogi irony etsy.#include &lt;bits/stdc++.h&gt;int main(int argc, char* argv[]){  printf(\"Hello Dear Programmer! \\n\\n --cpp\\n\");  return 0;}",
-            "content_html": "<p>Lorem ipsum dolor amet tousled viral art party blue bottle single-origin coffee cardigan, selvage man braid helvetica. Banh mi taxidermy meditation microdosing. Selvage cornhole YOLO, small batch vexillologist raclette VHS prism sustainable 8-bit ugh semiotics letterpress disrupt pop-up. Celiac shabby chic ugh, jianbing whatever kitsch tattooed edison bulb kogi irony etsy.</p><pre><code class=\"language-cpp\">#include &lt;bits/stdc++.h&gt;int main(int argc, char* argv[]){  printf(\"Hello Dear Programmer! \\n\\n --cpp\\n\");  return 0;}</code></pre>",
-            "url": "http://localhost:4000/blog/sample.html",
-            
-            
-            
-            "tags": ["jekyll","coding"],
-            
-            "date_published": "2020-03-09T00:00:00+05:30",
-            "date_modified": "2020-03-09T00:00:00+05:30",
-            
-                "author": "Rajesh Pandian M"
-            
-        },
-    
-        {
             "id": "http://localhost:4000/blog/newpost.html",
             "title": "Mic Testing",
             "summary": null,
