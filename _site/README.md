@@ -21,4 +21,5 @@
 - [x] Changed the date format in post, added author name.
 - [x] Added last modified at the footer.
 - [x] Created a template `post` and shell script to create the new post.
+- [x] Added syntax highlight from jekyll-pygments using `monokai` theme.
 - [ ] Figure out last modified from the last modified date of `md` file?
