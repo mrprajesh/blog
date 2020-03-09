@@ -3,26 +3,20 @@ layout: page
 title: About
 ---
 
-Sidey is a simple and minimalistic jekyll blogging theme.
+Hello there,
+this is Rajesh Pandian M. You can read more about me
+[here](https://mrprajesh.github.io). This blog uses Sidey theme.
+Sidey is a simple, fast and minimalistic jekyll blogging theme.
+Among [all](https://sidey-jekyll.netlify.com/about) I like the following
+features.
 
 ### Features
 
-- Responsive design
-- Inline CSS
+- Simple
 - Anchor headings
-- Search
+- Searchable
 - Tags & tag pages
-- Security headers (for Netlify hosting)
-- 404 page
-- Compressed CSS and HTML
 - 100/100 score on Lighthouse, Page Speed Insights & Webpagetest
-- Robots.txt
-- Atom & Json feeds
-- Sass
-- Seo optimized (Twitter cards, Facebook Open Graph, Schema.org)
 - Ultra fast (Only ~5kb of CSS)
-- Sidebar navigation
 
-### Screenshot
-
-![Screenshot](screenshot.png)
+Know about Ronalds Vilciņš's [Sidey](https://github.com/ronv/sidey).
