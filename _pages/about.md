@@ -4,11 +4,10 @@ title: About
 ---
 
 Hello there,
-this is Rajesh Pandian M. You can read more about me
-[here](https://mrprajesh.github.io). This blog uses Sidey theme.
-Sidey is a simple, fast and minimalistic jekyll blogging theme.
-Among [all](https://sidey-jekyll.netlify.com/about) I like the following
-features.
+this is [Rajesh Pandian M](https://mrprajesh.github.io). This blog uses
+Sidey theme. Sidey is a simple, fast and minimalistic jekyll blogging
+theme. Among [all](https://sidey-jekyll.netlify.com/about) I like the
+following features.
 
 ### Features
 

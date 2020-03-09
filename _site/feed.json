@@ -1,35 +1,71 @@
 {
     "version": "https://jsonfeed.org/version/1",
-    "title": "Sidey",
-    "home_page_url": "http://localhost:4000/",
-    "feed_url": "http://localhost:4000/feed.json",
-    "description": "Simple and minimalistic jekyll blogging theme.",
-    "icon": "http://localhost:4000/apple-touch-icon.png",
-    "favicon": "http://localhost:4000/favicon.ico",
+    "title": "Rajesh's Blog",
+    "home_page_url": "http://localhost:4000/blog/",
+    "feed_url": "http://localhost:4000/blog/feed.json",
+    "description": "Writing down my random thoughts",
+    "icon": "http://localhost:4000/blog/apple-touch-icon.png",
+    "favicon": "http://localhost:4000/blog/favicon.ico",
     "expired": false,
     
-    "author": "{"twitter"=>"mrprajesh", "name"=>nil, "avatar"=>nil, "email"=>nil, "url"=>nil}",
+    "author": "{"twitter"=>nil, "name"=>nil, "avatar"=>nil, "email"=>nil, "url"=>nil, "permalink"=>nil}",
     
 "items": [
     
         {
-            "id": "http://localhost:4000/2020/03/09/helloworld",
+            "id": "http://localhost:4000/blog/helloworld.html",
             "title": "Hello World",
             "summary": null,
             "content_text": "This is my first post in Github.ioblog.",
             "content_html": "<p>This is my first post in <a href=\"https://mrprajesh.github.io/blog\">Github.io</a>blog.</p>",
-            "url": "http://localhost:4000/2020/03/09/helloworld",
+            "url": "http://localhost:4000/blog/helloworld.html",
             
             
             
             
+            
+            "date_published": "2020-03-09T12:39:20+05:30",
+            "date_modified": "2020-03-09T12:39:20+05:30",
+            
+                "author": "Rajesh Pandian M"
+            
+        },
+    
+        {
+            "id": "http://localhost:4000/blog/sample.html",
+            "title": "Staticman comments on a Jekyll site",
+            "summary": null,
+            "content_text": "Lorem ipsum dolor amet tousled viral art party blue bottle single-origin coffee cardigan, selvage man braid helvetica. Banh mi taxidermy meditation microdosing. Selvage cornhole YOLO, small batch vexillologist raclette VHS prism sustainable 8-bit ugh semiotics letterpress disrupt pop-up. Celiac shabby chic ugh, jianbing whatever kitsch tattooed edison bulb kogi irony etsy.#include &lt;bits/stdc++.h&gt;int main(int argc, char* argv[]){  printf(\"Hello Dear Programmer! \\n\\n --cpp\\n\");  return 0;}",
+            "content_html": "<p>Lorem ipsum dolor amet tousled viral art party blue bottle single-origin coffee cardigan, selvage man braid helvetica. Banh mi taxidermy meditation microdosing. Selvage cornhole YOLO, small batch vexillologist raclette VHS prism sustainable 8-bit ugh semiotics letterpress disrupt pop-up. Celiac shabby chic ugh, jianbing whatever kitsch tattooed edison bulb kogi irony etsy.</p><pre><code class=\"language-cpp\">#include &lt;bits/stdc++.h&gt;int main(int argc, char* argv[]){  printf(\"Hello Dear Programmer! \\n\\n --cpp\\n\");  return 0;}</code></pre>",
+            "url": "http://localhost:4000/blog/sample.html",
+            
+            
+            
+            "tags": ["jekyll","coding"],
             
             "date_published": "2020-03-09T00:00:00+05:30",
             "date_modified": "2020-03-09T00:00:00+05:30",
             
-                "author": 
-                "{"twitter"=>"mrprajesh", "name"=>nil, "avatar"=>nil, "email"=>nil, "url"=>nil}"
-                
+                "author": "Rajesh Pandian M"
+            
+        },
+    
+        {
+            "id": "http://localhost:4000/blog/newpost.html",
+            "title": "Mic Testing",
+            "summary": null,
+            "content_text": "Lorem ipsum dolor amet tousled viral art party blue bottle single-origin coffee cardigan, selvage man braid helvetica. Banh mi taxidermy meditation microdosing. Selvage cornhole YOLO, small batch vexillologist raclette VHS prism sustainable 8-bit ugh semiotics letterpress disrupt pop-up. Celiac shabby chic ugh, jianbing whatever kitsch tattooed edison bulb kogi irony etsy.",
+            "content_html": "<p>Lorem ipsum dolor amet tousled viral art party blue bottle single-origin coffee cardigan, selvage man braid helvetica. Banh mi taxidermy meditation microdosing. Selvage cornhole YOLO, small batch vexillologist raclette VHS prism sustainable 8-bit ugh semiotics letterpress disrupt pop-up. Celiac shabby chic ugh, jianbing whatever kitsch tattooed edison bulb kogi irony etsy.</p>",
+            "url": "http://localhost:4000/blog/newpost.html",
+            
+            
+            
+            "tags": ["jekyll","coding"],
+            
+            "date_published": "2016-06-12T14:34:00+05:30",
+            "date_modified": "2016-06-12T14:34:00+05:30",
+            
+                "author": "Rajesh Pandian M"
             
         }
     

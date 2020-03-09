@@ -3,10 +3,32 @@
     {
 
       "title"    : "Hello World",
-      "url"      : "/2020/03/09/helloworld",
+      "url"      : "/blog/helloworld.html",
       "category" : "",
       "tags"     : "jekyll",
+      "date"     : "2020-03-09 12:39:20 +0530",
+      "discription" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Staticman comments on a Jekyll site",
+      "url"      : "/blog/sample.html",
+      "category" : "",
+      "tags"     : "jekyll, coding",
       "date"     : "2020-03-09 00:00:00 +0530",
+      "discription" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Mic Testing",
+      "url"      : "/blog/newpost.html",
+      "category" : "",
+      "tags"     : "jekyll, coding",
+      "date"     : "2016-06-12 14:34:00 +0530",
       "discription" : ""
 
     } 

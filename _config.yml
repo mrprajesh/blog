@@ -1,21 +1,21 @@
 site: Rajesh's Blog
-url: #yoururl
-title: Sidey
-description: Simple and minimalistic jekyll blogging theme.
+url: https://mrprajesh.github.io
+title: Rajesh's Blog
+description: Writing down my random thoughts
 twitter:
-  username: mrprajesh #yourusername
+  username: #mrprajesh
   card: summary
-  creator: mrprajesh #yourusername
+  creator: #mrprajesh
 author:
-  twitter: mrprajesh #yourusername
-  name: #yourusername
+  twitter: #mrprajesh
+  name: #Rajesh Pandian M
   avatar:
-  email: #youremail
-  url: #yoururl
-permalink: pretty
+  email:
+  url: #https://mrprajesh.github.io
+  permalink:
 
-baseurl: ""
-
+baseurl: "/blog"
+timezone: Asia/Kolkata
 highlighter: none
 
 exclude:
@@ -37,10 +37,11 @@ plugins:
 collections:
   pages:
     output: true
-    permalink: /:name
+    permalink: /:name.html
   posts:
     output: true
-    permalink: /:year/:month/:day/:slug
+    permalink: /:slug.html
+    #permalink: /:year/:month/:day/:slug
 
 defaults:
   -
