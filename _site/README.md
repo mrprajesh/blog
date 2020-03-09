@@ -14,10 +14,11 @@
 
 ## Features added
 
-- [x] Set base url as `*.github.io/blog`
+- [x] Set base url as `*.github.io/blog`.
+- [x] Create a `R` favicon blue.
 - [x] Fixed the issues created due to above using `{{site.baseurl}}`.
-- [x] Changed the US format date to UK/India in front page
+- [x] Changed the US format date to UK/India in front page.
 - [x] Changed the date format in post, added author name.
-- [x] Added last modified at the footer
-- [x] Created a template `post` and shell script to create the new post
+- [x] Added last modified at the footer.
+- [x] Created a template `post` and shell script to create the new post.
 - [ ] Figure out last modified from the last modified date of `md` file?

@@ -16,6 +16,8 @@ author:
 
 baseurl: "/blog"
 timezone: Asia/Kolkata
+#! highlighter: rouge
+date_format: "%-d %m %Y %T"
 
 exclude:
   - .jekyll-cache

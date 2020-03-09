@@ -13,6 +13,25 @@
 "items": [
     
         {
+            "id": "http://localhost:4000/blog/newpost.html",
+            "title": "Ready, get-set, and go!",
+            "summary": null,
+            "content_text": "This is to check if the syntax highlighting is working fine.  #include &lt;iostream&gt;  int main(int argc, char* argv[]){    std::cout &lt;&lt; \"Hello There!\"&lt;&lt; std::endl;    return EXIT_SUCCESS;  }",
+            "content_html": "<p>This is to check if the syntax highlighting is working fine.</p><figure class=\"highlight\"><pre><code class=\"language-cpp\" data-lang=\"cpp\">  <span class=\"cp\">#include &lt;iostream&gt;</span>  <span class=\"kt\">int</span> <span class=\"nf\">main</span><span class=\"p\">(</span><span class=\"kt\">int</span> <span class=\"n\">argc</span><span class=\"p\">,</span> <span class=\"kt\">char</span><span class=\"o\">*</span> <span class=\"n\">argv</span><span class=\"p\">[]){</span>    <span class=\"n\">std</span><span class=\"o\">::</span><span class=\"n\">cout</span> <span class=\"o\">&lt;&lt;</span> <span class=\"s\">\"Hello There!\"</span><span class=\"o\">&lt;&lt;</span> <span class=\"n\">std</span><span class=\"o\">::</span><span class=\"n\">endl</span><span class=\"p\">;</span>    <span class=\"k\">return</span> <span class=\"n\">EXIT_SUCCESS</span><span class=\"p\">;</span>  <span class=\"p\">}</span></code></pre></figure>",
+            "url": "http://localhost:4000/blog/newpost.html",
+            
+            
+            
+            "tags": ["cpp","coding"],
+            
+            "date_published": "2020-03-09T18:58:11+05:30",
+            "date_modified": "2020-03-09T18:58:11+05:30",
+            
+                "author": "Rajesh Pandian M"
+            
+        },
+    
+        {
             "id": "http://localhost:4000/blog/helloworld.html",
             "title": "Hello World",
             "summary": null,
@@ -26,25 +45,6 @@
             
             "date_published": "2020-03-09T12:39:20+05:30",
             "date_modified": "2020-03-09T12:39:20+05:30",
-            
-                "author": "Rajesh Pandian M"
-            
-        },
-    
-        {
-            "id": "http://localhost:4000/blog/newpost.html",
-            "title": "Mic Testing",
-            "summary": null,
-            "content_text": "Lorem ipsum dolor amet tousled viral art party blue bottle single-origin coffee cardigan, selvage man braid helvetica. Banh mi taxidermy meditation microdosing. Selvage cornhole YOLO, small batch vexillologist raclette VHS prism sustainable 8-bit ugh semiotics letterpress disrupt pop-up. Celiac shabby chic ugh, jianbing whatever kitsch tattooed edison bulb kogi irony etsy.",
-            "content_html": "<p>Lorem ipsum dolor amet tousled viral art party blue bottle single-origin coffee cardigan, selvage man braid helvetica. Banh mi taxidermy meditation microdosing. Selvage cornhole YOLO, small batch vexillologist raclette VHS prism sustainable 8-bit ugh semiotics letterpress disrupt pop-up. Celiac shabby chic ugh, jianbing whatever kitsch tattooed edison bulb kogi irony etsy.</p>",
-            "url": "http://localhost:4000/blog/newpost.html",
-            
-            
-            
-            "tags": ["jekyll","coding"],
-            
-            "date_published": "2016-06-12T14:34:00+05:30",
-            "date_modified": "2016-06-12T14:34:00+05:30",
             
                 "author": "Rajesh Pandian M"
             
