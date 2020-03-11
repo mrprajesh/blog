@@ -26,5 +26,5 @@ But, this word **overseas** has same spelling but different meaning/pronunciatio
 >>"overseas trips"
 
 
-Is this also homonyms. Time to see its [definition](https://www.google.com/search?q=Homonyms).
+Is this also homonyms? Time to see its [definition](https://www.google.com/search?q=Homonyms).
 It seems like. Are there more?
