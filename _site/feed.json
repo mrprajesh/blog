@@ -13,6 +13,25 @@
 "items": [
     
         {
+            "id": "http://localhost:4000/blog/overseas-pronounciation.html",
+            "title": "Same spelling but different pronunciation.",
+            "summary": null,
+            "content_text": "So, we know homonyms. Same pronunciation but different spelling/meaning.  e.g. right and writeBut, this word overseas has same spelling but different meaning/pronunciation.  adverb: overseas; /əʊvəˈsiːz/      in or to a foreign country, especially one across the sea.“he spent quite a lot of time working overseas”    adjective: overseas;  /ˈəʊvəsiːz/      from, to, or relating to a foreign country, especially one across the sea.“overseas trips”  Is this also homonyms. Time to see its definition.It seems like. Are there more?",
+            "content_html": "<p>So, we know homonyms. Same pronunciation but different spelling/meaning.</p><blockquote>  <p>e.g. right and write</p></blockquote><p>But, this word <strong>overseas</strong> has same spelling but different meaning/pronunciation.</p><blockquote>  <p>adverb: overseas; /əʊvəˈsiːz/</p>  <blockquote>    <p>in or to a foreign country, especially one across the sea.“he spent quite a lot of time working overseas”</p>  </blockquote></blockquote><blockquote>  <p>adjective: overseas;  /ˈəʊvəsiːz/</p>  <blockquote>    <p>from, to, or relating to a foreign country, especially one across the sea.“overseas trips”</p>  </blockquote></blockquote><p>Is this also homonyms. Time to see its <a href=\"https://www.google.com/search?q=Homonyms\">definition</a>.It seems like. Are there more?</p>",
+            "url": "http://localhost:4000/blog/overseas-pronounciation.html",
+            
+            
+            
+            
+            
+            "date_published": "2020-03-11T10:53:15+05:30",
+            "date_modified": "2020-03-11T10:53:15+05:30",
+            
+                "author": "Rajesh Pandian M"
+            
+        },
+    
+        {
             "id": "http://localhost:4000/blog/newpost.html",
             "title": "Ready, get-set, and go!",
             "summary": null,

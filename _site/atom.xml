@@ -4,13 +4,47 @@
  <title>Rajesh's Blog</title>
  <link href="http://localhost:4000/blog/atom.xml" rel="self"/>
  <link href="http://localhost:4000/blog/"/>
- <updated>2020-03-10T18:16:05+05:30</updated>
+ <updated>2020-03-11T11:08:25+05:30</updated>
  <id>http://localhost:4000</id>
  <author>
    <name></name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Same spelling but different pronunciation.</title>
+   <link href="http://localhost:4000/blog/overseas-pronounciation.html"/>
+   <updated>2020-03-11T10:53:15+05:30</updated>
+   <id>http://localhost:4000/overseas-pronounciation</id>
+   <content type="html">&lt;p&gt;So, we know homonyms. Same pronunciation but different spelling/meaning.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;e.g. right and write&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;But, this word &lt;strong&gt;overseas&lt;/strong&gt; has same spelling but different meaning/pronunciation.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;adverb: overseas; /əʊvəˈsiːz/&lt;/p&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;in or to a foreign country, especially one across the sea.
+“he spent quite a lot of time working overseas”&lt;/p&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;adjective: overseas;  /ˈəʊvəsiːz/&lt;/p&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;from, to, or relating to a foreign country, especially one across the sea.
+“overseas trips”&lt;/p&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Is this also homonyms. Time to see its &lt;a href=&quot;https://www.google.com/search?q=Homonyms&quot;&gt;definition&lt;/a&gt;.
+It seems like. Are there more?&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Ready, get-set, and go!</title>
