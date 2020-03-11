@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>http://localhost:4000/blog/new-words.html</loc>
+<lastmod>2020-03-11T19:17:59+05:30</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/blog/overseas-pronounciation.html</loc>
 <lastmod>2020-03-11T10:53:15+05:30</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/blog/newpost.html</loc>
+<loc>http://localhost:4000/blog/check-code-blocks.html</loc>
 <lastmod>2020-03-09T18:58:11+05:30</lastmod>
 </url>
 <url>
@@ -29,6 +33,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/blog/tag/english/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/blog/tag/vocab/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/blog/about.html</loc>

@@ -2,6 +2,17 @@
   
     {
 
+      "title"    : "Some new words",
+      "url"      : "/blog/new-words.html",
+      "category" : "",
+      "tags"     : "vocab",
+      "date"     : "2020-03-11 19:17:59 +0530",
+      "discription" : ""
+
+    } ,
+  
+    {
+
       "title"    : "Same spelling but different pronunciation.",
       "url"      : "/blog/overseas-pronounciation.html",
       "category" : "",
@@ -14,7 +25,7 @@
     {
 
       "title"    : "Ready, get-set, and go!",
-      "url"      : "/blog/newpost.html",
+      "url"      : "/blog/check-code-blocks.html",
       "category" : "",
       "tags"     : "cpp, coding",
       "date"     : "2020-03-09 18:58:11 +0530",

@@ -4,13 +4,49 @@
  <title>Rajesh's Blog</title>
  <link href="http://localhost:4000/blog/atom.xml" rel="self"/>
  <link href="http://localhost:4000/blog/"/>
- <updated>2020-03-11T11:08:25+05:30</updated>
+ <updated>2020-03-11T19:41:16+05:30</updated>
  <id>http://localhost:4000</id>
  <author>
    <name></name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Some new words</title>
+   <link href="http://localhost:4000/blog/new-words.html"/>
+   <updated>2020-03-11T19:17:59+05:30</updated>
+   <id>http://localhost:4000/new-words</id>
+   <content type="html">&lt;p&gt;In this novel coronovirus season learnt some new words.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;epidemic
+    &lt;blockquote&gt;
+      &lt;p&gt;a widespread occurrence of an infectious disease in a community at a particular time.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;pandemic
+    &lt;blockquote&gt;
+      &lt;p&gt;(of a disease) prevalent over a whole country or the world.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Price gouging
+    &lt;blockquote&gt;
+      &lt;p&gt;Price gouging is a term referring to when a seller &lt;strong&gt;increases the prices&lt;/strong&gt; of goods, to a level &lt;strong&gt;much higher than&lt;/strong&gt; is considered &lt;strong&gt;reasonable&lt;/strong&gt;, and is considered exploitative, potentially to an unethical extent. Usually this event occurs after a demand or supply shock.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Paywall
+    &lt;blockquote&gt;
+      &lt;p&gt;A paywall is a method of restricting access to content via a purchase or paid subscription&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;example-sentence&quot;&gt;Example sentence.&lt;/h3&gt;
+
+&lt;p&gt;WHO said COVID-19 disease is epidemic and nearly pandemic. While sellers are price gouging masks/sanitizing items, nature journal removed the paywall for all research involving coronovirus. Sweet!&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Same spelling but different pronunciation.</title>
@@ -41,16 +77,16 @@
   &lt;/blockquote&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Is this also homonyms. Time to see its &lt;a href=&quot;https://www.google.com/search?q=Homonyms&quot;&gt;definition&lt;/a&gt;.
+&lt;p&gt;Is this also homonyms? Time to see its &lt;a href=&quot;https://www.google.com/search?q=Homonyms&quot;&gt;definition&lt;/a&gt;.
 It seems like. Are there more?&lt;/p&gt;
 </content>
  </entry>
  
  <entry>
    <title>Ready, get-set, and go!</title>
-   <link href="http://localhost:4000/blog/newpost.html"/>
+   <link href="http://localhost:4000/blog/check-code-blocks.html"/>
    <updated>2020-03-09T18:58:11+05:30</updated>
-   <id>http://localhost:4000/NewPost</id>
+   <id>http://localhost:4000/check-code-blocks</id>
    <content type="html">&lt;p&gt;This is to check if the syntax highlighting is working fine.&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-cpp&quot; data-lang=&quot;cpp&quot;&gt;  &lt;span class=&quot;cp&quot;&gt;#include &amp;lt;iostream&amp;gt;

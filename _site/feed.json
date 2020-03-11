@@ -13,11 +13,30 @@
 "items": [
     
         {
+            "id": "http://localhost:4000/blog/new-words.html",
+            "title": "Some new words",
+            "summary": null,
+            "content_text": "In this novel coronovirus season learnt some new words.  epidemic          a widespread occurrence of an infectious disease in a community at a particular time.        pandemic          (of a disease) prevalent over a whole country or the world.        Price gouging          Price gouging is a term referring to when a seller increases the prices of goods, to a level much higher than is considered reasonable, and is considered exploitative, potentially to an unethical extent. Usually this event occurs after a demand or supply shock.        Paywall          A paywall is a method of restricting access to content via a purchase or paid subscription      Example sentence.WHO said COVID-19 disease is epidemic and nearly pandemic. While sellers are price gouging masks/sanitizing items, nature journal removed the paywall for all research involving coronovirus. Sweet!",
+            "content_html": "<p>In this novel coronovirus season learnt some new words.</p><ol>  <li>epidemic    <blockquote>      <p>a widespread occurrence of an infectious disease in a community at a particular time.</p>    </blockquote>  </li>  <li>pandemic    <blockquote>      <p>(of a disease) prevalent over a whole country or the world.</p>    </blockquote>  </li>  <li>Price gouging    <blockquote>      <p>Price gouging is a term referring to when a seller <strong>increases the prices</strong> of goods, to a level <strong>much higher than</strong> is considered <strong>reasonable</strong>, and is considered exploitative, potentially to an unethical extent. Usually this event occurs after a demand or supply shock.</p>    </blockquote>  </li>  <li>Paywall    <blockquote>      <p>A paywall is a method of restricting access to content via a purchase or paid subscription</p>    </blockquote>  </li></ol><h3 id=\"example-sentence\">Example sentence.</h3><p>WHO said COVID-19 disease is epidemic and nearly pandemic. While sellers are price gouging masks/sanitizing items, nature journal removed the paywall for all research involving coronovirus. Sweet!</p>",
+            "url": "http://localhost:4000/blog/new-words.html",
+            
+            
+            
+            
+            
+            "date_published": "2020-03-11T19:17:59+05:30",
+            "date_modified": "2020-03-11T19:17:59+05:30",
+            
+                "author": "Rajesh Pandian M"
+            
+        },
+    
+        {
             "id": "http://localhost:4000/blog/overseas-pronounciation.html",
             "title": "Same spelling but different pronunciation.",
             "summary": null,
-            "content_text": "So, we know homonyms. Same pronunciation but different spelling/meaning.  e.g. right and writeBut, this word overseas has same spelling but different meaning/pronunciation.  adverb: overseas; /əʊvəˈsiːz/      in or to a foreign country, especially one across the sea.“he spent quite a lot of time working overseas”    adjective: overseas;  /ˈəʊvəsiːz/      from, to, or relating to a foreign country, especially one across the sea.“overseas trips”  Is this also homonyms. Time to see its definition.It seems like. Are there more?",
-            "content_html": "<p>So, we know homonyms. Same pronunciation but different spelling/meaning.</p><blockquote>  <p>e.g. right and write</p></blockquote><p>But, this word <strong>overseas</strong> has same spelling but different meaning/pronunciation.</p><blockquote>  <p>adverb: overseas; /əʊvəˈsiːz/</p>  <blockquote>    <p>in or to a foreign country, especially one across the sea.“he spent quite a lot of time working overseas”</p>  </blockquote></blockquote><blockquote>  <p>adjective: overseas;  /ˈəʊvəsiːz/</p>  <blockquote>    <p>from, to, or relating to a foreign country, especially one across the sea.“overseas trips”</p>  </blockquote></blockquote><p>Is this also homonyms. Time to see its <a href=\"https://www.google.com/search?q=Homonyms\">definition</a>.It seems like. Are there more?</p>",
+            "content_text": "So, we know homonyms. Same pronunciation but different spelling/meaning.  e.g. right and writeBut, this word overseas has same spelling but different meaning/pronunciation.  adverb: overseas; /əʊvəˈsiːz/      in or to a foreign country, especially one across the sea.“he spent quite a lot of time working overseas”    adjective: overseas;  /ˈəʊvəsiːz/      from, to, or relating to a foreign country, especially one across the sea.“overseas trips”  Is this also homonyms? Time to see its definition.It seems like. Are there more?",
+            "content_html": "<p>So, we know homonyms. Same pronunciation but different spelling/meaning.</p><blockquote>  <p>e.g. right and write</p></blockquote><p>But, this word <strong>overseas</strong> has same spelling but different meaning/pronunciation.</p><blockquote>  <p>adverb: overseas; /əʊvəˈsiːz/</p>  <blockquote>    <p>in or to a foreign country, especially one across the sea.“he spent quite a lot of time working overseas”</p>  </blockquote></blockquote><blockquote>  <p>adjective: overseas;  /ˈəʊvəsiːz/</p>  <blockquote>    <p>from, to, or relating to a foreign country, especially one across the sea.“overseas trips”</p>  </blockquote></blockquote><p>Is this also homonyms? Time to see its <a href=\"https://www.google.com/search?q=Homonyms\">definition</a>.It seems like. Are there more?</p>",
             "url": "http://localhost:4000/blog/overseas-pronounciation.html",
             
             
@@ -32,12 +51,12 @@
         },
     
         {
-            "id": "http://localhost:4000/blog/newpost.html",
+            "id": "http://localhost:4000/blog/check-code-blocks.html",
             "title": "Ready, get-set, and go!",
             "summary": null,
             "content_text": "This is to check if the syntax highlighting is working fine.  #include &lt;iostream&gt;  int main(int argc, char* argv[]){    std::cout &lt;&lt; \"Hello There!\"&lt;&lt; std::endl;    return EXIT_SUCCESS;  }",
             "content_html": "<p>This is to check if the syntax highlighting is working fine.</p><figure class=\"highlight\"><pre><code class=\"language-cpp\" data-lang=\"cpp\">  <span class=\"cp\">#include &lt;iostream&gt;</span>  <span class=\"kt\">int</span> <span class=\"nf\">main</span><span class=\"p\">(</span><span class=\"kt\">int</span> <span class=\"n\">argc</span><span class=\"p\">,</span> <span class=\"kt\">char</span><span class=\"o\">*</span> <span class=\"n\">argv</span><span class=\"p\">[]){</span>    <span class=\"n\">std</span><span class=\"o\">::</span><span class=\"n\">cout</span> <span class=\"o\">&lt;&lt;</span> <span class=\"s\">\"Hello There!\"</span><span class=\"o\">&lt;&lt;</span> <span class=\"n\">std</span><span class=\"o\">::</span><span class=\"n\">endl</span><span class=\"p\">;</span>    <span class=\"k\">return</span> <span class=\"n\">EXIT_SUCCESS</span><span class=\"p\">;</span>  <span class=\"p\">}</span></code></pre></figure>",
-            "url": "http://localhost:4000/blog/newpost.html",
+            "url": "http://localhost:4000/blog/check-code-blocks.html",
             
             
             
