@@ -13,11 +13,22 @@
   
     {
 
-      "title"    : "Edit this to a new title",
+      "title"    : "CUDA and its questions",
       "url"      : "/blog/cuda.html",
       "category" : "",
-      "tags"     : "jekyll, coding",
+      "tags"     : "cuda",
       "date"     : "2020-03-18 15:49:43 +0530",
+      "discription" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "How to use Latex / MathJax in Jekyll",
+      "url"      : "/blog/latex-jekyll.html",
+      "category" : "",
+      "tags"     : "jekyll, latex, mathjax",
+      "date"     : "2020-03-17 16:12:01 +0530",
       "discription" : ""
 
     } ,
