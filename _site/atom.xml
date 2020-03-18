@@ -4,7 +4,7 @@
  <title>Rajesh's Blog</title>
  <link href="http://localhost:4000/blog/atom.xml" rel="self"/>
  <link href="http://localhost:4000/blog/"/>
- <updated>2020-03-18T16:37:14+05:30</updated>
+ <updated>2020-03-18T18:16:46+05:30</updated>
  <id>http://localhost:4000</id>
  <author>
    <name></name>
@@ -37,13 +37,82 @@ invoked only from the main function/Host device. Just got to know that thrust
    <updated>2020-03-18T15:49:43+05:30</updated>
    <id>http://localhost:4000/cuda</id>
    <content type="html">&lt;p&gt;There we were some question raised during Rupesh’s GPU class today.&lt;/p&gt;
+
 &lt;ul&gt;
-  &lt;li&gt;Why is the &lt;code class=&quot;highlighter-rouge&quot;&gt;blockDim.z&lt;/code&gt; 64 whereas &lt;code class=&quot;highlighter-rouge&quot;&gt;x&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;y&lt;/code&gt; is 1024&lt;/li&gt;
-  &lt;li&gt;Why is &lt;code class=&quot;highlighter-rouge&quot;&gt;gridDim.y or z&lt;/code&gt; is not 2^16 but 2^16-1
-&lt;script type=&quot;math/tex&quot;&gt;2^{16}&lt;/script&gt;&lt;/li&gt;
+  &lt;li&gt;what is sequence of actions for ‘D[1]=10’ in &lt;code class=&quot;highlighter-rouge&quot;&gt;cuda&lt;/code&gt;/&lt;code class=&quot;highlighter-rouge&quot;&gt;thrust&lt;/code&gt;
+    &lt;blockquote&gt;
+      &lt;ul&gt;
+        &lt;li&gt;first the index operator&lt;/li&gt;
+        &lt;li&gt;in device_vector.h &lt;a href=&quot;http://thrust.github.io/doc/device__vector_8h_source.html#l00239&quot;&gt;Line 240+290/300&lt;/a&gt;
+          &lt;blockquote&gt;
+            &lt;p&gt;declare these members for the purpose of Doxygenating them. they actually exist in a derived-from class&lt;/p&gt;
+          &lt;/blockquote&gt;
+        &lt;/li&gt;
+        &lt;li&gt;then vector_base.h &lt;a href=&quot;https://github.com/thrust/thrust/blob/master/thrust/detail/vector_base.h#L242&quot;&gt;L242&lt;/a&gt; &lt;a href=&quot;https://github.com/thrust/thrust/blob/master/thrust/detail/vector_base.h#L42&quot;&gt;L42&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;then contiguous_storage.h&lt;/li&gt;
+        &lt;li&gt;in thrust::detail::contiguous_storage::reference   &lt;a href=&quot;https://github.com/thrust/thrust/blob/master/thrust/detail/contiguous_storage.h#L36&quot;&gt;L36&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;then operator[] at &lt;a href=&quot;https://github.com/thrust/thrust/blob/a33734bdcabd2bb723b7edca0957ebf3e4b387d5/thrust/detail/contiguous_storage.inl#L173&quot;&gt;line173&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Sample&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;CAUTION:&lt;/strong&gt; Not sure about device_reference is focus!? &lt;a href=&quot;https://github.com/thrust/thrust/blob/7df7efe3542a0ab549530bc478467320467e0094/thrust/device_reference.h#L290&quot;&gt;L290&lt;/a&gt;
+device_reference.inl &lt;a href=&quot;https://github.com/thrust/thrust/blob/7df7efe3542a0ab549530bc478467320467e0094/thrust/detail/device_reference.inl#L28&quot;&gt;L2+42&lt;/a&gt;
+reference.h &lt;a href=&quot;https://github.com/thrust/thrust/blob/master/thrust/detail/reference.h#L82&quot;&gt;L82&lt;/a&gt;
+reference.inl at operator= &lt;a href=&quot;https://github.com/thrust/thrust/blob/master/thrust/detail/reference.inl#L65&quot;&gt;L65&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Why is the &lt;code class=&quot;highlighter-rouge&quot;&gt;blockDim.z&lt;/code&gt; 64 whereas &lt;code class=&quot;highlighter-rouge&quot;&gt;x&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;y&lt;/code&gt; is 1024
+    &lt;blockquote&gt;
+      &lt;p&gt;That is how it is designed to be in cuda/GPU.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Why is &lt;code class=&quot;highlighter-rouge&quot;&gt;gridDim.y or z&lt;/code&gt; is not &lt;script type=&quot;math/tex&quot;&gt;2^{16}&lt;/script&gt; but &lt;script type=&quot;math/tex&quot;&gt;2^{16}-1&lt;/script&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;Good question! unknown! Some curious people &lt;a href=&quot;https://forums.developer.nvidia.com/t/why-65535-instead-of-65536-at-maximum-size-for-each-griddimension-and-2d-tex-reference/24528&quot;&gt;1&lt;/a&gt;&lt;/p&gt;
+      &lt;blockquote&gt;
+        &lt;p&gt;Some people &lt;a href=&quot;https://forums.developer.nvidia.com/t/grid-dimention-why-65535/6853&quot;&gt;2&lt;/a&gt;
+Since block IDs begin at zero, shouldn’t the maximum dimension therefore be 65536? Having the limit as 65535 allows for block IDs [0, 65534], so we’re losing one ID.&lt;/p&gt;
+      &lt;/blockquote&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Does GTX 680 has limit of 2048 threads per thread block?
+    &lt;blockquote&gt;
+      &lt;p&gt;I think NO. See &lt;a href=&quot;https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#features-and-technical-specifications__technical-specifications-per-compute-capability&quot;&gt;this!&lt;/a&gt; and &lt;a href=&quot;https://developer.download.nvidia.com/compute/DevZone/docs/html/C/doc/CUDA_C_Programming_Guide.pdf&quot;&gt;table F2 in Guide v4&lt;/a&gt;
+From CC v2.0+ it is 1024&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Valid limits of kernel launches
+    &lt;blockquote&gt;
+      &lt;p&gt;There are multiple limits. All must be satisfied.&lt;/p&gt;
+      &lt;blockquote&gt;
+        &lt;ol&gt;
+          &lt;li&gt;The maximum number of threads in the block is limited to 1024. This is the product of whatever your threadblock dimensions are (xyz).&lt;/li&gt;
+          &lt;li&gt;The maximum x-dimension is 1024. (1024,1,1) is legal. (1025,1,1) is not legal.&lt;/li&gt;
+          &lt;li&gt;The maximum y-dimension is 1024. (1,1024,1) is legal. (1,1025,1) is not legal.&lt;/li&gt;
+          &lt;li&gt;The maximum z-dimension is 64. (1,1,64) is legal. (2,2,64) is also legal. (1,1,65) is not legal.
+Also, threadblock dimensions of 0 in any position are not legal.&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/blockquote&gt;
+
+      &lt;p&gt;Your choice of threadblock dimensions (x,y,z) must satisfy each of the rules 1-4 above.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Source &lt;a href=&quot;https://forums.developer.nvidia.com/t/maximum-number-of-threads-on-thread-block/46392/2&quot;&gt;Devtalk&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;dim3&lt;/code&gt; is actually a struct of &lt;code class=&quot;highlighter-rouge&quot;&gt;uint3&lt;/code&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;int3 a = make_int3(2,3,4);&lt;/code&gt;&lt;/p&gt;
+
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 </content>
  </entry>
  
