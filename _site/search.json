@@ -2,7 +2,29 @@
   
     {
 
-      "title"    : "Some new words",
+      "title"    : "Thrust library and CUDA API",
+      "url"      : "/blog/thrust.html",
+      "category" : "",
+      "tags"     : "cuda, thrust",
+      "date"     : "2020-03-18 15:49:47 +0530",
+      "discription" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Edit this to a new title",
+      "url"      : "/blog/cuda.html",
+      "category" : "",
+      "tags"     : "jekyll, coding",
+      "date"     : "2020-03-18 15:49:43 +0530",
+      "discription" : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Some new words - inspired by COVID-19",
       "url"      : "/blog/new-words.html",
       "category" : "",
       "tags"     : "vocab",

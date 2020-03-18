@@ -13,11 +13,49 @@
 "items": [
     
         {
-            "id": "http://localhost:4000/blog/new-words.html",
-            "title": "Some new words",
+            "id": "http://localhost:4000/blog/thrust.html",
+            "title": "Thrust library and CUDA API",
             "summary": null,
-            "content_text": "In this novel coronovirus season learnt some new words.  epidemic          a widespread occurrence of an infectious disease in a community at a particular time.        pandemic          (of a disease) prevalent over a whole country or the world.        Price gouging          Price gouging is a term referring to when a seller increases the prices of goods, to a level much higher than is considered reasonable, and is considered exploitative, potentially to an unethical extent. Usually this event occurs after a demand or supply shock.        Paywall          A paywall is a method of restricting access to content via a purchase or paid subscription      Example sentence.WHO said COVID-19 disease is epidemic and nearly pandemic. While sellers are price gouging masks/sanitizing items, nature journal removed the paywall for all research involving coronovirus. Sweet!",
-            "content_html": "<p>In this novel coronovirus season learnt some new words.</p><ol>  <li>epidemic    <blockquote>      <p>a widespread occurrence of an infectious disease in a community at a particular time.</p>    </blockquote>  </li>  <li>pandemic    <blockquote>      <p>(of a disease) prevalent over a whole country or the world.</p>    </blockquote>  </li>  <li>Price gouging    <blockquote>      <p>Price gouging is a term referring to when a seller <strong>increases the prices</strong> of goods, to a level <strong>much higher than</strong> is considered <strong>reasonable</strong>, and is considered exploitative, potentially to an unethical extent. Usually this event occurs after a demand or supply shock.</p>    </blockquote>  </li>  <li>Paywall    <blockquote>      <p>A paywall is a method of restricting access to content via a purchase or paid subscription</p>    </blockquote>  </li></ol><h3 id=\"example-sentence\">Example sentence.</h3><p>WHO said COVID-19 disease is epidemic and nearly pandemic. While sellers are price gouging masks/sanitizing items, nature journal removed the paywall for all research involving coronovirus. Sweet!</p>",
+            "content_text": "For long time, I was under the impression that thrust functions can beinvoked only from the main function/Host device. Just got to know that thrust(v1.8+) fucntion can be invocked inside the kernel__global__ void test(float *d_A, int N) {    float sum = thrust::reduce(thrust::seq, d_A, d_A + N);    printf(\"Device side result = %f\\n\", sum);}Source: SO link",
+            "content_html": "<p>For long time, I was under the impression that thrust functions can beinvoked only from the main function/Host device. Just got to know that thrust(v1.8+) fucntion can be invocked inside the kernel</p><div class=\"language-cuda highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"k\">__global__</span> <span class=\"kt\">void</span> <span class=\"nf\">test</span><span class=\"p\">(</span><span class=\"kt\">float</span> <span class=\"o\">*</span><span class=\"n\">d_A</span><span class=\"p\">,</span> <span class=\"kt\">int</span> <span class=\"n\">N</span><span class=\"p\">)</span> <span class=\"p\">{</span>    <span class=\"kt\">float</span> <span class=\"n\">sum</span> <span class=\"o\">=</span> <span class=\"n\">thrust</span><span class=\"o\">::</span><span class=\"n\">reduce</span><span class=\"p\">(</span><span class=\"n\">thrust</span><span class=\"o\">::</span><span class=\"n\">seq</span><span class=\"p\">,</span> <span class=\"n\">d_A</span><span class=\"p\">,</span> <span class=\"n\">d_A</span> <span class=\"o\">+</span> <span class=\"n\">N</span><span class=\"p\">);</span>    <span class=\"n\">printf</span><span class=\"p\">(</span><span class=\"s\">\"Device side result = %f</span><span class=\"se\">\\n</span><span class=\"s\">\"</span><span class=\"p\">,</span> <span class=\"n\">sum</span><span class=\"p\">);</span><span class=\"p\">}</span></code></pre></div></div><p><a href=\"https://stackoverflow.com/a/26784463/2712045\">Source: SO link</a></p>",
+            "url": "http://localhost:4000/blog/thrust.html",
+            
+            
+            
+            "tags": ["cuda","thrust"],
+            
+            "date_published": "2020-03-18T15:49:47+05:30",
+            "date_modified": "2020-03-18T15:49:47+05:30",
+            
+                "author": "Rajesh Pandian M"
+            
+        },
+    
+        {
+            "id": "http://localhost:4000/blog/cuda.html",
+            "title": "Edit this to a new title",
+            "summary": null,
+            "content_text": "This is sample content post.Edit this to a new post content!",
+            "content_html": "<p>This is sample content post.Edit this to a new post content!</p>",
+            "url": "http://localhost:4000/blog/cuda.html",
+            
+            
+            
+            "tags": ["jekyll","coding"],
+            
+            "date_published": "2020-03-18T15:49:43+05:30",
+            "date_modified": "2020-03-18T15:49:43+05:30",
+            
+                "author": "Rajesh Pandian M"
+            
+        },
+    
+        {
+            "id": "http://localhost:4000/blog/new-words.html",
+            "title": "Some new words - inspired by COVID-19",
+            "summary": null,
+            "content_text": "In this novel coronovirus season learnt some new words.  epidemic          a widespread occurrence of an infectious disease in a community at a particular time.        pandemic          (of a disease) prevalent over a whole country or the world.        Price gouging          Price gouging is a term referring to when a seller increases the prices of goods, to a level much higher than is considered reasonable, and is considered exploitative, potentially to an unethical extent. Usually this event occurs after a demand or supply shock.        Paywall          A paywall is a method of restricting access to content via a purchase or paid subscription      Example sentence.WHO said COVID-19 disease is epidemic and nearly pandemic officially pandemic today. While sellers are price gouging masks/sanitizing items, nature journal removed the paywall for all research involving coronovirus. Sweet!",
+            "content_html": "<p>In this novel coronovirus season learnt some new words.</p><ol>  <li>epidemic    <blockquote>      <p>a widespread occurrence of an infectious disease in a community at a particular time.</p>    </blockquote>  </li>  <li>pandemic    <blockquote>      <p>(of a disease) prevalent over a whole country or the world.</p>    </blockquote>  </li>  <li>Price gouging    <blockquote>      <p>Price gouging is a term referring to when a seller <strong>increases the prices</strong> of goods, to a level <strong>much higher than</strong> is considered <strong>reasonable</strong>, and is considered exploitative, potentially to an unethical extent. Usually this event occurs after a demand or supply shock.</p>    </blockquote>  </li>  <li>Paywall    <blockquote>      <p>A paywall is a method of restricting access to content via a purchase or paid subscription</p>    </blockquote>  </li></ol><h3 id=\"example-sentence\">Example sentence.</h3><p>WHO said COVID-19 disease is epidemic and <del>nearly pandemic</del> officially pandemic today. While sellers are price gouging masks/sanitizing items, nature journal removed the paywall for all research involving coronovirus. Sweet!</p>",
             "url": "http://localhost:4000/blog/new-words.html",
             
             

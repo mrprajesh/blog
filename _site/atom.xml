@@ -4,7 +4,7 @@
  <title>Rajesh's Blog</title>
  <link href="http://localhost:4000/blog/atom.xml" rel="self"/>
  <link href="http://localhost:4000/blog/"/>
- <updated>2020-03-11T19:41:16+05:30</updated>
+ <updated>2020-03-18T15:56:10+05:30</updated>
  <id>http://localhost:4000</id>
  <author>
    <name></name>
@@ -13,7 +13,36 @@
 
  
  <entry>
-   <title>Some new words</title>
+   <title>Thrust library and CUDA API</title>
+   <link href="http://localhost:4000/blog/thrust.html"/>
+   <updated>2020-03-18T15:49:47+05:30</updated>
+   <id>http://localhost:4000/thrust</id>
+   <content type="html">&lt;p&gt;For long time, I was under the impression that thrust functions can be
+invoked only from the main function/Host device. Just got to know that thrust
+(v1.8+) fucntion can be invocked inside the kernel&lt;/p&gt;
+
+&lt;div class=&quot;language-cuda highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;__global__&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;d_A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;N&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sum&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;thrust&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;reduce&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;thrust&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;seq&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;d_A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;d_A&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;N&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Device side result = %f&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/a/26784463/2712045&quot;&gt;Source: SO link&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Edit this to a new title</title>
+   <link href="http://localhost:4000/blog/cuda.html"/>
+   <updated>2020-03-18T15:49:43+05:30</updated>
+   <id>http://localhost:4000/cuda</id>
+   <content type="html">&lt;p&gt;This is sample content post.
+Edit this to a new post content!&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Some new words - inspired by COVID-19</title>
    <link href="http://localhost:4000/blog/new-words.html"/>
    <updated>2020-03-11T19:17:59+05:30</updated>
    <id>http://localhost:4000/new-words</id>
@@ -44,7 +73,7 @@
 
 &lt;h3 id=&quot;example-sentence&quot;&gt;Example sentence.&lt;/h3&gt;
 
-&lt;p&gt;WHO said COVID-19 disease is epidemic and nearly pandemic. While sellers are price gouging masks/sanitizing items, nature journal removed the paywall for all research involving coronovirus. Sweet!&lt;/p&gt;
+&lt;p&gt;WHO said COVID-19 disease is epidemic and &lt;del&gt;nearly pandemic&lt;/del&gt; officially pandemic today. While sellers are price gouging masks/sanitizing items, nature journal removed the paywall for all research involving coronovirus. Sweet!&lt;/p&gt;
 </content>
  </entry>
  
