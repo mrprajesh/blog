@@ -13,6 +13,44 @@
 "items": [
     
         {
+            "id": "http://localhost:4000/blog/testing-anchor-tags.html",
+            "title": "Sample",
+            "summary": null,
+            "content_text": "Sample 1Sample textSample 2Sample textSample 3Sample text",
+            "content_html": "<h2 id=\"sample-1\">Sample 1</h2><p>Sample text</p><h3 id=\"sample-2\">Sample 2</h3><p>Sample text</p><h4 id=\"sample-3\">Sample 3</h4><p>Sample text</p>",
+            "url": "http://localhost:4000/blog/testing-anchor-tags.html",
+            
+            
+            
+            "tags": ["jekyll","coding"],
+            
+            "date_published": "2020-03-19T20:23:24+05:30",
+            "date_modified": "2020-03-19T20:23:24+05:30",
+            
+                "author": "Rajesh Pandian M"
+            
+        },
+    
+        {
+            "id": "http://localhost:4000/blog/raw-tag-jekyll.html",
+            "title": "using \"raw\" tag in jekyll to view liquid tags",
+            "summary": null,
+            "content_text": "  For example in a post I mentioned how to enable  in jekyll  at 4th step i said include the below tag.          {% include mathjax.html %}        jekyll did not allow me to include above line into code blocks in post.  that is where I found this raw tag to be very helpful. use as below{% raw %}{% include mathjax.html %}{% endraw %}Alternatively, we can disable liquid processing (jekyll v4.0+) in the post’s front matter userender_with_liquid: false  see more here.",
+            "content_html": "<ul>  <li>For example in a <a href=\"/blog/latex-jekyll.html\">post</a> I mentioned how to enable <script type=\"math/tex\">\\LaTeX</script> in jekyll</li>  <li>at 4th step i said include the below tag.    <blockquote>      <p>{% include mathjax.html %}</p>    </blockquote>  </li>  <li>jekyll did not allow me to <code class=\"highlighter-rouge\">include</code> above line into <code class=\"highlighter-rouge\">code blocks</code> in post.</li>  <li>that is where I found this <code class=\"highlighter-rouge\">raw</code> tag to be very helpful. use as below</li></ul><div class=\"language-cpp highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"p\">{</span><span class=\"o\">%</span> <span class=\"n\">raw</span> <span class=\"o\">%</span><span class=\"p\">}</span><span class=\"p\">{</span><span class=\"o\">%</span> <span class=\"n\">include</span> <span class=\"n\">mathjax</span><span class=\"p\">.</span><span class=\"n\">html</span> <span class=\"o\">%</span><span class=\"p\">}</span><span class=\"p\">{</span><span class=\"o\">%</span> <span class=\"n\">endraw</span> <span class=\"o\">%</span><span class=\"p\">}</span></code></pre></div></div><p>Alternatively, we can disable liquid processing (jekyll v4.0+) in the post’s front matter use</p><p><code class=\"highlighter-rouge\">render_with_liquid: false</code></p><ul>  <li>see more <a href=\"https://jekyllrb.com/docs/liquid/tags/\">here</a>.</li></ul>",
+            "url": "http://localhost:4000/blog/raw-tag-jekyll.html",
+            
+            
+            
+            
+            
+            "date_published": "2020-03-19T19:44:39+05:30",
+            "date_modified": "2020-03-19T19:44:39+05:30",
+            
+                "author": "Rajesh Pandian M"
+            
+        },
+    
+        {
             "id": "http://localhost:4000/blog/add-min-read-to-jekyll.html",
             "title": "How to add mins to read in jekyll post like medium",
             "summary": null,

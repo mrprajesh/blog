@@ -5,7 +5,7 @@
 1. Run `bundle exec jekyll server`
 2. Run `./newpost.sh <NEW-POST-NAME>` to create new post
 3. Edit `md` file from `_post/` folder that starts with current date
-4. Check on browser from [http://127.0.0.1:4000/](http://127.0.0.1:4000/)
+4. Check on browser from [http://127.0.0.1:4000/blog](http://127.0.0.1:4000/blog) or [http://127.0.0.1:4000](http://127.0.0.1:4000)
 5. Repeat 3 and 4 till it perfect
 6. Git commit and push
 7. The blog should appear if `gh-page` is enabled in repository settings

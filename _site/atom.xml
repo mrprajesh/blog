@@ -4,13 +4,61 @@
  <title>Rajesh's Blog</title>
  <link href="http://localhost:4000/blog/atom.xml" rel="self"/>
  <link href="http://localhost:4000/blog/"/>
- <updated>2020-03-19T19:38:04+05:30</updated>
+ <updated>2020-03-19T21:41:12+05:30</updated>
  <id>http://localhost:4000</id>
  <author>
    <name></name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Sample</title>
+   <link href="http://localhost:4000/blog/testing-anchor-tags.html"/>
+   <updated>2020-03-19T20:23:24+05:30</updated>
+   <id>http://localhost:4000/testing-anchor-tags</id>
+   <content type="html">&lt;h2 id=&quot;sample-1&quot;&gt;Sample 1&lt;/h2&gt;
+&lt;p&gt;Sample text&lt;/p&gt;
+
+&lt;h3 id=&quot;sample-2&quot;&gt;Sample 2&lt;/h3&gt;
+&lt;p&gt;Sample text&lt;/p&gt;
+
+&lt;h4 id=&quot;sample-3&quot;&gt;Sample 3&lt;/h4&gt;
+&lt;p&gt;Sample text&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>using &quot;raw&quot; tag in jekyll to view liquid tags</title>
+   <link href="http://localhost:4000/blog/raw-tag-jekyll.html"/>
+   <updated>2020-03-19T19:44:39+05:30</updated>
+   <id>http://localhost:4000/raw-tag-jekyll</id>
+   <content type="html">&lt;ul&gt;
+  &lt;li&gt;For example in a &lt;a href=&quot;/blog/latex-jekyll.html&quot;&gt;post&lt;/a&gt;
+ I mentioned how to enable &lt;script type=&quot;math/tex&quot;&gt;\LaTeX&lt;/script&gt; in jekyll&lt;/li&gt;
+  &lt;li&gt;at 4th step i said include the below tag.
+    &lt;blockquote&gt;
+      &lt;p&gt;{% include mathjax.html %}&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;jekyll did not allow me to &lt;code class=&quot;highlighter-rouge&quot;&gt;include&lt;/code&gt; above line into &lt;code class=&quot;highlighter-rouge&quot;&gt;code blocks&lt;/code&gt; in post.&lt;/li&gt;
+  &lt;li&gt;that is where I found this &lt;code class=&quot;highlighter-rouge&quot;&gt;raw&lt;/code&gt; tag to be very helpful. use as below&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;raw&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mathjax&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;html&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;endraw&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Alternatively, we can disable liquid processing (jekyll v4.0+) in the post’s front matter use&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;render_with_liquid: false&lt;/code&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;see more &lt;a href=&quot;https://jekyllrb.com/docs/liquid/tags/&quot;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
  
  <entry>
    <title>How to add mins to read in jekyll post like medium</title>

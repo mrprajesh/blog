@@ -29,3 +29,5 @@ echo "This is sample content post."     >> $DIR/$FILE
 echo "Edit this to a new post content!" >> $DIR/$FILE
 
 echo $DIR/$FILE - created!
+
+geany $DIR/$FILE
