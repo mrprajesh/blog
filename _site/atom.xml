@@ -4,13 +4,59 @@
  <title>Rajesh's Blog</title>
  <link href="http://localhost:4000/blog/atom.xml" rel="self"/>
  <link href="http://localhost:4000/blog/"/>
- <updated>2020-03-18T18:16:46+05:30</updated>
+ <updated>2020-03-19T19:08:26+05:30</updated>
  <id>http://localhost:4000</id>
  <author>
    <name></name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>How to add mins to read in jekyll post like medium</title>
+   <link href="http://localhost:4000/blog/add-min-read-to-jekyll.html"/>
+   <updated>2020-03-19T18:53:53+05:30</updated>
+   <id>http://localhost:4000/add-min-read-to-jekyll</id>
+   <content type="html">&lt;p&gt;Edit the &lt;code class=&quot;highlighter-rouge&quot;&gt;_layouts/post.html&lt;/code&gt; and place below lines appropriately.&lt;/p&gt;
+
+&lt;blockquote&gt;
+
+  &lt;p&gt;{% assign words = content | number_of_words %}&lt;/p&gt;
+
+  &lt;p&gt;{{ words | plus:179 | divided_by:180  }} min read&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;I got this idea from &lt;a href=&quot;https://carlosbecker.com/posts/jekyll-reading-time-without-plugins&quot;&gt;Carlos Becker’s post&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;He has used &lt;code class=&quot;highlighter-rouge&quot;&gt;if-else&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Whereas I have &lt;strong&gt;avoided&lt;/strong&gt; that using &lt;code class=&quot;highlighter-rouge&quot;&gt;ceil(words/180)&lt;/code&gt; i.e same as &lt;code class=&quot;highlighter-rouge&quot;&gt;(words+179)/180&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+
+  &lt;p&gt;&lt;span class=&quot;reading-time&quot; title=&quot;Estimated read time&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+
+  &lt;p&gt;{% assign words = content | number_of_words %}&lt;/p&gt;
+
+  &lt;p&gt;{% if words &amp;lt; 360 %}&lt;/p&gt;
+
+  &lt;p&gt;1 min&lt;/p&gt;
+
+  &lt;p&gt;{% else %}&lt;/p&gt;
+
+  &lt;p&gt;{{ words | divided_by:180 }} mins&lt;/p&gt;
+
+  &lt;p&gt;{% endif %}&lt;/p&gt;
+
+  &lt;p&gt;&amp;lt;/span&amp;gt;&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>Thrust library and CUDA API</title>
@@ -108,11 +154,11 @@ Also, threadblock dimensions of 0 in any position are not legal.&lt;/li&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;dim3&lt;/code&gt; is actually a struct of &lt;code class=&quot;highlighter-rouge&quot;&gt;uint3&lt;/code&gt;
     &lt;blockquote&gt;
-      &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;int3 a = make_int3(2,3,4);&lt;/code&gt;&lt;/p&gt;
-
+      &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;int3 make_int3(2,3,4);&lt;/code&gt;&lt;/p&gt;
     &lt;/blockquote&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
+
 </content>
  </entry>
  
@@ -166,15 +212,20 @@ Also, threadblock dimensions of 0 in any position are not legal.&lt;/li&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;edit &lt;code class=&quot;highlighter-rouge&quot;&gt;_layouts/default.html&lt;/code&gt; add a include line before &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;/body&amp;gt;&lt;/code&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;{\% include mathjax.html \%}&lt;/p&gt;
-      &lt;blockquote&gt;
-        &lt;p&gt;Caution: Remove &lt;code class=&quot;highlighter-rouge&quot;&gt;\&lt;/code&gt; before &lt;code class=&quot;highlighter-rouge&quot;&gt;%&lt;/code&gt; (at the beginning and at the end).
-For some reason jekyll is not allowing me write it&lt;/p&gt;
-      &lt;/blockquote&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
+  &lt;li&gt;edit &lt;code class=&quot;highlighter-rouge&quot;&gt;_layouts/default.html&lt;/code&gt; add a include line before &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;/body&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+
+  &lt;p&gt;…&lt;/p&gt;
+
+  &lt;p&gt;{% include mathjax.html %}&lt;/p&gt;
+
+  &lt;p&gt;&amp;lt;/body&amp;gt;&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
   &lt;li&gt;that’s it. Enclose math symbols within &lt;code class=&quot;highlighter-rouge&quot;&gt;$$&lt;/code&gt;&lt;/li&gt;
   &lt;li&gt;e.g Some random &lt;script type=&quot;math/tex&quot;&gt;A_{m \times n} \cdot B^{n} = C_n&lt;/script&gt;
     &lt;div class=&quot;language-tex highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;$$&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;_{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;m &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\times&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\cdot&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; B&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;^{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; C&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;_&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;n &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;$$&lt;/span&gt;

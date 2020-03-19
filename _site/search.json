@@ -2,6 +2,17 @@
   
     {
 
+      "title"    : "How to add mins to read in jekyll post like medium",
+      "url"      : "/blog/add-min-read-to-jekyll.html",
+      "category" : "",
+      "tags"     : "jekyll",
+      "date"     : "2020-03-19 18:53:53 +0530",
+      "discription" : ""
+
+    } ,
+  
+    {
+
       "title"    : "Thrust library and CUDA API",
       "url"      : "/blog/thrust.html",
       "category" : "",

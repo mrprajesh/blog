@@ -53,9 +53,14 @@ author: Rajesh Pandian M
 ```
 
 * edit `_layouts/default.html` add a include line before `</body>`
-> {\% include mathjax.html \%\}
->> Caution: Remove `\` before `%` (at the beginning and at the end).
-> For some reason jekyll is not allowing me write it
+
+> {% raw  %}
+> ...
+>
+> {% include mathjax.html %}
+>
+> </body>
+> {% endraw %}
 
 - that's it. Enclose math symbols within `$$`
 - e.g Some random $$A_{m \times n} \cdot B^{n} = C_n $$
