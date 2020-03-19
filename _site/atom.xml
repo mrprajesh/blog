@@ -4,13 +4,117 @@
  <title>Rajesh's Blog</title>
  <link href="http://localhost:4000/blog/atom.xml" rel="self"/>
  <link href="http://localhost:4000/blog/"/>
- <updated>2020-03-19T22:43:14+05:30</updated>
+ <updated>2020-03-20T00:06:11+05:30</updated>
  <id>http://localhost:4000</id>
  <author>
    <name></name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Corona, and some links</title>
+   <link href="http://localhost:4000/blog/corono-virus-pedia.html"/>
+   <updated>2020-03-19T22:52:50+05:30</updated>
+   <id>http://localhost:4000/corono-virus-pedia</id>
+   <content type="html">&lt;h2 id=&quot;originated&quot;&gt;Originated&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;The 2019 novel coronavirus was identified in Wuhan, Hubei province of China&lt;/li&gt;
+  &lt;li&gt;People were dying of an unknown disease causing pnuemonia&lt;/li&gt;
+  &lt;li&gt;The first case may be occurred on/after 17-Nov-2019&lt;/li&gt;
+  &lt;li&gt;China notified WHO, 31-Dec-2019&lt;/li&gt;
+  &lt;li&gt;Majority of the case had some connections to Wuhan wild-life market&lt;/li&gt;
+  &lt;li&gt;China shutdown Wuhan and closed-down sea food wet market&lt;/li&gt;
+  &lt;li&gt;International countries restricted their travelling to/from China&lt;/li&gt;
+  &lt;li&gt;First death in China &lt;a href=&quot;https://www.aljazeera.com/news/2020/01/timeline-china-coronavirus-spread-200126061554884.html&quot;&gt;9-Jan-2020&lt;/a&gt; announced on 11-Jan.&lt;/li&gt;
+  &lt;li&gt;On 30-Jan-2020 WHO declared coronavirus a global emergency&lt;/li&gt;
+  &lt;li&gt;On 11-Mar-2020 WHO declared pandemic&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;naming&quot;&gt;Naming&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;2019-nCOV&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;2019 novel coronavirus&lt;/code&gt; is initial temporary name&lt;/li&gt;
+  &lt;li&gt;It is a novel type in human coronavirus &lt;a href=&quot;https://en.wikipedia.org/wiki/Coronavirus#Human_coronaviruses&quot;&gt;family&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;cornavirus is amoung the viruses that causes common cold&lt;/li&gt;
+  &lt;li&gt;This is the 7th type&lt;/li&gt;
+  &lt;li&gt;On 11-Feb-2020 International Committee on Taxonomy of Viruses (ICTV) named virus a &lt;code class=&quot;highlighter-rouge&quot;&gt;SAR-COV-2&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;due to the similarity with 2003 SARS virus&lt;/li&gt;
+  &lt;li&gt;disease as coronavirus disease (COVID-19)&lt;/li&gt;
+  &lt;li&gt;virus as Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2)&lt;/li&gt;
+  &lt;li&gt;similar as HIV is virus; AIDS is disease&lt;/li&gt;
+  &lt;li&gt;WHO &lt;a href=&quot;https://www.who.int/emergencies/diseases/novel-coronavirus-2019/technical-guidance/naming-the-coronavirus-disease-(covid-2019)-and-the-virus-that-causes-it&quot;&gt;call is&lt;/a&gt; as
+    &lt;blockquote&gt;
+      &lt;p&gt;From a risk communications perspective, using the name SARS can have unintended consequences in terms of creating unnecessary fear for some populations, especially in Asia which was worst affected by the SARS outbreak in 2003.
+For that reason and others, WHO has begun referring to the virus as “the virus responsible for COVID-19” or “the COVID-19 virus” when communicating with the public.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;virus-origin&quot;&gt;Virus origin&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Possibly mutated from bat and then maybe pangolin&lt;/li&gt;
+  &lt;li&gt;Then to a human&lt;/li&gt;
+  &lt;li&gt;Definitely Zoonotic&lt;/li&gt;
+  &lt;li&gt;Human-human transmission&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;characteristics&quot;&gt;Characteristics&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Respiratory disease - affects tissues in the lungs.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;It has a R0 factor of 1.4-2.5 as said &lt;a href=&quot;https://www.who.int/news-room/detail/23-01-2020-statement-on-the-meeting-of-the-international-health-regulations-(2005)-emergency-committee-regarding-the-outbreak-of-novel-coronavirus-(2019-ncov)&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;It is highly contagious - transmitted from person affect&lt;/li&gt;
+  &lt;li&gt;Aerosol, contacting the Plastic/metal Items and touhcing eye/nose/face/mouth&lt;/li&gt;
+  &lt;li&gt;It is incubation period (time between infection to show symptoms) of 2-14 days.&lt;/li&gt;
+  &lt;li&gt;Fatality rate is 1-7% (varies based on region and age-group)&lt;/li&gt;
+  &lt;li&gt;Affects the elderly persons and immune deficient person (who has high blood pressure, heart disease, lung disease, cancer or diabetes) than the healthy young ones&lt;/li&gt;
+  &lt;li&gt;Common &lt;a href=&quot;https://en.wikipedia.org/wiki/Coronavirus_disease_2019#Signs_and_symptoms&quot;&gt;Symptoms&lt;/a&gt; - Fever, Dry cough, Fatigue, Sputum production, Shortness of breath&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;prevention-measure&quot;&gt;Prevention measure&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Frequent hand-washing with soap/sanitizer 20 seconds&lt;/li&gt;
+  &lt;li&gt;Cover your mouth/nose when sneezing/coughing; otherwise elbow cough&lt;/li&gt;
+  &lt;li&gt;Use mask when visiting an affected person or in hospital&lt;/li&gt;
+  &lt;li&gt;Maintain social distancing (1 meter) with public&lt;/li&gt;
+  &lt;li&gt;Avoid crowded places&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;treatment&quot;&gt;Treatment&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Unknown!&lt;/li&gt;
+  &lt;li&gt;Symptomatic - Treat the symptoms&lt;/li&gt;
+  &lt;li&gt;Healthy person recovers on their own&lt;/li&gt;
+  &lt;li&gt;Weak persons - Breathing problems/Pneumonia, ARDS,&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;vaccine&quot;&gt;Vaccine&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Not present&lt;/li&gt;
+  &lt;li&gt;Would take at least 18 months&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;links&quot;&gt;Links&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;WHO &lt;a href=&quot;https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports&quot;&gt;situation reports&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;WHO &lt;a href=&quot;https://experience.arcgis.com/experience/685d0ace521648f8a5beeeee1b9125cd&quot;&gt;dash board&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.worldometers.info/coronavirus/&quot;&gt;Worldometer&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://coronavirus.jhu.edu/map.html&quot;&gt;Johns Hopkins University.&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.bing.com/covid&quot;&gt;BING&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://covidout.in/&quot;&gt;India&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.mohfw.gov.in/&quot;&gt;Govt. of India&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>Hovering anchor tag heading in Jekyll</title>
