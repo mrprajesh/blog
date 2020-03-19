@@ -2,8 +2,8 @@
   
     {
 
-      "title"    : "Sample",
-      "url"      : "/blog/testing-anchor-tags.html",
+      "title"    : "Hovering anchor tag heading in Jekyll",
+      "url"      : "/blog/hovering-anchor-tags-headings.html",
       "category" : "",
       "tags"     : "jekyll, coding",
       "date"     : "2020-03-19 20:23:24 +0530",

@@ -4,7 +4,7 @@
  <title>Rajesh's Blog</title>
  <link href="http://localhost:4000/blog/atom.xml" rel="self"/>
  <link href="http://localhost:4000/blog/"/>
- <updated>2020-03-19T21:46:40+05:30</updated>
+ <updated>2020-03-19T22:43:14+05:30</updated>
  <id>http://localhost:4000</id>
  <author>
    <name></name>
@@ -13,18 +13,60 @@
 
  
  <entry>
-   <title>Sample</title>
-   <link href="http://localhost:4000/blog/testing-anchor-tags.html"/>
+   <title>Hovering anchor tag heading in Jekyll</title>
+   <link href="http://localhost:4000/blog/hovering-anchor-tags-headings.html"/>
    <updated>2020-03-19T20:23:24+05:30</updated>
-   <id>http://localhost:4000/testing-anchor-tags</id>
-   <content type="html">&lt;h2 id=&quot;sample-1&quot;&gt;Sample 1&lt;/h2&gt;
-&lt;p&gt;Sample text&lt;/p&gt;
+   <id>http://localhost:4000/hovering-anchor-tags-headings</id>
+   <content type="html">&lt;p&gt;I like when (sub)heading has anchor links on a long blog post.&lt;/p&gt;
 
-&lt;h3 id=&quot;sample-2&quot;&gt;Sample 2&lt;/h3&gt;
-&lt;p&gt;Sample text&lt;/p&gt;
+&lt;h2 id=&quot;this-is-an-example&quot;&gt;This is an example&lt;/h2&gt;
+&lt;p&gt;Can you see a link for the above heading? Try moving the cursor over the heading&lt;/p&gt;
 
-&lt;h4 id=&quot;sample-3&quot;&gt;Sample 3&lt;/h4&gt;
-&lt;p&gt;Sample text&lt;/p&gt;
+&lt;h3 id=&quot;how-to-achieve-it&quot;&gt;How to achieve it?&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;in &lt;code class=&quot;highlighter-rouge&quot;&gt;_layouts/default.html&lt;/code&gt; after html tag&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;and just before &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;/body&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;...
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;script&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;anchors&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;have-customized-it&quot;&gt;Have customized it?&lt;/h2&gt;
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;style&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nc&quot;&gt;.anchorjs-link&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#aaa&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;nc&quot;&gt;.anchorjs-link&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:hover&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#ff5231&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/style&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;script&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;anchors&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;placement&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;anchors&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;references&quot;&gt;References&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;As &lt;a href=&quot;https://github.com/allejo/jekyll-anchor-headings&quot;&gt;jekyll-anchor-heading&lt;/a&gt; did not work&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.bryanbraun.com/anchorjs/#installation&quot;&gt;AnchorJs&lt;/a&gt; helped me&lt;/li&gt;
+  &lt;li&gt;we can anchor &lt;code class=&quot;highlighter-rouge&quot;&gt;para&lt;/code&gt; as well.&lt;/li&gt;
+&lt;/ul&gt;
 </content>
  </entry>
  

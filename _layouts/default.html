@@ -4,6 +4,17 @@ layout: compress
 
 <!DOCTYPE html>
 <html lang="en" >
+
+  <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+  <style>
+    .anchorjs-link {
+      color: #aaa;
+    }
+    .anchorjs-link:hover {
+      color: #ff5231;
+    }
+  </style>
+
   {% include head.html %}
 
   <body>
@@ -20,5 +31,11 @@ layout: compress
       <p id="LDate">Last Modified On: {{site.time | date: "%A, %-d %B %Y %T %Z"}} </p>
     </footer>
     {% include mathjax.html %}
+
+    <script>
+      anchors.options.placement = 'left';
+      anchors.add();
+    </script>
+
   </body>
 </html>
