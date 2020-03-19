@@ -4,7 +4,7 @@
  <title>Rajesh's Blog</title>
  <link href="http://localhost:4000/blog/atom.xml" rel="self"/>
  <link href="http://localhost:4000/blog/"/>
- <updated>2020-03-20T00:06:11+05:30</updated>
+ <updated>2020-03-20T00:35:23+05:30</updated>
  <id>http://localhost:4000</id>
  <author>
    <name></name>
@@ -13,7 +13,7 @@
 
  
  <entry>
-   <title>Corona, and some links</title>
+   <title>Corona, origin, story, and some links</title>
    <link href="http://localhost:4000/blog/corono-virus-pedia.html"/>
    <updated>2020-03-19T22:52:50+05:30</updated>
    <id>http://localhost:4000/corono-virus-pedia</id>
