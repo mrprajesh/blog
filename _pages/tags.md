@@ -1,9 +1,4 @@
 ---
-layout: page
-title: Tags
+layout: tags
+title: All Tags
 ---
-
-
-### //Todo
-
-- collect all the unique tags from the posts
