@@ -8,7 +8,11 @@
     "favicon": "http://localhost:4000/blog/favicon.ico",
     "expired": false,
     
-    "author": "{"twitter"=>nil, "name"=>nil, "avatar"=>nil, "email"=>nil, "url"=>nil, "permalink"=>nil}",
+    "author":  {
+        "name": "Rajesh Pandian M",
+        "url": null,
+        "avatar": null
+    },
     
 "items": [
     
