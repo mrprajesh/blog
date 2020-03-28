@@ -21,6 +21,11 @@ date_format: "%-d %m %Y %T"
 
 exclude:
   - .jekyll-cache
+  - run.sh
+  - newpost.sh
+
+## checking
+link-tags: true
 
 compress_html:
   clippings: all
