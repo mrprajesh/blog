@@ -3,10 +3,12 @@
 
 DIR=_posts
 FILE=$(date +'%Y-%m-%d')-new-post.md
+TITLE="Edit this to a new title"
 
 if [ $# -ge 1 ] # if given with args,
 then
-  FILE=$(date +'%Y-%m-%d')-$1.md
+  FILE=$(date +'%Y-%m-%d')-"$1".md
+  TITLE="$1"
 fi
 
 if [ -f $DIR/$FILE ] #if the same file name found then, suffix with time
@@ -16,7 +18,7 @@ fi
 
 echo "---"                               > $DIR/$FILE
 echo "layout: post"                     >> $DIR/$FILE
-echo "title: Edit this to a new title"  >> $DIR/$FILE
+echo "title: $TITLE"                    >> $DIR/$FILE
 echo "date: $(date +'%d-%m-%Y %T %:z')" >> $DIR/$FILE
 echo "tags: [jekyll, coding]"           >> $DIR/$FILE
 echo "description:"                     >> $DIR/$FILE
