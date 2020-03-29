@@ -10,7 +10,7 @@
 6. Git commit and push
 7. The blog should appear if `gh-page` is enabled in repository settings
 8. Check [https://mrprajesh.github.io/blog](https://mrprajesh.github.io/blog)
-9. ```rsync -avz --delete _sites/ ../mrprajesh.github.io/blog```
+9. `./publish.sh`
 
 > Note: It would take a couple minutes to get published to the web.
 
