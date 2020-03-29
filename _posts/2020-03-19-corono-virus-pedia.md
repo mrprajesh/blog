@@ -82,6 +82,7 @@ author: Rajesh Pandian M
 - [Worldometer](https://www.worldometers.info/coronavirus/)
 - [Johns Hopkins University.](https://coronavirus.jhu.edu/map.html)
 - [BING](https://www.bing.com/covid)
-- [India](https://covidout.in/)
+- [~~India~~](https://covidout.in/) - decommissioned
+- [India - ICMR](http://covidindiaupdates.in/index.php)
 - [Govt. of India](https://www.mohfw.gov.in/)
 

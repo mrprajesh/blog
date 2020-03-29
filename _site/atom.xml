@@ -4,13 +4,114 @@
  <title>Rajesh's Blog</title>
  <link href="http://localhost:4000/blog/atom.xml" rel="self"/>
  <link href="http://localhost:4000/blog/"/>
- <updated>2020-03-29T15:03:22+05:30</updated>
+ <updated>2020-03-29T17:24:22+05:30</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Rajesh Pandian M</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>New technologies in web/mobile/GUI Application development</title>
+   <link href="http://localhost:4000/blog/new-tech-mobile-web-app.html"/>
+   <updated>2020-03-29T17:09:54+05:30</updated>
+   <id>http://localhost:4000/new-tech-mobile-web-app</id>
+   <content type="html">&lt;p&gt;There is angular js and node js – java script based front-end web/GUI apps.
+Similarly, on mobile we need separated development environment for Android and iOS.
+Devs use Android studio and Apple’s Software etc.But, then there were apps which does both but it is not very flexible as native tools.&lt;/p&gt;
+
+&lt;p&gt;There are some &lt;em&gt;new&lt;/em&gt; technologies (at least to me) where you can create
+web, desktop, mobile (andriod+ios) in a single development, open-source mobile application framework.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Flutter_(software)&quot;&gt;Flutter&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/React_Native&quot;&gt;React Native&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Ionic_(mobile_app_framework)&quot;&gt;IONIC&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;These kind of hybrid-development will surely save a “lot” of time.&lt;/p&gt;
+
+&lt;p&gt;Previously, I was introduced to &lt;a href=&quot;https://en.wikipedia.org/wiki/Electron_(software_framework)&quot;&gt;electron&lt;/a&gt; framework which creates an universal GUI application irrespective of the operating system (Windows, Linux, Mac). It used HTML5 + Chromium engine.&lt;/p&gt;
+
+&lt;p&gt;Nice to see! world is changing so fast. I am rarely catching up these days.&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Searching jekyll posts and enabling tags in GitHub pages</title>
+   <link href="http://localhost:4000/blog/search-jekyll-post-content.html"/>
+   <updated>2020-03-29T16:42:59+05:30</updated>
+   <id>http://localhost:4000/search-jekyll-post-content</id>
+   <content type="html">&lt;h3 id=&quot;search-post&quot;&gt;Search Post&lt;/h3&gt;
+
+&lt;p&gt;Ronv’s Sidey theme already had the search ability; But, was not searching post’s content.
+It is using the &lt;a href=&quot;https://github.com/christian-fei/Simple-Jekyll-Search&quot;&gt;Java script&lt;/a&gt; search.
+It has nice &lt;a href=&quot;https://github.com/christian-fei/Simple-Jekyll-Search/wiki#enabling-full-text-search&quot;&gt;wiki&lt;/a&gt; which listed all the options.&lt;/p&gt;
+
+&lt;p&gt;In the &lt;code class=&quot;highlighter-rouge&quot;&gt;search.json&lt;/code&gt; file add the below line to enable it!&lt;/p&gt;
+
+&lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;s&quot;&gt;&quot;content&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;content&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;jsonify&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;jekyll-tags-in-github-pages&quot;&gt;Jekyll Tags in Github Pages&lt;/h3&gt;
+
+&lt;p&gt;I have explained the issue and my workaround for this. Sometimes the solution can be
+&lt;a href=&quot;https://github.com/mrprajesh/blog/issues/4&quot;&gt;simple&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>War against corona virus disease (COVID) 2019</title>
+   <link href="http://localhost:4000/blog/stop-corono-tn.html"/>
+   <updated>2020-03-29T15:10:24+05:30</updated>
+   <id>http://localhost:4000/stop-corono-tn</id>
+   <content type="html">&lt;p&gt;We are entering stage 3.The is a call for volunteers at various levels
+namely India, Tamil Nadu, Chennai, and even IT volunteers.&lt;/p&gt;
+
+&lt;h3 id=&quot;volunteers&quot;&gt;Volunteers&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://self4society.mygov.in/volunteer/&quot;&gt;India&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://stopcorona.xenovex.com/login&quot;&gt;TN&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.chennaicorporation.gov.in/relief_2016/sel_grp.htm&quot;&gt;Chennai&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://tnega.tn.gov.in/volunteers/login&quot;&gt;IT/E-Gov&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://stopcoronatn.in/files/COVID-19-Volunteers_List_28.03.2020_3_Pages_407_KB.pdf&quot;&gt;STATS - TN&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;tn-has-exclusive-links-for-covid-19&quot;&gt;TN has exclusive links for COVID-19&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://stopcoronatn.in/&quot;&gt;https://stopcoronatn.in&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://stopcoronatn.in/dailybulletin.html&quot;&gt;Daily TN updates&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://stopcoronatn.in/healthadvisory.html&quot;&gt;Posters&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://stopcoronatn.in/importantinformation.html&quot;&gt;IMP updates&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://twitter.com/NHM_TN&quot;&gt;NHM - TN&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://twitter.com/Vijayabaskarofl&quot;&gt;Health Minister&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.facebook.com/tamilnadunhm/?ti=as&quot;&gt;Facebook&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/channel/UCey5XaVBUChYMfsBcpcxeuw/featured?view_as=subscriber&quot;&gt;YouTube&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://t.me/TN_Together_AgainstCorona&quot;&gt;Telegram Group&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;challenges&quot;&gt;Challenges&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://innovate.mygov.in/covid19/&quot;&gt;India&lt;/a&gt; last day 31-Mar&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.mygov.in/group-issue/share-your-ideas-suggestions-help-fight-coronavirus/?utm_source=webcampaign&amp;amp;group_issue&amp;amp;285571&quot;&gt;BrainStrom Ideas to combat&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://fold.it/portal/node/2008963&quot;&gt;Fold.it&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge&quot;&gt;Kaggle Challenge&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;ias-officers-are-doing-a-very-good-job&quot;&gt;IAS Officers are doing a very good job&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;I have created a twitter list where you can see &lt;a href=&quot;https://twitter.com/i/lists/1243768845015240705&quot;&gt;their actions&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Corona, origin, story, and some links</title>
@@ -109,7 +210,8 @@ For that reason and others, WHO has begun referring to the virus as “the virus
   &lt;li&gt;&lt;a href=&quot;https://www.worldometers.info/coronavirus/&quot;&gt;Worldometer&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://coronavirus.jhu.edu/map.html&quot;&gt;Johns Hopkins University.&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.bing.com/covid&quot;&gt;BING&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://covidout.in/&quot;&gt;India&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://covidout.in/&quot;&gt;&lt;del&gt;India&lt;/del&gt;&lt;/a&gt; - decommissioned&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://covidindiaupdates.in/index.php&quot;&gt;India - ICMR&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.mohfw.gov.in/&quot;&gt;Govt. of India&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
