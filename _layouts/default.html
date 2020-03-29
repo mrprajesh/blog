@@ -6,17 +6,6 @@ layout: compress
 <html lang="en" >
 
   <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
-  <style>
-    <!--
-    For Anchor tags!
-    -->
-    .anchorjs-link {
-      color: #aaa;
-    }
-    .anchorjs-link:hover {
-      color: #ff5231;
-    }
-  </style>
 
   {% include head.html %}
 
@@ -27,12 +16,8 @@ layout: compress
       {{content}}
 
     </main>
-    <footer id="footer" class="body">
-      <p> Made with ❤ <a href="https://jekyllrb.com//">Jekyll</a>
-      | Customized <a href="https://github.com/ronv/sidey"> «Sidey» </a> theme.
-      </p>
-      <p id="LDate">Last Modified On: {{site.time | date: "%A, %-d %B %Y %T %Z"}} </p>
-    </footer>
+
+    {% include footer.html %}
     {% include mathjax.html %}
 
     <script>

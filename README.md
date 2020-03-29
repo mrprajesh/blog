@@ -10,7 +10,8 @@
 6. Git commit and push
 7. The blog should appear if `gh-page` is enabled in repository settings
 8. Check [https://mrprajesh.github.io/blog](https://mrprajesh.github.io/blog)
-9. `./publish.sh`
+
+Instead of last 3 steps use `./publish.sh` due the [gerated tag issue](https://github.com/mrprajesh/blog/issues/4)
 
 > Note: It would take a couple minutes to get published to the web.
 
