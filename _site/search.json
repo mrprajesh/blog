@@ -14,18 +14,6 @@
   
     {
 
-      "title"    : "How to write bikeshed - Sample",
-      "url"      : "/blog/how-to-bikeshed-copy.html",
-      "category" : "",
-      "tags"     : "docs, bikeshed",
-      "date"     : "2020-03-30 13:59:10 +0530",
-      "discription" : "",
-      "content" : "<h3 id=\"install\">Install</h3>\n<p>As installed required Py3.7, decided not to install locally.</p>\n\n<h3 id=\"curl--online\">Curl + Online</h3>\n\n<p><strong>3 Steps</strong> Let us create Makefile and sample.bs which generates HTML file!</p>\n\n<pre>\nbikeshed/\n├── build\n│   └── sample.html\n├── Makefile\n└── sample.bs\n</pre>\n\n<h4 id=\"step-1\">Step 1</h4>\n<p><code class=\"highlighter-rouge\">Makefile</code> contents. <a href=\"1\">Thanks</a> Bryce.</p>\n\n<pre>\n\nBUILDDIR = build\n\nall: remote\n\nsetup:\n\tmkdir -p $(BUILDDIR)/\n\nremote: setup\n\tfind . -maxdepth 1 -name \"*.bs\" -type f | sed 's/\\.bs$$//' | xargs -I{} -t -n 1 sh -c \"curl https://api.csswg.org/bikeshed/ -F force=1 -F file=@{}.bs &gt; $(BUILDDIR)/\\`basename {}\\`.html\"\n\nlocal: setup\n\tfind . -maxdepth 1 -name \"*.bs\" -type f | sed 's/\\.bs$$//' | xargs -I{} -t -n 1 sh -c \"bikeshed -f spec {}.bs $(BUILDDIR)/\\`basename {}\\`.html\"\n\nclean:\n\trm $(BUILDDIR)/*\n\trmdir $(BUILDDIR)\n\n</pre>\n\n<h4 id=\"step-2\">Step 2</h4>\n<p><code class=\"highlighter-rouge\">sample.bs</code> contents. Thanks to quick start <a href=\"2\">guide</a>.</p>\n\n<pre>\n<pre class=\"metadata\">\nTitle: Your Spec Title\nShortname: your-spec\nLevel: 1\nStatus: ED\nGroup: WGNAMEORWHATEVER\nURL: http://example.com/url-this-spec-will-live-at\nEditor: Your Name, Your Company http://example.com/your-company, your-email@example.com, http://example.com/your-personal-website\nAbstract: A short description of your spec, one or two sentences.\n</pre>\n\nIntroduction {#intro}\n=====================\n\nIntroduction here.\n</pre>\n\n<h4 id=\"step-3\">Step 3</h4>\n\n<p>Run <code class=\"highlighter-rouge\">make</code> and open your <code class=\"highlighter-rouge\">build/*.html</code> file in browser to view it. Yay!</p>\n\n"
-
-    } ,
-  
-    {
-
       "title"    : "Rajesh tinkers",
       "url"      : "/blog/rajesh-tinkers.html",
       "category" : "",

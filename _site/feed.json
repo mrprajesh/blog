@@ -36,25 +36,6 @@
         },
     
         {
-            "id": "http://localhost:4000/blog/how-to-bikeshed-copy.html",
-            "title": "How to write bikeshed - Sample",
-            "summary": null,
-            "content_text": "InstallAs installed required Py3.7, decided not to install locally.Curl + Online3 Steps Let us create Makefile and sample.bs which generates HTML file!bikeshed/├── build│   └── sample.html├── Makefile└── sample.bsStep 1Makefile contents. Thanks Bryce.BUILDDIR = buildall: remotesetup:\tmkdir -p $(BUILDDIR)/remote: setup\tfind . -maxdepth 1 -name \"*.bs\" -type f | sed 's/\\.bs$$//' | xargs -I{} -t -n 1 sh -c \"curl https://api.csswg.org/bikeshed/ -F force=1 -F file=@{}.bs &gt; $(BUILDDIR)/\\`basename {}\\`.html\"local: setup\tfind . -maxdepth 1 -name \"*.bs\" -type f | sed 's/\\.bs$$//' | xargs -I{} -t -n 1 sh -c \"bikeshed -f spec {}.bs $(BUILDDIR)/\\`basename {}\\`.html\"clean:\trm $(BUILDDIR)/*\trmdir $(BUILDDIR)Step 2sample.bs contents. Thanks to quick start guide.Title: Your Spec TitleShortname: your-specLevel: 1Status: EDGroup: WGNAMEORWHATEVERURL: http://example.com/url-this-spec-will-live-atEditor: Your Name, Your Company http://example.com/your-company, your-email@example.com, http://example.com/your-personal-websiteAbstract: A short description of your spec, one or two sentences.Introduction {#intro}=====================Introduction here.Step 3Run make and open your build/*.html file in browser to view it. Yay!",
-            "content_html": "<h3 id=\"install\">Install</h3><p>As installed required Py3.7, decided not to install locally.</p><h3 id=\"curl--online\">Curl + Online</h3><p><strong>3 Steps</strong> Let us create Makefile and sample.bs which generates HTML file!</p><pre>bikeshed/├── build│   └── sample.html├── Makefile└── sample.bs</pre><h4 id=\"step-1\">Step 1</h4><p><code class=\"highlighter-rouge\">Makefile</code> contents. <a href=\"1\">Thanks</a> Bryce.</p><pre>BUILDDIR = buildall: remotesetup:\tmkdir -p $(BUILDDIR)/remote: setup\tfind . -maxdepth 1 -name \"*.bs\" -type f | sed 's/\\.bs$$//' | xargs -I{} -t -n 1 sh -c \"curl https://api.csswg.org/bikeshed/ -F force=1 -F file=@{}.bs &gt; $(BUILDDIR)/\\`basename {}\\`.html\"local: setup\tfind . -maxdepth 1 -name \"*.bs\" -type f | sed 's/\\.bs$$//' | xargs -I{} -t -n 1 sh -c \"bikeshed -f spec {}.bs $(BUILDDIR)/\\`basename {}\\`.html\"clean:\trm $(BUILDDIR)/*\trmdir $(BUILDDIR)</pre><h4 id=\"step-2\">Step 2</h4><p><code class=\"highlighter-rouge\">sample.bs</code> contents. Thanks to quick start <a href=\"2\">guide</a>.</p><pre><pre class=\"metadata\">Title: Your Spec TitleShortname: your-specLevel: 1Status: EDGroup: WGNAMEORWHATEVERURL: http://example.com/url-this-spec-will-live-atEditor: Your Name, Your Company http://example.com/your-company, your-email@example.com, http://example.com/your-personal-websiteAbstract: A short description of your spec, one or two sentences.</pre>Introduction {#intro}=====================Introduction here.</pre><h4 id=\"step-3\">Step 3</h4><p>Run <code class=\"highlighter-rouge\">make</code> and open your <code class=\"highlighter-rouge\">build/*.html</code> file in browser to view it. Yay!</p>",
-            "url": "http://localhost:4000/blog/how-to-bikeshed-copy.html",
-            
-            
-            
-            "tags": ["docs","bikeshed"],
-            
-            "date_published": "2020-03-30T13:59:10+05:30",
-            "date_modified": "2020-03-30T13:59:10+05:30",
-            
-                "author": "Rajesh Pandian M"
-            
-        },
-    
-        {
             "id": "http://localhost:4000/blog/rajesh-tinkers.html",
             "title": "Rajesh tinkers",
             "summary": null,

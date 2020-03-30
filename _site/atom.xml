@@ -4,7 +4,7 @@
  <title>Rajesh's Blog</title>
  <link href="http://localhost:4000/blog/atom.xml" rel="self"/>
  <link href="http://localhost:4000/blog/"/>
- <updated>2020-03-30T15:14:00+05:30</updated>
+ <updated>2020-03-30T15:14:05+05:30</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Rajesh Pandian M</name>
@@ -77,78 +77,6 @@ clean:
 
 &lt;span class=&quot;n&quot;&gt;Introduction&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;here&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h4 id=&quot;step-3&quot;&gt;Step 3&lt;/h4&gt;
-
-&lt;p&gt;Run &lt;code class=&quot;highlighter-rouge&quot;&gt;make&lt;/code&gt; and open your &lt;code class=&quot;highlighter-rouge&quot;&gt;build/*.html&lt;/code&gt; file in browser to view it. Yay!&lt;/p&gt;
-
-</content>
- </entry>
- 
- <entry>
-   <title>How to write bikeshed - Sample</title>
-   <link href="http://localhost:4000/blog/how-to-bikeshed-copy.html"/>
-   <updated>2020-03-30T13:59:10+05:30</updated>
-   <id>http://localhost:4000/how-to-bikeshed (copy)</id>
-   <content type="html">&lt;h3 id=&quot;install&quot;&gt;Install&lt;/h3&gt;
-&lt;p&gt;As installed required Py3.7, decided not to install locally.&lt;/p&gt;
-
-&lt;h3 id=&quot;curl--online&quot;&gt;Curl + Online&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;3 Steps&lt;/strong&gt; Let us create Makefile and sample.bs which generates HTML file!&lt;/p&gt;
-
-&lt;pre&gt;
-bikeshed/
-├── build
-│   └── sample.html
-├── Makefile
-└── sample.bs
-&lt;/pre&gt;
-
-&lt;h4 id=&quot;step-1&quot;&gt;Step 1&lt;/h4&gt;
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Makefile&lt;/code&gt; contents. &lt;a href=&quot;1&quot;&gt;Thanks&lt;/a&gt; Bryce.&lt;/p&gt;
-
-&lt;pre&gt;
-
-BUILDDIR = build
-
-all: remote
-
-setup:
-	mkdir -p $(BUILDDIR)/
-
-remote: setup
-	find . -maxdepth 1 -name &quot;*.bs&quot; -type f | sed 's/\.bs$$//' | xargs -I{} -t -n 1 sh -c &quot;curl https://api.csswg.org/bikeshed/ -F force=1 -F file=@{}.bs &amp;gt; $(BUILDDIR)/\`basename {}\`.html&quot;
-
-local: setup
-	find . -maxdepth 1 -name &quot;*.bs&quot; -type f | sed 's/\.bs$$//' | xargs -I{} -t -n 1 sh -c &quot;bikeshed -f spec {}.bs $(BUILDDIR)/\`basename {}\`.html&quot;
-
-clean:
-	rm $(BUILDDIR)/*
-	rmdir $(BUILDDIR)
-
-&lt;/pre&gt;
-
-&lt;h4 id=&quot;step-2&quot;&gt;Step 2&lt;/h4&gt;
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sample.bs&lt;/code&gt; contents. Thanks to quick start &lt;a href=&quot;2&quot;&gt;guide&lt;/a&gt;.&lt;/p&gt;
-
-&lt;pre&gt;
-&lt;pre class=&quot;metadata&quot;&gt;
-Title: Your Spec Title
-Shortname: your-spec
-Level: 1
-Status: ED
-Group: WGNAMEORWHATEVER
-URL: http://example.com/url-this-spec-will-live-at
-Editor: Your Name, Your Company http://example.com/your-company, your-email@example.com, http://example.com/your-personal-website
-Abstract: A short description of your spec, one or two sentences.
-&lt;/pre&gt;
-
-Introduction {#intro}
-=====================
-
-Introduction here.
-&lt;/pre&gt;
 
 &lt;h4 id=&quot;step-3&quot;&gt;Step 3&lt;/h4&gt;
 
