@@ -42,6 +42,7 @@ plugins:
   - jekyll-paginate
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jemoji
 
 collections:
   pages:
@@ -51,8 +52,6 @@ collections:
     output: true
     permalink: /:slug.html
     #permalink: /:year/:month/:day/:slug
-  tag:
-    output: true
 
 defaults:
   -
