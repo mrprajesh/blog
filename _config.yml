@@ -24,6 +24,7 @@ exclude:
   - run.sh
   - newpost.sh
   - publish.sh
+  - pygments-css/
 
 
 ## checking

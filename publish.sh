@@ -10,7 +10,7 @@ git commit -m "Auto updated! $TSTAMP - src"
 git push origin master
 
 # copy files to local repo then commit and push html files
-rsync -arvh  _site/ "$GITHUB"
+rsync -arvh  _site/ "$GITHUB" --delete
 cd "$GITHUB"
 git add .
 git commit -m "Auto updated! $TSTAMP - blog"
