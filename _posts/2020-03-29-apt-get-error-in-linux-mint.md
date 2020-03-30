@@ -44,10 +44,10 @@ Clearsigned file isn't valid, got 'NOSPLIT' (does the network require authentica
 
 ```
 
-- I tried a lot changing the servers in sources sofwares.
-- But, the solution was simple. The network had a authentication for the internet from ISP.
+- I tried a lot changing the servers in sources softwares.
+- But, the solution was simple. The network had an authentication for the internet from ISP.
 - When I switched to the other/Mobile network.
-- This problem got resolved. :-|
+- This problem got resolved. :-| wierd!
 
 
 

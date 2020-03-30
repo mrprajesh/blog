@@ -4,13 +4,209 @@
  <title>Rajesh's Blog</title>
  <link href="http://localhost:4000/blog/atom.xml" rel="self"/>
  <link href="http://localhost:4000/blog/"/>
- <updated>2020-03-29T18:00:50+05:30</updated>
+ <updated>2020-03-30T15:14:00+05:30</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Rajesh Pandian M</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>How to write bikeshed</title>
+   <link href="http://localhost:4000/blog/how-to-bikeshed.html"/>
+   <updated>2020-03-30T13:59:10+05:30</updated>
+   <id>http://localhost:4000/how-to-bikeshed</id>
+   <content type="html">&lt;h3 id=&quot;install&quot;&gt;Install&lt;/h3&gt;
+&lt;p&gt;As installation required Py3.7, decided not to install locally.&lt;/p&gt;
+
+&lt;h3 id=&quot;so-lets-use-curl--online&quot;&gt;So, lets use Curl + Online&lt;/h3&gt;
+
+&lt;p&gt;In 3 Steps,&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Let us create Makefile&lt;/li&gt;
+  &lt;li&gt;and sample.bs&lt;/li&gt;
+  &lt;li&gt;which generates HTML file!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;
+bikeshed/
+├── build
+│   └── sample.html
+├── Makefile
+└── sample.bs
+&lt;/pre&gt;
+
+&lt;h4 id=&quot;step-1&quot;&gt;Step 1&lt;/h4&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Makefile&lt;/code&gt; contents. &lt;a href=&quot;https://github.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/blob/master/Makefile&quot;&gt;Thanks&lt;/a&gt; Bryce.&lt;/p&gt;
+
+&lt;pre&gt;
+BUILDDIR = build
+
+all: remote
+
+setup:
+	mkdir -p $(BUILDDIR)/
+
+remote: setup
+	find . -maxdepth 1 -name &quot;*.bs&quot; -type f | sed 's/\.bs$$//' | xargs -I{} -t -n 1 sh -c &quot;curl https://api.csswg.org/bikeshed/ -F force=1 -F file=@{}.bs &amp;gt; $(BUILDDIR)/\`basename {}\`.html&quot;
+
+local: setup
+	find . -maxdepth 1 -name &quot;*.bs&quot; -type f | sed 's/\.bs$$//' | xargs -I{} -t -n 1 sh -c &quot;bikeshed -f spec {}.bs $(BUILDDIR)/\`basename {}\`.html&quot;
+
+clean:
+	rm $(BUILDDIR)/*
+	rmdir $(BUILDDIR)
+
+&lt;/pre&gt;
+
+&lt;h4 id=&quot;step-2&quot;&gt;Step 2&lt;/h4&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sample.bs&lt;/code&gt; contents. Thanks to quick start &lt;a href=&quot;https://github.com/tabatkins/bikeshed/blob/master/docs/quick-start.md#starting-the-spec&quot;&gt;guide&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pre&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;metadata&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Title&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Your&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Spec&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Title&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Shortname&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;your&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;spec&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Level&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Status&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ED&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Group&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;WGNAMEORWHATEVER&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;URL&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//example.com/url-this-spec-will-live-at&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Editor&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Your&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Your&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Company&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//example.com/your-company, your-email@example.com, http://example.com/your-personal-website&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Abstract&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;A&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;short&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;description&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;of&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;your&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;spec&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;one&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;two&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sentences&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Introduction&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;intro&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;=====================&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;Introduction&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;here&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;step-3&quot;&gt;Step 3&lt;/h4&gt;
+
+&lt;p&gt;Run &lt;code class=&quot;highlighter-rouge&quot;&gt;make&lt;/code&gt; and open your &lt;code class=&quot;highlighter-rouge&quot;&gt;build/*.html&lt;/code&gt; file in browser to view it. Yay!&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>How to write bikeshed - Sample</title>
+   <link href="http://localhost:4000/blog/how-to-bikeshed-copy.html"/>
+   <updated>2020-03-30T13:59:10+05:30</updated>
+   <id>http://localhost:4000/how-to-bikeshed (copy)</id>
+   <content type="html">&lt;h3 id=&quot;install&quot;&gt;Install&lt;/h3&gt;
+&lt;p&gt;As installed required Py3.7, decided not to install locally.&lt;/p&gt;
+
+&lt;h3 id=&quot;curl--online&quot;&gt;Curl + Online&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;3 Steps&lt;/strong&gt; Let us create Makefile and sample.bs which generates HTML file!&lt;/p&gt;
+
+&lt;pre&gt;
+bikeshed/
+├── build
+│   └── sample.html
+├── Makefile
+└── sample.bs
+&lt;/pre&gt;
+
+&lt;h4 id=&quot;step-1&quot;&gt;Step 1&lt;/h4&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Makefile&lt;/code&gt; contents. &lt;a href=&quot;1&quot;&gt;Thanks&lt;/a&gt; Bryce.&lt;/p&gt;
+
+&lt;pre&gt;
+
+BUILDDIR = build
+
+all: remote
+
+setup:
+	mkdir -p $(BUILDDIR)/
+
+remote: setup
+	find . -maxdepth 1 -name &quot;*.bs&quot; -type f | sed 's/\.bs$$//' | xargs -I{} -t -n 1 sh -c &quot;curl https://api.csswg.org/bikeshed/ -F force=1 -F file=@{}.bs &amp;gt; $(BUILDDIR)/\`basename {}\`.html&quot;
+
+local: setup
+	find . -maxdepth 1 -name &quot;*.bs&quot; -type f | sed 's/\.bs$$//' | xargs -I{} -t -n 1 sh -c &quot;bikeshed -f spec {}.bs $(BUILDDIR)/\`basename {}\`.html&quot;
+
+clean:
+	rm $(BUILDDIR)/*
+	rmdir $(BUILDDIR)
+
+&lt;/pre&gt;
+
+&lt;h4 id=&quot;step-2&quot;&gt;Step 2&lt;/h4&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sample.bs&lt;/code&gt; contents. Thanks to quick start &lt;a href=&quot;2&quot;&gt;guide&lt;/a&gt;.&lt;/p&gt;
+
+&lt;pre&gt;
+&lt;pre class=&quot;metadata&quot;&gt;
+Title: Your Spec Title
+Shortname: your-spec
+Level: 1
+Status: ED
+Group: WGNAMEORWHATEVER
+URL: http://example.com/url-this-spec-will-live-at
+Editor: Your Name, Your Company http://example.com/your-company, your-email@example.com, http://example.com/your-personal-website
+Abstract: A short description of your spec, one or two sentences.
+&lt;/pre&gt;
+
+Introduction {#intro}
+=====================
+
+Introduction here.
+&lt;/pre&gt;
+
+&lt;h4 id=&quot;step-3&quot;&gt;Step 3&lt;/h4&gt;
+
+&lt;p&gt;Run &lt;code class=&quot;highlighter-rouge&quot;&gt;make&lt;/code&gt; and open your &lt;code class=&quot;highlighter-rouge&quot;&gt;build/*.html&lt;/code&gt; file in browser to view it. Yay!&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Rajesh tinkers</title>
+   <link href="http://localhost:4000/blog/rajesh-tinkers.html"/>
+   <updated>2020-03-30T12:52:09+05:30</updated>
+   <id>http://localhost:4000/rajesh-tinkers</id>
+   <content type="html">&lt;p&gt;Instead of doing work (needs to be done!) Rajesh keeps tinkering.&lt;/p&gt;
+
+&lt;h3 id=&quot;bikeshed&quot;&gt;Bikeshed&lt;/h3&gt;
+&lt;p&gt;Happen to see a few C++/HTML standards committee people using &lt;a href=&quot;&quot;&gt;Bikeshed&lt;/a&gt; for writing
+drafts/proposal. Got to know from &lt;a href=&quot;https://github.com/brycelelbach/wg21_p2145_evolving_cpp_remotely&quot;&gt;Bryce&lt;/a&gt;
+See how it &lt;a href=&quot;https://api.csswg.org/bikeshed/?force=1&amp;amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs&quot;&gt;looks&lt;/a&gt;. Just from bs file in git repo.
+Cool. Isn’t? May be we can use this for docs?&lt;/p&gt;
+
+&lt;p&gt;How to &lt;a href=&quot;/blog/how-to-bikeshed.html&quot;&gt;bikeshed&lt;/a&gt; or &lt;a href=&quot;/blog/how-to-bikeshed.html&quot;&gt;bikeshed&lt;/a&gt;!&lt;/p&gt;
+
+&lt;h3 id=&quot;html5&quot;&gt;HTML5&lt;/h3&gt;
+
+&lt;p&gt;I had an impression that HTML5 is a version of HTML standard. But..&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;the term “HTML5” is widely used as a buzzword to refer to
+&lt;strong&gt;modern webtechnologies&lt;/strong&gt;, many of which (though by no means all) are
+developed at the &lt;a href=&quot;https://whatwg.org/&quot;&gt;WHATWG&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Quite surprised to read this &lt;a href=&quot;https://html.spec.whatwg.org/#is-this-html5?&quot;&gt;from&lt;/a&gt; HTML standard.
+BTW, I suspect this is generated using bikeshed!?&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The HTML Living Standard, which is developed by WHATWG, is the official version, while W3C HTML5 is no longer separate from WHATWG&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Now &lt;code class=&quot;highlighter-rouge&quot;&gt;W3C == WHATWG&lt;/code&gt; as said in &lt;a href=&quot;https://en.wikipedia.org/wiki/HTML#WHATWG_HTML_versus_HTML5&quot;&gt;WIKI&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;markdown&quot;&gt;Markdown&lt;/h3&gt;
+
+&lt;p&gt;Ever since daring-fireball/John-Gruber introduced mark down. It became so popular.
+Everyone liked it because of its simplicity and usability. Even Reddit and GitHub rely on it!&lt;/p&gt;
+
+&lt;p&gt;There are other extensions of it.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://daringfireball.net/projects/markdown/&quot;&gt;Daring Fireball&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://commonmark.org/help/&quot;&gt;CommonMark&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://guides.github.com/features/mastering-markdown/&quot;&gt;GitHub Flavored Markdown (GFM)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Some more like Markdown Extra, Pandoc, … // Read &lt;a href=&quot;https://en.wikipedia.org/wiki/Markdown&quot;&gt;WIKI&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>apt-get error in linux mint</title>
@@ -52,14 +248,15 @@ I had faced some issues with &lt;code class=&quot;highlighter-rouge&quot;&gt;apt
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;I tried a lot changing the servers in sources sofwares.&lt;/li&gt;
-  &lt;li&gt;But, the solution was simple. The network had a authentication for the internet from ISP.&lt;/li&gt;
+  &lt;li&gt;I tried a lot changing the servers in sources softwares.&lt;/li&gt;
+  &lt;li&gt;But, the solution was simple. The network had an authentication for the internet from ISP.&lt;/li&gt;
   &lt;li&gt;When I switched to the other/Mobile network.&lt;/li&gt;
   &lt;li&gt;
     &lt;table&gt;
       &lt;tbody&gt;
         &lt;tr&gt;
           &lt;td&gt;This problem got resolved. :-&lt;/td&gt;
+          &lt;td&gt;wierd!&lt;/td&gt;
         &lt;/tr&gt;
       &lt;/tbody&gt;
     &lt;/table&gt;
