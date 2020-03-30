@@ -2,7 +2,7 @@
 
 GITHUB=../mrprajesh.github.io/blog
 
-TSTAMP=${date +'%d-%b-%Y-%T'}
+TSTAMP=$(date +'%d-%b-%Y-%T')
 
 # commit src jekyll files
 git add .
