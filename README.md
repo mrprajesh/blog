@@ -1,5 +1,9 @@
 # Rajesh's Blog
 
+![Jekyll Logo](https://img.shields.io/badge/powered_by-Jekyll-blue.svg)
+![Last commit](https://img.shields.io/github/last-commit/mrprajesh/blog)
+![License](https://img.shields.io/github/license/mrprajesh/blog)
+
 ## Workflow
 
 1. Run `bundle exec jekyll server` or `./run.sh`

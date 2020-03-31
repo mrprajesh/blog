@@ -17,6 +17,44 @@
 "items": [
     
         {
+            "id": "https://mrprajesh.co.in/blog/add-badges-to-your-git-repo-site.html",
+            "title": "add badges to your git repo site",
+            "summary": null,
+            "content_text": "  There are multiple ways to add badges.      one such service is by shield  ",
+            "content_html": "<ul>  <li>There are multiple ways to add badges.</li>  <li>    <h2 id=\"one-such-service-is-by-shield\">one such service is by <a href=\"https://shields.io/\">shield</a></h2>  </li></ul>",
+            "url": "https://mrprajesh.co.in/blog/add-badges-to-your-git-repo-site.html",
+            
+            
+            
+            "tags": ["jekyll","coding"],
+            
+            "date_published": "2020-04-01T01:35:26+05:30",
+            "date_modified": "2020-04-01T01:35:26+05:30",
+            
+                "author": "Rajesh Pandian M"
+            
+        },
+    
+        {
+            "id": "https://mrprajesh.co.in/blog/with-math.html",
+            "title": "with math",
+            "summary": null,
+            "content_text": "This is post contains latex or math mode symbols.  As mathjax.js is loaded from the default.html,  even for the post/page that was not using math/latex symbols it used load mathjax.jsunnecessarily.  Have added new variable calledmathjax to the front matter for posts.  we can now load mathjax only for the post that has math symbols.  We should remember to set variable to true for post having math symbols.mathjax: true_layouts/default.html{% raw %}    {% if page.mathjax == true %}      {% include mathjax.html %}    {% endif %}_{% endraw %}",
+            "content_html": "<p>This is post contains <code class=\"highlighter-rouge\">latex</code> or <code class=\"highlighter-rouge\">math</code> mode symbols.</p><script type=\"math/tex; mode=display\">A_1 \\times B_2 = C_3</script><ul>  <li>As <code class=\"highlighter-rouge\">mathjax.js</code> is loaded from the <code class=\"highlighter-rouge\">default.html</code>,</li>  <li>even for the post/page that was not using math/latex symbols it used load <code class=\"highlighter-rouge\">mathjax.js</code>unnecessarily.</li>  <li>Have added <a href=\"https://jekyllrb.com/docs/front-matter/#custom-variables\">new variable</a> called<code class=\"highlighter-rouge\">mathjax</code> to the front matter for posts.</li>  <li>we can now load mathjax only for the post that has math symbols.</li>  <li>We should remember to set variable to true for post having math symbols.</li></ul><div class=\"highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code>mathjax: true</code></pre></div></div><h4 id=\"_layoutsdefaulthtml\">_layouts/default.html</h4><p>{% raw %}    {% if page.mathjax == true %}      {% include mathjax.html %}    {% endif %}_{% endraw %}</p>",
+            "url": "https://mrprajesh.co.in/blog/with-math.html",
+            
+            
+            
+            "tags": ["jekyll","coding"],
+            
+            "date_published": "2020-04-01T00:19:04+05:30",
+            "date_modified": "2020-04-01T00:19:04+05:30",
+            
+                "author": "Rajesh Pandian M"
+            
+        },
+    
+        {
             "id": "https://mrprajesh.co.in/blog/skype-how-to-make-someone-admin.html",
             "title": "Skype - How to make someone admin",
             "summary": null,

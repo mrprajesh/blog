@@ -9,3 +9,5 @@ links:
   url: /tags
 - title: RSS
   url: /atom.xml
+- title: Sample
+  url: /sample

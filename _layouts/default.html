@@ -18,7 +18,11 @@ layout: compress
     </main>
 
     {% include footer.html %}
-    {% include mathjax.html %}
+
+
+    {% if page.mathjax == true %}
+      {% include mathjax.html %}
+    {% endif %}
 
     <script>
       anchors.options.placement = 'left';

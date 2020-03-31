@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>https://mrprajesh.co.in/blog/add-badges-to-your-git-repo-site.html</loc>
+<lastmod>2020-04-01T01:35:26+05:30</lastmod>
+</url>
+<url>
+<loc>https://mrprajesh.co.in/blog/with-math.html</loc>
+<lastmod>2020-04-01T00:19:04+05:30</lastmod>
+</url>
+<url>
 <loc>https://mrprajesh.co.in/blog/skype-how-to-make-someone-admin.html</loc>
 <lastmod>2020-03-31T12:32:56+05:30</lastmod>
 </url>
@@ -146,6 +154,9 @@
 </url>
 <url>
 <loc>https://mrprajesh.co.in/blog/about.html</loc>
+</url>
+<url>
+<loc>https://mrprajesh.co.in/blog/sample.html</loc>
 </url>
 <url>
 <loc>https://mrprajesh.co.in/blog/search.html</loc>

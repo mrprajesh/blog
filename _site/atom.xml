@@ -4,13 +4,60 @@
  <title>Rajesh's Blog</title>
  <link href="https://mrprajesh.co.in/blog/atom.xml" rel="self"/>
  <link href="https://mrprajesh.co.in/blog/"/>
- <updated>2020-03-31T23:31:40+05:30</updated>
+ <updated>2020-04-01T01:53:31+05:30</updated>
  <id>https://mrprajesh.co.in</id>
  <author>
    <name>Rajesh Pandian M</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>add badges to your git repo site</title>
+   <link href="https://mrprajesh.co.in/blog/add-badges-to-your-git-repo-site.html"/>
+   <updated>2020-04-01T01:35:26+05:30</updated>
+   <id>https://mrprajesh.co.in/add-badges-to-your-git-repo-site</id>
+   <content type="html">&lt;ul&gt;
+  &lt;li&gt;There are multiple ways to add badges.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;h2 id=&quot;one-such-service-is-by-shield&quot;&gt;one such service is by &lt;a href=&quot;https://shields.io/&quot;&gt;shield&lt;/a&gt;&lt;/h2&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>with math</title>
+   <link href="https://mrprajesh.co.in/blog/with-math.html"/>
+   <updated>2020-04-01T00:19:04+05:30</updated>
+   <id>https://mrprajesh.co.in/with-math</id>
+   <content type="html">&lt;p&gt;This is post contains &lt;code class=&quot;highlighter-rouge&quot;&gt;latex&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;math&lt;/code&gt; mode symbols.&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;A_1 \times B_2 = C_3&lt;/script&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;As &lt;code class=&quot;highlighter-rouge&quot;&gt;mathjax.js&lt;/code&gt; is loaded from the &lt;code class=&quot;highlighter-rouge&quot;&gt;default.html&lt;/code&gt;,&lt;/li&gt;
+  &lt;li&gt;even for the post/page that was not using math/latex symbols it used load &lt;code class=&quot;highlighter-rouge&quot;&gt;mathjax.js&lt;/code&gt;
+unnecessarily.&lt;/li&gt;
+  &lt;li&gt;Have added &lt;a href=&quot;https://jekyllrb.com/docs/front-matter/#custom-variables&quot;&gt;new variable&lt;/a&gt; called
+&lt;code class=&quot;highlighter-rouge&quot;&gt;mathjax&lt;/code&gt; to the front matter for posts.&lt;/li&gt;
+  &lt;li&gt;we can now load mathjax only for the post that has math symbols.&lt;/li&gt;
+  &lt;li&gt;We should remember to set variable to true for post having math symbols.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mathjax: true
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;_layoutsdefaulthtml&quot;&gt;_layouts/default.html&lt;/h4&gt;
+
+&lt;p&gt;{% raw %}
+    {% if page.mathjax == true %}
+      {% include mathjax.html %}
+    {% endif %}_
+{% endraw %}&lt;/p&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>Skype - How to make someone admin</title>

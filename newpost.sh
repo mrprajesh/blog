@@ -25,6 +25,8 @@ echo "description:"                     >> $DIR/$FILE
 echo "summary:"                         >> $DIR/$FILE
 echo "comments: false"                  >> $DIR/$FILE
 echo "author: Rajesh Pandian M"         >> $DIR/$FILE
+echo "mathjax: false"                   >> $DIR/$FILE
+echo "render_with_liquid: true"         >> $DIR/$FILE
 echo "---"                              >> $DIR/$FILE
 echo ""                                 >> $DIR/$FILE
 echo "This is sample content post."     >> $DIR/$FILE

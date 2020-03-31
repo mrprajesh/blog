@@ -2,6 +2,30 @@
   
     {
 
+      "title"    : "add badges to your git repo site",
+      "url"      : "/blog/add-badges-to-your-git-repo-site.html",
+      "category" : "",
+      "tags"     : "jekyll, coding",
+      "date"     : "2020-04-01 01:35:26 +0530",
+      "discription" : "",
+      "content" : "<ul>\n  <li>There are multiple ways to add badges.</li>\n  <li>\n    <h2 id=\"one-such-service-is-by-shield\">one such service is by <a href=\"https://shields.io/\">shield</a></h2>\n  </li>\n</ul>\n"
+
+    } ,
+  
+    {
+
+      "title"    : "with math",
+      "url"      : "/blog/with-math.html",
+      "category" : "",
+      "tags"     : "jekyll, coding",
+      "date"     : "2020-04-01 00:19:04 +0530",
+      "discription" : "",
+      "content" : "<p>This is post contains <code class=\"highlighter-rouge\">latex</code> or <code class=\"highlighter-rouge\">math</code> mode symbols.</p>\n\n<script type=\"math/tex; mode=display\">A_1 \\times B_2 = C_3</script>\n\n<ul>\n  <li>As <code class=\"highlighter-rouge\">mathjax.js</code> is loaded from the <code class=\"highlighter-rouge\">default.html</code>,</li>\n  <li>even for the post/page that was not using math/latex symbols it used load <code class=\"highlighter-rouge\">mathjax.js</code>\nunnecessarily.</li>\n  <li>Have added <a href=\"https://jekyllrb.com/docs/front-matter/#custom-variables\">new variable</a> called\n<code class=\"highlighter-rouge\">mathjax</code> to the front matter for posts.</li>\n  <li>we can now load mathjax only for the post that has math symbols.</li>\n  <li>We should remember to set variable to true for post having math symbols.</li>\n</ul>\n\n<div class=\"highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code>mathjax: true\n</code></pre></div></div>\n\n<h4 id=\"_layoutsdefaulthtml\">_layouts/default.html</h4>\n\n<p>{% raw %}\n    {% if page.mathjax == true %}\n      {% include mathjax.html %}\n    {% endif %}_\n{% endraw %}</p>\n\n"
+
+    } ,
+  
+    {
+
       "title"    : "Skype - How to make someone admin",
       "url"      : "/blog/skype-how-to-make-someone-admin.html",
       "category" : "",
