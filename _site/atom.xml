@@ -4,7 +4,7 @@
  <title>Rajesh's Blog</title>
  <link href="https://mrprajesh.co.in/blog/atom.xml" rel="self"/>
  <link href="https://mrprajesh.co.in/blog/"/>
- <updated>2020-04-01T02:30:25+05:30</updated>
+ <updated>2020-04-01T02:41:31+05:30</updated>
  <id>https://mrprajesh.co.in</id>
  <author>
    <name>Rajesh Pandian M</name>
@@ -59,11 +59,10 @@
   &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;mathjax.js&lt;/code&gt; is loaded from the &lt;code class=&quot;highlighter-rouge&quot;&gt;default.html&lt;/code&gt;, even for the post/page&lt;/li&gt;
   &lt;li&gt;that was not using math/latex symbols it used load &lt;code class=&quot;highlighter-rouge&quot;&gt;mathjax.js&lt;/code&gt; unnecessarily.&lt;/li&gt;
   &lt;li&gt;23 HTTP page request vs 4 (with mathjax vs without)&lt;/li&gt;
-  &lt;li&gt;So, decided to load only for post having math symbols&lt;/li&gt;
-  &lt;li&gt;Have added &lt;a href=&quot;https://jekyllrb.com/docs/front-matter/#custom-variables&quot;&gt;new variable&lt;/a&gt; called
-&lt;code class=&quot;highlighter-rouge&quot;&gt;mathjax&lt;/code&gt; to the front matter for posts.&lt;/li&gt;
-  &lt;li&gt;Now, we can now load mathjax only for the post that has math symbols.&lt;/li&gt;
-  &lt;li&gt;But, should remember to set variable to true for post having math symbols.&lt;/li&gt;
+  &lt;li&gt;So, decided to load (mathjax.js) only for post that has math symbols&lt;/li&gt;
+  &lt;li&gt;Have added &lt;a href=&quot;https://jekyllrb.com/docs/front-matter/#custom-variables&quot;&gt;custom variable&lt;/a&gt; called
+&lt;code class=&quot;highlighter-rouge&quot;&gt;mathjax&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;But, should remember to set variable to true in post’s front matter&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h4 id=&quot;_post2020-04-01-new-postmd&quot;&gt;_post/2020-04-01-new-post.md&lt;/h4&gt;

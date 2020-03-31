@@ -18,11 +18,10 @@ $$A_1 \times B_2 = C_3$$
 - `mathjax.js` is loaded from the `default.html`, even for the post/page
 - that was not using math/latex symbols it used load `mathjax.js` unnecessarily.
 - 23 HTTP page request vs 4 (with mathjax vs without)
-- So, decided to load only for post having math symbols
-- Have added [new variable](https://jekyllrb.com/docs/front-matter/#custom-variables) called
-`mathjax` to the front matter for posts.
-- Now, we can now load mathjax only for the post that has math symbols.
-- But, should remember to set variable to true for post having math symbols.
+- So, decided to load (mathjax.js) only for post that has math symbols
+- Have added [custom variable](https://jekyllrb.com/docs/front-matter/#custom-variables) called
+`mathjax`.
+- But, should remember to set variable to true in post's front matter
 
 #### _post/2020-04-01-new-post.md
 
