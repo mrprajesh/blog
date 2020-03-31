@@ -3,12 +3,12 @@
 
 DIR=_posts
 FILE=$(date +'%Y-%m-%d')-new-post.md
-TITLE="Edit this to a new title"
+TITLE="Edit this to a new title" # This will be the default title
 
-if [ $# -ge 1 ] # if given with args,
+if [ $# -ge 1 ] # if given with 1st args (assumes 1st arg is hyphenated)
 then
   FILE=$(date +'%Y-%m-%d')-"$1".md
-  TITLE="$1"
+  TITLE=$(echo "$1" | sed 's/-/\ /g') #
 fi
 
 if [ -f $DIR/$FILE ] #if the same file name found then, suffix with time

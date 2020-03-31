@@ -3,7 +3,7 @@
 GITHUB=../mrprajesh.github.io/blog
 TSTAMP=$(date +'%d-%b-%Y-%T')
 
-
+JEKYLL_ENV=production bundle exec jekyll build
 
 # commit src jekyll files
 git add .

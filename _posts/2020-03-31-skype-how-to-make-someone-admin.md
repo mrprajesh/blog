@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Skype  How to make someone admin
+title: Skype - How to make someone admin
 date: 31-03-2020 12:32:56 +05:30
 tags: [skype]
 description:

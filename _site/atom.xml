@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>Rajesh's Blog</title>
- <link href="http://localhost:4000/blog/atom.xml" rel="self"/>
- <link href="http://localhost:4000/blog/"/>
- <updated>2020-03-31T13:15:13+05:30</updated>
- <id>http://localhost:4000</id>
+ <link href="https://mrprajesh.co.in/blog/atom.xml" rel="self"/>
+ <link href="https://mrprajesh.co.in/blog/"/>
+ <updated>2020-03-31T23:31:40+05:30</updated>
+ <id>https://mrprajesh.co.in</id>
  <author>
    <name>Rajesh Pandian M</name>
    <email></email>
@@ -13,10 +13,10 @@
 
  
  <entry>
-   <title>Skype  How to make someone admin</title>
-   <link href="http://localhost:4000/blog/skype-how-to-make-someone-admin.html"/>
+   <title>Skype - How to make someone admin</title>
+   <link href="https://mrprajesh.co.in/blog/skype-how-to-make-someone-admin.html"/>
    <updated>2020-03-31T12:32:56+05:30</updated>
-   <id>http://localhost:4000/skype-how-to-make-someone-admin</id>
+   <id>https://mrprajesh.co.in/skype-how-to-make-someone-admin</id>
    <content type="html">&lt;p&gt;How to make someone admin in skype. i.e How to update the role of
 a particular person in a group chat.&lt;/p&gt;
 
@@ -38,9 +38,9 @@ window!&lt;/p&gt;
  
  <entry>
    <title>How to write bikeshed</title>
-   <link href="http://localhost:4000/blog/how-to-bikeshed.html"/>
+   <link href="https://mrprajesh.co.in/blog/how-to-bikeshed.html"/>
    <updated>2020-03-30T13:59:10+05:30</updated>
-   <id>http://localhost:4000/how-to-bikeshed</id>
+   <id>https://mrprajesh.co.in/how-to-bikeshed</id>
    <content type="html">&lt;h3 id=&quot;install&quot;&gt;Install&lt;/h3&gt;
 &lt;p&gt;As installation required Py3.7, decided not to install locally.&lt;/p&gt;
 
@@ -111,9 +111,9 @@ clean:
  
  <entry>
    <title>Rajesh tinkers</title>
-   <link href="http://localhost:4000/blog/rajesh-tinkers.html"/>
+   <link href="https://mrprajesh.co.in/blog/rajesh-tinkers.html"/>
    <updated>2020-03-30T12:52:09+05:30</updated>
-   <id>http://localhost:4000/rajesh-tinkers</id>
+   <id>https://mrprajesh.co.in/rajesh-tinkers</id>
    <content type="html">&lt;p&gt;Instead of doing work (needs to be done!) Rajesh keeps tinkering.&lt;/p&gt;
 
 &lt;h3 id=&quot;bikeshed&quot;&gt;Bikeshed&lt;/h3&gt;
@@ -162,9 +162,9 @@ Everyone liked it because of its simplicity and usability. Even Reddit and GitHu
  
  <entry>
    <title>apt-get error in linux mint</title>
-   <link href="http://localhost:4000/blog/apt-get-error-in-linux-mint.html"/>
+   <link href="https://mrprajesh.co.in/blog/apt-get-error-in-linux-mint.html"/>
    <updated>2020-03-29T17:46:41+05:30</updated>
-   <id>http://localhost:4000/apt-get-error-in-linux-mint</id>
+   <id>https://mrprajesh.co.in/apt-get-error-in-linux-mint</id>
    <content type="html">&lt;p&gt;The last time when I went to my relatives home which had a good internet connection.
 I had faced some issues with &lt;code class=&quot;highlighter-rouge&quot;&gt;apt-get&lt;/code&gt;.&lt;/p&gt;
 
@@ -220,9 +220,9 @@ I had faced some issues with &lt;code class=&quot;highlighter-rouge&quot;&gt;apt
  
  <entry>
    <title>New technologies in web/mobile/GUI Application development</title>
-   <link href="http://localhost:4000/blog/new-tech-mobile-web-app.html"/>
+   <link href="https://mrprajesh.co.in/blog/new-tech-mobile-web-app.html"/>
    <updated>2020-03-29T17:09:54+05:30</updated>
-   <id>http://localhost:4000/new-tech-mobile-web-app</id>
+   <id>https://mrprajesh.co.in/new-tech-mobile-web-app</id>
    <content type="html">&lt;p&gt;There is angular js and node js – java script based front-end web/GUI apps.
 Similarly, on mobile we need separated development environment for Android and iOS.
 Devs use Android studio and Apple’s Software etc.But, then there were apps which does both but it is not very flexible as native tools.&lt;/p&gt;
@@ -247,9 +247,9 @@ web, desktop, mobile (andriod+ios) in a single development, open-source mobile a
  
  <entry>
    <title>Searching jekyll posts and enabling tags in GitHub pages</title>
-   <link href="http://localhost:4000/blog/search-jekyll-post-content.html"/>
+   <link href="https://mrprajesh.co.in/blog/search-jekyll-post-content.html"/>
    <updated>2020-03-29T16:42:59+05:30</updated>
-   <id>http://localhost:4000/search-jekyll-post-content</id>
+   <id>https://mrprajesh.co.in/search-jekyll-post-content</id>
    <content type="html">&lt;h3 id=&quot;search-post&quot;&gt;Search Post&lt;/h3&gt;
 
 &lt;p&gt;Ronv’s Sidey theme already had the search ability; But, was not searching post’s content.
@@ -272,9 +272,9 @@ It has nice &lt;a href=&quot;https://github.com/christian-fei/Simple-Jekyll-Sear
  
  <entry>
    <title>War against corona virus disease (COVID) 2019</title>
-   <link href="http://localhost:4000/blog/stop-corono-tn.html"/>
+   <link href="https://mrprajesh.co.in/blog/stop-corono-tn.html"/>
    <updated>2020-03-29T15:10:24+05:30</updated>
-   <id>http://localhost:4000/stop-corono-tn</id>
+   <id>https://mrprajesh.co.in/stop-corono-tn</id>
    <content type="html">&lt;p&gt;We are entering stage 3.The is a call for volunteers at various levels
 namely India, Tamil Nadu, Chennai, and even IT volunteers.&lt;/p&gt;
 
@@ -321,9 +321,9 @@ namely India, Tamil Nadu, Chennai, and even IT volunteers.&lt;/p&gt;
  
  <entry>
    <title>Corona, origin, story, and some links</title>
-   <link href="http://localhost:4000/blog/corono-virus-pedia.html"/>
+   <link href="https://mrprajesh.co.in/blog/corono-virus-pedia.html"/>
    <updated>2020-03-19T22:52:50+05:30</updated>
-   <id>http://localhost:4000/corono-virus-pedia</id>
+   <id>https://mrprajesh.co.in/corono-virus-pedia</id>
    <content type="html">&lt;h2 id=&quot;originated&quot;&gt;Originated&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;The 2019 novel coronavirus was identified in Wuhan, Hubei province of China&lt;/li&gt;
@@ -426,9 +426,9 @@ For that reason and others, WHO has begun referring to the virus as “the virus
  
  <entry>
    <title>Hovering anchor tag heading in Jekyll</title>
-   <link href="http://localhost:4000/blog/hovering-anchor-tags-headings.html"/>
+   <link href="https://mrprajesh.co.in/blog/hovering-anchor-tags-headings.html"/>
    <updated>2020-03-19T20:23:24+05:30</updated>
-   <id>http://localhost:4000/hovering-anchor-tags-headings</id>
+   <id>https://mrprajesh.co.in/hovering-anchor-tags-headings</id>
    <content type="html">&lt;p&gt;I like when (sub)heading has anchor links on a long blog post.&lt;/p&gt;
 
 &lt;h2 id=&quot;this-is-an-example&quot;&gt;This is an example&lt;/h2&gt;
@@ -484,9 +484,9 @@ For that reason and others, WHO has begun referring to the virus as “the virus
  
  <entry>
    <title>using &quot;raw&quot; tag in jekyll to view liquid tags</title>
-   <link href="http://localhost:4000/blog/raw-tag-jekyll.html"/>
+   <link href="https://mrprajesh.co.in/blog/raw-tag-jekyll.html"/>
    <updated>2020-03-19T19:44:39+05:30</updated>
-   <id>http://localhost:4000/raw-tag-jekyll</id>
+   <id>https://mrprajesh.co.in/raw-tag-jekyll</id>
    <content type="html">&lt;ul&gt;
   &lt;li&gt;For example in a &lt;a href=&quot;/blog/latex-jekyll.html&quot;&gt;post&lt;/a&gt;
  I mentioned how to enable &lt;script type=&quot;math/tex&quot;&gt;\LaTeX&lt;/script&gt; in jekyll&lt;/li&gt;
@@ -516,9 +516,9 @@ For that reason and others, WHO has begun referring to the virus as “the virus
  
  <entry>
    <title>How to add mins to read in jekyll post like medium</title>
-   <link href="http://localhost:4000/blog/add-min-read-to-jekyll.html"/>
+   <link href="https://mrprajesh.co.in/blog/add-min-read-to-jekyll.html"/>
    <updated>2020-03-19T18:53:53+05:30</updated>
-   <id>http://localhost:4000/add-min-read-to-jekyll</id>
+   <id>https://mrprajesh.co.in/add-min-read-to-jekyll</id>
    <content type="html">&lt;p&gt;Edit the &lt;code class=&quot;highlighter-rouge&quot;&gt;_layouts/post.html&lt;/code&gt; and place below lines appropriately.&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -562,9 +562,9 @@ For that reason and others, WHO has begun referring to the virus as “the virus
  
  <entry>
    <title>Thrust library and CUDA API</title>
-   <link href="http://localhost:4000/blog/thrust.html"/>
+   <link href="https://mrprajesh.co.in/blog/thrust.html"/>
    <updated>2020-03-18T15:49:47+05:30</updated>
-   <id>http://localhost:4000/thrust</id>
+   <id>https://mrprajesh.co.in/thrust</id>
    <content type="html">&lt;p&gt;For long time, I was under the impression that thrust functions can be
 invoked only from the main function/Host device. Just got to know that thrust
 (v1.8+) fucntion can be invocked inside the kernel&lt;/p&gt;
@@ -581,9 +581,9 @@ invoked only from the main function/Host device. Just got to know that thrust
  
  <entry>
    <title>CUDA and its questions</title>
-   <link href="http://localhost:4000/blog/cuda.html"/>
+   <link href="https://mrprajesh.co.in/blog/cuda.html"/>
    <updated>2020-03-18T15:49:43+05:30</updated>
-   <id>http://localhost:4000/cuda</id>
+   <id>https://mrprajesh.co.in/cuda</id>
    <content type="html">&lt;p&gt;There we were some question raised during Rupesh’s GPU class today.&lt;/p&gt;
 
 &lt;ul&gt;
@@ -666,9 +666,9 @@ Also, threadblock dimensions of 0 in any position are not legal.&lt;/li&gt;
  
  <entry>
    <title>How to use Latex / MathJax in Jekyll</title>
-   <link href="http://localhost:4000/blog/latex-jekyll.html"/>
+   <link href="https://mrprajesh.co.in/blog/latex-jekyll.html"/>
    <updated>2020-03-17T16:12:01+05:30</updated>
-   <id>http://localhost:4000/latex-jekyll</id>
+   <id>https://mrprajesh.co.in/latex-jekyll</id>
    <content type="html">&lt;ul&gt;
   &lt;li&gt;create &lt;code class=&quot;highlighter-rouge&quot;&gt;_include/mathjax.html&lt;/code&gt;&lt;/li&gt;
   &lt;li&gt;add the below code&lt;/li&gt;
@@ -747,9 +747,9 @@ Also, threadblock dimensions of 0 in any position are not legal.&lt;/li&gt;
  
  <entry>
    <title>Some new words - inspired by COVID-19</title>
-   <link href="http://localhost:4000/blog/new-words.html"/>
+   <link href="https://mrprajesh.co.in/blog/new-words.html"/>
    <updated>2020-03-11T19:17:59+05:30</updated>
-   <id>http://localhost:4000/new-words</id>
+   <id>https://mrprajesh.co.in/new-words</id>
    <content type="html">&lt;p&gt;In this novel coronovirus season learnt some new words.&lt;/p&gt;
 
 &lt;ol&gt;
@@ -783,9 +783,9 @@ Also, threadblock dimensions of 0 in any position are not legal.&lt;/li&gt;
  
  <entry>
    <title>Same spelling but different pronunciation.</title>
-   <link href="http://localhost:4000/blog/overseas-pronounciation.html"/>
+   <link href="https://mrprajesh.co.in/blog/overseas-pronounciation.html"/>
    <updated>2020-03-11T10:53:15+05:30</updated>
-   <id>http://localhost:4000/overseas-pronounciation</id>
+   <id>https://mrprajesh.co.in/overseas-pronounciation</id>
    <content type="html">&lt;p&gt;So, we know homonyms. Same pronunciation but different spelling/meaning.&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -817,9 +817,9 @@ It seems like. Are there more?&lt;/p&gt;
  
  <entry>
    <title>Ready, get-set, and go!</title>
-   <link href="http://localhost:4000/blog/check-code-blocks.html"/>
+   <link href="https://mrprajesh.co.in/blog/check-code-blocks.html"/>
    <updated>2020-03-09T18:58:11+05:30</updated>
-   <id>http://localhost:4000/check-code-blocks</id>
+   <id>https://mrprajesh.co.in/check-code-blocks</id>
    <content type="html">&lt;p&gt;This is to check if the syntax highlighting is working fine.&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-cpp&quot; data-lang=&quot;cpp&quot;&gt;  &lt;span class=&quot;cp&quot;&gt;#include &amp;lt;iostream&amp;gt;
@@ -833,9 +833,9 @@ It seems like. Are there more?&lt;/p&gt;
  
  <entry>
    <title>Hello World</title>
-   <link href="http://localhost:4000/blog/helloworld.html"/>
+   <link href="https://mrprajesh.co.in/blog/helloworld.html"/>
    <updated>2020-03-09T12:39:20+05:30</updated>
-   <id>http://localhost:4000/helloworld</id>
+   <id>https://mrprajesh.co.in/helloworld</id>
    <content type="html">&lt;p&gt;This is my first post in &lt;a href=&quot;https://mrprajesh.github.io/blog&quot;&gt;Github.io&lt;/a&gt;
 blog.&lt;/p&gt;
 </content>
