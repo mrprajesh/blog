@@ -7,6 +7,7 @@ description:
 summary:
 comments: false
 author: Rajesh Pandian M
+mathjax: true
 ---
 
 * create `_include/mathjax.html`
