@@ -3,7 +3,7 @@ layout: post
 title: Enable latex/mathjax in your post only if needed
 date: 01-04-2020 00:19:04 +05:30
 tags: [jekyll, latex]
-description:
+description: Enable mathjax in your jekyll post only if needed
 mathjax: true
 comments: false
 author: Rajesh Pandian M

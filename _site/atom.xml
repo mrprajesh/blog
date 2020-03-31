@@ -4,7 +4,7 @@
  <title>Rajesh's Blog</title>
  <link href="https://mrprajesh.co.in/blog/atom.xml" rel="self"/>
  <link href="https://mrprajesh.co.in/blog/"/>
- <updated>2020-04-01T02:26:52+05:30</updated>
+ <updated>2020-04-01T02:30:25+05:30</updated>
  <id>https://mrprajesh.co.in</id>
  <author>
    <name>Rajesh Pandian M</name>
@@ -45,9 +45,9 @@
  
  <entry>
    <title>Enable latex/mathjax in your post only if needed</title>
-   <link href="https://mrprajesh.co.in/blog/with-math.html"/>
+   <link href="https://mrprajesh.co.in/blog/include-mathjax-only-if-needed.html"/>
    <updated>2020-04-01T00:19:04+05:30</updated>
-   <id>https://mrprajesh.co.in/with-math</id>
+   <id>https://mrprajesh.co.in/include-mathjax-only-if-needed</id>
    <content type="html">&lt;ul&gt;
   &lt;li&gt;Assuming this is an extension of my earlier &lt;a href=&quot;/blog/latex-jekyll.html&quot;&gt;mathjax post&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;This post contains &lt;code class=&quot;highlighter-rouge&quot;&gt;latex&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;math&lt;/code&gt; mode symbols.&lt;/li&gt;
