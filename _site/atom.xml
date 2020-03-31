@@ -4,7 +4,7 @@
  <title>Rajesh's Blog</title>
  <link href="https://mrprajesh.co.in/blog/atom.xml" rel="self"/>
  <link href="https://mrprajesh.co.in/blog/"/>
- <updated>2020-04-01T01:53:31+05:30</updated>
+ <updated>2020-04-01T02:22:16+05:30</updated>
  <id>https://mrprajesh.co.in</id>
  <author>
    <name>Rajesh Pandian M</name>
@@ -13,49 +13,78 @@
 
  
  <entry>
-   <title>add badges to your git repo site</title>
+   <title>How to add badges to your git repo or website</title>
    <link href="https://mrprajesh.co.in/blog/add-badges-to-your-git-repo-site.html"/>
    <updated>2020-04-01T01:35:26+05:30</updated>
    <id>https://mrprajesh.co.in/add-badges-to-your-git-repo-site</id>
    <content type="html">&lt;ul&gt;
+  &lt;li&gt;How to add badges to your Git repo like &lt;a href=&quot;https://github.com/jekyll/jekyll#jekyll&quot;&gt;this&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;There are multiple ways to add badges.&lt;/li&gt;
-  &lt;li&gt;
-    &lt;h2 id=&quot;one-such-service-is-by-shield&quot;&gt;one such service is by &lt;a href=&quot;https://shields.io/&quot;&gt;shield&lt;/a&gt;&lt;/h2&gt;
-  &lt;/li&gt;
+  &lt;li&gt;one such service is by &lt;a href=&quot;https://shields.io/&quot;&gt;shield&lt;/a&gt;, see examples&lt;/li&gt;
+  &lt;li&gt;put the below in your &lt;code class=&quot;highlighter-rouge&quot;&gt;readme.md&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Jekyll&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Logo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;](&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;https&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//img.shields.io/badge/powered_by-Jekyll-blue.svg)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;It should look like this&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://img.shields.io/badge/powered_by-Jekyll-blue.svg&quot; alt=&quot;Jekyll Logo&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;the &lt;code class=&quot;highlighter-rouge&quot;&gt;.svg&lt;/code&gt; at end of the url is optional.&lt;/li&gt;
+  &lt;li&gt;shows last commit of this blog.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://img.shields.io/github/last-commit/mrprajesh/blog&quot; alt=&quot;Last commit&quot; /&gt;&lt;/p&gt;
+&lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Last&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;commit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;](&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;https&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//img.shields.io/github/last-commit/mrprajesh/blog)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </content>
  </entry>
  
  <entry>
-   <title>with math</title>
+   <title>Enable latex/mathjax in your post only if needed</title>
    <link href="https://mrprajesh.co.in/blog/with-math.html"/>
    <updated>2020-04-01T00:19:04+05:30</updated>
    <id>https://mrprajesh.co.in/with-math</id>
-   <content type="html">&lt;p&gt;This is post contains &lt;code class=&quot;highlighter-rouge&quot;&gt;latex&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;math&lt;/code&gt; mode symbols.&lt;/p&gt;
+   <content type="html">&lt;ul&gt;
+  &lt;li&gt;Assuming this is an extension of my earlier &lt;a href=&quot;/blog/latex-jekyll.html&quot;&gt;mathjax post&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;This is post contains &lt;code class=&quot;highlighter-rouge&quot;&gt;latex&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;math&lt;/code&gt; mode symbols.&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;A_1 \times B_2 = C_3&lt;/script&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;As &lt;code class=&quot;highlighter-rouge&quot;&gt;mathjax.js&lt;/code&gt; is loaded from the &lt;code class=&quot;highlighter-rouge&quot;&gt;default.html&lt;/code&gt;,&lt;/li&gt;
-  &lt;li&gt;even for the post/page that was not using math/latex symbols it used load &lt;code class=&quot;highlighter-rouge&quot;&gt;mathjax.js&lt;/code&gt;
+  &lt;li&gt;As &lt;code class=&quot;highlighter-rouge&quot;&gt;mathjax.js&lt;/code&gt; is loaded from the &lt;code class=&quot;highlighter-rouge&quot;&gt;default.html&lt;/code&gt;, even for the post/page&lt;/li&gt;
+  &lt;li&gt;that was not using math/latex symbols it used load &lt;code class=&quot;highlighter-rouge&quot;&gt;mathjax.js&lt;/code&gt;
 unnecessarily.&lt;/li&gt;
+  &lt;li&gt;23 HTTP page request vs 4 (with mathjax vs without)&lt;/li&gt;
+  &lt;li&gt;So, decided to load only for post having math symbols&lt;/li&gt;
   &lt;li&gt;Have added &lt;a href=&quot;https://jekyllrb.com/docs/front-matter/#custom-variables&quot;&gt;new variable&lt;/a&gt; called
 &lt;code class=&quot;highlighter-rouge&quot;&gt;mathjax&lt;/code&gt; to the front matter for posts.&lt;/li&gt;
   &lt;li&gt;we can now load mathjax only for the post that has math symbols.&lt;/li&gt;
   &lt;li&gt;We should remember to set variable to true for post having math symbols.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mathjax: true
+&lt;h4 id=&quot;_post2020-04-01-new-postmd&quot;&gt;_post/2020-04-01-new-post.md&lt;/h4&gt;
+
+&lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;---&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;post&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Enable&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;latex&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mathjax&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;your&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;post&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;only&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;needed&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;tags&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;jekyll&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;latex&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;mathjax&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;true&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;---&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h4 id=&quot;_layoutsdefaulthtml&quot;&gt;_layouts/default.html&lt;/h4&gt;
 
-&lt;p&gt;{% raw %}
-    {% if page.mathjax == true %}
-      {% include mathjax.html %}
-    {% endif %}_
-{% endraw %}&lt;/p&gt;
+&lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mathjax&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;true&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mathjax&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;html&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;endif&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
+&lt;p&gt;See the &lt;a href=&quot;https://raw.githubusercontent.com/mrprajesh/blog/master/_posts/2020-04-01-with-math.md&quot;&gt;full post&lt;/a&gt;.&lt;/p&gt;
 </content>
  </entry>
  
