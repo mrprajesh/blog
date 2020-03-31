@@ -2,7 +2,7 @@
 layout: post
 title: apt-get error in linux mint
 date: 29-03-2020 17:46:41 +05:30
-tags: [jekyll]
+tags: [linux]
 description:
 summary:
 comments: false

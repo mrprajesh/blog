@@ -17,6 +17,25 @@
 "items": [
     
         {
+            "id": "http://localhost:4000/blog/skype-how-to-make-someone-admin.html",
+            "title": "Skype  How to make someone admin",
+            "summary": null,
+            "content_text": "How to make someone admin in skype. i.e How to update the role ofa particular person in a group chat.  First, find out the &lt;username&gt; of that person  View the current role  Change the role for that user. valid roles: Admin or UserType the following skype chat commands on group’s chatwindow!/showmembers/setrole &lt;username&gt; Admin",
+            "content_html": "<p>How to make someone admin in skype. i.e How to update the role ofa particular person in a group chat.</p><ul>  <li>First, find out the <code class=\"highlighter-rouge\">&lt;username&gt;</code> of that person</li>  <li>View the current role</li>  <li>Change the role for that user. valid roles: <code class=\"highlighter-rouge\">Admin</code> or <code class=\"highlighter-rouge\">User</code></li></ul><p>Type the following skype chat commands on group’s chatwindow!</p><div class=\"language-c highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"o\">/</span><span class=\"n\">showmembers</span><span class=\"o\">/</span><span class=\"n\">setrole</span> <span class=\"o\">&lt;</span><span class=\"n\">username</span><span class=\"o\">&gt;</span> <span class=\"n\">Admin</span></code></pre></div></div>",
+            "url": "http://localhost:4000/blog/skype-how-to-make-someone-admin.html",
+            
+            
+            
+            
+            
+            "date_published": "2020-03-31T12:32:56+05:30",
+            "date_modified": "2020-03-31T12:32:56+05:30",
+            
+                "author": "Rajesh Pandian M"
+            
+        },
+    
+        {
             "id": "http://localhost:4000/blog/how-to-bikeshed.html",
             "title": "How to write bikeshed",
             "summary": null,

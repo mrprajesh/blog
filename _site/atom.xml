@@ -4,13 +4,37 @@
  <title>Rajesh's Blog</title>
  <link href="http://localhost:4000/blog/atom.xml" rel="self"/>
  <link href="http://localhost:4000/blog/"/>
- <updated>2020-03-30T16:03:44+05:30</updated>
+ <updated>2020-03-31T13:13:59+05:30</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Rajesh Pandian M</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Skype  How to make someone admin</title>
+   <link href="http://localhost:4000/blog/skype-how-to-make-someone-admin.html"/>
+   <updated>2020-03-31T12:32:56+05:30</updated>
+   <id>http://localhost:4000/skype-how-to-make-someone-admin</id>
+   <content type="html">&lt;p&gt;How to make someone admin in skype. i.e How to update the role of
+a particular person in a group chat.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;First, find out the &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;username&amp;gt;&lt;/code&gt; of that person&lt;/li&gt;
+  &lt;li&gt;View the current role&lt;/li&gt;
+  &lt;li&gt;Change the role for that user. valid roles: &lt;code class=&quot;highlighter-rouge&quot;&gt;Admin&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;User&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Type the following skype chat commands on group’s chat
+window!&lt;/p&gt;
+
+&lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;showmembers&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;setrole&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;username&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Admin&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</content>
+ </entry>
  
  <entry>
    <title>How to write bikeshed</title>
