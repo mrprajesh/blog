@@ -4,13 +4,47 @@
  <title>Rajesh's Blog</title>
  <link href="https://mrprajesh.co.in/blog/atom.xml" rel="self"/>
  <link href="https://mrprajesh.co.in/blog/"/>
- <updated>2020-04-01T12:32:43+05:30</updated>
+ <updated>2020-04-01T13:59:10+05:30</updated>
  <id>https://mrprajesh.co.in</id>
  <author>
    <name>Rajesh Pandian M</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>How to keep ssh session alive longer</title>
+   <link href="https://mrprajesh.co.in/blog/how-to-keep-ssh-session-alive-longer.html"/>
+   <updated>2020-04-01T13:40:44+05:30</updated>
+   <id>https://mrprajesh.co.in/how-to-keep-ssh-session-alive-longer</id>
+   <content type="html">&lt;ul&gt;
+  &lt;li&gt;More often &lt;code class=&quot;highlighter-rouge&quot;&gt;ssh&lt;/code&gt; times out when the user is not using the terminal for a few minutes.&lt;/li&gt;
+  &lt;li&gt;The remote server disconnects the silent clients; Annoying! :angry:&lt;/li&gt;
+  &lt;li&gt;Two ways to resolve from client-side on Linux Mint/Ubuntu/Any&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;way-1&quot;&gt;Way 1&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;while connecting via ssh add few flags&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ssh -o ServerAliveInterval=60 &amp;lt;myname&amp;gt;@&amp;lt;myremote-host-or-ip-address&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;way-2&quot;&gt;Way 2&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;nano $HOME/.ssh/config&lt;/code&gt;
+    &lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;Host&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;ServerAliveInterval&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;240&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;chmod 600 $HOME/.ssh/config&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;thanks&quot;&gt;Thanks&lt;/h4&gt;
+&lt;p&gt;Cheers and thanks to &lt;a href=&quot;https://stackoverflow.com/questions/25084288/keep-ssh-session-alive&quot;&gt;SO!&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>How to add badges to your git repo or website</title>

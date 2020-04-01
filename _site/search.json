@@ -2,6 +2,18 @@
   
     {
 
+      "title"    : "How to keep ssh session alive longer",
+      "url"      : "/blog/how-to-keep-ssh-session-alive-longer.html",
+      "category" : "",
+      "tags"     : "ssh, linux",
+      "date"     : "2020-04-01 13:40:44 +0530",
+      "discription" : "How to keep ssh session alive longer",
+      "content" : "<ul>\n  <li>More often <code class=\"highlighter-rouge\">ssh</code> times out when the user is not using the terminal for a few minutes.</li>\n  <li>The remote server disconnects the silent clients; Annoying! :angry:</li>\n  <li>Two ways to resolve from client-side on Linux Mint/Ubuntu/Any</li>\n</ul>\n\n<h3 id=\"way-1\">Way 1</h3>\n\n<ul>\n  <li>while connecting via ssh add few flags</li>\n  <li><code class=\"highlighter-rouge\">ssh -o ServerAliveInterval=60 &lt;myname&gt;@&lt;myremote-host-or-ip-address&gt;</code></li>\n</ul>\n\n<h3 id=\"way-2\">Way 2</h3>\n\n<ul>\n  <li><code class=\"highlighter-rouge\">nano $HOME/.ssh/config</code>\n    <div class=\"language-c highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"n\">Host</span> <span class=\"o\">*</span>\n  <span class=\"n\">ServerAliveInterval</span> <span class=\"mi\">240</span>\n</code></pre></div>    </div>\n  </li>\n  <li>chmod 600 $HOME/.ssh/config</li>\n</ul>\n\n<h4 id=\"thanks\">Thanks</h4>\n<p>Cheers and thanks to <a href=\"https://stackoverflow.com/questions/25084288/keep-ssh-session-alive\">SO!</a></p>\n"
+
+    } ,
+  
+    {
+
       "title"    : "How to add badges to your git repo or website",
       "url"      : "/blog/add-badges-to-your-git-repo-site.html",
       "category" : "",

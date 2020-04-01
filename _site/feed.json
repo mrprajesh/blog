@@ -17,6 +17,25 @@
 "items": [
     
         {
+            "id": "https://mrprajesh.co.in/blog/how-to-keep-ssh-session-alive-longer.html",
+            "title": "How to keep ssh session alive longer",
+            "summary": "How to keep ssh session alive longer",
+            "content_text": "  More often ssh times out when the user is not using the terminal for a few minutes.  The remote server disconnects the silent clients; Annoying! :angry:  Two ways to resolve from client-side on Linux Mint/Ubuntu/AnyWay 1  while connecting via ssh add few flags  ssh -o ServerAliveInterval=60 &lt;myname&gt;@&lt;myremote-host-or-ip-address&gt;Way 2  nano $HOME/.ssh/config    Host *  ServerAliveInterval 240        chmod 600 $HOME/.ssh/configThanksCheers and thanks to SO!",
+            "content_html": "<ul>  <li>More often <code class=\"highlighter-rouge\">ssh</code> times out when the user is not using the terminal for a few minutes.</li>  <li>The remote server disconnects the silent clients; Annoying! :angry:</li>  <li>Two ways to resolve from client-side on Linux Mint/Ubuntu/Any</li></ul><h3 id=\"way-1\">Way 1</h3><ul>  <li>while connecting via ssh add few flags</li>  <li><code class=\"highlighter-rouge\">ssh -o ServerAliveInterval=60 &lt;myname&gt;@&lt;myremote-host-or-ip-address&gt;</code></li></ul><h3 id=\"way-2\">Way 2</h3><ul>  <li><code class=\"highlighter-rouge\">nano $HOME/.ssh/config</code>    <div class=\"language-c highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"n\">Host</span> <span class=\"o\">*</span>  <span class=\"n\">ServerAliveInterval</span> <span class=\"mi\">240</span></code></pre></div>    </div>  </li>  <li>chmod 600 $HOME/.ssh/config</li></ul><h4 id=\"thanks\">Thanks</h4><p>Cheers and thanks to <a href=\"https://stackoverflow.com/questions/25084288/keep-ssh-session-alive\">SO!</a></p>",
+            "url": "https://mrprajesh.co.in/blog/how-to-keep-ssh-session-alive-longer.html",
+            
+            
+            
+            "tags": ["ssh","linux"],
+            
+            "date_published": "2020-04-01T13:40:44+05:30",
+            "date_modified": "2020-04-01T13:40:44+05:30",
+            
+                "author": "Rajesh Pandian M"
+            
+        },
+    
+        {
             "id": "https://mrprajesh.co.in/blog/add-badges-to-your-git-repo-site.html",
             "title": "How to add badges to your git repo or website",
             "summary": null,
