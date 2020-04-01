@@ -2,6 +2,18 @@
   
     {
 
+      "title"    : "GSuite tools for online teaching",
+      "url"      : "/blog/gsuite-tools-for-online-teaching.html",
+      "category" : "",
+      "tags"     : "jekyll, coding",
+      "date"     : "2020-04-01 17:14:10 +0530",
+      "discription" : "",
+      "content" : "<p>Google had a lot of tools like hangout on air and many others. But, many\nbecause unavailable now. In this COVID19 season below tool see a surge.</p>\n\n<ul>\n  <li><a href=\"https://zoom.us/\">Zoom</a> is one possibility</li>\n  <li><a href=\"https://web.skype.com\">Skype</a> Group call + Screen share</li>\n  <li><a href=\"https://meet.jit.si/\">Jitsi</a> - An open-source</li>\n  <li><a href=\"https://studio.youtube.com/channel/UC/livestreaming\">YouTube Live</a> - stream</li>\n</ul>\n\n<p>Everything has its own advantages + disadvantages</p>\n\n<ul>\n  <li>zoom can not record 40+ mins</li>\n  <li>skype has can not call 50+ participants</li>\n  <li>web skype needs no install</li>\n  <li>skype mobile is available</li>\n  <li>Jistsi also is in mobile</li>\n</ul>\n\n<p>Google has a lot of resources</p>\n\n<ul>\n  <li>Moodle  == <a href=\"https://classroom.google.com\">Classroom</a></li>\n  <li>Zoom == <a href=\"https://meet.google.com/\">Meet</a></li>\n  <li>CamStacia/CamStudio == <a href=\"https://jamboard.google.com\">Jamboard</a></li>\n</ul>\n\n<p>and few others. More details here at <a href=\"https://teachfromhome.google/intl/en/\">Teaching from home.</a>\nThere is a nice presentation <a href=\"https://storage.googleapis.com/teachfromhome.appspot.com/en-toolkit.pdf\">here</a>.</p>\n\n<ul>\n  <li>Some of these tools are available only in Gsuite. Seems like temporary?</li>\n  <li>Sometime later, will tell about all open/free tools.</li>\n</ul>\n"
+
+    } ,
+  
+    {
+
       "title"    : "How to keep ssh session alive longer",
       "url"      : "/blog/how-to-keep-ssh-session-alive-longer.html",
       "category" : "",

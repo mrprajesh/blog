@@ -17,6 +17,25 @@
 "items": [
     
         {
+            "id": "https://mrprajesh.co.in/blog/gsuite-tools-for-online-teaching.html",
+            "title": "GSuite tools for online teaching",
+            "summary": null,
+            "content_text": "Google had a lot of tools like hangout on air and many others. But, manybecause unavailable now. In this COVID19 season below tool see a surge.  Zoom is one possibility  Skype Group call + Screen share  Jitsi - An open-source  YouTube Live - streamEverything has its own advantages + disadvantages  zoom can not record 40+ mins  skype has can not call 50+ participants  web skype needs no install  skype mobile is available  Jistsi also is in mobileGoogle has a lot of resources  Moodle  == Classroom  Zoom == Meet  CamStacia/CamStudio == Jamboardand few others. More details here at Teaching from home.There is a nice presentation here.  Some of these tools are available only in Gsuite. Seems like temporary?  Sometime later, will tell about all open/free tools.",
+            "content_html": "<p>Google had a lot of tools like hangout on air and many others. But, manybecause unavailable now. In this COVID19 season below tool see a surge.</p><ul>  <li><a href=\"https://zoom.us/\">Zoom</a> is one possibility</li>  <li><a href=\"https://web.skype.com\">Skype</a> Group call + Screen share</li>  <li><a href=\"https://meet.jit.si/\">Jitsi</a> - An open-source</li>  <li><a href=\"https://studio.youtube.com/channel/UC/livestreaming\">YouTube Live</a> - stream</li></ul><p>Everything has its own advantages + disadvantages</p><ul>  <li>zoom can not record 40+ mins</li>  <li>skype has can not call 50+ participants</li>  <li>web skype needs no install</li>  <li>skype mobile is available</li>  <li>Jistsi also is in mobile</li></ul><p>Google has a lot of resources</p><ul>  <li>Moodle  == <a href=\"https://classroom.google.com\">Classroom</a></li>  <li>Zoom == <a href=\"https://meet.google.com/\">Meet</a></li>  <li>CamStacia/CamStudio == <a href=\"https://jamboard.google.com\">Jamboard</a></li></ul><p>and few others. More details here at <a href=\"https://teachfromhome.google/intl/en/\">Teaching from home.</a>There is a nice presentation <a href=\"https://storage.googleapis.com/teachfromhome.appspot.com/en-toolkit.pdf\">here</a>.</p><ul>  <li>Some of these tools are available only in Gsuite. Seems like temporary?</li>  <li>Sometime later, will tell about all open/free tools.</li></ul>",
+            "url": "https://mrprajesh.co.in/blog/gsuite-tools-for-online-teaching.html",
+            
+            
+            
+            "tags": ["jekyll","coding"],
+            
+            "date_published": "2020-04-01T17:14:10+05:30",
+            "date_modified": "2020-04-01T17:14:10+05:30",
+            
+                "author": "Rajesh Pandian M"
+            
+        },
+    
+        {
             "id": "https://mrprajesh.co.in/blog/how-to-keep-ssh-session-alive-longer.html",
             "title": "How to keep ssh session alive longer",
             "summary": "How to keep ssh session alive longer",

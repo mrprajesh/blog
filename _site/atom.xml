@@ -4,13 +4,56 @@
  <title>Rajesh's Blog</title>
  <link href="https://mrprajesh.co.in/blog/atom.xml" rel="self"/>
  <link href="https://mrprajesh.co.in/blog/"/>
- <updated>2020-04-01T13:59:10+05:30</updated>
+ <updated>2020-04-01T17:41:05+05:30</updated>
  <id>https://mrprajesh.co.in</id>
  <author>
    <name>Rajesh Pandian M</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>GSuite tools for online teaching</title>
+   <link href="https://mrprajesh.co.in/blog/gsuite-tools-for-online-teaching.html"/>
+   <updated>2020-04-01T17:14:10+05:30</updated>
+   <id>https://mrprajesh.co.in/gSuite-tools-for-online-teaching</id>
+   <content type="html">&lt;p&gt;Google had a lot of tools like hangout on air and many others. But, many
+because unavailable now. In this COVID19 season below tool see a surge.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://zoom.us/&quot;&gt;Zoom&lt;/a&gt; is one possibility&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://web.skype.com&quot;&gt;Skype&lt;/a&gt; Group call + Screen share&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://meet.jit.si/&quot;&gt;Jitsi&lt;/a&gt; - An open-source&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://studio.youtube.com/channel/UC/livestreaming&quot;&gt;YouTube Live&lt;/a&gt; - stream&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Everything has its own advantages + disadvantages&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;zoom can not record 40+ mins&lt;/li&gt;
+  &lt;li&gt;skype has can not call 50+ participants&lt;/li&gt;
+  &lt;li&gt;web skype needs no install&lt;/li&gt;
+  &lt;li&gt;skype mobile is available&lt;/li&gt;
+  &lt;li&gt;Jistsi also is in mobile&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Google has a lot of resources&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Moodle  == &lt;a href=&quot;https://classroom.google.com&quot;&gt;Classroom&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Zoom == &lt;a href=&quot;https://meet.google.com/&quot;&gt;Meet&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;CamStacia/CamStudio == &lt;a href=&quot;https://jamboard.google.com&quot;&gt;Jamboard&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;and few others. More details here at &lt;a href=&quot;https://teachfromhome.google/intl/en/&quot;&gt;Teaching from home.&lt;/a&gt;
+There is a nice presentation &lt;a href=&quot;https://storage.googleapis.com/teachfromhome.appspot.com/en-toolkit.pdf&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Some of these tools are available only in Gsuite. Seems like temporary?&lt;/li&gt;
+  &lt;li&gt;Sometime later, will tell about all open/free tools.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
  
  <entry>
    <title>How to keep ssh session alive longer</title>
