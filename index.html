@@ -11,6 +11,7 @@ layout: default
   </li>
 {% endfor %}
 -->
+<!--
 {% for post in site.posts  %}
     {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
     {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
@@ -34,6 +35,26 @@ layout: default
         {% endif %}
     {% endif %}
 {% endfor %}
+-->
+{% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
+    {% for year in postsByYear %}
+      <h1>{{ year.name }}</h1>
+      {% assign postsByMonth = year.items | group_by_exp:"post", "post.date | date: '%B'" %}
+
+      {% for month in postsByMonth %}
+        <h3>{{ month.name }}</h3>
+        <ul>
+          {% for post in month.items %}
+          <li>
+            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d-%b-%Y" }}</time>
+          </li>
+          {% endfor %}
+        </ul>
+
+      {% endfor %}
+    {% endfor %}
+
 </ul>
 </section>
 
