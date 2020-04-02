@@ -17,6 +17,25 @@
 "items": [
     
         {
+            "id": "https://mrprajesh.co.in/blog/list-the-order-of-calls-of-installed.html",
+            "title": "List the order of calls of installed",
+            "summary": null,
+            "content_text": "  I had a ruby 2.7 version but system was using 2.5 (an older came by default).  How did I managed to find out  with which command?  which -a &lt;cmd&gt; lists the order of executable that is checked for cmdrajz@LordOfWarriors:~$ ruby -vruby 2.5.1p57 (2018-03-29 revision 63029) [x86_64-linux-gnu]rajz@LordOfWarriors:~$ which ruby/usr/bin/rubyrajz@LordOfWarriors:~$ which -a ruby/usr/bin/ruby/home/linuxbrew/.linuxbrew/bin/rubyrajz@LordOfWarriors:~$ /home/linuxbrew/.linuxbrew/bin/ruby -vruby 2.7.0p0 (2019-12-25 revision 647ee6f091) [x86_64-linux]rajz@LordOfWarriors:~$",
+            "content_html": "<ul>  <li>I had a ruby 2.7 version but system was using 2.5 (an older came by default).</li>  <li>How did I managed to find out  with <code class=\"highlighter-rouge\">which</code> command?</li>  <li><code class=\"highlighter-rouge\">which -a &lt;cmd&gt;</code> lists the order of executable that is checked for cmd</li></ul><div class=\"language-c highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"n\">rajz</span><span class=\"err\">@</span><span class=\"n\">LordOfWarriors</span><span class=\"o\">:~</span><span class=\"err\">$</span> <span class=\"n\">ruby</span> <span class=\"o\">-</span><span class=\"n\">v</span><span class=\"n\">ruby</span> <span class=\"mi\">2</span><span class=\"p\">.</span><span class=\"mi\">5</span><span class=\"p\">.</span><span class=\"mi\">1</span><span class=\"n\">p57</span> <span class=\"p\">(</span><span class=\"mi\">2018</span><span class=\"o\">-</span><span class=\"mo\">03</span><span class=\"o\">-</span><span class=\"mi\">29</span> <span class=\"n\">revision</span> <span class=\"mi\">63029</span><span class=\"p\">)</span> <span class=\"p\">[</span><span class=\"n\">x86_64</span><span class=\"o\">-</span><span class=\"n\">linux</span><span class=\"o\">-</span><span class=\"n\">gnu</span><span class=\"p\">]</span><span class=\"n\">rajz</span><span class=\"err\">@</span><span class=\"n\">LordOfWarriors</span><span class=\"o\">:~</span><span class=\"err\">$</span> <span class=\"n\">which</span> <span class=\"n\">ruby</span><span class=\"o\">/</span><span class=\"n\">usr</span><span class=\"o\">/</span><span class=\"n\">bin</span><span class=\"o\">/</span><span class=\"n\">ruby</span><span class=\"n\">rajz</span><span class=\"err\">@</span><span class=\"n\">LordOfWarriors</span><span class=\"o\">:~</span><span class=\"err\">$</span> <span class=\"n\">which</span> <span class=\"o\">-</span><span class=\"n\">a</span> <span class=\"n\">ruby</span><span class=\"o\">/</span><span class=\"n\">usr</span><span class=\"o\">/</span><span class=\"n\">bin</span><span class=\"o\">/</span><span class=\"n\">ruby</span><span class=\"o\">/</span><span class=\"n\">home</span><span class=\"o\">/</span><span class=\"n\">linuxbrew</span><span class=\"o\">/</span><span class=\"p\">.</span><span class=\"n\">linuxbrew</span><span class=\"o\">/</span><span class=\"n\">bin</span><span class=\"o\">/</span><span class=\"n\">ruby</span><span class=\"n\">rajz</span><span class=\"err\">@</span><span class=\"n\">LordOfWarriors</span><span class=\"o\">:~</span><span class=\"err\">$</span> <span class=\"o\">/</span><span class=\"n\">home</span><span class=\"o\">/</span><span class=\"n\">linuxbrew</span><span class=\"o\">/</span><span class=\"p\">.</span><span class=\"n\">linuxbrew</span><span class=\"o\">/</span><span class=\"n\">bin</span><span class=\"o\">/</span><span class=\"n\">ruby</span> <span class=\"o\">-</span><span class=\"n\">v</span><span class=\"n\">ruby</span> <span class=\"mi\">2</span><span class=\"p\">.</span><span class=\"mi\">7</span><span class=\"p\">.</span><span class=\"mi\">0</span><span class=\"n\">p0</span> <span class=\"p\">(</span><span class=\"mi\">2019</span><span class=\"o\">-</span><span class=\"mi\">12</span><span class=\"o\">-</span><span class=\"mi\">25</span> <span class=\"n\">revision</span> <span class=\"mi\">647</span><span class=\"n\">ee6f091</span><span class=\"p\">)</span> <span class=\"p\">[</span><span class=\"n\">x86_64</span><span class=\"o\">-</span><span class=\"n\">linux</span><span class=\"p\">]</span><span class=\"n\">rajz</span><span class=\"err\">@</span><span class=\"n\">LordOfWarriors</span><span class=\"o\">:~</span><span class=\"err\">$</span></code></pre></div></div>",
+            "url": "https://mrprajesh.co.in/blog/list-the-order-of-calls-of-installed.html",
+            
+            
+            
+            "tags": ["linux","shell"],
+            
+            "date_published": "2020-04-02T19:45:14+05:30",
+            "date_modified": "2020-04-02T19:45:14+05:30",
+            
+                "author": "Rajesh Pandian M"
+            
+        },
+    
+        {
             "id": "https://mrprajesh.co.in/blog/gsuite-tools-for-online-teaching.html",
             "title": "GSuite tools for online teaching",
             "summary": null,
