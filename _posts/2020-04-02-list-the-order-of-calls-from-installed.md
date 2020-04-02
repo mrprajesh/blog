@@ -1,6 +1,6 @@
 ---
 layout: post
-title: List the order of calls of installed
+title: List the order of calls from installed packages/commands
 date: 02-04-2020 19:45:14 +05:30
 tags: [linux,shell]
 description:
@@ -11,9 +11,9 @@ mathjax: false
 render_with_liquid: true
 ---
 
-- I had a ruby 2.7 version but system was using 2.5 (an older came by default).
-- How did I managed to find out  with `which` command?
-- `which -a <cmd>` lists the order of executable that is checked for cmd
+- I had a ruby 2.7 version but system was using 2.5 (an older version came by default).
+- How did I managed to find out  using `which` command?
+- `which -a <cmd>` lists the order of executable that is checked for a command
 
 ```c
 rajz@LordOfWarriors:~$ ruby -v

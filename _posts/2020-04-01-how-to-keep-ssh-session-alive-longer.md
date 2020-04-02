@@ -15,7 +15,7 @@ render_with_liquid: true
 - The remote server disconnects the silent clients; Annoying! :angry:
 - Two ways to resolve from client-side on Linux Mint/Ubuntu/Any
 
-### Way 1
+### Way 1 (works great!)
 
 - while connecting via ssh add few flags
 - `ssh -o ServerAliveInterval=60 <myname>@<myremote-host-or-ip-address>`
@@ -28,6 +28,19 @@ Host *
     ServerAliveInterval 240
 ```
 - chmod 600 $HOME/.ssh/config
+
+#### Alias sss - way 1
+
+- In `~/.bashrc`, towards the end
+
+```c
+alias sshlive='ssh -o ServerAliveInterval=60'
+```
+- Open a new terminal or run `source ~/.bashrc`
+- See, list of aliases that are set. Type `alias`
+- Next time, when I want ssh we need not remember the long command.
+- Just type `sshlive user@hostname`.
+- Thanks to `alias`
 
 
 #### Thanks
