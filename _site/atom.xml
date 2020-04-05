@@ -4,7 +4,7 @@
  <title>Rajesh's Blog</title>
  <link href="https://mrprajesh.co.in/blog/atom.xml" rel="self"/>
  <link href="https://mrprajesh.co.in/blog/"/>
- <updated>2020-04-02T20:47:20+05:30</updated>
+ <updated>2020-04-05T18:28:19+05:30</updated>
  <id>https://mrprajesh.co.in</id>
  <author>
    <name>Rajesh Pandian M</name>
@@ -110,7 +110,7 @@ There is a nice presentation &lt;a href=&quot;https://storage.googleapis.com/tea
   &lt;li&gt;chmod 600 $HOME/.ssh/config&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&quot;alias-sss---way-1&quot;&gt;Alias sss - way 1&lt;/h4&gt;
+&lt;h4 id=&quot;alias-ssh---way-1&quot;&gt;Alias ssh - Way 1&lt;/h4&gt;
 
 &lt;ul&gt;
   &lt;li&gt;In &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.bashrc&lt;/code&gt;, towards the end&lt;/li&gt;
@@ -943,7 +943,7 @@ Also, threadblock dimensions of 0 in any position are not legal.&lt;/li&gt;
    <link href="https://mrprajesh.co.in/blog/new-words.html"/>
    <updated>2020-03-11T19:17:59+05:30</updated>
    <id>https://mrprajesh.co.in/new-words</id>
-   <content type="html">&lt;p&gt;In this novel coronovirus season learnt some new words.&lt;/p&gt;
+   <content type="html">&lt;p&gt;In this novel coronavirus season learnt some new words.&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;epidemic
@@ -970,7 +970,7 @@ Also, threadblock dimensions of 0 in any position are not legal.&lt;/li&gt;
 
 &lt;h3 id=&quot;example-sentence&quot;&gt;Example sentence.&lt;/h3&gt;
 
-&lt;p&gt;WHO said COVID-19 disease is epidemic and &lt;del&gt;nearly pandemic&lt;/del&gt; officially pandemic today. While sellers are price gouging masks/sanitizing items, nature journal removed the paywall for all research involving coronovirus. Sweet!&lt;/p&gt;
+&lt;p&gt;WHO said COVID-19 disease is epidemic and &lt;del&gt;nearly pandemic&lt;/del&gt; officially pandemic today. While sellers are price gouging masks/sanitizing items, nature journal removed the paywall for all research involving coronavirus. Sweet!&lt;/p&gt;
 </content>
  </entry>
  

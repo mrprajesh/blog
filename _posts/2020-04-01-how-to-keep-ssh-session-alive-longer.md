@@ -29,7 +29,7 @@ Host *
 ```
 - chmod 600 $HOME/.ssh/config
 
-#### Alias sss - way 1
+#### Alias ssh - Way 1
 
 - In `~/.bashrc`, towards the end
 

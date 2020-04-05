@@ -2,7 +2,7 @@
 layout: post
 title: Corona, origin, story, and some links
 date: 19-03-2020 22:52:50 +05:30
-tags: [coronovirus, covid19]
+tags: [coronavirus, covid19]
 description:
 summary:
 comments: false
