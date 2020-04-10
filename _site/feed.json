@@ -17,6 +17,25 @@
 "items": [
     
         {
+            "id": "https://mrprajesh.co.in/blog/securing-email-servers.html",
+            "title": "Securing email servers",
+            "summary": null,
+            "content_text": "To get a background on the issue,read this or see the video from vox. :sunglasses:We had a similar issues in our department as well.Someone sent email impersonating our HoD’s cse email. OMG! :flushed:  In brief, any scammers can impersonate and send email from legitimatedomain name if email admins do not have secure configuration (appropriate DMARC record). For e.g cse.iitm.ac.in or who.int domain for CSE IITM or WHOHow find if you are vulnerable? or Check your DMARC record for  See hereHow to resolve it?  Add a DMARC record as said hereThis is a simple thingBut, only 15% servers has done this setup. That’s strange, isn’t? :anguished:Roll out progressively and monitor daily log.Otherwise, you may end up genuine mails being dropped/lost.As said in this post under section Deploy your DMARC policy slowly.Cheers, bye!",
+            "content_html": "<p>To get a background on the issue,read <a href=\"https://www.vox.com/recode/2020/4/2/21202852/coronavirus-scam-email-who-spoofing-domain-dmarc\">this</a> or see the video from vox. :sunglasses:We had a similar issues in our department as well.Someone sent email impersonating our HoD’s cse email. OMG! :flushed:</p><iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/_CrbHvbvvMw\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"\"></iframe><blockquote>  <p>In brief, any scammers can impersonate and send email from legitimatedomain name if email admins do not have secure configuration (appropriate DMARC record). For e.g cse.iitm.ac.in or who.int domain for <a href=\"https://www.cse.iitm.ac.in/\">CSE IITM</a> or <a href=\"https://www.who.int/\">WHO</a></p></blockquote><p>How find if you are vulnerable? or Check your DMARC record for</p><blockquote>  <p>See <a href=\"https://www.dmarcanalyzer.com/dmarc/dmarc-record-check\">here</a></p></blockquote><p>How to resolve it?</p><blockquote>  <p>Add a DMARC record as said <a href=\"https://www.dmarcanalyzer.com/how-to-create-a-dmarc-record/\">here</a></p></blockquote><p>This is a simple thingBut, only 15% servers has done this setup. That’s strange, isn’t? :anguished:</p><p>Roll out progressively and monitor daily log.Otherwise, you may end up genuine mails being dropped/lost.As said in this <a href=\"https://www.dmarcanalyzer.com/how-to-create-a-dmarc-record/\">post</a> under section <em>Deploy your DMARC policy slowly</em>.</p><p>Cheers, bye!</p>",
+            "url": "https://mrprajesh.co.in/blog/securing-email-servers.html",
+            
+            
+            
+            "tags": ["email","tech"],
+            
+            "date_published": "2020-04-10T16:08:45+05:30",
+            "date_modified": "2020-04-10T16:08:45+05:30",
+            
+                "author": "Rajesh Pandian M"
+            
+        },
+    
+        {
             "id": "https://mrprajesh.co.in/blog/list-the-order-of-calls-from-installed.html",
             "title": "List the order of calls from installed packages/commands",
             "summary": null,

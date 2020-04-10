@@ -4,13 +4,53 @@
  <title>Rajesh's Blog</title>
  <link href="https://mrprajesh.co.in/blog/atom.xml" rel="self"/>
  <link href="https://mrprajesh.co.in/blog/"/>
- <updated>2020-04-05T18:28:19+05:30</updated>
+ <updated>2020-04-10T16:40:22+05:30</updated>
  <id>https://mrprajesh.co.in</id>
  <author>
    <name>Rajesh Pandian M</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Securing email servers</title>
+   <link href="https://mrprajesh.co.in/blog/securing-email-servers.html"/>
+   <updated>2020-04-10T16:08:45+05:30</updated>
+   <id>https://mrprajesh.co.in/securing-email-servers</id>
+   <content type="html">&lt;p&gt;To get a background on the issue,
+read &lt;a href=&quot;https://www.vox.com/recode/2020/4/2/21202852/coronavirus-scam-email-who-spoofing-domain-dmarc&quot;&gt;this&lt;/a&gt; or see the video from vox. :sunglasses:
+We had a similar issues in our department as well.
+Someone sent email impersonating our HoD’s cse email. OMG! :flushed:&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/_CrbHvbvvMw&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;In brief, any scammers can impersonate and send email from legitimate
+domain name if email admins do not have secure configuration (appropriate DMARC record). For e.g cse.iitm.ac.in or who.int domain for &lt;a href=&quot;https://www.cse.iitm.ac.in/&quot;&gt;CSE IITM&lt;/a&gt; or &lt;a href=&quot;https://www.who.int/&quot;&gt;WHO&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;How find if you are vulnerable? or Check your DMARC record for&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;See &lt;a href=&quot;https://www.dmarcanalyzer.com/dmarc/dmarc-record-check&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;How to resolve it?&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Add a DMARC record as said &lt;a href=&quot;https://www.dmarcanalyzer.com/how-to-create-a-dmarc-record/&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This is a simple thing
+But, only 15% servers has done this setup. That’s strange, isn’t? :anguished:&lt;/p&gt;
+
+&lt;p&gt;Roll out progressively and monitor daily log.
+Otherwise, you may end up genuine mails being dropped/lost.
+As said in this &lt;a href=&quot;https://www.dmarcanalyzer.com/how-to-create-a-dmarc-record/&quot;&gt;post&lt;/a&gt; under section &lt;em&gt;Deploy your DMARC policy slowly&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Cheers, bye!&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>List the order of calls from installed packages/commands</title>

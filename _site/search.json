@@ -2,6 +2,18 @@
   
     {
 
+      "title"    : "Securing email servers",
+      "url"      : "/blog/securing-email-servers.html",
+      "category" : "",
+      "tags"     : "email, tech",
+      "date"     : "2020-04-10 16:08:45 +0530",
+      "discription" : "",
+      "content" : "<p>To get a background on the issue,\nread <a href=\"https://www.vox.com/recode/2020/4/2/21202852/coronavirus-scam-email-who-spoofing-domain-dmarc\">this</a> or see the video from vox. :sunglasses:\nWe had a similar issues in our department as well.\nSomeone sent email impersonating our HoD’s cse email. OMG! :flushed:</p>\n\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/_CrbHvbvvMw\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"\"></iframe>\n\n<blockquote>\n  <p>In brief, any scammers can impersonate and send email from legitimate\ndomain name if email admins do not have secure configuration (appropriate DMARC record). For e.g cse.iitm.ac.in or who.int domain for <a href=\"https://www.cse.iitm.ac.in/\">CSE IITM</a> or <a href=\"https://www.who.int/\">WHO</a></p>\n</blockquote>\n\n<p>How find if you are vulnerable? or Check your DMARC record for</p>\n\n<blockquote>\n  <p>See <a href=\"https://www.dmarcanalyzer.com/dmarc/dmarc-record-check\">here</a></p>\n</blockquote>\n\n<p>How to resolve it?</p>\n\n<blockquote>\n  <p>Add a DMARC record as said <a href=\"https://www.dmarcanalyzer.com/how-to-create-a-dmarc-record/\">here</a></p>\n</blockquote>\n\n<p>This is a simple thing\nBut, only 15% servers has done this setup. That’s strange, isn’t? :anguished:</p>\n\n<p>Roll out progressively and monitor daily log.\nOtherwise, you may end up genuine mails being dropped/lost.\nAs said in this <a href=\"https://www.dmarcanalyzer.com/how-to-create-a-dmarc-record/\">post</a> under section <em>Deploy your DMARC policy slowly</em>.</p>\n\n<p>Cheers, bye!</p>\n"
+
+    } ,
+  
+    {
+
       "title"    : "List the order of calls from installed packages/commands",
       "url"      : "/blog/list-the-order-of-calls-from-installed.html",
       "category" : "",
