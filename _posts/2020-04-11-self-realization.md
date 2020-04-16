@@ -40,7 +40,7 @@ So, you say yes (A). Yes, you do not want to say the whole story and occupy your
 (why? woke late; why? late to sleep; why? first day + night show movie of your fav actor that you can not miss out)
 
 Later sometime, when the prof ask if I had finished the last week assignment. He says "yes" it is nearing completion.
-The reality is I had not done enough work that week.
+The reality is I had not done enough work that week. :flushed:
 
 **why?**
 - researching coronavirus,

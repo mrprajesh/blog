@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>https://mrprajesh.co.in/blog/learning-coronavirus.html</loc>
+<lastmod>2020-04-16T20:44:32+05:30</lastmod>
+</url>
+<url>
+<loc>https://mrprajesh.co.in/blog/self-realization.html</loc>
+<lastmod>2020-04-11T13:58:12+05:30</lastmod>
+</url>
+<url>
 <loc>https://mrprajesh.co.in/blog/securing-email-servers.html</loc>
 <lastmod>2020-04-10T16:08:45+05:30</lastmod>
 </url>
@@ -173,6 +181,9 @@
 </url>
 <url>
 <loc>https://mrprajesh.co.in/blog/tag/email/</loc>
+</url>
+<url>
+<loc>https://mrprajesh.co.in/blog/tag/rant/</loc>
 </url>
 <url>
 <loc>https://mrprajesh.co.in/blog/about.html</loc>
