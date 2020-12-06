@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>https://mrprajesh.co.in/blog/new-post.html</loc>
+<lastmod>2020-11-23T09:20:53+05:30</lastmod>
+</url>
+<url>
+<loc>https://mrprajesh.co.in/blog/rummy-card-game-playing-tips.html</loc>
+<lastmod>2020-04-29T13:41:09+05:30</lastmod>
+</url>
+<url>
 <loc>https://mrprajesh.co.in/blog/learning-coronavirus.html</loc>
 <lastmod>2020-04-16T20:44:32+05:30</lastmod>
 </url>
@@ -184,6 +192,12 @@
 </url>
 <url>
 <loc>https://mrprajesh.co.in/blog/tag/rant/</loc>
+</url>
+<url>
+<loc>https://mrprajesh.co.in/blog/tag/game/</loc>
+</url>
+<url>
+<loc>https://mrprajesh.co.in/blog/tag/life/</loc>
 </url>
 <url>
 <loc>https://mrprajesh.co.in/blog/about.html</loc>

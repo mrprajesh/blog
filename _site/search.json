@@ -2,6 +2,30 @@
   
     {
 
+      "title"    : "Back on track",
+      "url"      : "/blog/new-post.html",
+      "category" : "",
+      "tags"     : "life",
+      "date"     : "2020-11-23 09:20:53 +0530",
+      "discription" : "",
+      "content" : "<p>Many at time one <strong>life</strong> take too many quick turns. Lately,</p>\n<ul>\n  <li>Preethi Pregnant and other complications</li>\n  <li>Father-in-law COVID+</li>\n  <li>Parents COVID+</li>\n  <li>All fine and back home</li>\n  <li>Preethi delivers a boy baby – Shiva :) :heart_eyes:</li>\n</ul>\n\n<p>Hope all my priorities and roles(as sond and husband) are over now. Time\nto continue my role as PhD scholar now. Of course new role father is\nadded to it.</p>\n\n<p>Cheers,\nRajz</p>\n"
+
+    } ,
+  
+    {
+
+      "title"    : "Rummy card game play",
+      "url"      : "/blog/rummy-card-game-playing-tips.html",
+      "category" : "",
+      "tags"     : "game",
+      "date"     : "2020-04-29 13:41:09 +0530",
+      "discription" : "",
+      "content" : "<p>Indian Rummy; 13 Cards Rummy or Points Rummy.</p>\n\n<h3 id=\"types\">Types</h3>\n\n<ol>\n  <li>Rummy</li>\n  <li>Rummy with open joker</li>\n</ol>\n\n<h3 id=\"setup\">Setup</h3>\n\n<ul>\n  <li>13 x 4 + 2 jokers = 54 cards = 1 deck</li>\n  <li>For 2 players  = 1 deck</li>\n  <li>If 2-5 players  = 2 deck</li>\n  <li>If 6+  player = 3 deck</li>\n</ul>\n\n<h3 id=\"gameplay\">Gameplay</h3>\n\n<ul>\n  <li>\n    <p>Shuffle, dealing, start, circular turns, declare, and score!</p>\n  </li>\n  <li>Dealing: to every player with 13; cut open card and game joker.</li>\n  <li>Circular-turn: in a player’s turn should pick and discard</li>\n  <li>Declare: in a players turn after picking, closd a card and show melds</li>\n  <li>Scoring: verify declaration and others points, and update score!</li>\n</ul>\n\n<h3 id=\"rules\">Rules</h3>\n\n<p>Meld is 3+ cards of seq/run or set!\nNote a set is 3 or 4!</p>\n\n<h3 id=\"strategy\">Strategy</h3>\n\n<p>Prioritize these first!</p>\n\n<ol>\n  <li>Aim for pure sequence/run (original rummy)</li>\n  <li>Aim for pure/impure sequence (or additional rummy or second run/seq)</li>\n  <li>Aim if sets (or dummy) or pure/impure sequence possible</li>\n  <li>Aim for 4th card</li>\n  <li>If someone declared, rearrange to minimize your score points</li>\n</ol>\n\n<h3 id=\"own-maximize-your-probability-towards-winning\">OWN: Maximize your probability towards winning</h3>\n\n<h3 id=\"minimize-points\">Minimize points</h3>\n\n<p>Assuming you have a pure run and second sequence</p>\n\n<ol>\n  <li>In a two impure sequence, keep joker to the largest sequence.</li>\n  <li>In a 4 card meld, try to reuse start/end card to make a set</li>\n  <li>In a 4+ card meld with stating/ending joker, reuse the joker to other melds</li>\n  <li>\n    <p>In a 3 card meld (for 3rd) break to make set if any</p>\n  </li>\n  <li>{2 :diamonds:, 3 :diamonds:,  :black_joker:} {9 :hearts:, 10 :hearts:} Point=18 :fast_forward::fast_forward: {2 :diamonds:, 3 :diamonds:} {9 :hearts:, 10 :hearts:, :black_joker:}  Points=5\n2.</li>\n</ol>\n\n<h3 id=\"other-guessing-opponents\">OTHER: Guessing opponents</h3>\n\n<p>// Todo</p>\n"
+
+    } ,
+  
+    {
+
       "title"    : "Learning coronavirus",
       "url"      : "/blog/learning-coronavirus.html",
       "category" : "",

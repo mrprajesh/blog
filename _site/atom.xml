@@ -4,13 +4,111 @@
  <title>Rajesh's Blog</title>
  <link href="https://mrprajesh.co.in/blog/atom.xml" rel="self"/>
  <link href="https://mrprajesh.co.in/blog/"/>
- <updated>2020-04-16T22:47:14+05:30</updated>
+ <updated>2020-12-06T14:30:12+05:30</updated>
  <id>https://mrprajesh.co.in</id>
  <author>
    <name>Rajesh Pandian M</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Back on track</title>
+   <link href="https://mrprajesh.co.in/blog/new-post.html"/>
+   <updated>2020-11-23T09:20:53+05:30</updated>
+   <id>https://mrprajesh.co.in/new-post</id>
+   <content type="html">&lt;p&gt;Many at time one &lt;strong&gt;life&lt;/strong&gt; take too many quick turns. Lately,&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Preethi Pregnant and other complications&lt;/li&gt;
+  &lt;li&gt;Father-in-law COVID+&lt;/li&gt;
+  &lt;li&gt;Parents COVID+&lt;/li&gt;
+  &lt;li&gt;All fine and back home&lt;/li&gt;
+  &lt;li&gt;Preethi delivers a boy baby – Shiva :) :heart_eyes:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Hope all my priorities and roles(as sond and husband) are over now. Time
+to continue my role as PhD scholar now. Of course new role father is
+added to it.&lt;/p&gt;
+
+&lt;p&gt;Cheers,
+Rajz&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Rummy card game play</title>
+   <link href="https://mrprajesh.co.in/blog/rummy-card-game-playing-tips.html"/>
+   <updated>2020-04-29T13:41:09+05:30</updated>
+   <id>https://mrprajesh.co.in/rummy-card-game-playing-tips</id>
+   <content type="html">&lt;p&gt;Indian Rummy; 13 Cards Rummy or Points Rummy.&lt;/p&gt;
+
+&lt;h3 id=&quot;types&quot;&gt;Types&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Rummy&lt;/li&gt;
+  &lt;li&gt;Rummy with open joker&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;setup&quot;&gt;Setup&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;13 x 4 + 2 jokers = 54 cards = 1 deck&lt;/li&gt;
+  &lt;li&gt;For 2 players  = 1 deck&lt;/li&gt;
+  &lt;li&gt;If 2-5 players  = 2 deck&lt;/li&gt;
+  &lt;li&gt;If 6+  player = 3 deck&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;gameplay&quot;&gt;Gameplay&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Shuffle, dealing, start, circular turns, declare, and score!&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Dealing: to every player with 13; cut open card and game joker.&lt;/li&gt;
+  &lt;li&gt;Circular-turn: in a player’s turn should pick and discard&lt;/li&gt;
+  &lt;li&gt;Declare: in a players turn after picking, closd a card and show melds&lt;/li&gt;
+  &lt;li&gt;Scoring: verify declaration and others points, and update score!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;rules&quot;&gt;Rules&lt;/h3&gt;
+
+&lt;p&gt;Meld is 3+ cards of seq/run or set!
+Note a set is 3 or 4!&lt;/p&gt;
+
+&lt;h3 id=&quot;strategy&quot;&gt;Strategy&lt;/h3&gt;
+
+&lt;p&gt;Prioritize these first!&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Aim for pure sequence/run (original rummy)&lt;/li&gt;
+  &lt;li&gt;Aim for pure/impure sequence (or additional rummy or second run/seq)&lt;/li&gt;
+  &lt;li&gt;Aim if sets (or dummy) or pure/impure sequence possible&lt;/li&gt;
+  &lt;li&gt;Aim for 4th card&lt;/li&gt;
+  &lt;li&gt;If someone declared, rearrange to minimize your score points&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;own-maximize-your-probability-towards-winning&quot;&gt;OWN: Maximize your probability towards winning&lt;/h3&gt;
+
+&lt;h3 id=&quot;minimize-points&quot;&gt;Minimize points&lt;/h3&gt;
+
+&lt;p&gt;Assuming you have a pure run and second sequence&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;In a two impure sequence, keep joker to the largest sequence.&lt;/li&gt;
+  &lt;li&gt;In a 4 card meld, try to reuse start/end card to make a set&lt;/li&gt;
+  &lt;li&gt;In a 4+ card meld with stating/ending joker, reuse the joker to other melds&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;In a 3 card meld (for 3rd) break to make set if any&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;{2 :diamonds:, 3 :diamonds:,  :black_joker:} {9 :hearts:, 10 :hearts:} Point=18 :fast_forward::fast_forward: {2 :diamonds:, 3 :diamonds:} {9 :hearts:, 10 :hearts:, :black_joker:}  Points=5
+2.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;other-guessing-opponents&quot;&gt;OTHER: Guessing opponents&lt;/h3&gt;
+
+&lt;p&gt;// Todo&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Learning coronavirus</title>
