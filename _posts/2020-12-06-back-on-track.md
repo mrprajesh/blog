@@ -11,7 +11,7 @@ mathjax: false
 render_with_liquid: true
 ---
 
-Many at time one **life** take too many quick turns. Lately,
+Many at times one's **life** take too many quick turns. Lately,
 - Preethi's Pregnancy and other complications
 - Father-in-law COVID+
 - Parents COVID+
