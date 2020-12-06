@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Rummy card game play
+title: Card game play - Rummy
 date: 29-04-2020 13:41:09 +05:30
 tags: [game]
 description:

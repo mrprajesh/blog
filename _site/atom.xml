@@ -4,7 +4,7 @@
  <title>Rajesh's Blog</title>
  <link href="https://mrprajesh.co.in/blog/atom.xml" rel="self"/>
  <link href="https://mrprajesh.co.in/blog/"/>
- <updated>2020-12-06T14:33:31+05:30</updated>
+ <updated>2020-12-06T14:44:01+05:30</updated>
  <id>https://mrprajesh.co.in</id>
  <author>
    <name>Rajesh Pandian M</name>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>Back on track</title>
-   <link href="https://mrprajesh.co.in/blog/new-post.html"/>
+   <link href="https://mrprajesh.co.in/blog/back-on-track.html"/>
    <updated>2020-11-23T09:20:53+05:30</updated>
-   <id>https://mrprajesh.co.in/new-post</id>
+   <id>https://mrprajesh.co.in/back-on-track</id>
    <content type="html">&lt;p&gt;Many at time one &lt;strong&gt;life&lt;/strong&gt; take too many quick turns. Lately,&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;Preethi’s Pregnancy and other complications&lt;/li&gt;
@@ -37,10 +37,10 @@ Of course, new role father is added to it.&lt;/p&gt;
  </entry>
  
  <entry>
-   <title>Rummy card game play</title>
-   <link href="https://mrprajesh.co.in/blog/rummy-card-game-playing-tips.html"/>
+   <title>Card game play - Rummy</title>
+   <link href="https://mrprajesh.co.in/blog/card-game-playing-tips-rummy.html"/>
    <updated>2020-04-29T13:41:09+05:30</updated>
-   <id>https://mrprajesh.co.in/rummy-card-game-playing-tips</id>
+   <id>https://mrprajesh.co.in/card-game-playing-tips-rummy</id>
    <content type="html">&lt;p&gt;Indian Rummy; 13 Cards Rummy or Points Rummy.&lt;/p&gt;
 
 &lt;h3 id=&quot;types&quot;&gt;Types&lt;/h3&gt;
