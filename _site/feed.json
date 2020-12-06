@@ -17,11 +17,30 @@
 "items": [
     
         {
+            "id": "https://mrprajesh.co.in/blog/implementation-challenges.html",
+            "title": "DIMACS and PACE Implementation challenges",
+            "summary": null,
+            "content_text": "There are two implementations challenges currently accepting submissions.  12th DIMACS   PACE 2021 DIMACS  Vehicle Routing          CVRP - a simplest variant      Generalized form of TSP        TSP          Input: n points with unique ids on xy plane i xi y1      Output: print a permutation of n      Goal: Minimizing the distance travelled from first point to all others point and back to first.      PACE  Cluster Editing",
+            "content_html": "<p>There are two implementations challenges currently accepting submissions.</p><ul>  <li><a href=\"http://dimacs.rutgers.edu/programs/challenge/vrp/\">12th DIMACS </a></li>  <li><a href=\"https://pacechallenge.org/2021/\">PACE 2021 </a></li></ul><h3 id=\"dimacs\">DIMACS</h3><ul>  <li><strong>Vehicle Routing</strong>    <ul>      <li>CVRP - a simplest variant</li>      <li>Generalized form of TSP</li>    </ul>  </li>  <li><strong>TSP</strong>    <ul>      <li>Input: n points with unique ids on xy plane <code class=\"highlighter-rouge\">i xi y1</code></li>      <li>Output: print a permutation of n</li>      <li>Goal: Minimizing the distance travelled from first point to all others point and back to first.</li>    </ul>  </li></ul><h3 id=\"pace\">PACE</h3><ul>  <li>Cluster Editing</li></ul>",
+            "url": "https://mrprajesh.co.in/blog/implementation-challenges.html",
+            
+            
+            
+            
+            
+            "date_published": "2020-12-06T14:52:47+05:30",
+            "date_modified": "2020-12-06T14:52:47+05:30",
+            
+                "author": "Rajesh Pandian M"
+            
+        },
+    
+        {
             "id": "https://mrprajesh.co.in/blog/back-on-track.html",
             "title": "Back on track",
             "summary": null,
-            "content_text": "Many at time one life take too many quick turns. Lately,  Preethi’s Pregnancy and other complications  Father-in-law COVID+  Parents COVID+  All fine and back home  Preethi delivers a boy baby – Shiva :heart_eyes: :)Hope all my priorities and roles(as son and husband) are over now. Timeto continue my role as PhD scholar with high priority.Of course, new role father is added to it.Cheers,Rajz",
-            "content_html": "<p>Many at time one <strong>life</strong> take too many quick turns. Lately,</p><ul>  <li>Preethi’s Pregnancy and other complications</li>  <li>Father-in-law COVID+</li>  <li>Parents COVID+</li>  <li>All fine and back home</li>  <li>Preethi delivers a boy baby – Shiva :heart_eyes: :)</li></ul><p>Hope all my priorities and roles(as son and husband) are over now. Timeto continue my role as PhD scholar with high priority.Of course, new role father is added to it.</p><p>Cheers,</p><p>Rajz</p>",
+            "content_text": "Many at times one’s life take too many quick turns. Lately,  Preethi’s Pregnancy and other complications  Father-in-law COVID+  Parents COVID+  All fine and back home  Preethi delivers a boy baby – Shiva :heart_eyes: :)Hope all my priorities and roles(as son and husband) are over now. Timeto continue my role as PhD scholar with high priority.Of course, new role father is added to it.Cheers,Rajz",
+            "content_html": "<p>Many at times one’s <strong>life</strong> take too many quick turns. Lately,</p><ul>  <li>Preethi’s Pregnancy and other complications</li>  <li>Father-in-law COVID+</li>  <li>Parents COVID+</li>  <li>All fine and back home</li>  <li>Preethi delivers a boy baby – Shiva :heart_eyes: :)</li></ul><p>Hope all my priorities and roles(as son and husband) are over now. Timeto continue my role as PhD scholar with high priority.Of course, new role father is added to it.</p><p>Cheers,</p><p>Rajz</p>",
             "url": "https://mrprajesh.co.in/blog/back-on-track.html",
             
             

@@ -4,7 +4,7 @@
  <title>Rajesh's Blog</title>
  <link href="https://mrprajesh.co.in/blog/atom.xml" rel="self"/>
  <link href="https://mrprajesh.co.in/blog/"/>
- <updated>2020-12-06T14:44:01+05:30</updated>
+ <updated>2020-12-06T15:35:21+05:30</updated>
  <id>https://mrprajesh.co.in</id>
  <author>
    <name>Rajesh Pandian M</name>
@@ -13,11 +13,47 @@
 
  
  <entry>
+   <title>DIMACS and PACE Implementation challenges</title>
+   <link href="https://mrprajesh.co.in/blog/implementation-challenges.html"/>
+   <updated>2020-12-06T14:52:47+05:30</updated>
+   <id>https://mrprajesh.co.in/implementation-challenges</id>
+   <content type="html">&lt;p&gt;There are two implementations challenges currently accepting submissions.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://dimacs.rutgers.edu/programs/challenge/vrp/&quot;&gt;12th DIMACS &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://pacechallenge.org/2021/&quot;&gt;PACE 2021 &lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;dimacs&quot;&gt;DIMACS&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Vehicle Routing&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;CVRP - a simplest variant&lt;/li&gt;
+      &lt;li&gt;Generalized form of TSP&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;TSP&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Input: n points with unique ids on xy plane &lt;code class=&quot;highlighter-rouge&quot;&gt;i xi y1&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;Output: print a permutation of n&lt;/li&gt;
+      &lt;li&gt;Goal: Minimizing the distance travelled from first point to all others point and back to first.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;pace&quot;&gt;PACE&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Cluster Editing&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
+ 
+ <entry>
    <title>Back on track</title>
    <link href="https://mrprajesh.co.in/blog/back-on-track.html"/>
    <updated>2020-11-23T09:20:53+05:30</updated>
    <id>https://mrprajesh.co.in/back-on-track</id>
-   <content type="html">&lt;p&gt;Many at time one &lt;strong&gt;life&lt;/strong&gt; take too many quick turns. Lately,&lt;/p&gt;
+   <content type="html">&lt;p&gt;Many at times one’s &lt;strong&gt;life&lt;/strong&gt; take too many quick turns. Lately,&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;Preethi’s Pregnancy and other complications&lt;/li&gt;
   &lt;li&gt;Father-in-law COVID+&lt;/li&gt;

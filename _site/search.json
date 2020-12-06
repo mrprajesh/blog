@@ -2,13 +2,25 @@
   
     {
 
+      "title"    : "DIMACS and PACE Implementation challenges",
+      "url"      : "/blog/implementation-challenges.html",
+      "category" : "",
+      "tags"     : "coding",
+      "date"     : "2020-12-06 14:52:47 +0530",
+      "discription" : "",
+      "content" : "<p>There are two implementations challenges currently accepting submissions.</p>\n<ul>\n  <li><a href=\"http://dimacs.rutgers.edu/programs/challenge/vrp/\">12th DIMACS </a></li>\n  <li><a href=\"https://pacechallenge.org/2021/\">PACE 2021 </a></li>\n</ul>\n\n<h3 id=\"dimacs\">DIMACS</h3>\n\n<ul>\n  <li><strong>Vehicle Routing</strong>\n    <ul>\n      <li>CVRP - a simplest variant</li>\n      <li>Generalized form of TSP</li>\n    </ul>\n  </li>\n  <li><strong>TSP</strong>\n    <ul>\n      <li>Input: n points with unique ids on xy plane <code class=\"highlighter-rouge\">i xi y1</code></li>\n      <li>Output: print a permutation of n</li>\n      <li>Goal: Minimizing the distance travelled from first point to all others point and back to first.</li>\n    </ul>\n  </li>\n</ul>\n\n<h3 id=\"pace\">PACE</h3>\n<ul>\n  <li>Cluster Editing</li>\n</ul>\n"
+
+    } ,
+  
+    {
+
       "title"    : "Back on track",
       "url"      : "/blog/back-on-track.html",
       "category" : "",
       "tags"     : "life",
       "date"     : "2020-11-23 09:20:53 +0530",
       "discription" : "",
-      "content" : "<p>Many at time one <strong>life</strong> take too many quick turns. Lately,</p>\n<ul>\n  <li>Preethi’s Pregnancy and other complications</li>\n  <li>Father-in-law COVID+</li>\n  <li>Parents COVID+</li>\n  <li>All fine and back home</li>\n  <li>Preethi delivers a boy baby – Shiva :heart_eyes: :)</li>\n</ul>\n\n<p>Hope all my priorities and roles(as son and husband) are over now. Time\nto continue my role as PhD scholar with high priority.\nOf course, new role father is added to it.</p>\n\n<p>Cheers,</p>\n\n<p>Rajz</p>\n"
+      "content" : "<p>Many at times one’s <strong>life</strong> take too many quick turns. Lately,</p>\n<ul>\n  <li>Preethi’s Pregnancy and other complications</li>\n  <li>Father-in-law COVID+</li>\n  <li>Parents COVID+</li>\n  <li>All fine and back home</li>\n  <li>Preethi delivers a boy baby – Shiva :heart_eyes: :)</li>\n</ul>\n\n<p>Hope all my priorities and roles(as son and husband) are over now. Time\nto continue my role as PhD scholar with high priority.\nOf course, new role father is added to it.</p>\n\n<p>Cheers,</p>\n\n<p>Rajz</p>\n"
 
     } ,
   
