@@ -14,13 +14,13 @@ render_with_liquid: true
 Recently on my advisor's server machine, some automatic updates has messed
 up with the installed drivers. So, this resulted in the following:
 
-```
+```c
 CUDA error 30: unknown error.
 ```
 
 Even the device query was erring.
 
-```
+```c
 cudaGetDeviceCount returned 30
 -> unknown error
 Result = FAIL
@@ -30,7 +30,7 @@ However, `nvidia-smi` was showing
 the GPUs connected.
 
 
-```shell
+```c
 rajesh@rn-gpu-p100 ~]$ dkms status
 nvidia, 396.44, 3.10.0-862.3.2.el7.x86_64, x86_64: installed (WARNING! Diff between built and installed module!) (WARNING! Diff between built and installed module!) (WARNING! Diff between built and installed module!)
 nvidia, 440.31, 3.10.0-862.3.2.el7.x86_64, x86_64: built
