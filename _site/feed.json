@@ -17,6 +17,25 @@
 "items": [
     
         {
+            "id": "https://mrprajesh.co.in/blog/resolving-nvidia-driver-conflicts.html",
+            "title": "Resolving nvidia/cuda driver conflicts",
+            "summary": null,
+            "content_text": "Recently on my advisor’s server machine, some automatic updates has messedup with the installed drivers. So, this resulted in the following:CUDA error 30: unknown error.Even the device query was erring.cudaGetDeviceCount returned 30-&gt; unknown errorResult = FAILHowever, nvidia-smi was showingthe GPUs connected.rajesh@rn-gpu-p100 ~]$ dkms statusnvidia, 396.44, 3.10.0-862.3.2.el7.x86_64, x86_64: installed (WARNING! Diff between built and installed module!) (WARNING! Diff between built and installed module!) (WARNING! Diff between built and installed module!)nvidia, 440.31, 3.10.0-862.3.2.el7.x86_64, x86_64: built# dkms remove -m nvidia -v 396.44 --all# dkms remove -m nvidia -v 440.31 --all# dkms install -m nvidia -v 440.31# reboot# dkms statusnvidia, 440.31, 3.10.0-862.3.2.el7.x86_64, x86_64: installedThat resolved the cuda error 30. Yay!",
+            "content_html": "<p>Recently on my advisor’s server machine, some automatic updates has messedup with the installed drivers. So, this resulted in the following:</p><div class=\"highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code>CUDA error 30: unknown error.</code></pre></div></div><p>Even the device query was erring.</p><div class=\"highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code>cudaGetDeviceCount returned 30-&gt; unknown errorResult = FAIL</code></pre></div></div><p>However, <code class=\"highlighter-rouge\">nvidia-smi</code> was showingthe GPUs connected.</p><div class=\"language-shell highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code>rajesh@rn-gpu-p100 ~]<span class=\"nv\">$ </span>dkms statusnvidia, 396.44, 3.10.0-862.3.2.el7.x86_64, x86_64: installed <span class=\"o\">(</span>WARNING! Diff between built and installed module!<span class=\"o\">)</span> <span class=\"o\">(</span>WARNING! Diff between built and installed module!<span class=\"o\">)</span> <span class=\"o\">(</span>WARNING! Diff between built and installed module!<span class=\"o\">)</span>nvidia, 440.31, 3.10.0-862.3.2.el7.x86_64, x86_64: built<span class=\"c\"># dkms remove -m nvidia -v 396.44 --all</span><span class=\"c\"># dkms remove -m nvidia -v 440.31 --all</span><span class=\"c\"># dkms install -m nvidia -v 440.31</span><span class=\"c\"># reboot</span><span class=\"c\"># dkms status</span>nvidia, 440.31, 3.10.0-862.3.2.el7.x86_64, x86_64: installed</code></pre></div></div><p>That resolved the cuda error 30. Yay!</p>",
+            "url": "https://mrprajesh.co.in/blog/resolving-nvidia-driver-conflicts.html",
+            
+            
+            
+            "tags": ["gpu","nvidia","sysadmin"],
+            
+            "date_published": "2020-12-16T14:17:15+05:30",
+            "date_modified": "2020-12-16T14:17:15+05:30",
+            
+                "author": "Rajesh Pandian M"
+            
+        },
+    
+        {
             "id": "https://mrprajesh.co.in/blog/implementation-challenges.html",
             "title": "DIMACS and PACE Implementation challenges",
             "summary": null,

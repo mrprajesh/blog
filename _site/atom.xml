@@ -4,13 +4,51 @@
  <title>Rajesh's Blog</title>
  <link href="https://mrprajesh.co.in/blog/atom.xml" rel="self"/>
  <link href="https://mrprajesh.co.in/blog/"/>
- <updated>2020-12-06T15:35:21+05:30</updated>
+ <updated>2020-12-16T14:24:58+05:30</updated>
  <id>https://mrprajesh.co.in</id>
  <author>
    <name>Rajesh Pandian M</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Resolving nvidia/cuda driver conflicts</title>
+   <link href="https://mrprajesh.co.in/blog/resolving-nvidia-driver-conflicts.html"/>
+   <updated>2020-12-16T14:17:15+05:30</updated>
+   <id>https://mrprajesh.co.in/resolving-nvidia-driver-conflicts</id>
+   <content type="html">&lt;p&gt;Recently on my advisor’s server machine, some automatic updates has messed
+up with the installed drivers. So, this resulted in the following:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;CUDA error 30: unknown error.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Even the device query was erring.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cudaGetDeviceCount returned 30
+-&amp;gt; unknown error
+Result = FAIL
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;However, &lt;code class=&quot;highlighter-rouge&quot;&gt;nvidia-smi&lt;/code&gt; was showing
+the GPUs connected.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;rajesh@rn-gpu-p100 ~]&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;dkms status
+nvidia, 396.44, 3.10.0-862.3.2.el7.x86_64, x86_64: installed &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;WARNING! Diff between built and installed module!&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;WARNING! Diff between built and installed module!&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;WARNING! Diff between built and installed module!&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+nvidia, 440.31, 3.10.0-862.3.2.el7.x86_64, x86_64: built
+&lt;span class=&quot;c&quot;&gt;# dkms remove -m nvidia -v 396.44 --all&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# dkms remove -m nvidia -v 440.31 --all&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# dkms install -m nvidia -v 440.31&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# reboot&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# dkms status&lt;/span&gt;
+nvidia, 440.31, 3.10.0-862.3.2.el7.x86_64, x86_64: installed
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;That resolved the cuda error 30. Yay!&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>DIMACS and PACE Implementation challenges</title>

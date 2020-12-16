@@ -2,6 +2,18 @@
   
     {
 
+      "title"    : "Resolving nvidia/cuda driver conflicts",
+      "url"      : "/blog/resolving-nvidia-driver-conflicts.html",
+      "category" : "",
+      "tags"     : "gpu, nvidia, sysadmin",
+      "date"     : "2020-12-16 14:17:15 +0530",
+      "discription" : "",
+      "content" : "<p>Recently on my advisor’s server machine, some automatic updates has messed\nup with the installed drivers. So, this resulted in the following:</p>\n\n<div class=\"highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code>CUDA error 30: unknown error.\n</code></pre></div></div>\n\n<p>Even the device query was erring.</p>\n\n<div class=\"highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code>cudaGetDeviceCount returned 30\n-&gt; unknown error\nResult = FAIL\n</code></pre></div></div>\n\n<p>However, <code class=\"highlighter-rouge\">nvidia-smi</code> was showing\nthe GPUs connected.</p>\n\n<div class=\"language-shell highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code>rajesh@rn-gpu-p100 ~]<span class=\"nv\">$ </span>dkms status\nnvidia, 396.44, 3.10.0-862.3.2.el7.x86_64, x86_64: installed <span class=\"o\">(</span>WARNING! Diff between built and installed module!<span class=\"o\">)</span> <span class=\"o\">(</span>WARNING! Diff between built and installed module!<span class=\"o\">)</span> <span class=\"o\">(</span>WARNING! Diff between built and installed module!<span class=\"o\">)</span>\nnvidia, 440.31, 3.10.0-862.3.2.el7.x86_64, x86_64: built\n<span class=\"c\"># dkms remove -m nvidia -v 396.44 --all</span>\n<span class=\"c\"># dkms remove -m nvidia -v 440.31 --all</span>\n<span class=\"c\"># dkms install -m nvidia -v 440.31</span>\n\n<span class=\"c\"># reboot</span>\n\n<span class=\"c\"># dkms status</span>\nnvidia, 440.31, 3.10.0-862.3.2.el7.x86_64, x86_64: installed\n</code></pre></div></div>\n\n<p>That resolved the cuda error 30. Yay!</p>\n"
+
+    } ,
+  
+    {
+
       "title"    : "DIMACS and PACE Implementation challenges",
       "url"      : "/blog/implementation-challenges.html",
       "category" : "",
