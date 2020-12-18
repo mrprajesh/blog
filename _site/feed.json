@@ -17,6 +17,25 @@
 "items": [
     
         {
+            "id": "https://mrprajesh.co.in/blog/set-nvidia-gpu-as-default-cmd-line.html",
+            "title": "Enable Nvidia or Intel GPUs command line for display in Ubuntu/Linux Mint",
+            "summary": null,
+            "content_text": "Do you want to set the preferred GPU if nvidia x server setting is not displayedin the tray icon. Let’s go command line.$ sudo prime-select statusUsage: /usr/bin/prime-select nvidia|intel|query$ sudo prime-select querynvidia$ sudo prime-select nvidiaInfo: the nvidia profile is already setOf course, mine is already set to nvidia!Reboot to see the changes.Peace!",
+            "content_html": "<p>Do you want to set the preferred GPU if <code class=\"highlighter-rouge\">nvidia x server setting</code> is not displayedin the tray icon. Let’s go command line.</p><div class=\"language-c highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"err\">$</span> <span class=\"n\">sudo</span> <span class=\"n\">prime</span><span class=\"o\">-</span><span class=\"n\">select</span> <span class=\"n\">status</span><span class=\"n\">Usage</span><span class=\"o\">:</span> <span class=\"o\">/</span><span class=\"n\">usr</span><span class=\"o\">/</span><span class=\"n\">bin</span><span class=\"o\">/</span><span class=\"n\">prime</span><span class=\"o\">-</span><span class=\"n\">select</span> <span class=\"n\">nvidia</span><span class=\"o\">|</span><span class=\"n\">intel</span><span class=\"o\">|</span><span class=\"n\">query</span><span class=\"err\">$</span> <span class=\"n\">sudo</span> <span class=\"n\">prime</span><span class=\"o\">-</span><span class=\"n\">select</span> <span class=\"n\">query</span><span class=\"n\">nvidia</span><span class=\"err\">$</span> <span class=\"n\">sudo</span> <span class=\"n\">prime</span><span class=\"o\">-</span><span class=\"n\">select</span> <span class=\"n\">nvidia</span><span class=\"n\">Info</span><span class=\"o\">:</span> <span class=\"n\">the</span> <span class=\"n\">nvidia</span> <span class=\"n\">profile</span> <span class=\"n\">is</span> <span class=\"n\">already</span> <span class=\"n\">set</span></code></pre></div></div><p>Of course, mine is already set to nvidia!Reboot to see the changes.</p><p>Peace!</p>",
+            "url": "https://mrprajesh.co.in/blog/set-nvidia-gpu-as-default-cmd-line.html",
+            
+            
+            
+            "tags": ["nvidia","sysadmin"],
+            
+            "date_published": "2020-12-19T03:06:07+05:30",
+            "date_modified": "2020-12-19T03:06:07+05:30",
+            
+                "author": "Rajesh Pandian M"
+            
+        },
+    
+        {
             "id": "https://mrprajesh.co.in/blog/terminal-and-shell-prompt-customization.html",
             "title": "Terminal and shell prompt customization",
             "summary": null,

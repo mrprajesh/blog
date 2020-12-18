@@ -2,6 +2,18 @@
   
     {
 
+      "title"    : "Enable Nvidia or Intel GPUs command line for display in Ubuntu/Linux Mint",
+      "url"      : "/blog/set-nvidia-gpu-as-default-cmd-line.html",
+      "category" : "",
+      "tags"     : "nvidia, sysadmin",
+      "date"     : "2020-12-19 03:06:07 +0530",
+      "discription" : "",
+      "content" : "<p>Do you want to set the preferred GPU if <code class=\"highlighter-rouge\">nvidia x server setting</code> is not displayed\nin the tray icon. Let’s go command line.</p>\n\n<div class=\"language-c highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"err\">$</span> <span class=\"n\">sudo</span> <span class=\"n\">prime</span><span class=\"o\">-</span><span class=\"n\">select</span> <span class=\"n\">status</span>\n<span class=\"n\">Usage</span><span class=\"o\">:</span> <span class=\"o\">/</span><span class=\"n\">usr</span><span class=\"o\">/</span><span class=\"n\">bin</span><span class=\"o\">/</span><span class=\"n\">prime</span><span class=\"o\">-</span><span class=\"n\">select</span> <span class=\"n\">nvidia</span><span class=\"o\">|</span><span class=\"n\">intel</span><span class=\"o\">|</span><span class=\"n\">query</span>\n<span class=\"err\">$</span> <span class=\"n\">sudo</span> <span class=\"n\">prime</span><span class=\"o\">-</span><span class=\"n\">select</span> <span class=\"n\">query</span>\n<span class=\"n\">nvidia</span>\n<span class=\"err\">$</span> <span class=\"n\">sudo</span> <span class=\"n\">prime</span><span class=\"o\">-</span><span class=\"n\">select</span> <span class=\"n\">nvidia</span>\n<span class=\"n\">Info</span><span class=\"o\">:</span> <span class=\"n\">the</span> <span class=\"n\">nvidia</span> <span class=\"n\">profile</span> <span class=\"n\">is</span> <span class=\"n\">already</span> <span class=\"n\">set</span>\n</code></pre></div></div>\n<p>Of course, mine is already set to nvidia!\nReboot to see the changes.</p>\n\n<p>Peace!</p>\n"
+
+    } ,
+  
+    {
+
       "title"    : "Terminal and shell prompt customization",
       "url"      : "/blog/terminal-and-shell-prompt-customization.html",
       "category" : "",
