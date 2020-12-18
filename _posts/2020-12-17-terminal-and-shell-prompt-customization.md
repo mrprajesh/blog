@@ -18,7 +18,18 @@ Do you want your terminal prompt to look like a pro?
 ### Installation steps.
 
 1.  Install [powerline-shell](https://github.com/b-ryan/powerline-shell)
- through `pip install powerline-shell`
+ through `pip3 install powerline-shell` (and maybe fonts?!)
+2. Do this
+```c
+sudo apt-get install fonts-powerline
+```
+or
+
+```c
+$ wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf
+$ mv PowerlineSymbols.otf ~/.local/share/fonts/
+$ fc-cache -vf ~/.local/share/fonts/
+```
 2.  Append below contents to the end of `~/.bashrc` file.
 ```c
 function _update_ps1() {
@@ -49,6 +60,8 @@ Edit this file as mine below!
     "git",
     "hg",
     "jobs",
+    "battery",
+    "time",
     "root"
   ],
   "cwd": {
@@ -57,12 +70,22 @@ Edit this file as mine below!
   },
   "vcs": {
     "show_symbol": "true"
-  }
+  },
+  "time": {
+    "format": "%H:%M"
+  },
+  "theme": "default"
 }
 
 ```
 
-or my remote config
+or my remote config with custom theme. Themes available are
+- default
+- basic
+- solarized_light
+- solarized_dark
+- washed
+- gruvbox
 
 
 ```c
@@ -90,4 +113,9 @@ or my remote config
   }
 }
 ```
+
+I tried to achieve [Rayan's Terminal](https://github.com/ryanoasis/powerline-extra-symbols)
+like below. But, mission not accomplished still..
+
+![Ryan Terminal Pic - NOT LOADED](images/ryan-preview.png)
 Cheers,
