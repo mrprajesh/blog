@@ -2,7 +2,7 @@
 layout: post
 title: Enable recent gcc version using devtoolset on centOs
 date: 23-12-2020 13:37:55 +05:30
-tags: [jekyll, coding]
+tags: [gcc, g++, sysadmin]
 description:
 summary:
 comments: false
