@@ -2,6 +2,18 @@
   
     {
 
+      "title"    : "Do you want a smart &quot;git log&quot;",
+      "url"      : "/blog/smart-git-log.html",
+      "category" : "",
+      "tags"     : "git, coding",
+      "date"     : "2020-12-23 14:13:35 +0530",
+      "discription" : "",
+      "content" : "<p>Many at time <code class=\"highlighter-rouge\">git log</code> is more difficult to read and scoll. Here is a\nsmart solution for it. Do you want some thing like below?</p>\n\n<p><img src=\"images/rajz-git-log.png\" alt=\"image NOT lOaDeD\" /></p>\n\n<h3 id=\"to-setup\">To setup</h3>\n\n<div class=\"language-c highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"err\">$</span> <span class=\"n\">git</span> <span class=\"n\">config</span> <span class=\"o\">--</span><span class=\"n\">global</span> <span class=\"n\">alias</span><span class=\"p\">.</span><span class=\"n\">lg</span> <span class=\"s\">\"log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset' --abbrev-commit\"</span>\n</code></pre></div></div>\n<p>This is just git pretty format and <code class=\"highlighter-rouge\">lg</code> alias for a bigger <code class=\"highlighter-rouge\">cmd</code>.</p>\n\n<h3 id=\"ref\">Ref</h3>\n\n<p>For more <a href=\"https://coderwall.com/p/euwpig/a-better-git-log\">info</a> here.</p>\n"
+
+    } ,
+  
+    {
+
       "title"    : "Enable recent gcc version using devtoolset on centOs",
       "url"      : "/blog/devtoolset-on-centos.html",
       "category" : "",

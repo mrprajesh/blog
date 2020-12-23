@@ -4,13 +4,35 @@
  <title>Rajesh's Blog</title>
  <link href="https://mrprajesh.co.in/blog/atom.xml" rel="self"/>
  <link href="https://mrprajesh.co.in/blog/"/>
- <updated>2020-12-23T13:50:58+05:30</updated>
+ <updated>2020-12-23T14:31:20+05:30</updated>
  <id>https://mrprajesh.co.in</id>
  <author>
    <name>Rajesh Pandian M</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Do you want a smart &quot;git log&quot;</title>
+   <link href="https://mrprajesh.co.in/blog/smart-git-log.html"/>
+   <updated>2020-12-23T14:13:35+05:30</updated>
+   <id>https://mrprajesh.co.in/smart-git-log</id>
+   <content type="html">&lt;p&gt;Many at time &lt;code class=&quot;highlighter-rouge&quot;&gt;git log&lt;/code&gt; is more difficult to read and scoll. Here is a
+smart solution for it. Do you want some thing like below?&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/rajz-git-log.png&quot; alt=&quot;image NOT lOaDeD&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;to-setup&quot;&gt;To setup&lt;/h3&gt;
+
+&lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;git&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;config&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;global&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;alias&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lg&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&amp;lt;%an&amp;gt;%Creset' --abbrev-commit&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;This is just git pretty format and &lt;code class=&quot;highlighter-rouge&quot;&gt;lg&lt;/code&gt; alias for a bigger &lt;code class=&quot;highlighter-rouge&quot;&gt;cmd&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;ref&quot;&gt;Ref&lt;/h3&gt;
+
+&lt;p&gt;For more &lt;a href=&quot;https://coderwall.com/p/euwpig/a-better-git-log&quot;&gt;info&lt;/a&gt; here.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Enable recent gcc version using devtoolset on centOs</title>

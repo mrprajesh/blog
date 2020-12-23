@@ -17,6 +17,25 @@
 "items": [
     
         {
+            "id": "https://mrprajesh.co.in/blog/smart-git-log.html",
+            "title": "Do you want a smart \"git log\"",
+            "summary": null,
+            "content_text": "Many at time git log is more difficult to read and scoll. Here is asmart solution for it. Do you want some thing like below?To setup$ git config --global alias.lg \"log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset' --abbrev-commit\"This is just git pretty format and lg alias for a bigger cmd.RefFor more info here.",
+            "content_html": "<p>Many at time <code class=\"highlighter-rouge\">git log</code> is more difficult to read and scoll. Here is asmart solution for it. Do you want some thing like below?</p><p><img src=\"images/rajz-git-log.png\" alt=\"image NOT lOaDeD\" /></p><h3 id=\"to-setup\">To setup</h3><div class=\"language-c highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"err\">$</span> <span class=\"n\">git</span> <span class=\"n\">config</span> <span class=\"o\">--</span><span class=\"n\">global</span> <span class=\"n\">alias</span><span class=\"p\">.</span><span class=\"n\">lg</span> <span class=\"s\">\"log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset' --abbrev-commit\"</span></code></pre></div></div><p>This is just git pretty format and <code class=\"highlighter-rouge\">lg</code> alias for a bigger <code class=\"highlighter-rouge\">cmd</code>.</p><h3 id=\"ref\">Ref</h3><p>For more <a href=\"https://coderwall.com/p/euwpig/a-better-git-log\">info</a> here.</p>",
+            "url": "https://mrprajesh.co.in/blog/smart-git-log.html",
+            
+            
+            
+            "tags": ["git","coding"],
+            
+            "date_published": "2020-12-23T14:13:35+05:30",
+            "date_modified": "2020-12-23T14:13:35+05:30",
+            
+                "author": "Rajesh Pandian M"
+            
+        },
+    
+        {
             "id": "https://mrprajesh.co.in/blog/devtoolset-on-centos.html",
             "title": "Enable recent gcc version using devtoolset on centOs",
             "summary": null,
