@@ -20,8 +20,8 @@
             "id": "https://mrprajesh.co.in/blog/smart-git-log.html",
             "title": "Do you want a smart \"git log\"",
             "summary": null,
-            "content_text": "Many at time git log is more difficult to read and scoll. Here is asmart solution for it. Do you want some thing like below?To setup$ git config --global alias.lg \"log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset' --abbrev-commit\"This is just git pretty format and lg alias for a bigger cmd.RefFor more info here.",
-            "content_html": "<p>Many at time <code class=\"highlighter-rouge\">git log</code> is more difficult to read and scoll. Here is asmart solution for it. Do you want some thing like below?</p><p><img src=\"images/rajz-git-log.png\" alt=\"image NOT lOaDeD\" /></p><h3 id=\"to-setup\">To setup</h3><div class=\"language-c highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"err\">$</span> <span class=\"n\">git</span> <span class=\"n\">config</span> <span class=\"o\">--</span><span class=\"n\">global</span> <span class=\"n\">alias</span><span class=\"p\">.</span><span class=\"n\">lg</span> <span class=\"s\">\"log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset' --abbrev-commit\"</span></code></pre></div></div><p>This is just git pretty format and <code class=\"highlighter-rouge\">lg</code> alias for a bigger <code class=\"highlighter-rouge\">cmd</code>.</p><h3 id=\"ref\">Ref</h3><p>For more <a href=\"https://coderwall.com/p/euwpig/a-better-git-log\">info</a> here.</p>",
+            "content_text": "Many at times git log is more difficult to read and scroll. Here is asmart solution for it. Do you want some thing like below?To setup$ git config --global alias.lg \"log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset' --abbrev-commit\"This is just git pretty format and lg alias for a bigger cmd.RefFor more infor see here.",
+            "content_html": "<p>Many at times <code class=\"highlighter-rouge\">git log</code> is more difficult to read and scroll. Here is asmart solution for it. Do you want some thing like below?</p><p><img src=\"images/rajz-git-log.png\" alt=\"image NOT lOaDeD\" /></p><h3 id=\"to-setup\">To setup</h3><div class=\"language-c highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"err\">$</span> <span class=\"n\">git</span> <span class=\"n\">config</span> <span class=\"o\">--</span><span class=\"n\">global</span> <span class=\"n\">alias</span><span class=\"p\">.</span><span class=\"n\">lg</span> <span class=\"s\">\"log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset' --abbrev-commit\"</span></code></pre></div></div><p>This is just git pretty format and <code class=\"highlighter-rouge\">lg</code> alias for a bigger <code class=\"highlighter-rouge\">cmd</code>.</p><h3 id=\"ref\">Ref</h3><p>For more infor <a href=\"https://coderwall.com/p/euwpig/a-better-git-log\">see here.</a></p>",
             "url": "https://mrprajesh.co.in/blog/smart-git-log.html",
             
             
@@ -144,6 +144,25 @@
             
             "date_published": "2020-11-23T09:20:53+05:30",
             "date_modified": "2020-11-23T09:20:53+05:30",
+            
+                "author": "Rajesh Pandian M"
+            
+        },
+    
+        {
+            "id": "https://mrprajesh.co.in/blog/github-renames-master-branch-to-main.html",
+            "title": "Github renames master branch to main",
+            "summary": null,
+            "content_text": "I happen to know this pretty late. Github is set the rename the master branchas main branch. So, why does Github do so?  After the brutal death of George Floyd and the Black Lives Matter protests earlier this year, tech companies wanted to show their support for the black community by abandoning non-inclusive terms such as master, slave, blacklist, and whitelist.That’s good.From 01-Oct-2020, all new repos created will have default branch as main.Github has provided details for older repos to migrate.So, should be fairly easy for old repos. Let’s see.Cheers,ByeRajeshReference  Zedge  Github - Official porting information",
+            "content_html": "<p>I happen to know this pretty late. Github is set the rename the master branchas main branch. So, why does Github do so?</p><blockquote>  <p>After the brutal death of George Floyd and the Black Lives Matter protests earlier this year, tech companies wanted to show their support for the black community by abandoning non-inclusive terms such as master, slave, blacklist, and whitelist.</p></blockquote><p>That’s good.</p><p>From 01-Oct-2020, all new repos created will have default branch as <code class=\"highlighter-rouge\">main</code>.Github has provided <a href=\"https://github.com/github/renaming\">details</a> for older repos to migrate.So, should be fairly easy for old repos. Let’s see.</p><p>Cheers,Bye</p><p>Rajesh</p><h3 id=\"reference\">Reference</h3><ul>  <li><a href=\"https://www.zdnet.com/article/github-to-replace-master-with-main-starting-next-month/\">Zedge</a></li>  <li><a href=\"https://github.com/github/renaming\">Github - Official porting information</a></li></ul>",
+            "url": "https://mrprajesh.co.in/blog/github-renames-master-branch-to-main.html",
+            
+            
+            
+            
+            
+            "date_published": "2020-10-29T00:29:07+05:30",
+            "date_modified": "2020-10-29T00:29:07+05:30",
             
                 "author": "Rajesh Pandian M"
             

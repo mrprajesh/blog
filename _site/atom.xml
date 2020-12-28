@@ -4,7 +4,7 @@
  <title>Rajesh's Blog</title>
  <link href="https://mrprajesh.co.in/blog/atom.xml" rel="self"/>
  <link href="https://mrprajesh.co.in/blog/"/>
- <updated>2020-12-23T14:31:20+05:30</updated>
+ <updated>2020-12-29T00:43:33+05:30</updated>
  <id>https://mrprajesh.co.in</id>
  <author>
    <name>Rajesh Pandian M</name>
@@ -17,7 +17,7 @@
    <link href="https://mrprajesh.co.in/blog/smart-git-log.html"/>
    <updated>2020-12-23T14:13:35+05:30</updated>
    <id>https://mrprajesh.co.in/smart-git-log</id>
-   <content type="html">&lt;p&gt;Many at time &lt;code class=&quot;highlighter-rouge&quot;&gt;git log&lt;/code&gt; is more difficult to read and scoll. Here is a
+   <content type="html">&lt;p&gt;Many at times &lt;code class=&quot;highlighter-rouge&quot;&gt;git log&lt;/code&gt; is more difficult to read and scroll. Here is a
 smart solution for it. Do you want some thing like below?&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;images/rajz-git-log.png&quot; alt=&quot;image NOT lOaDeD&quot; /&gt;&lt;/p&gt;
@@ -30,7 +30,7 @@ smart solution for it. Do you want some thing like below?&lt;/p&gt;
 
 &lt;h3 id=&quot;ref&quot;&gt;Ref&lt;/h3&gt;
 
-&lt;p&gt;For more &lt;a href=&quot;https://coderwall.com/p/euwpig/a-better-git-log&quot;&gt;info&lt;/a&gt; here.&lt;/p&gt;
+&lt;p&gt;For more infor &lt;a href=&quot;https://coderwall.com/p/euwpig/a-better-git-log&quot;&gt;see here.&lt;/a&gt;&lt;/p&gt;
 </content>
  </entry>
  
@@ -308,6 +308,37 @@ Of course, new role father is added to it.&lt;/p&gt;
 &lt;p&gt;Cheers,&lt;/p&gt;
 
 &lt;p&gt;Rajz&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Github renames master branch to main</title>
+   <link href="https://mrprajesh.co.in/blog/github-renames-master-branch-to-main.html"/>
+   <updated>2020-10-29T00:29:07+05:30</updated>
+   <id>https://mrprajesh.co.in/github-renames-master-branch-to-main</id>
+   <content type="html">&lt;p&gt;I happen to know this pretty late. Github is set the rename the master branch
+as main branch. So, why does Github do so?&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;After the brutal death of George Floyd and the Black Lives Matter protests earlier this year, tech companies wanted to show their support for the black community by abandoning non-inclusive terms such as master, slave, blacklist, and whitelist.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;That’s good.&lt;/p&gt;
+
+&lt;p&gt;From 01-Oct-2020, all new repos created will have default branch as &lt;code class=&quot;highlighter-rouge&quot;&gt;main&lt;/code&gt;.
+Github has provided &lt;a href=&quot;https://github.com/github/renaming&quot;&gt;details&lt;/a&gt; for older repos to migrate.
+So, should be fairly easy for old repos. Let’s see.&lt;/p&gt;
+
+&lt;p&gt;Cheers,
+Bye&lt;/p&gt;
+
+&lt;p&gt;Rajesh&lt;/p&gt;
+
+&lt;h3 id=&quot;reference&quot;&gt;Reference&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.zdnet.com/article/github-to-replace-master-with-main-starting-next-month/&quot;&gt;Zedge&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/github/renaming&quot;&gt;Github - Official porting information&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </content>
  </entry>
  

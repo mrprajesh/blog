@@ -11,7 +11,7 @@ mathjax: false
 render_with_liquid: true
 ---
 
-Many at time `git log` is more difficult to read and scoll. Here is a
+Many at times `git log` is more difficult to read and scroll. Here is a
 smart solution for it. Do you want some thing like below?
 
 ![image NOT lOaDeD](images/rajz-git-log.png)
@@ -26,4 +26,4 @@ This is just git pretty format and `lg` alias for a bigger `cmd`.
 
 ### Ref
 
-For more [info](https://coderwall.com/p/euwpig/a-better-git-log) here.
+For more infor [see here.](https://coderwall.com/p/euwpig/a-better-git-log)
