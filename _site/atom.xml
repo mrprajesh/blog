@@ -4,13 +4,63 @@
  <title>Rajesh's Blog</title>
  <link href="https://mrprajesh.co.in/blog/atom.xml" rel="self"/>
  <link href="https://mrprajesh.co.in/blog/"/>
- <updated>2020-12-29T00:43:33+05:30</updated>
+ <updated>2021-01-06T18:48:11+05:30</updated>
  <id>https://mrprajesh.co.in</id>
  <author>
    <name>Rajesh Pandian M</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Use standard date and time format</title>
+   <link href="https://mrprajesh.co.in/blog/use-date-and-time-format.html"/>
+   <updated>2021-01-06T17:59:37+05:30</updated>
+   <id>https://mrprajesh.co.in/Use-date-and-time-format</id>
+   <content type="html">&lt;h4 id=&quot;date&quot;&gt;Date&lt;/h4&gt;
+&lt;p&gt;My brother’s birth day is &lt;code class=&quot;highlighter-rouge&quot;&gt;11-04-1994&lt;/code&gt;. It is natural to
+get confused as &lt;code class=&quot;highlighter-rouge&quot;&gt;04-Nov&lt;/code&gt; if are an US/Europen citizen. :open_mouth: His birthday is  on &lt;code class=&quot;highlighter-rouge&quot;&gt;11-April&lt;/code&gt;. :yum: So, it is always better write (or store in system)
+date &lt;strong&gt;unambiguously&lt;/strong&gt; despite your locality. :thinking:&lt;/p&gt;
+
+&lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;DD&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Mon&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;YYYY&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;is my favourite for several reasons because it uses constant &lt;code class=&quot;highlighter-rouge&quot;&gt;11&lt;/code&gt; chars. Prefer to prefix &lt;code class=&quot;highlighter-rouge&quot;&gt;0&lt;/code&gt; if DD is single digit. You can do that to your pen signature as well. It is tamper proof. So,
+the right way is &lt;code class=&quot;highlighter-rouge&quot;&gt;11-Apr-1994&lt;/code&gt; :sunglasses:&lt;/p&gt;
+
+&lt;h4 id=&quot;time&quot;&gt;Time&lt;/h4&gt;
+
+&lt;p&gt;Similar thing goes for time as well. I am in India and we follow IST. There might be others who are reading it from a different time zone.
+You might have responded to email the next minute. But
+based on how email clients are configure might show a different time of you reply/received time. It compounds with AM+PM thing.
+So, let’s follow a 24 hours standard time along with mentioning your shift or your time zone. e.g &lt;code class=&quot;highlighter-rouge&quot;&gt;GMT+0530&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;IST&lt;/code&gt;. That way it is unambiguous.&lt;/p&gt;
+
+&lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nl&quot;&gt;HH:MM:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SS&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GMT&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+/-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hhss&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;If you are on linux,&lt;/p&gt;
+
+&lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;date&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;%d-%b-%Y %T (GMT%z)&quot;&lt;/span&gt;
+&lt;span class=&quot;mo&quot;&gt;06&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Jan&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2021&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;18&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;31&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;38&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GMT&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mo&quot;&gt;0530&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;date&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;%d-%b-%Y %T (%Z)&quot;&lt;/span&gt;
+&lt;span class=&quot;mo&quot;&gt;06&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Jan&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2021&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;18&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;32&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mo&quot;&gt;02&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;IST&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Again this uses constant chars irrespective of date and time 24/7 (for another ~8000 years :sweat_smile:). By the way GMT and UTC mean the same.&lt;/p&gt;
+
+&lt;h4 id=&quot;currency&quot;&gt;Currency&lt;/h4&gt;
+
+&lt;p&gt;Similarly, for currency: $  and Rs.  Better to use USD or INR instead.&lt;/p&gt;
+
+&lt;p&gt;Let’s me stop here for now.&lt;/p&gt;
+
+&lt;p&gt;:mask: Up and stay safe.&lt;/p&gt;
+
+&lt;p&gt;Cheers,&lt;/p&gt;
+
+&lt;p&gt;Rajz&lt;/p&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>Do you want a smart &quot;git log&quot;</title>

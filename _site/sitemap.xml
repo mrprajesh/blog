@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>https://mrprajesh.co.in/blog/use-date-and-time-format.html</loc>
+<lastmod>2021-01-06T17:59:37+05:30</lastmod>
+</url>
+<url>
 <loc>https://mrprajesh.co.in/blog/smart-git-log.html</loc>
 <lastmod>2020-12-23T14:13:35+05:30</lastmod>
 </url>
@@ -247,6 +251,12 @@
 </url>
 <url>
 <loc>https://mrprajesh.co.in/blog/tag/git/</loc>
+</url>
+<url>
+<loc>https://mrprajesh.co.in/blog/tag/date/</loc>
+</url>
+<url>
+<loc>https://mrprajesh.co.in/blog/tag/time/</loc>
 </url>
 <url>
 <loc>https://mrprajesh.co.in/blog/about.html</loc>

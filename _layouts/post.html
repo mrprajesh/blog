@@ -19,7 +19,7 @@ layout: default
     &middot;
     <a href="/" > {{ page.author }}</a>
     &middot;
-    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d-%B-%Y %T" }}</time>
+    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d-%b-%Y %T %Z (UTC%z)" }}</time>
     ★
     {% for tag in page.tags %}
       <a href="{{ site.baseurl }}/tag/{{tag}}"> {{tag}} </a>
