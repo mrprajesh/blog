@@ -2,6 +2,18 @@
   
     {
 
+      "title"    : "Checker for DIMACS",
+      "url"      : "/blog/checker-for-dimacs.html",
+      "category" : "",
+      "tags"     : "coding",
+      "date"     : "2021-01-07 18:36:07 +0530",
+      "discription" : "",
+      "content" : "<p>Created a checker for DIMACS\n<a href=\"https://mrprajesh.co.in/blog/cvrp.html\">is here</a> or\n<a href=\"https://mrprajesh.co.in/cvrp.html\">here</a>.</p>\n"
+
+    } ,
+  
+    {
+
       "title"    : "Use standard date and time format",
       "url"      : "/blog/use-date-and-time-format.html",
       "category" : "",

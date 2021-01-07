@@ -4,13 +4,24 @@
  <title>Rajesh's Blog</title>
  <link href="https://mrprajesh.co.in/blog/atom.xml" rel="self"/>
  <link href="https://mrprajesh.co.in/blog/"/>
- <updated>2021-01-06T18:48:11+05:30</updated>
+ <updated>2021-01-07T18:39:09+05:30</updated>
  <id>https://mrprajesh.co.in</id>
  <author>
    <name>Rajesh Pandian M</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Checker for DIMACS</title>
+   <link href="https://mrprajesh.co.in/blog/checker-for-dimacs.html"/>
+   <updated>2021-01-07T18:36:07+05:30</updated>
+   <id>https://mrprajesh.co.in/checker-for-dimacs</id>
+   <content type="html">&lt;p&gt;Created a checker for DIMACS
+&lt;a href=&quot;https://mrprajesh.co.in/blog/cvrp.html&quot;&gt;is here&lt;/a&gt; or
+&lt;a href=&quot;https://mrprajesh.co.in/cvrp.html&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Use standard date and time format</title>
