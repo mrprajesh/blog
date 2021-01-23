@@ -4,13 +4,36 @@
  <title>Rajesh's Blog</title>
  <link href="https://mrprajesh.co.in/blog/atom.xml" rel="self"/>
  <link href="https://mrprajesh.co.in/blog/"/>
- <updated>2021-01-07T18:39:09+05:30</updated>
+ <updated>2021-01-23T17:58:34+05:30</updated>
  <id>https://mrprajesh.co.in</id>
  <author>
    <name>Rajesh Pandian M</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>My encounters with nvprof metrics</title>
+   <link href="https://mrprajesh.co.in/blog/my-encounters-with-nvprof.html"/>
+   <updated>2021-01-12T01:58:18+05:30</updated>
+   <id>https://mrprajesh.co.in/my-encounters-with-nvprof</id>
+   <content type="html">&lt;p&gt;My objective is plain and simple. I wanted &lt;code class=&quot;highlighter-rouge&quot;&gt;nvprof&lt;/code&gt; to output
+the metrics as I had mentioned in &lt;a href=&quot;https://gist.github.com/mrprajesh/352cbe661ee27a6b4627ae72d89479e6&quot;&gt;my gist&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;We have two GPU P100 and GTX2080 which has 3 versions of CUDA installed: 8.0, 9.1 and 10.2 with driver 440.31.
+We got some weird error which even google had no answers.&lt;/p&gt;
+
+&lt;p&gt;// TODO&lt;/p&gt;
+
+&lt;h2 id=&quot;how-did-we-fix-it&quot;&gt;How did we fix it&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Installed Driver 440.33.01&lt;/li&gt;
+  &lt;li&gt;sudo with nvprof&lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>Checker for DIMACS</title>

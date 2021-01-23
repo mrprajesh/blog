@@ -2,6 +2,18 @@
   
     {
 
+      "title"    : "My encounters with nvprof metrics",
+      "url"      : "/blog/my-encounters-with-nvprof.html",
+      "category" : "",
+      "tags"     : "nvidia, cuda, nvprof",
+      "date"     : "2021-01-12 01:58:18 +0530",
+      "discription" : "",
+      "content" : "<p>My objective is plain and simple. I wanted <code class=\"highlighter-rouge\">nvprof</code> to output\nthe metrics as I had mentioned in <a href=\"https://gist.github.com/mrprajesh/352cbe661ee27a6b4627ae72d89479e6\">my gist</a></p>\n\n<p>We have two GPU P100 and GTX2080 which has 3 versions of CUDA installed: 8.0, 9.1 and 10.2 with driver 440.31.\nWe got some weird error which even google had no answers.</p>\n\n<p>// TODO</p>\n\n<h2 id=\"how-did-we-fix-it\">How did we fix it</h2>\n\n<ul>\n  <li>Installed Driver 440.33.01</li>\n  <li>sudo with nvprof</li>\n</ul>\n\n"
+
+    } ,
+  
+    {
+
       "title"    : "Checker for DIMACS",
       "url"      : "/blog/checker-for-dimacs.html",
       "category" : "",

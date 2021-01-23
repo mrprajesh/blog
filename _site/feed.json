@@ -17,6 +17,25 @@
 "items": [
     
         {
+            "id": "https://mrprajesh.co.in/blog/my-encounters-with-nvprof.html",
+            "title": "My encounters with nvprof metrics",
+            "summary": null,
+            "content_text": "My objective is plain and simple. I wanted nvprof to outputthe metrics as I had mentioned in my gistWe have two GPU P100 and GTX2080 which has 3 versions of CUDA installed: 8.0, 9.1 and 10.2 with driver 440.31.We got some weird error which even google had no answers.// TODOHow did we fix it  Installed Driver 440.33.01  sudo with nvprof",
+            "content_html": "<p>My objective is plain and simple. I wanted <code class=\"highlighter-rouge\">nvprof</code> to outputthe metrics as I had mentioned in <a href=\"https://gist.github.com/mrprajesh/352cbe661ee27a6b4627ae72d89479e6\">my gist</a></p><p>We have two GPU P100 and GTX2080 which has 3 versions of CUDA installed: 8.0, 9.1 and 10.2 with driver 440.31.We got some weird error which even google had no answers.</p><p>// TODO</p><h2 id=\"how-did-we-fix-it\">How did we fix it</h2><ul>  <li>Installed Driver 440.33.01</li>  <li>sudo with nvprof</li></ul>",
+            "url": "https://mrprajesh.co.in/blog/my-encounters-with-nvprof.html",
+            
+            
+            
+            "tags": ["nvidia","cuda","nvprof"],
+            
+            "date_published": "2021-01-12T01:58:18+05:30",
+            "date_modified": "2021-01-12T01:58:18+05:30",
+            
+                "author": "Rajesh Pandian M"
+            
+        },
+    
+        {
             "id": "https://mrprajesh.co.in/blog/checker-for-dimacs.html",
             "title": "Checker for DIMACS",
             "summary": null,
@@ -676,25 +695,6 @@
             
             "date_published": "2020-03-11T10:53:15+05:30",
             "date_modified": "2020-03-11T10:53:15+05:30",
-            
-                "author": "Rajesh Pandian M"
-            
-        },
-    
-        {
-            "id": "https://mrprajesh.co.in/blog/check-code-blocks.html",
-            "title": "Ready, get-set, and go!",
-            "summary": null,
-            "content_text": "This is to check if the syntax highlighting is working fine.  #include &lt;iostream&gt;  int main(int argc, char* argv[]){    std::cout &lt;&lt; \"Hello There!\"&lt;&lt; std::endl;    return EXIT_SUCCESS;  }",
-            "content_html": "<p>This is to check if the syntax highlighting is working fine.</p><figure class=\"highlight\"><pre><code class=\"language-cpp\" data-lang=\"cpp\">  <span class=\"cp\">#include &lt;iostream&gt;</span>  <span class=\"kt\">int</span> <span class=\"nf\">main</span><span class=\"p\">(</span><span class=\"kt\">int</span> <span class=\"n\">argc</span><span class=\"p\">,</span> <span class=\"kt\">char</span><span class=\"o\">*</span> <span class=\"n\">argv</span><span class=\"p\">[]){</span>    <span class=\"n\">std</span><span class=\"o\">::</span><span class=\"n\">cout</span> <span class=\"o\">&lt;&lt;</span> <span class=\"s\">\"Hello There!\"</span><span class=\"o\">&lt;&lt;</span> <span class=\"n\">std</span><span class=\"o\">::</span><span class=\"n\">endl</span><span class=\"p\">;</span>    <span class=\"k\">return</span> <span class=\"n\">EXIT_SUCCESS</span><span class=\"p\">;</span>  <span class=\"p\">}</span></code></pre></figure>",
-            "url": "https://mrprajesh.co.in/blog/check-code-blocks.html",
-            
-            
-            
-            "tags": ["cpp","coding"],
-            
-            "date_published": "2020-03-09T18:58:11+05:30",
-            "date_modified": "2020-03-09T18:58:11+05:30",
             
                 "author": "Rajesh Pandian M"
             
