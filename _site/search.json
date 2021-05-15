@@ -2,13 +2,25 @@
   
     {
 
+      "title"    : "bool in C language",
+      "url"      : "/blog/bool-in-c-language.html",
+      "category" : "",
+      "tags"     : "jekyll, coding",
+      "date"     : "2021-05-16 00:01:01 +0530",
+      "discription" : "",
+      "content" : "<p>For long time I was under an impression that <code class=\"highlighter-rouge\">bool</code> data type is present\nonly in C++ and not in C language. I just got to know that it is there\nin C however it is not enabled default. So, we have to include it. It is\nvery surprising that it is present there from C99 standard.</p>\n\n<div class=\"language-c highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"cp\">#include &lt;stdio.h&gt;\n#include &lt;stdbool.h&gt;\n</span><span class=\"kt\">int</span> <span class=\"nf\">main</span><span class=\"p\">(){</span>\n  <span class=\"n\">bool</span> <span class=\"n\">a</span> <span class=\"o\">=</span> <span class=\"nb\">true</span><span class=\"p\">;</span>\n  <span class=\"n\">printf</span><span class=\"p\">(</span><span class=\"s\">\"what's a? %d\"</span><span class=\"p\">,</span> <span class=\"n\">a</span><span class=\"p\">);</span>\n  <span class=\"k\">return</span> <span class=\"mi\">0</span><span class=\"p\">;</span>\n<span class=\"p\">}</span>\n\n</code></pre></div></div>\n<h3 id=\"note\">Note</h3>\n\n<ul>\n  <li>Uninitialized bool defaults to <code class=\"highlighter-rouge\">false</code>.</li>\n  <li>There is <strong>no</strong> format specifier in printf to specify bool type.</li>\n</ul>\n\n<h3 id=\"references\">References</h3>\n\n<ul>\n  <li><a href=\"https://en.wikibooks.org/wiki/C_Programming/stdbool.h\">Wikibooks</a></li>\n  <li><a href=\"https://stackoverflow.com/a/17307307/2712045\">SO</a></li>\n</ul>\n\n"
+
+    } ,
+  
+    {
+
       "title"    : "My encounters with nvprof metrics",
       "url"      : "/blog/my-encounters-with-nvprof.html",
       "category" : "",
       "tags"     : "nvidia, cuda, nvprof",
       "date"     : "2021-01-12 01:58:18 +0530",
       "discription" : "",
-      "content" : "<p>My objective is plain and simple. I wanted <code class=\"highlighter-rouge\">nvprof</code> to output\nthe metrics as I had mentioned in <a href=\"https://gist.github.com/mrprajesh/352cbe661ee27a6b4627ae72d89479e6\">my gist</a></p>\n\n<p>We have two GPU P100 and GTX2080 which has 3 versions of CUDA installed: 8.0, 9.1 and 10.2 with driver 440.31.\nWe got some weird error which even google had no answers.</p>\n\n<p>// TODO</p>\n\n<h2 id=\"how-did-we-fix-it\">How did we fix it</h2>\n\n<ul>\n  <li>Installed Driver 440.33.01</li>\n  <li>sudo with nvprof</li>\n</ul>\n\n"
+      "content" : "<p>My objective is plain and simple. I wanted <code class=\"highlighter-rouge\">nvprof</code> to output\nthe metrics as I had mentioned in <a href=\"https://gist.github.com/mrprajesh/352cbe661ee27a6b4627ae72d89479e6\">my gist</a></p>\n\n<p>We have two GPU P100 and GTX2080 which has 3 versions of CUDA installed: 8.0, 9.1 and 10.2 with driver 440.31.\nWe got some weird errors which even google had no answers.</p>\n\n<p>// TODO</p>\n\n<h2 id=\"how-did-we-fix-it\">How did we fix it</h2>\n\n<ul>\n  <li>Installed Driver 440.33.01</li>\n  <li>sudo with nvprof</li>\n</ul>\n\n<h3 id=\"ref\">Ref</h3>\n<p>-</p>\n"
 
     } ,
   

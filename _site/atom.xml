@@ -4,13 +4,49 @@
  <title>Rajesh's Blog</title>
  <link href="https://mrprajesh.co.in/blog/atom.xml" rel="self"/>
  <link href="https://mrprajesh.co.in/blog/"/>
- <updated>2021-01-23T17:58:34+05:30</updated>
+ <updated>2021-05-16T00:17:43+05:30</updated>
  <id>https://mrprajesh.co.in</id>
  <author>
    <name>Rajesh Pandian M</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>bool in C language</title>
+   <link href="https://mrprajesh.co.in/blog/bool-in-c-language.html"/>
+   <updated>2021-05-16T00:01:01+05:30</updated>
+   <id>https://mrprajesh.co.in/bool-in-c-language</id>
+   <content type="html">&lt;p&gt;For long time I was under an impression that &lt;code class=&quot;highlighter-rouge&quot;&gt;bool&lt;/code&gt; data type is present
+only in C++ and not in C language. I just got to know that it is there
+in C however it is not enabled default. So, we have to include it. It is
+very surprising that it is present there from C99 standard.&lt;/p&gt;
+
+&lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;stdio.h&amp;gt;
+#include &amp;lt;stdbool.h&amp;gt;
+&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;bool&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;what's a? %d&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&quot;note&quot;&gt;Note&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Uninitialized bool defaults to &lt;code class=&quot;highlighter-rouge&quot;&gt;false&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;There is &lt;strong&gt;no&lt;/strong&gt; format specifier in printf to specify bool type.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;references&quot;&gt;References&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikibooks.org/wiki/C_Programming/stdbool.h&quot;&gt;Wikibooks&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/a/17307307/2712045&quot;&gt;SO&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>My encounters with nvprof metrics</title>
@@ -21,7 +57,7 @@
 the metrics as I had mentioned in &lt;a href=&quot;https://gist.github.com/mrprajesh/352cbe661ee27a6b4627ae72d89479e6&quot;&gt;my gist&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;We have two GPU P100 and GTX2080 which has 3 versions of CUDA installed: 8.0, 9.1 and 10.2 with driver 440.31.
-We got some weird error which even google had no answers.&lt;/p&gt;
+We got some weird errors which even google had no answers.&lt;/p&gt;
 
 &lt;p&gt;// TODO&lt;/p&gt;
 
@@ -32,6 +68,8 @@ We got some weird error which even google had no answers.&lt;/p&gt;
   &lt;li&gt;sudo with nvprof&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;h3 id=&quot;ref&quot;&gt;Ref&lt;/h3&gt;
+&lt;p&gt;-&lt;/p&gt;
 </content>
  </entry>
  

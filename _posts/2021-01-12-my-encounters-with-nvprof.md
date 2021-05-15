@@ -15,7 +15,7 @@ My objective is plain and simple. I wanted `nvprof` to output
 the metrics as I had mentioned in [my gist](https://gist.github.com/mrprajesh/352cbe661ee27a6b4627ae72d89479e6)
 
 We have two GPU P100 and GTX2080 which has 3 versions of CUDA installed: 8.0, 9.1 and 10.2 with driver 440.31.
-We got some weird error which even google had no answers.
+We got some weird errors which even google had no answers.
 
 
 // TODO
@@ -27,4 +27,5 @@ We got some weird error which even google had no answers.
 - Installed Driver 440.33.01
 - sudo with nvprof
 
-
+### Ref
+  -

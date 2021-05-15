@@ -17,11 +17,30 @@
 "items": [
     
         {
+            "id": "https://mrprajesh.co.in/blog/bool-in-c-language.html",
+            "title": "bool in C language",
+            "summary": null,
+            "content_text": "For long time I was under an impression that bool data type is presentonly in C++ and not in C language. I just got to know that it is therein C however it is not enabled default. So, we have to include it. It isvery surprising that it is present there from C99 standard.#include &lt;stdio.h&gt;#include &lt;stdbool.h&gt;int main(){  bool a = true;  printf(\"what's a? %d\", a);  return 0;}Note  Uninitialized bool defaults to false.  There is no format specifier in printf to specify bool type.References  Wikibooks  SO",
+            "content_html": "<p>For long time I was under an impression that <code class=\"highlighter-rouge\">bool</code> data type is presentonly in C++ and not in C language. I just got to know that it is therein C however it is not enabled default. So, we have to include it. It isvery surprising that it is present there from C99 standard.</p><div class=\"language-c highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"cp\">#include &lt;stdio.h&gt;#include &lt;stdbool.h&gt;</span><span class=\"kt\">int</span> <span class=\"nf\">main</span><span class=\"p\">(){</span>  <span class=\"n\">bool</span> <span class=\"n\">a</span> <span class=\"o\">=</span> <span class=\"nb\">true</span><span class=\"p\">;</span>  <span class=\"n\">printf</span><span class=\"p\">(</span><span class=\"s\">\"what's a? %d\"</span><span class=\"p\">,</span> <span class=\"n\">a</span><span class=\"p\">);</span>  <span class=\"k\">return</span> <span class=\"mi\">0</span><span class=\"p\">;</span><span class=\"p\">}</span></code></pre></div></div><h3 id=\"note\">Note</h3><ul>  <li>Uninitialized bool defaults to <code class=\"highlighter-rouge\">false</code>.</li>  <li>There is <strong>no</strong> format specifier in printf to specify bool type.</li></ul><h3 id=\"references\">References</h3><ul>  <li><a href=\"https://en.wikibooks.org/wiki/C_Programming/stdbool.h\">Wikibooks</a></li>  <li><a href=\"https://stackoverflow.com/a/17307307/2712045\">SO</a></li></ul>",
+            "url": "https://mrprajesh.co.in/blog/bool-in-c-language.html",
+            
+            
+            
+            "tags": ["jekyll","coding"],
+            
+            "date_published": "2021-05-16T00:01:01+05:30",
+            "date_modified": "2021-05-16T00:01:01+05:30",
+            
+                "author": "Rajesh Pandian M"
+            
+        },
+    
+        {
             "id": "https://mrprajesh.co.in/blog/my-encounters-with-nvprof.html",
             "title": "My encounters with nvprof metrics",
             "summary": null,
-            "content_text": "My objective is plain and simple. I wanted nvprof to outputthe metrics as I had mentioned in my gistWe have two GPU P100 and GTX2080 which has 3 versions of CUDA installed: 8.0, 9.1 and 10.2 with driver 440.31.We got some weird error which even google had no answers.// TODOHow did we fix it  Installed Driver 440.33.01  sudo with nvprof",
-            "content_html": "<p>My objective is plain and simple. I wanted <code class=\"highlighter-rouge\">nvprof</code> to outputthe metrics as I had mentioned in <a href=\"https://gist.github.com/mrprajesh/352cbe661ee27a6b4627ae72d89479e6\">my gist</a></p><p>We have two GPU P100 and GTX2080 which has 3 versions of CUDA installed: 8.0, 9.1 and 10.2 with driver 440.31.We got some weird error which even google had no answers.</p><p>// TODO</p><h2 id=\"how-did-we-fix-it\">How did we fix it</h2><ul>  <li>Installed Driver 440.33.01</li>  <li>sudo with nvprof</li></ul>",
+            "content_text": "My objective is plain and simple. I wanted nvprof to outputthe metrics as I had mentioned in my gistWe have two GPU P100 and GTX2080 which has 3 versions of CUDA installed: 8.0, 9.1 and 10.2 with driver 440.31.We got some weird errors which even google had no answers.// TODOHow did we fix it  Installed Driver 440.33.01  sudo with nvprofRef-",
+            "content_html": "<p>My objective is plain and simple. I wanted <code class=\"highlighter-rouge\">nvprof</code> to outputthe metrics as I had mentioned in <a href=\"https://gist.github.com/mrprajesh/352cbe661ee27a6b4627ae72d89479e6\">my gist</a></p><p>We have two GPU P100 and GTX2080 which has 3 versions of CUDA installed: 8.0, 9.1 and 10.2 with driver 440.31.We got some weird errors which even google had no answers.</p><p>// TODO</p><h2 id=\"how-did-we-fix-it\">How did we fix it</h2><ul>  <li>Installed Driver 440.33.01</li>  <li>sudo with nvprof</li></ul><h3 id=\"ref\">Ref</h3><p>-</p>",
             "url": "https://mrprajesh.co.in/blog/my-encounters-with-nvprof.html",
             
             
@@ -676,25 +695,6 @@
             
             "date_published": "2020-03-11T19:17:59+05:30",
             "date_modified": "2020-03-11T19:17:59+05:30",
-            
-                "author": "Rajesh Pandian M"
-            
-        },
-    
-        {
-            "id": "https://mrprajesh.co.in/blog/overseas-pronounciation.html",
-            "title": "Same spelling but different pronunciation.",
-            "summary": null,
-            "content_text": "So, we know homonyms. Same pronunciation but different spelling/meaning.  e.g. right and writeBut, this word overseas has same spelling but different meaning/pronunciation.  adverb: overseas; /əʊvəˈsiːz/      in or to a foreign country, especially one across the sea.“he spent quite a lot of time working overseas”    adjective: overseas;  /ˈəʊvəsiːz/      from, to, or relating to a foreign country, especially one across the sea.“overseas trips”  Is this also homonyms? Time to see its definition.It seems like. Are there more?",
-            "content_html": "<p>So, we know homonyms. Same pronunciation but different spelling/meaning.</p><blockquote>  <p>e.g. right and write</p></blockquote><p>But, this word <strong>overseas</strong> has same spelling but different meaning/pronunciation.</p><blockquote>  <p>adverb: overseas; /əʊvəˈsiːz/</p>  <blockquote>    <p>in or to a foreign country, especially one across the sea.“he spent quite a lot of time working overseas”</p>  </blockquote></blockquote><blockquote>  <p>adjective: overseas;  /ˈəʊvəsiːz/</p>  <blockquote>    <p>from, to, or relating to a foreign country, especially one across the sea.“overseas trips”</p>  </blockquote></blockquote><p>Is this also homonyms? Time to see its <a href=\"https://www.google.com/search?q=Homonyms\">definition</a>.It seems like. Are there more?</p>",
-            "url": "https://mrprajesh.co.in/blog/overseas-pronounciation.html",
-            
-            
-            
-            
-            
-            "date_published": "2020-03-11T10:53:15+05:30",
-            "date_modified": "2020-03-11T10:53:15+05:30",
             
                 "author": "Rajesh Pandian M"
             
