@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>https://mrprajesh.co.in/blog/install-gunrock-on-centos.html</loc>
+<lastmod>2021-07-03T19:44:23+05:30</lastmod>
+</url>
+<url>
 <loc>https://mrprajesh.co.in/blog/thinks-to-note-c-language.html</loc>
 <lastmod>2021-06-19T17:08:54+05:30</lastmod>
 </url>
@@ -288,6 +292,12 @@
 </url>
 <url>
 <loc>https://mrprajesh.co.in/blog/tag/ta/</loc>
+</url>
+<url>
+<loc>https://mrprajesh.co.in/blog/tag/gunrock/</loc>
+</url>
+<url>
+<loc>https://mrprajesh.co.in/blog/tag/install/</loc>
 </url>
 <url>
 <loc>https://mrprajesh.co.in/blog/about.html</loc>
