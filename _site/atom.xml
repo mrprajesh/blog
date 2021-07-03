@@ -4,7 +4,7 @@
  <title>Rajesh's Blog</title>
  <link href="https://mrprajesh.co.in/blog/atom.xml" rel="self"/>
  <link href="https://mrprajesh.co.in/blog/"/>
- <updated>2021-07-03T20:04:14+05:30</updated>
+ <updated>2021-07-03T21:32:33+05:30</updated>
  <id>https://mrprajesh.co.in</id>
  <author>
    <name>Rajesh Pandian M</name>
@@ -18,7 +18,8 @@
    <updated>2021-07-03T19:44:23+05:30</updated>
    <id>https://mrprajesh.co.in/install-gunrock-on-centos</id>
    <content type="html">&lt;p&gt;This post is in continuation of with my earlier  &lt;a href=&quot;https://mrprajesh.blogspot.com/2019/12/building-gunrock-on-redhatcentos.html&quot;&gt;blog post&lt;/a&gt;.
-The recent version (v1.2) of gunrock requires &lt;code class=&quot;highlighter-rouge&quot;&gt;std=c++14&lt;/code&gt; for building. We have modified some of the steps there. Let’s build &lt;code class=&quot;highlighter-rouge&quot;&gt;SSSP&lt;/code&gt;.&lt;/p&gt;
+The recent version (v1.2) of gunrock requires &lt;code class=&quot;highlighter-rouge&quot;&gt;std=c++14&lt;/code&gt; for building. We have modified some of the steps there. Let’s build &lt;code class=&quot;highlighter-rouge&quot;&gt;SSSP&lt;/code&gt;.
+Do check out the &lt;a href=&quot;#short-5-min-video&quot;&gt;5 minute-video&lt;/a&gt; at the end.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Step 1: Setting up env&lt;/strong&gt;&lt;/p&gt;
 &lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;scl&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;enable&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;devtoolset&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bash&lt;/span&gt;
@@ -56,8 +57,9 @@ The recent version (v1.2) of gunrock requires &lt;code class=&quot;highlighter-r
 &lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sssp&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;market&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dataset&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;small&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;test_mst&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mtx&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;strong&gt;A short 5 Min video&lt;/strong&gt;
-&lt;script id=&quot;asciicast-423671&quot; src=&quot;https://asciinema.org/a/423671.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;h3 id=&quot;short-5-min-video&quot;&gt;Short 5 Min video&lt;/h3&gt;
+&lt;script id=&quot;asciicast-423671&quot; src=&quot;https://asciinema.org/a/423671.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;
+
 </content>
  </entry>
  

@@ -13,6 +13,7 @@ render_with_liquid: true
 
 This post is in continuation of with my earlier  [blog post](https://mrprajesh.blogspot.com/2019/12/building-gunrock-on-redhatcentos.html).
 The recent version (v1.2) of gunrock requires `std=c++14` for building. We have modified some of the steps there. Let's build `SSSP`.
+Do check out the [5 minute-video](#short-5-min-video) at the end.
 
 **Step 1: Setting up env**
 ```c
@@ -55,5 +56,5 @@ make -j8 #edit to suit your config
 ./bin/sssp market ../dataset/small/test_mst.mtx
 ```
 
-**A short 5 Min video**
+### Short 5 Min video
 <script id="asciicast-423671" src="https://asciinema.org/a/423671.js" async></script>
