@@ -17,6 +17,25 @@
 "items": [
     
         {
+            "id": "https://mrprajesh.co.in/blog/thinks-to-note-c-language.html",
+            "title": "Thinks To Note in C Language",
+            "summary": null,
+            "content_text": "Back in those days as I started as a teaching assistant (TA) Ilearn things which I never knew before. I am going add few things that Ihave learnt in TAing CS1111 this semester Apr-Jun 2021.  \" %c\" the space before the %c matters! it prevents storing white space char.          Otherwise it might consume the white space chars (such as ' ', '\\t','\\n') of the previous inputeg scanf(\"%d%c\", num, ch) taking input “11 a” implies num=11 and ch=' ' i.e a space in ch instead of intended a        n=2i assignment is valid in C because the newer compilers have a complex constants as well.    #include &lt;stdio.h&gt;int main(){int j=0;int k=3i;printf(\"i=%d k=%d\",j,k);for(j=0; j&lt;k; ++k)  printf(\"j=%d\\n\",j);return 0;}              So, this will not result in a compiler error as i undefined.        clang and gcc may produce different output on using of uninitialized variables. One defaults to zero and other uses garbage value.  We used Replit.com to running our labs. It can very much simulate a TA monitoring the students while coding. More about replt later.  Never assign 0 to char in the char array and print it. It will either not print or have trouble with output.  Usage of bitwise operator to make string of chars turn into: lower-case, upper-case and flip cases.",
+            "content_html": "<p>Back in those days as I started as a teaching assistant (TA) Ilearn things which I never knew before. I am going add few things that Ihave learnt in TAing CS1111 this semester Apr-Jun 2021.</p><ul>  <li><code class=\"highlighter-rouge\">\" %c\"</code> the space before the %c matters! it prevents storing white space char.    <blockquote>      <p>Otherwise it might consume the white space chars (such as <code class=\"highlighter-rouge\">' ', '\\t','\\n'</code>) of the previous inputeg <code class=\"highlighter-rouge\">scanf(\"%d%c\", num, ch)</code> taking input “11 a” implies <code class=\"highlighter-rouge\">num=11</code> and <code class=\"highlighter-rouge\">ch=' '</code> i.e a space in <code class=\"highlighter-rouge\">ch</code> instead of intended <code class=\"highlighter-rouge\">a</code></p>    </blockquote>  </li>  <li><code class=\"highlighter-rouge\">n=2i</code> assignment is valid in C because the newer compilers have a complex constants as well.    <div class=\"language-c highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"cp\">#include &lt;stdio.h&gt;</span><span class=\"kt\">int</span> <span class=\"nf\">main</span><span class=\"p\">(){</span><span class=\"kt\">int</span> <span class=\"n\">j</span><span class=\"o\">=</span><span class=\"mi\">0</span><span class=\"p\">;</span><span class=\"kt\">int</span> <span class=\"n\">k</span><span class=\"o\">=</span><span class=\"mi\">3</span><span class=\"n\">i</span><span class=\"p\">;</span><span class=\"n\">printf</span><span class=\"p\">(</span><span class=\"s\">\"i=%d k=%d\"</span><span class=\"p\">,</span><span class=\"n\">j</span><span class=\"p\">,</span><span class=\"n\">k</span><span class=\"p\">);</span><span class=\"k\">for</span><span class=\"p\">(</span><span class=\"n\">j</span><span class=\"o\">=</span><span class=\"mi\">0</span><span class=\"p\">;</span> <span class=\"n\">j</span><span class=\"o\">&lt;</span><span class=\"n\">k</span><span class=\"p\">;</span> <span class=\"o\">++</span><span class=\"n\">k</span><span class=\"p\">)</span>  <span class=\"n\">printf</span><span class=\"p\">(</span><span class=\"s\">\"j=%d</span><span class=\"se\">\\n</span><span class=\"s\">\"</span><span class=\"p\">,</span><span class=\"n\">j</span><span class=\"p\">);</span><span class=\"k\">return</span> <span class=\"mi\">0</span><span class=\"p\">;</span><span class=\"p\">}</span></code></pre></div>    </div>    <blockquote>      <p>So, this will not result in a compiler error as <code class=\"highlighter-rouge\">i</code> undefined.</p>    </blockquote>  </li>  <li><code class=\"highlighter-rouge\">clang</code> and <code class=\"highlighter-rouge\">gcc</code> may produce different output on using of uninitialized variables. One defaults to zero and other uses garbage value.</li>  <li>We used <a href=\"replit.com\">Replit.com</a> to running our labs. It can very much simulate a TA monitoring the students while coding. More about replt later.</li>  <li>Never assign 0 to char in the char array and print it. It will either not print or have trouble with output.</li>  <li>Usage of bitwise operator to make string of chars turn into: lower-case, upper-case and flip cases.</li></ul>",
+            "url": "https://mrprajesh.co.in/blog/thinks-to-note-c-language.html",
+            
+            
+            
+            "tags": ["c","programming","teaching","ta"],
+            
+            "date_published": "2021-06-19T17:08:54+05:30",
+            "date_modified": "2021-06-19T17:08:54+05:30",
+            
+                "author": "Rajesh Pandian M"
+            
+        },
+    
+        {
             "id": "https://mrprajesh.co.in/blog/bool-in-c-language.html",
             "title": "bool in C language",
             "summary": null,
@@ -676,25 +695,6 @@
             
             "date_published": "2020-03-17T16:12:01+05:30",
             "date_modified": "2020-03-17T16:12:01+05:30",
-            
-                "author": "Rajesh Pandian M"
-            
-        },
-    
-        {
-            "id": "https://mrprajesh.co.in/blog/new-words.html",
-            "title": "Some new words - inspired by COVID-19",
-            "summary": null,
-            "content_text": "In this novel coronavirus season learnt some new words.  epidemic          a widespread occurrence of an infectious disease in a community at a particular time.        pandemic          (of a disease) prevalent over a whole country or the world.        Price gouging          Price gouging is a term referring to when a seller increases the prices of goods, to a level much higher than is considered reasonable, and is considered exploitative, potentially to an unethical extent. Usually this event occurs after a demand or supply shock.        Paywall          A paywall is a method of restricting access to content via a purchase or paid subscription      Example sentence.WHO said COVID-19 disease is epidemic and nearly pandemic officially pandemic today. While sellers are price gouging masks/sanitizing items, nature journal removed the paywall for all research involving coronavirus. Sweet!",
-            "content_html": "<p>In this novel coronavirus season learnt some new words.</p><ol>  <li>epidemic    <blockquote>      <p>a widespread occurrence of an infectious disease in a community at a particular time.</p>    </blockquote>  </li>  <li>pandemic    <blockquote>      <p>(of a disease) prevalent over a whole country or the world.</p>    </blockquote>  </li>  <li>Price gouging    <blockquote>      <p>Price gouging is a term referring to when a seller <strong>increases the prices</strong> of goods, to a level <strong>much higher than</strong> is considered <strong>reasonable</strong>, and is considered exploitative, potentially to an unethical extent. Usually this event occurs after a demand or supply shock.</p>    </blockquote>  </li>  <li>Paywall    <blockquote>      <p>A paywall is a method of restricting access to content via a purchase or paid subscription</p>    </blockquote>  </li></ol><h3 id=\"example-sentence\">Example sentence.</h3><p>WHO said COVID-19 disease is epidemic and <del>nearly pandemic</del> officially pandemic today. While sellers are price gouging masks/sanitizing items, nature journal removed the paywall for all research involving coronavirus. Sweet!</p>",
-            "url": "https://mrprajesh.co.in/blog/new-words.html",
-            
-            
-            
-            
-            
-            "date_published": "2020-03-11T19:17:59+05:30",
-            "date_modified": "2020-03-11T19:17:59+05:30",
             
                 "author": "Rajesh Pandian M"
             

@@ -2,6 +2,18 @@
   
     {
 
+      "title"    : "Thinks To Note in C Language",
+      "url"      : "/blog/thinks-to-note-c-language.html",
+      "category" : "",
+      "tags"     : "c, programming, teaching, ta",
+      "date"     : "2021-06-19 17:08:54 +0530",
+      "discription" : "",
+      "content" : "<p>Back in those days as I started as a teaching assistant (TA) I\nlearn things which I never knew before. I am going add few things that I\nhave learnt in TAing CS1111 this semester Apr-Jun 2021.</p>\n\n<ul>\n  <li><code class=\"highlighter-rouge\">\" %c\"</code> the space before the %c matters! it prevents storing white space char.\n    <blockquote>\n      <p>Otherwise it might consume the white space chars (such as <code class=\"highlighter-rouge\">' ', '\\t','\\n'</code>) of the previous input\neg <code class=\"highlighter-rouge\">scanf(\"%d%c\", num, ch)</code> taking input “11 a” implies <code class=\"highlighter-rouge\">num=11</code> and <code class=\"highlighter-rouge\">ch=' '</code> i.e a space in <code class=\"highlighter-rouge\">ch</code> instead of intended <code class=\"highlighter-rouge\">a</code></p>\n    </blockquote>\n  </li>\n  <li><code class=\"highlighter-rouge\">n=2i</code> assignment is valid in C because the newer compilers have a complex constants as well.\n    <div class=\"language-c highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"cp\">#include &lt;stdio.h&gt;\n</span><span class=\"kt\">int</span> <span class=\"nf\">main</span><span class=\"p\">(){</span>\n<span class=\"kt\">int</span> <span class=\"n\">j</span><span class=\"o\">=</span><span class=\"mi\">0</span><span class=\"p\">;</span>\n<span class=\"kt\">int</span> <span class=\"n\">k</span><span class=\"o\">=</span><span class=\"mi\">3</span><span class=\"n\">i</span><span class=\"p\">;</span>\n<span class=\"n\">printf</span><span class=\"p\">(</span><span class=\"s\">\"i=%d k=%d\"</span><span class=\"p\">,</span><span class=\"n\">j</span><span class=\"p\">,</span><span class=\"n\">k</span><span class=\"p\">);</span>\n<span class=\"k\">for</span><span class=\"p\">(</span><span class=\"n\">j</span><span class=\"o\">=</span><span class=\"mi\">0</span><span class=\"p\">;</span> <span class=\"n\">j</span><span class=\"o\">&lt;</span><span class=\"n\">k</span><span class=\"p\">;</span> <span class=\"o\">++</span><span class=\"n\">k</span><span class=\"p\">)</span>\n  <span class=\"n\">printf</span><span class=\"p\">(</span><span class=\"s\">\"j=%d</span><span class=\"se\">\\n</span><span class=\"s\">\"</span><span class=\"p\">,</span><span class=\"n\">j</span><span class=\"p\">);</span>\n<span class=\"k\">return</span> <span class=\"mi\">0</span><span class=\"p\">;</span>\n<span class=\"p\">}</span>\n</code></pre></div>    </div>\n    <blockquote>\n      <p>So, this will not result in a compiler error as <code class=\"highlighter-rouge\">i</code> undefined.</p>\n    </blockquote>\n  </li>\n  <li><code class=\"highlighter-rouge\">clang</code> and <code class=\"highlighter-rouge\">gcc</code> may produce different output on using of uninitialized variables. One defaults to zero and other uses garbage value.</li>\n  <li>We used <a href=\"replit.com\">Replit.com</a> to running our labs. It can very much simulate a TA monitoring the students while coding. More about replt later.</li>\n  <li>Never assign 0 to char in the char array and print it. It will either not print or have trouble with output.</li>\n  <li>Usage of bitwise operator to make string of chars turn into: lower-case, upper-case and flip cases.</li>\n</ul>\n"
+
+    } ,
+  
+    {
+
       "title"    : "bool in C language",
       "url"      : "/blog/bool-in-c-language.html",
       "category" : "",

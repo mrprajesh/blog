@@ -4,13 +4,52 @@
  <title>Rajesh's Blog</title>
  <link href="https://mrprajesh.co.in/blog/atom.xml" rel="self"/>
  <link href="https://mrprajesh.co.in/blog/"/>
- <updated>2021-05-16T00:17:43+05:30</updated>
+ <updated>2021-07-03T17:44:12+05:30</updated>
  <id>https://mrprajesh.co.in</id>
  <author>
    <name>Rajesh Pandian M</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Thinks To Note in C Language</title>
+   <link href="https://mrprajesh.co.in/blog/thinks-to-note-c-language.html"/>
+   <updated>2021-06-19T17:08:54+05:30</updated>
+   <id>https://mrprajesh.co.in/Thinks-To-Note-C-Language</id>
+   <content type="html">&lt;p&gt;Back in those days as I started as a teaching assistant (TA) I
+learn things which I never knew before. I am going add few things that I
+have learnt in TAing CS1111 this semester Apr-Jun 2021.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&quot; %c&quot;&lt;/code&gt; the space before the %c matters! it prevents storing white space char.
+    &lt;blockquote&gt;
+      &lt;p&gt;Otherwise it might consume the white space chars (such as &lt;code class=&quot;highlighter-rouge&quot;&gt;' ', '\t','\n'&lt;/code&gt;) of the previous input
+eg &lt;code class=&quot;highlighter-rouge&quot;&gt;scanf(&quot;%d%c&quot;, num, ch)&lt;/code&gt; taking input “11 a” implies &lt;code class=&quot;highlighter-rouge&quot;&gt;num=11&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;ch=' '&lt;/code&gt; i.e a space in &lt;code class=&quot;highlighter-rouge&quot;&gt;ch&lt;/code&gt; instead of intended &lt;code class=&quot;highlighter-rouge&quot;&gt;a&lt;/code&gt;&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;n=2i&lt;/code&gt; assignment is valid in C because the newer compilers have a complex constants as well.
+    &lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;stdio.h&amp;gt;
+&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;i=%d k=%d&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;j=%d&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;So, this will not result in a compiler error as &lt;code class=&quot;highlighter-rouge&quot;&gt;i&lt;/code&gt; undefined.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;clang&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;gcc&lt;/code&gt; may produce different output on using of uninitialized variables. One defaults to zero and other uses garbage value.&lt;/li&gt;
+  &lt;li&gt;We used &lt;a href=&quot;replit.com&quot;&gt;Replit.com&lt;/a&gt; to running our labs. It can very much simulate a TA monitoring the students while coding. More about replt later.&lt;/li&gt;
+  &lt;li&gt;Never assign 0 to char in the char array and print it. It will either not print or have trouble with output.&lt;/li&gt;
+  &lt;li&gt;Usage of bitwise operator to make string of chars turn into: lower-case, upper-case and flip cases.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
  
  <entry>
    <title>bool in C language</title>
