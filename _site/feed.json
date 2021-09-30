@@ -17,6 +17,25 @@
 "items": [
     
         {
+            "id": "https://mrprajesh.co.in/blog/cpp-stl-enlightment.html",
+            "title": "CPP STL Enlightenment",
+            "summary": null,
+            "content_text": "C++ is moving so fast especially in the recent decade. I learned C++ without STL (in 2010’s)and only learned about STL containers much after 2014 (during my PG). There werelot of useful data structure such a set, map, vector, etc.STL isn’t just about that. STL algorithms is a whole new world.I saw this Corner’s talk in CPPCON Algorithm Intuition and has learned a lot.This is a amazing talk!I recommend one more. It is Jonathan Boccara’s talk on 105 STL Algorithms in Less Than an HourIf you are writing CUDA or thrust program’s then I suggest one.Basically, if we can solve problems with a the sequence of STL algorithms then that can be translated into CUDA/Thrust code easily using device_vector. But not problems exhibit this behaviour. But, the intuition to think and solve along those lines always help us with a better C++/Thrust code.I am in :heart: with STL algorithms, recently.There is new language called APL. WHAT! Yes. I have spelled it right.You can solve most of the competitive programming problems in just 1 or 2 lines. Watch more of his videos here OMG! :open_mouth:Cheers, more later!",
+            "content_html": "<p>C++ is moving so fast especially in the recent decade. I learned C++ without STL (in 2010’s)and only learned about STL containers much after 2014 (during my PG). There werelot of useful data structure such a set, map, vector, etc.</p><p>STL isn’t just about that. STL algorithms is a whole new world.I saw this Corner’s talk in CPPCON <em>Algorithm Intuition</em> and has learned a lot.This is a amazing talk!</p><iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/48gV1SNm3WA\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"\"></iframe><p>I recommend one more. It is <strong>Jonathan Boccara</strong>’s talk on <strong>105 STL Algorithms in Less Than an Hour</strong></p><iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/bFSnXNIsK4A\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"\"></iframe><p>If you are writing CUDA or thrust program’s then I suggest one.</p><iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/zlJg9mCNfkQ\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"\"></iframe><p>Basically, if we can solve problems with a the sequence of STL algorithms then that can be translated into CUDA/Thrust code easily using <strong>device_vector</strong>. But not problems exhibit this behaviour. But, the intuition to think and solve along those lines always help us with a better C++/Thrust code.</p><p>I am in :heart: with STL algorithms, recently.</p><p>There is new language called <a href=\"https://en.wikipedia.org/wiki/APL_(programming_language)\">APL</a>. WHAT! Yes. I have spelled it right.You can solve most of the competitive programming problems in just 1 or 2 lines. Watch more of his videos <a href=\"https://www.youtube.com/watch?v=8Njxgy4itts\">here</a> OMG! :open_mouth:</p><p>Cheers, more later!</p>",
+            "url": "https://mrprajesh.co.in/blog/cpp-stl-enlightment.html",
+            
+            
+            
+            "tags": ["cpp","stl","algorithms"],
+            
+            "date_published": "2021-09-30T12:56:28+05:30",
+            "date_modified": "2021-09-30T12:56:28+05:30",
+            
+                "author": "Rajesh Pandian M"
+            
+        },
+    
+        {
             "id": "https://mrprajesh.co.in/blog/creating-images-for-research-papers.html",
             "title": "Creating Good Images for research papers",
             "summary": null,
@@ -676,25 +695,6 @@
             
             "date_published": "2020-03-19T19:44:39+05:30",
             "date_modified": "2020-03-19T19:44:39+05:30",
-            
-                "author": "Rajesh Pandian M"
-            
-        },
-    
-        {
-            "id": "https://mrprajesh.co.in/blog/add-min-read-to-jekyll.html",
-            "title": "How to add mins to read in jekyll post like medium",
-            "summary": null,
-            "content_text": "Edit the _layouts/post.html and place below lines appropriately.  {% assign words = content | number_of_words %}  {{ words | plus:179 | divided_by:180  }} min readReferences  I got this idea from Carlos Becker’s post  He has used if-else  Whereas I have avoided that using ceil(words/180) i.e same as (words+179)/180    {% assign words = content | number_of_words %}  {% if words &lt; 360 %}  1 min  {% else %}  {{ words | divided_by:180 }} mins  {% endif %}  &lt;/span&gt;",
-            "content_html": "<p>Edit the <code class=\"highlighter-rouge\">_layouts/post.html</code> and place below lines appropriately.</p><blockquote>  <p>{% assign words = content | number_of_words %}</p>  <p>{{ words | plus:179 | divided_by:180  }} min read</p></blockquote><h2 id=\"references\">References</h2><ul>  <li>I got this idea from <a href=\"https://carlosbecker.com/posts/jekyll-reading-time-without-plugins\">Carlos Becker’s post</a></li>  <li>He has used <code class=\"highlighter-rouge\">if-else</code></li>  <li>Whereas I have <strong>avoided</strong> that using <code class=\"highlighter-rouge\">ceil(words/180)</code> i.e same as <code class=\"highlighter-rouge\">(words+179)/180</code></li></ul><blockquote>  <p><span class=\"reading-time\" title=\"Estimated read time\"></span></p>  <p>{% assign words = content | number_of_words %}</p>  <p>{% if words &lt; 360 %}</p>  <p>1 min</p>  <p>{% else %}</p>  <p>{{ words | divided_by:180 }} mins</p>  <p>{% endif %}</p>  <p>&lt;/span&gt;</p></blockquote>",
-            "url": "https://mrprajesh.co.in/blog/add-min-read-to-jekyll.html",
-            
-            
-            
-            
-            
-            "date_published": "2020-03-19T18:53:53+05:30",
-            "date_modified": "2020-03-19T18:53:53+05:30",
             
                 "author": "Rajesh Pandian M"
             

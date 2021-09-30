@@ -2,6 +2,18 @@
   
     {
 
+      "title"    : "CPP STL Enlightenment",
+      "url"      : "/blog/cpp-stl-enlightment.html",
+      "category" : "",
+      "tags"     : "cpp, stl, algorithms",
+      "date"     : "2021-09-30 12:56:28 +0530",
+      "discription" : "",
+      "content" : "<p>C++ is moving so fast especially in the recent decade. I learned C++ without STL (in 2010’s)\nand only learned about STL containers much after 2014 (during my PG). There were\nlot of useful data structure such a set, map, vector, etc.</p>\n\n<p>STL isn’t just about that. STL algorithms is a whole new world.\nI saw this Corner’s talk in CPPCON <em>Algorithm Intuition</em> and has learned a lot.\nThis is a amazing talk!</p>\n\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/48gV1SNm3WA\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"\"></iframe>\n\n<p>I recommend one more. It is <strong>Jonathan Boccara</strong>’s talk on <strong>105 STL Algorithms in Less Than an Hour</strong></p>\n\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/bFSnXNIsK4A\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"\"></iframe>\n\n<p>If you are writing CUDA or thrust program’s then I suggest one.</p>\n\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/zlJg9mCNfkQ\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"\"></iframe>\n\n<p>Basically, if we can solve problems with a the sequence of STL algorithms then that can be translated into CUDA/Thrust code easily using <strong>device_vector</strong>. But not problems exhibit this behaviour. But, the intuition to think and solve along those lines always help us with a better C++/Thrust code.</p>\n\n<p>I am in :heart: with STL algorithms, recently.</p>\n\n<p>There is new language called <a href=\"https://en.wikipedia.org/wiki/APL_(programming_language)\">APL</a>. WHAT! Yes. I have spelled it right.\nYou can solve most of the competitive programming problems in just 1 or 2 lines. Watch more of his videos <a href=\"https://www.youtube.com/watch?v=8Njxgy4itts\">here</a> OMG! :open_mouth:</p>\n\n<p>Cheers, more later!</p>\n"
+
+    } ,
+  
+    {
+
       "title"    : "Creating Good Images for research papers",
       "url"      : "/blog/creating-images-for-research-papers.html",
       "category" : "",

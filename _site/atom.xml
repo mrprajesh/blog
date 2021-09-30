@@ -4,13 +4,47 @@
  <title>Rajesh's Blog</title>
  <link href="https://mrprajesh.co.in/blog/atom.xml" rel="self"/>
  <link href="https://mrprajesh.co.in/blog/"/>
- <updated>2021-09-30T12:54:20+05:30</updated>
+ <updated>2021-09-30T13:18:29+05:30</updated>
  <id>https://mrprajesh.co.in</id>
  <author>
    <name>Rajesh Pandian M</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>CPP STL Enlightenment</title>
+   <link href="https://mrprajesh.co.in/blog/cpp-stl-enlightment.html"/>
+   <updated>2021-09-30T12:56:28+05:30</updated>
+   <id>https://mrprajesh.co.in/cpp-stl-enlightment</id>
+   <content type="html">&lt;p&gt;C++ is moving so fast especially in the recent decade. I learned C++ without STL (in 2010’s)
+and only learned about STL containers much after 2014 (during my PG). There were
+lot of useful data structure such a set, map, vector, etc.&lt;/p&gt;
+
+&lt;p&gt;STL isn’t just about that. STL algorithms is a whole new world.
+I saw this Corner’s talk in CPPCON &lt;em&gt;Algorithm Intuition&lt;/em&gt; and has learned a lot.
+This is a amazing talk!&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/48gV1SNm3WA&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;I recommend one more. It is &lt;strong&gt;Jonathan Boccara&lt;/strong&gt;’s talk on &lt;strong&gt;105 STL Algorithms in Less Than an Hour&lt;/strong&gt;&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/bFSnXNIsK4A&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;If you are writing CUDA or thrust program’s then I suggest one.&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/zlJg9mCNfkQ&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Basically, if we can solve problems with a the sequence of STL algorithms then that can be translated into CUDA/Thrust code easily using &lt;strong&gt;device_vector&lt;/strong&gt;. But not problems exhibit this behaviour. But, the intuition to think and solve along those lines always help us with a better C++/Thrust code.&lt;/p&gt;
+
+&lt;p&gt;I am in :heart: with STL algorithms, recently.&lt;/p&gt;
+
+&lt;p&gt;There is new language called &lt;a href=&quot;https://en.wikipedia.org/wiki/APL_(programming_language)&quot;&gt;APL&lt;/a&gt;. WHAT! Yes. I have spelled it right.
+You can solve most of the competitive programming problems in just 1 or 2 lines. Watch more of his videos &lt;a href=&quot;https://www.youtube.com/watch?v=8Njxgy4itts&quot;&gt;here&lt;/a&gt; OMG! :open_mouth:&lt;/p&gt;
+
+&lt;p&gt;Cheers, more later!&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Creating Good Images for research papers</title>
