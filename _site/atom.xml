@@ -4,13 +4,46 @@
  <title>Rajesh's Blog</title>
  <link href="https://mrprajesh.co.in/blog/atom.xml" rel="self"/>
  <link href="https://mrprajesh.co.in/blog/"/>
- <updated>2021-09-01T13:08:27+05:30</updated>
+ <updated>2021-09-30T12:54:20+05:30</updated>
  <id>https://mrprajesh.co.in</id>
  <author>
    <name>Rajesh Pandian M</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Creating Good Images for research papers</title>
+   <link href="https://mrprajesh.co.in/blog/creating-images-for-research-papers.html"/>
+   <updated>2021-09-30T12:40:41+05:30</updated>
+   <id>https://mrprajesh.co.in/creating-images-for-research-papers</id>
+   <content type="html">&lt;p&gt;It is a 3-step process I follow from &lt;a href=&quot;http://faculty.iitr.ac.in/~sparshfec/&quot;&gt;Sparsh Mittal&lt;/a&gt;
+‘s talk.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Create Images using Open office Impress from a blank presentation.
+    &lt;ul&gt;
+      &lt;li&gt;// We can use shapes, or other images.&lt;/li&gt;
+      &lt;li&gt;// We can use Text/Arrows/anything.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Export as PDF.&lt;/li&gt;
+  &lt;li&gt;Use &lt;code class=&quot;highlighter-rouge&quot;&gt;pdfcrop sample.pdf&lt;/code&gt; to crop the extra white spaces around and directly include cropped file in begin figure on latex.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;PS: We can do the same for &lt;code class=&quot;highlighter-rouge&quot;&gt;Openoffice Calc&lt;/code&gt; figures by exporting as &lt;code class=&quot;highlighter-rouge&quot;&gt;.eps&lt;/code&gt; format.&lt;/p&gt;
+
+&lt;h3 id=&quot;prerequsites&quot;&gt;Prerequsites&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Need Open or Libre office which is a FOSS.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;pdfcrop&lt;/code&gt; which you could install using apt-get commands&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;apt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;texlive&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;extra&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;utils&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Building GaloisGPU on CentOS</title>

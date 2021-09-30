@@ -2,6 +2,18 @@
   
     {
 
+      "title"    : "Creating Good Images for research papers",
+      "url"      : "/blog/creating-images-for-research-papers.html",
+      "category" : "",
+      "tags"     : "research, latex, writeup",
+      "date"     : "2021-09-30 12:40:41 +0530",
+      "discription" : "",
+      "content" : "<p>It is a 3-step process I follow from <a href=\"http://faculty.iitr.ac.in/~sparshfec/\">Sparsh Mittal</a>\n‘s talk.</p>\n\n<ol>\n  <li>Create Images using Open office Impress from a blank presentation.\n    <ul>\n      <li>// We can use shapes, or other images.</li>\n      <li>// We can use Text/Arrows/anything.</li>\n    </ul>\n  </li>\n  <li>Export as PDF.</li>\n  <li>Use <code class=\"highlighter-rouge\">pdfcrop sample.pdf</code> to crop the extra white spaces around and directly include cropped file in begin figure on latex.</li>\n</ol>\n\n<p>PS: We can do the same for <code class=\"highlighter-rouge\">Openoffice Calc</code> figures by exporting as <code class=\"highlighter-rouge\">.eps</code> format.</p>\n\n<h3 id=\"prerequsites\">Prerequsites</h3>\n\n<ul>\n  <li>Need Open or Libre office which is a FOSS.</li>\n  <li><code class=\"highlighter-rouge\">pdfcrop</code> which you could install using apt-get commands</li>\n</ul>\n\n<div class=\"language-c highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"n\">sudo</span> <span class=\"n\">apt</span><span class=\"o\">-</span><span class=\"n\">get</span> <span class=\"n\">install</span> <span class=\"n\">texlive</span><span class=\"o\">-</span><span class=\"n\">extra</span><span class=\"o\">-</span><span class=\"n\">utils</span>\n</code></pre></div></div>\n"
+
+    } ,
+  
+    {
+
       "title"    : "Building GaloisGPU on CentOS",
       "url"      : "/blog/building-galoisgpu.html",
       "category" : "",

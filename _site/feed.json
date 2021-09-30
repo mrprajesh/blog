@@ -17,6 +17,25 @@
 "items": [
     
         {
+            "id": "https://mrprajesh.co.in/blog/creating-images-for-research-papers.html",
+            "title": "Creating Good Images for research papers",
+            "summary": null,
+            "content_text": "It is a 3-step process I follow from Sparsh Mittal‘s talk.  Create Images using Open office Impress from a blank presentation.          // We can use shapes, or other images.      // We can use Text/Arrows/anything.        Export as PDF.  Use pdfcrop sample.pdf to crop the extra white spaces around and directly include cropped file in begin figure on latex.PS: We can do the same for Openoffice Calc figures by exporting as .eps format.Prerequsites  Need Open or Libre office which is a FOSS.  pdfcrop which you could install using apt-get commandssudo apt-get install texlive-extra-utils",
+            "content_html": "<p>It is a 3-step process I follow from <a href=\"http://faculty.iitr.ac.in/~sparshfec/\">Sparsh Mittal</a>‘s talk.</p><ol>  <li>Create Images using Open office Impress from a blank presentation.    <ul>      <li>// We can use shapes, or other images.</li>      <li>// We can use Text/Arrows/anything.</li>    </ul>  </li>  <li>Export as PDF.</li>  <li>Use <code class=\"highlighter-rouge\">pdfcrop sample.pdf</code> to crop the extra white spaces around and directly include cropped file in begin figure on latex.</li></ol><p>PS: We can do the same for <code class=\"highlighter-rouge\">Openoffice Calc</code> figures by exporting as <code class=\"highlighter-rouge\">.eps</code> format.</p><h3 id=\"prerequsites\">Prerequsites</h3><ul>  <li>Need Open or Libre office which is a FOSS.</li>  <li><code class=\"highlighter-rouge\">pdfcrop</code> which you could install using apt-get commands</li></ul><div class=\"language-c highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"n\">sudo</span> <span class=\"n\">apt</span><span class=\"o\">-</span><span class=\"n\">get</span> <span class=\"n\">install</span> <span class=\"n\">texlive</span><span class=\"o\">-</span><span class=\"n\">extra</span><span class=\"o\">-</span><span class=\"n\">utils</span></code></pre></div></div>",
+            "url": "https://mrprajesh.co.in/blog/creating-images-for-research-papers.html",
+            
+            
+            
+            "tags": ["research","latex","writeup"],
+            
+            "date_published": "2021-09-30T12:40:41+05:30",
+            "date_modified": "2021-09-30T12:40:41+05:30",
+            
+                "author": "Rajesh Pandian M"
+            
+        },
+    
+        {
             "id": "https://mrprajesh.co.in/blog/building-galoisgpu.html",
             "title": "Building GaloisGPU on CentOS",
             "summary": null,
@@ -676,25 +695,6 @@
             
             "date_published": "2020-03-19T18:53:53+05:30",
             "date_modified": "2020-03-19T18:53:53+05:30",
-            
-                "author": "Rajesh Pandian M"
-            
-        },
-    
-        {
-            "id": "https://mrprajesh.co.in/blog/thrust.html",
-            "title": "Thrust library and CUDA API",
-            "summary": null,
-            "content_text": "For long time, I was under the impression that thrust functions can beinvoked only from the main function/Host device. Just got to know that thrust(v1.8+) fucntion can be invocked inside the kernel__global__ void test(float *d_A, int N) {    float sum = thrust::reduce(thrust::seq, d_A, d_A + N);    printf(\"Device side result = %f\\n\", sum);}Source: SO link",
-            "content_html": "<p>For long time, I was under the impression that thrust functions can beinvoked only from the main function/Host device. Just got to know that thrust(v1.8+) fucntion can be invocked inside the kernel</p><div class=\"language-cuda highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"k\">__global__</span> <span class=\"kt\">void</span> <span class=\"nf\">test</span><span class=\"p\">(</span><span class=\"kt\">float</span> <span class=\"o\">*</span><span class=\"n\">d_A</span><span class=\"p\">,</span> <span class=\"kt\">int</span> <span class=\"n\">N</span><span class=\"p\">)</span> <span class=\"p\">{</span>    <span class=\"kt\">float</span> <span class=\"n\">sum</span> <span class=\"o\">=</span> <span class=\"n\">thrust</span><span class=\"o\">::</span><span class=\"n\">reduce</span><span class=\"p\">(</span><span class=\"n\">thrust</span><span class=\"o\">::</span><span class=\"n\">seq</span><span class=\"p\">,</span> <span class=\"n\">d_A</span><span class=\"p\">,</span> <span class=\"n\">d_A</span> <span class=\"o\">+</span> <span class=\"n\">N</span><span class=\"p\">);</span>    <span class=\"n\">printf</span><span class=\"p\">(</span><span class=\"s\">\"Device side result = %f</span><span class=\"se\">\\n</span><span class=\"s\">\"</span><span class=\"p\">,</span> <span class=\"n\">sum</span><span class=\"p\">);</span><span class=\"p\">}</span></code></pre></div></div><p><a href=\"https://stackoverflow.com/a/26784463/2712045\">Source: SO link</a></p>",
-            "url": "https://mrprajesh.co.in/blog/thrust.html",
-            
-            
-            
-            "tags": ["cuda","thrust"],
-            
-            "date_published": "2020-03-18T15:49:47+05:30",
-            "date_modified": "2020-03-18T15:49:47+05:30",
             
                 "author": "Rajesh Pandian M"
             
