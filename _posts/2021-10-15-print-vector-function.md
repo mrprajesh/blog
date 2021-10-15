@@ -52,16 +52,26 @@ void printVec4(const auto &data){
   std::cout << '\n';
 }
 
+// Templating above
+template <typename Container>
+void printVec5(const Container &data){
+  std::copy(data.begin(),
+    data.end(),
+    std::ostream_iterator<typename Container::value_type>(std::cout, " "));
+  std::cout << '\n';
+}
+
 int main(int argc, char* argv[]){
   vector <int> v= {11,22,33,44,55};
   printVec1(v);
   printVec2(v);
   printVec3(v);
   printVec4(v);
+  printVec5(v);
 
   return 0;
 }
 
 ```
 
-Can we template the `printVec4`? I still do not know.
+Can we template the `printVec4`? ~I still do not know~. Found it!
