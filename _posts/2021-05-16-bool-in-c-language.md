@@ -2,7 +2,7 @@
 layout: post
 title: bool in C language
 date: 16-05-2021 00:01:01 +05:30
-tags: [jekyll, coding]
+tags: [cpp, tricks]
 description:
 summary:
 comments: false

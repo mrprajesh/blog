@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>https://mrprajesh.co.in/blog/cpp-20-loop-fusion.html</loc>
+<lastmod>2021-10-18T12:13:46+05:30</lastmod>
+</url>
+<url>
 <loc>https://mrprajesh.co.in/blog/print-vector-function.html</loc>
 <lastmod>2021-10-15T11:36:26+05:30</lastmod>
 </url>
@@ -300,6 +304,9 @@
 </url>
 <url>
 <loc>https://mrprajesh.co.in/blog/tag/nvprof/</loc>
+</url>
+<url>
+<loc>https://mrprajesh.co.in/blog/tag/tricks/</loc>
 </url>
 <url>
 <loc>https://mrprajesh.co.in/blog/tag/c/</loc>

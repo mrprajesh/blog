@@ -2,6 +2,18 @@
   
     {
 
+      "title"    : "cpp loop fusion and fission",
+      "url"      : "/blog/cpp-20-loop-fusion.html",
+      "category" : "",
+      "tags"     : "cpp, cuda",
+      "date"     : "2021-10-18 12:13:46 +0530",
+      "discription" : "",
+      "content" : "<p>After seeing the below tweet.</p>\n\n<blockquote class=\"twitter-tweet\" data-theme=\"dark\"><p lang=\"en\" dir=\"ltr\">IMO the two most important transformations for performant code are Array of Structs to Struct of Arrays and Loop Fusion to Loop Fission. The 1st is essential for cache perf and the 2nd breaks data dependencies and often unlocks more optimizations that were not obvious before. <a href=\"https://t.co/hjLvzusExz\">pic.twitter.com/hjLvzusExz</a></p>&mdash; Daniel Holden (@anorangeduck) <a href=\"https://twitter.com/anorangeduck/status/1449420737895440393?ref_src=twsrc%5Etfw\">October 16,\n2021</a></blockquote>\n<script async=\"\" src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>\n\n<p>This is super cool! I sense a lot of value for whoever using <code class=\"highlighter-rouge\">Thurst</code> algorithms.</p>\n"
+
+    } ,
+  
+    {
+
       "title"    : "Print Vector function",
       "url"      : "/blog/print-vector-function.html",
       "category" : "",
@@ -17,7 +29,7 @@
       "title"    : "cpp20 features",
       "url"      : "/blog/cpp20-features.html",
       "category" : "",
-      "tags"     : "jekyll, coding",
+      "tags"     : "c, cpp, tricks",
       "date"     : "2021-10-04 13:21:58 +0530",
       "discription" : "",
       "content" : "<p>With advent to range-based  for loop we begin to write the below loop</p>\n<div class=\"language-c highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"k\">for</span><span class=\"p\">(</span> <span class=\"kt\">int</span> <span class=\"n\">i</span><span class=\"o\">=</span><span class=\"mi\">0</span><span class=\"p\">;</span> <span class=\"n\">i</span> <span class=\"o\">&lt;</span> <span class=\"n\">vec</span><span class=\"p\">.</span><span class=\"n\">size</span><span class=\"p\">();</span> <span class=\"o\">++</span><span class=\"n\">i</span><span class=\"p\">){</span> <span class=\"c1\">//vec is just for sample</span>\n  <span class=\"c1\">// use vec[i]</span>\n<span class=\"p\">}</span>\n</code></pre></div></div>\n\n<p>as this one.</p>\n\n<div class=\"language-c highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"k\">for</span><span class=\"p\">(</span> <span class=\"k\">auto</span> <span class=\"n\">v</span><span class=\"o\">:</span> <span class=\"n\">vec</span><span class=\"p\">){</span>\n  <span class=\"c1\">// use v</span>\n<span class=\"p\">}</span>\n</code></pre></div></div>\n\n<p>However at many time we also needed the index, we have do this dirty work.</p>\n\n<div class=\"language-c highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"kt\">int</span> <span class=\"n\">index</span> <span class=\"o\">=</span><span class=\"mi\">0</span><span class=\"p\">;</span>\n<span class=\"k\">for</span><span class=\"p\">(</span> <span class=\"k\">auto</span> <span class=\"n\">v</span><span class=\"o\">:</span> <span class=\"n\">vec</span><span class=\"p\">){</span>\n  <span class=\"c1\">// use v</span>\n  <span class=\"o\">++</span><span class=\"n\">index</span><span class=\"p\">;</span>\n<span class=\"p\">}</span>\n</code></pre></div></div>\n\n<p>But, we do not have to play on dirt now using <code class=\"highlighter-rouge\">c++20</code> we can declare variable inside the range for loop. :)</p>\n\n<div class=\"language-c highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"k\">for</span><span class=\"p\">(</span><span class=\"kt\">int</span> <span class=\"n\">index</span><span class=\"p\">{</span><span class=\"mi\">0</span><span class=\"p\">};</span> <span class=\"k\">auto</span> <span class=\"n\">v</span><span class=\"o\">:</span> <span class=\"n\">vec</span><span class=\"p\">){</span>\n  <span class=\"c1\">// use v</span>\n  <span class=\"o\">++</span><span class=\"n\">index</span><span class=\"p\">;</span>\n<span class=\"p\">}</span>\n</code></pre></div></div>\n"
@@ -89,7 +101,7 @@
       "title"    : "bool in C language",
       "url"      : "/blog/bool-in-c-language.html",
       "category" : "",
-      "tags"     : "jekyll, coding",
+      "tags"     : "cpp, tricks",
       "date"     : "2021-05-16 00:01:01 +0530",
       "discription" : "",
       "content" : "<p>For long time I was under an impression that <code class=\"highlighter-rouge\">bool</code> data type is present\nonly in C++ and not in C language. I just got to know that it is there\nin C however it is not enabled default. So, we have to include it. It is\nvery surprising that it is present there from C99 standard.</p>\n\n<div class=\"language-c highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"cp\">#include &lt;stdio.h&gt;\n#include &lt;stdbool.h&gt;\n</span><span class=\"kt\">int</span> <span class=\"nf\">main</span><span class=\"p\">(){</span>\n  <span class=\"n\">bool</span> <span class=\"n\">a</span> <span class=\"o\">=</span> <span class=\"nb\">true</span><span class=\"p\">;</span>\n  <span class=\"n\">printf</span><span class=\"p\">(</span><span class=\"s\">\"what's a? %d\"</span><span class=\"p\">,</span> <span class=\"n\">a</span><span class=\"p\">);</span>\n  <span class=\"k\">return</span> <span class=\"mi\">0</span><span class=\"p\">;</span>\n<span class=\"p\">}</span>\n\n</code></pre></div></div>\n<h3 id=\"note\">Note</h3>\n\n<ul>\n  <li>Uninitialized bool defaults to <code class=\"highlighter-rouge\">false</code>.</li>\n  <li>There is <strong>no</strong> format specifier in printf to specify bool type.</li>\n</ul>\n\n<h3 id=\"references\">References</h3>\n\n<ul>\n  <li><a href=\"https://en.wikibooks.org/wiki/C_Programming/stdbool.h\">Wikibooks</a></li>\n  <li><a href=\"https://stackoverflow.com/a/17307307/2712045\">SO</a></li>\n</ul>\n\n"

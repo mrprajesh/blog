@@ -2,7 +2,7 @@
 layout: post
 title: cpp20 features
 date: 04-10-2021 13:21:58 +05:30
-tags: [jekyll, coding]
+tags: [c,cpp,tricks]
 description:
 summary:
 comments: false

@@ -4,13 +4,28 @@
  <title>Rajesh's Blog</title>
  <link href="https://mrprajesh.co.in/blog/atom.xml" rel="self"/>
  <link href="https://mrprajesh.co.in/blog/"/>
- <updated>2021-10-15T12:55:41+05:30</updated>
+ <updated>2021-10-18T12:42:28+05:30</updated>
  <id>https://mrprajesh.co.in</id>
  <author>
    <name>Rajesh Pandian M</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>cpp loop fusion and fission</title>
+   <link href="https://mrprajesh.co.in/blog/cpp-20-loop-fusion.html"/>
+   <updated>2021-10-18T12:13:46+05:30</updated>
+   <id>https://mrprajesh.co.in/cpp-20-loop-fusion</id>
+   <content type="html">&lt;p&gt;After seeing the below tweet.&lt;/p&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot; data-theme=&quot;dark&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;IMO the two most important transformations for performant code are Array of Structs to Struct of Arrays and Loop Fusion to Loop Fission. The 1st is essential for cache perf and the 2nd breaks data dependencies and often unlocks more optimizations that were not obvious before. &lt;a href=&quot;https://t.co/hjLvzusExz&quot;&gt;pic.twitter.com/hjLvzusExz&lt;/a&gt;&lt;/p&gt;&amp;mdash; Daniel Holden (@anorangeduck) &lt;a href=&quot;https://twitter.com/anorangeduck/status/1449420737895440393?ref_src=twsrc%5Etfw&quot;&gt;October 16,
+2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;This is super cool! I sense a lot of value for whoever using &lt;code class=&quot;highlighter-rouge&quot;&gt;Thurst&lt;/code&gt; algorithms.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Print Vector function</title>
