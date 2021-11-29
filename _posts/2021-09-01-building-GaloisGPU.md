@@ -20,7 +20,9 @@ module load gcc640
 
 - Get the v4 and its prerequsites mgpu and cub.
 
+```
 git clone -b release-4.0 https://github.com/IntelligentSoftwareSystems/GaloisGPU
+```
 
 Follow below steps
 
@@ -89,12 +91,18 @@ make #no threads please.
 #we need libggrt.a file the be generated. Although it ended in errors looks like it is generated.
 ls -lrt rt/lib/
   libggrt.a
-cd sssp
+cd apps/sssp
 make
+
 
 ./sssp
 usage: ./sssp [-q] [-g gpunum] [-o output-file] [-l] [-d delta] [-s startNode] graph-file
  -l: enable thread block load balancer (by default false)
+
+cd apps/pr #Doing the same for PR and TC. What about BC?
+make
+cd apps/triangle
+make
 
 ```
 YAY!
