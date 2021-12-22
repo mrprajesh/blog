@@ -17,6 +17,25 @@
 "items": [
     
         {
+            "id": "https://mrprajesh.co.in/blog/run-program-with-inputs-files.html",
+            "title": "Run program with inputs and write output files",
+            "summary": null,
+            "content_text": "Most of the time, We wanted to run an executable on several inputinstances and store the corresponding results using a shell script.The location of input and output folders are specified in the script. However, we wantedoutput file to be in a specific format. This below thing works irrespective of thedepth of the folder location.Example:some/folder/inputFileWith.ext to  some/other/folder/outFileWithDifferent.extensionINPUT=some/folder            #no need to suffix /OUTPUT=some/other/folder     #no need to suffix /for f in $INPUT/*vrpdo  #fileName=$(echo $f | cut -f3 -d'/' | cut -f1 -d'.') # NOT GENERIC. DOES NOT WORK for NON-TWO LEVEL LOCATION  #fileName=$(echo $f | rev | cut -f1 -d'/' | rev | cut -f1 -d'.') # SLOWER THAN BELOW  fileName=$(echo $f | awk -F[./] '{print $(NF-1)}')  #echo $f and $fileName  ./runExe &lt; $f &gt; $OUTPUT/$fileName.soldone",
+            "content_html": "<p>Most of the time, We wanted to run an executable on several inputinstances and store the corresponding results using a shell script.The location of input and output folders are specified in the script. However, we wantedoutput file to be in a specific format. This below thing works irrespective of thedepth of the folder location.</p><p>Example:</p><p><code class=\"highlighter-rouge\">some/folder/inputFileWith.ext</code> to  <code class=\"highlighter-rouge\">some/other/folder/outFileWithDifferent.extension</code></p><div class=\"language-c highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"n\">INPUT</span><span class=\"o\">=</span><span class=\"n\">some</span><span class=\"o\">/</span><span class=\"n\">folder</span>            <span class=\"err\">#</span><span class=\"n\">no</span> <span class=\"n\">need</span> <span class=\"n\">to</span> <span class=\"n\">suffix</span> <span class=\"o\">/</span><span class=\"n\">OUTPUT</span><span class=\"o\">=</span><span class=\"n\">some</span><span class=\"o\">/</span><span class=\"n\">other</span><span class=\"o\">/</span><span class=\"n\">folder</span>     <span class=\"err\">#</span><span class=\"n\">no</span> <span class=\"n\">need</span> <span class=\"n\">to</span> <span class=\"n\">suffix</span> <span class=\"o\">/</span><span class=\"k\">for</span> <span class=\"n\">f</span> <span class=\"n\">in</span> <span class=\"err\">$</span><span class=\"n\">INPUT</span><span class=\"o\">/*</span><span class=\"n\">vrp</span><span class=\"k\">do</span>  <span class=\"cp\">#fileName=$(echo $f | cut -f3 -d'/' | cut -f1 -d'.') # NOT GENERIC. DOES NOT WORK for NON-TWO LEVEL LOCATION</span>  <span class=\"cp\">#fileName=$(echo $f | rev | cut -f1 -d'/' | rev | cut -f1 -d'.') # SLOWER THAN BELOW</span>  <span class=\"n\">fileName</span><span class=\"o\">=</span><span class=\"err\">$</span><span class=\"p\">(</span><span class=\"n\">echo</span> <span class=\"err\">$</span><span class=\"n\">f</span> <span class=\"o\">|</span> <span class=\"n\">awk</span> <span class=\"o\">-</span><span class=\"n\">F</span><span class=\"p\">[.</span><span class=\"o\">/</span><span class=\"p\">]</span> <span class=\"err\">'</span><span class=\"p\">{</span><span class=\"n\">print</span> <span class=\"err\">$</span><span class=\"p\">(</span><span class=\"n\">NF</span><span class=\"o\">-</span><span class=\"mi\">1</span><span class=\"p\">)}</span><span class=\"err\">'</span><span class=\"p\">)</span>  <span class=\"cp\">#echo $f and $fileName</span>  <span class=\"p\">.</span><span class=\"o\">/</span><span class=\"n\">runExe</span> <span class=\"o\">&lt;</span> <span class=\"err\">$</span><span class=\"n\">f</span> <span class=\"o\">&gt;</span> <span class=\"err\">$</span><span class=\"n\">OUTPUT</span><span class=\"o\">/</span><span class=\"err\">$</span><span class=\"n\">fileName</span><span class=\"p\">.</span><span class=\"n\">sol</span><span class=\"n\">done</span></code></pre></div></div>",
+            "url": "https://mrprajesh.co.in/blog/run-program-with-inputs-files.html",
+            
+            
+            
+            "tags": ["cpp","shell"],
+            
+            "date_published": "2021-12-22T09:59:47+05:30",
+            "date_modified": "2021-12-22T09:59:47+05:30",
+            
+                "author": "Rajesh Pandian M"
+            
+        },
+    
+        {
             "id": "https://mrprajesh.co.in/blog/cpp-20-loop-fusion.html",
             "title": "cpp loop fusion and fission",
             "summary": null,
@@ -676,25 +695,6 @@
             
             "date_published": "2020-03-29T16:42:59+05:30",
             "date_modified": "2020-03-29T16:42:59+05:30",
-            
-                "author": "Rajesh Pandian M"
-            
-        },
-    
-        {
-            "id": "https://mrprajesh.co.in/blog/stop-corono-tn.html",
-            "title": "War against corona virus disease (COVID) 2019",
-            "summary": "This is a sample description",
-            "content_text": "We are entering stage 3.The is a call for volunteers at various levelsnamely India, Tamil Nadu, Chennai, and even IT volunteers.Volunteers  India  TN  Chennai  IT/E-Gov  STATS - TNTN has exclusive links for COVID-19  https://stopcoronatn.in  Daily TN updates  Posters  IMP updates  NHM - TN  Health Minister  Facebook  YouTube  Telegram GroupChallenges  India last day 31-Mar  BrainStrom Ideas to combat  Fold.it  Kaggle ChallengeIAS Officers are doing a very good job  I have created a twitter list where you can see their actions",
-            "content_html": "<p>We are entering stage 3.The is a call for volunteers at various levelsnamely India, Tamil Nadu, Chennai, and even IT volunteers.</p><h3 id=\"volunteers\">Volunteers</h3><ul>  <li><a href=\"https://self4society.mygov.in/volunteer/\">India</a></li>  <li><a href=\"https://stopcorona.xenovex.com/login\">TN</a></li>  <li><a href=\"http://www.chennaicorporation.gov.in/relief_2016/sel_grp.htm\">Chennai</a></li>  <li><a href=\"https://tnega.tn.gov.in/volunteers/login\">IT/E-Gov</a></li>  <li><a href=\"https://stopcoronatn.in/files/COVID-19-Volunteers_List_28.03.2020_3_Pages_407_KB.pdf\">STATS - TN</a></li></ul><h3 id=\"tn-has-exclusive-links-for-covid-19\">TN has exclusive links for COVID-19</h3><ul>  <li><a href=\"https://stopcoronatn.in/\">https://stopcoronatn.in</a></li>  <li><a href=\"https://stopcoronatn.in/dailybulletin.html\">Daily TN updates</a></li>  <li><a href=\"https://stopcoronatn.in/healthadvisory.html\">Posters</a></li>  <li><a href=\"https://stopcoronatn.in/importantinformation.html\">IMP updates</a></li>  <li><a href=\"https://twitter.com/NHM_TN\">NHM - TN</a></li>  <li><a href=\"https://twitter.com/Vijayabaskarofl\">Health Minister</a></li>  <li><a href=\"https://www.facebook.com/tamilnadunhm/?ti=as\">Facebook</a></li>  <li><a href=\"https://www.youtube.com/channel/UCey5XaVBUChYMfsBcpcxeuw/featured?view_as=subscriber\">YouTube</a></li>  <li><a href=\"https://t.me/TN_Together_AgainstCorona\">Telegram Group</a></li></ul><h3 id=\"challenges\">Challenges</h3><ul>  <li><a href=\"https://innovate.mygov.in/covid19/\">India</a> last day 31-Mar</li>  <li><a href=\"https://www.mygov.in/group-issue/share-your-ideas-suggestions-help-fight-coronavirus/?utm_source=webcampaign&amp;group_issue&amp;285571\">BrainStrom Ideas to combat</a></li>  <li><a href=\"https://fold.it/portal/node/2008963\">Fold.it</a></li>  <li><a href=\"https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge\">Kaggle Challenge</a></li></ul><h3 id=\"ias-officers-are-doing-a-very-good-job\">IAS Officers are doing a very good job</h3><ul>  <li>I have created a twitter list where you can see <a href=\"https://twitter.com/i/lists/1243768845015240705\">their actions</a></li></ul>",
-            "url": "https://mrprajesh.co.in/blog/stop-corono-tn.html",
-            
-            
-            
-            "tags": ["covid","coronavirus","ias"],
-            
-            "date_published": "2020-03-29T15:10:24+05:30",
-            "date_modified": "2020-03-29T15:10:24+05:30",
             
                 "author": "Rajesh Pandian M"
             

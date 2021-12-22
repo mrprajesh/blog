@@ -2,6 +2,18 @@
   
     {
 
+      "title"    : "Run program with inputs and write output files",
+      "url"      : "/blog/run-program-with-inputs-files.html",
+      "category" : "",
+      "tags"     : "cpp, shell",
+      "date"     : "2021-12-22 09:59:47 +0530",
+      "discription" : "",
+      "content" : "<p>Most of the time, We wanted to run an executable on several input\ninstances and store the corresponding results using a shell script.\nThe location of input and output folders are specified in the script. However, we wanted\noutput file to be in a specific format. This below thing works irrespective of the\ndepth of the folder location.</p>\n\n<p>Example:</p>\n\n<p><code class=\"highlighter-rouge\">some/folder/inputFileWith.ext</code> to  <code class=\"highlighter-rouge\">some/other/folder/outFileWithDifferent.extension</code></p>\n\n<div class=\"language-c highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"n\">INPUT</span><span class=\"o\">=</span><span class=\"n\">some</span><span class=\"o\">/</span><span class=\"n\">folder</span>            <span class=\"err\">#</span><span class=\"n\">no</span> <span class=\"n\">need</span> <span class=\"n\">to</span> <span class=\"n\">suffix</span> <span class=\"o\">/</span>\n<span class=\"n\">OUTPUT</span><span class=\"o\">=</span><span class=\"n\">some</span><span class=\"o\">/</span><span class=\"n\">other</span><span class=\"o\">/</span><span class=\"n\">folder</span>     <span class=\"err\">#</span><span class=\"n\">no</span> <span class=\"n\">need</span> <span class=\"n\">to</span> <span class=\"n\">suffix</span> <span class=\"o\">/</span>\n<span class=\"k\">for</span> <span class=\"n\">f</span> <span class=\"n\">in</span> <span class=\"err\">$</span><span class=\"n\">INPUT</span><span class=\"o\">/*</span><span class=\"n\">vrp</span>\n<span class=\"k\">do</span>\n  <span class=\"cp\">#fileName=$(echo $f | cut -f3 -d'/' | cut -f1 -d'.') # NOT GENERIC. DOES NOT WORK for NON-TWO LEVEL LOCATION\n</span>  <span class=\"cp\">#fileName=$(echo $f | rev | cut -f1 -d'/' | rev | cut -f1 -d'.') # SLOWER THAN BELOW\n</span>  <span class=\"n\">fileName</span><span class=\"o\">=</span><span class=\"err\">$</span><span class=\"p\">(</span><span class=\"n\">echo</span> <span class=\"err\">$</span><span class=\"n\">f</span> <span class=\"o\">|</span> <span class=\"n\">awk</span> <span class=\"o\">-</span><span class=\"n\">F</span><span class=\"p\">[.</span><span class=\"o\">/</span><span class=\"p\">]</span> <span class=\"err\">'</span><span class=\"p\">{</span><span class=\"n\">print</span> <span class=\"err\">$</span><span class=\"p\">(</span><span class=\"n\">NF</span><span class=\"o\">-</span><span class=\"mi\">1</span><span class=\"p\">)}</span><span class=\"err\">'</span><span class=\"p\">)</span>\n  <span class=\"cp\">#echo $f and $fileName\n</span>  <span class=\"p\">.</span><span class=\"o\">/</span><span class=\"n\">runExe</span> <span class=\"o\">&lt;</span> <span class=\"err\">$</span><span class=\"n\">f</span> <span class=\"o\">&gt;</span> <span class=\"err\">$</span><span class=\"n\">OUTPUT</span><span class=\"o\">/</span><span class=\"err\">$</span><span class=\"n\">fileName</span><span class=\"p\">.</span><span class=\"n\">sol</span>\n<span class=\"n\">done</span>\n</code></pre></div></div>\n\n"
+
+    } ,
+  
+    {
+
       "title"    : "cpp loop fusion and fission",
       "url"      : "/blog/cpp-20-loop-fusion.html",
       "category" : "",
