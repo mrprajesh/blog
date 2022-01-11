@@ -4,7 +4,7 @@
  <title>Rajesh's Blog</title>
  <link href="https://mrprajesh.co.in/blog/atom.xml" rel="self"/>
  <link href="https://mrprajesh.co.in/blog/"/>
- <updated>2022-01-11T13:24:38+05:30</updated>
+ <updated>2022-01-11T13:26:29+05:30</updated>
  <id>https://mrprajesh.co.in</id>
  <author>
    <name>Rajesh Pandian M</name>
@@ -172,7 +172,7 @@ over the years.&lt;/p&gt;
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Can we template the &lt;code class=&quot;highlighter-rouge&quot;&gt;printVec4&lt;/code&gt;? &lt;del&gt;I still do not know&lt;/del&gt;. Found it!&lt;/p&gt;
+&lt;p&gt;Can we template the &lt;code class=&quot;highlighter-rouge&quot;&gt;printVec4&lt;/code&gt;? &lt;s&gt; I still do not know &lt;s&gt; . Found it!&lt;/s&gt;&lt;/s&gt;&lt;/p&gt;
 </content>
  </entry>
  

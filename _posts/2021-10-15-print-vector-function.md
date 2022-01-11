@@ -74,4 +74,4 @@ int main(int argc, char* argv[]){
 
 ```
 
-Can we template the `printVec4`? ~~I still do not know~~. Found it!
+Can we template the `printVec4`? <s> I still do not know <s> . Found it!
