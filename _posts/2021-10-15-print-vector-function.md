@@ -52,7 +52,7 @@ void printVec4(const auto &data){
   std::cout << '\n';
 }
 
-// Templating above
+// Templating above! #include <iterator>
 template <typename Container>
 void printVec5(const Container &data){
   std::copy(data.begin(),
@@ -74,4 +74,4 @@ int main(int argc, char* argv[]){
 
 ```
 
-Can we template the `printVec4`? ~I still do not know~. Found it!
+Can we template the `printVec4`? ~~I still do not know~~. Found it!
