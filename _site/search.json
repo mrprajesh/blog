@@ -2,6 +2,18 @@
   
     {
 
+      "title"    : "new year 2022",
+      "url"      : "/blog/new-year.html",
+      "category" : "",
+      "tags"     : "rant",
+      "date"     : "2022-01-11 12:26:45 +0530",
+      "discription" : "",
+      "content" : "<p>Happy new year 2022. Hopefully I will complete my PhD this year!</p>\n\n<h3 id=\"new-habits\">New habits</h3>\n\n<ul>\n  <li>Started to read books. (Digital Minimalism, Stillness is the key,…)</li>\n  <li>Starting to keep away from internet for some definite time per day.</li>\n</ul>\n\n<h3 id=\"big-fan-of\">Big fan of</h3>\n\n<ul>\n  <li>TRID (and Sheena)’s <a href=\"https://www.youtube.com/watch?v=Jf47F1IOmbg\">videos</a> and his (their) <a href=\"https://www.youtube.com/watch?v=_dH3NPaLzGA\">funny</a>, <a href=\"https://www.youtube.com/watch?v=ZYDC097mPPw\">wittly</a> remarks.</li>\n  <li><a href=\"https://www.powerlanguage.co.uk/wordle/\">Wordle game</a>. Found what are those square blocks circulating on twitter. Solved it on Day 2.</li>\n  <li>The Encanto – Disney’s latest animated movie! Love most charactors and song. Great to see animators capture visuals from choreographers and dancers.</li>\n</ul>\n\n<h3 id=\"phd-plan\">PhD Plan</h3>\n\n<ul>\n  <li>Finish DIMACS</li>\n  <li>Finish seminar-2</li>\n  <li>Finish 2nd work and submit</li>\n  <li>Start 3rd work (bc?)</li>\n</ul>\n\n<h3 id=\"nsm-project\">NSM Project</h3>\n\n<ul>\n  <li>bcManual bug on soc-twitter and friendster?</li>\n  <li>bcGeneration</li>\n  <li>ssspGen code clean up</li>\n</ul>\n\n<h3 id=\"planned-to-weekend\">Planned to (weekend)</h3>\n\n<ul>\n  <li>Complete Stroustrup’s chapters as videos? English? Tanglish?</li>\n  <li>Talk about std::algorithms?</li>\n  <li>do code review?</li>\n</ul>\n"
+
+    } ,
+  
+    {
+
       "title"    : "Run program with inputs and write output files",
       "url"      : "/blog/run-program-with-inputs-files.html",
       "category" : "",

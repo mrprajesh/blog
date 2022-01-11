@@ -17,6 +17,25 @@
 "items": [
     
         {
+            "id": "https://mrprajesh.co.in/blog/new-year.html",
+            "title": "new year 2022",
+            "summary": null,
+            "content_text": "Happy new year 2022. Hopefully I will complete my PhD this year!New habits  Started to read books. (Digital Minimalism, Stillness is the key,…)  Starting to keep away from internet for some definite time per day.Big fan of  TRID (and Sheena)’s videos and his (their) funny, wittly remarks.  Wordle game. Found what are those square blocks circulating on twitter. Solved it on Day 2.  The Encanto – Disney’s latest animated movie! Love most charactors and song. Great to see animators capture visuals from choreographers and dancers.PhD Plan  Finish DIMACS  Finish seminar-2  Finish 2nd work and submit  Start 3rd work (bc?)NSM Project  bcManual bug on soc-twitter and friendster?  bcGeneration  ssspGen code clean upPlanned to (weekend)  Complete Stroustrup’s chapters as videos? English? Tanglish?  Talk about std::algorithms?  do code review?",
+            "content_html": "<p>Happy new year 2022. Hopefully I will complete my PhD this year!</p><h3 id=\"new-habits\">New habits</h3><ul>  <li>Started to read books. (Digital Minimalism, Stillness is the key,…)</li>  <li>Starting to keep away from internet for some definite time per day.</li></ul><h3 id=\"big-fan-of\">Big fan of</h3><ul>  <li>TRID (and Sheena)’s <a href=\"https://www.youtube.com/watch?v=Jf47F1IOmbg\">videos</a> and his (their) <a href=\"https://www.youtube.com/watch?v=_dH3NPaLzGA\">funny</a>, <a href=\"https://www.youtube.com/watch?v=ZYDC097mPPw\">wittly</a> remarks.</li>  <li><a href=\"https://www.powerlanguage.co.uk/wordle/\">Wordle game</a>. Found what are those square blocks circulating on twitter. Solved it on Day 2.</li>  <li>The Encanto – Disney’s latest animated movie! Love most charactors and song. Great to see animators capture visuals from choreographers and dancers.</li></ul><h3 id=\"phd-plan\">PhD Plan</h3><ul>  <li>Finish DIMACS</li>  <li>Finish seminar-2</li>  <li>Finish 2nd work and submit</li>  <li>Start 3rd work (bc?)</li></ul><h3 id=\"nsm-project\">NSM Project</h3><ul>  <li>bcManual bug on soc-twitter and friendster?</li>  <li>bcGeneration</li>  <li>ssspGen code clean up</li></ul><h3 id=\"planned-to-weekend\">Planned to (weekend)</h3><ul>  <li>Complete Stroustrup’s chapters as videos? English? Tanglish?</li>  <li>Talk about std::algorithms?</li>  <li>do code review?</li></ul>",
+            "url": "https://mrprajesh.co.in/blog/new-year.html",
+            
+            
+            
+            
+            
+            "date_published": "2022-01-11T12:26:45+05:30",
+            "date_modified": "2022-01-11T12:26:45+05:30",
+            
+                "author": "Rajesh Pandian M"
+            
+        },
+    
+        {
             "id": "https://mrprajesh.co.in/blog/run-program-with-inputs-files.html",
             "title": "Run program with inputs and write output files",
             "summary": null,
@@ -676,25 +695,6 @@
             
             "date_published": "2020-03-29T17:09:54+05:30",
             "date_modified": "2020-03-29T17:09:54+05:30",
-            
-                "author": "Rajesh Pandian M"
-            
-        },
-    
-        {
-            "id": "https://mrprajesh.co.in/blog/search-jekyll-post-content.html",
-            "title": "Searching jekyll posts and enabling tags in GitHub pages",
-            "summary": null,
-            "content_text": "Search PostRonv’s Sidey theme already had the search ability; But, was not searching post’s content.It is using the Java script search.It has nice wiki which listed all the options.In the search.json file add the below line to enable it!\"content\" : {{ post.content | jsonify }}Jekyll Tags in Github PagesI have explained the issue and my workaround for this. Sometimes the solution can besimple.",
-            "content_html": "<h3 id=\"search-post\">Search Post</h3><p>Ronv’s Sidey theme already had the search ability; But, was not searching post’s content.It is using the <a href=\"https://github.com/christian-fei/Simple-Jekyll-Search\">Java script</a> search.It has nice <a href=\"https://github.com/christian-fei/Simple-Jekyll-Search/wiki#enabling-full-text-search\">wiki</a> which listed all the options.</p><p>In the <code class=\"highlighter-rouge\">search.json</code> file add the below line to enable it!</p><div class=\"language-cpp highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"s\">\"content\"</span> <span class=\"o\">:</span> <span class=\"p\">{{</span> <span class=\"n\">post</span><span class=\"p\">.</span><span class=\"n\">content</span> <span class=\"o\">|</span> <span class=\"n\">jsonify</span> <span class=\"p\">}}</span></code></pre></div></div><h3 id=\"jekyll-tags-in-github-pages\">Jekyll Tags in Github Pages</h3><p>I have explained the issue and my workaround for this. Sometimes the solution can be<a href=\"https://github.com/mrprajesh/blog/issues/4\">simple</a>.</p>",
-            "url": "https://mrprajesh.co.in/blog/search-jekyll-post-content.html",
-            
-            
-            
-            "tags": ["jekyll","github","gh-pages"],
-            
-            "date_published": "2020-03-29T16:42:59+05:30",
-            "date_modified": "2020-03-29T16:42:59+05:30",
             
                 "author": "Rajesh Pandian M"
             

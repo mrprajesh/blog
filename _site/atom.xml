@@ -4,13 +4,62 @@
  <title>Rajesh's Blog</title>
  <link href="https://mrprajesh.co.in/blog/atom.xml" rel="self"/>
  <link href="https://mrprajesh.co.in/blog/"/>
- <updated>2021-12-22T10:22:28+05:30</updated>
+ <updated>2022-01-11T13:21:36+05:30</updated>
  <id>https://mrprajesh.co.in</id>
  <author>
    <name>Rajesh Pandian M</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>new year 2022</title>
+   <link href="https://mrprajesh.co.in/blog/new-year.html"/>
+   <updated>2022-01-11T12:26:45+05:30</updated>
+   <id>https://mrprajesh.co.in/new-year</id>
+   <content type="html">&lt;p&gt;Happy new year 2022. Hopefully I will complete my PhD this year!&lt;/p&gt;
+
+&lt;h3 id=&quot;new-habits&quot;&gt;New habits&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Started to read books. (Digital Minimalism, Stillness is the key,…)&lt;/li&gt;
+  &lt;li&gt;Starting to keep away from internet for some definite time per day.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;big-fan-of&quot;&gt;Big fan of&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;TRID (and Sheena)’s &lt;a href=&quot;https://www.youtube.com/watch?v=Jf47F1IOmbg&quot;&gt;videos&lt;/a&gt; and his (their) &lt;a href=&quot;https://www.youtube.com/watch?v=_dH3NPaLzGA&quot;&gt;funny&lt;/a&gt;, &lt;a href=&quot;https://www.youtube.com/watch?v=ZYDC097mPPw&quot;&gt;wittly&lt;/a&gt; remarks.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.powerlanguage.co.uk/wordle/&quot;&gt;Wordle game&lt;/a&gt;. Found what are those square blocks circulating on twitter. Solved it on Day 2.&lt;/li&gt;
+  &lt;li&gt;The Encanto – Disney’s latest animated movie! Love most charactors and song. Great to see animators capture visuals from choreographers and dancers.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;phd-plan&quot;&gt;PhD Plan&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Finish DIMACS&lt;/li&gt;
+  &lt;li&gt;Finish seminar-2&lt;/li&gt;
+  &lt;li&gt;Finish 2nd work and submit&lt;/li&gt;
+  &lt;li&gt;Start 3rd work (bc?)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;nsm-project&quot;&gt;NSM Project&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;bcManual bug on soc-twitter and friendster?&lt;/li&gt;
+  &lt;li&gt;bcGeneration&lt;/li&gt;
+  &lt;li&gt;ssspGen code clean up&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;planned-to-weekend&quot;&gt;Planned to (weekend)&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Complete Stroustrup’s chapters as videos? English? Tanglish?&lt;/li&gt;
+  &lt;li&gt;Talk about std::algorithms?&lt;/li&gt;
+  &lt;li&gt;do code review?&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Run program with inputs and write output files</title>
