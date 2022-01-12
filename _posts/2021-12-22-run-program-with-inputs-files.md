@@ -22,6 +22,7 @@ Example:
 `some/folder/inputFileWith.ext` to  `some/other/folder/outFileWithDifferent.extension`
 
 ```c
+#!/bin/bash
 INPUT=some/folder            #no need to suffix /
 OUTPUT=some/other/folder     #no need to suffix /
 for f in $INPUT/*vrp
