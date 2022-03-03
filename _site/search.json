@@ -2,6 +2,18 @@
   
     {
 
+      "title"    : "change default login shell to bash without root access",
+      "url"      : "/blog/change-default-login-shell-without-root.html",
+      "category" : "",
+      "tags"     : "linux, shell, bash, sh",
+      "date"     : "2022-03-03 11:05:41 +0530",
+      "discription" : "",
+      "content" : "<p>Somehow our admin did not make <code class=\"highlighter-rouge\">bash</code> as a default shell during user creation.\nI had to type every time <code class=\"highlighter-rouge\">bash</code> after login to enable bash like below:</p>\n\n<div class=\"language-c highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"n\">Welcome</span> <span class=\"n\">to</span> <span class=\"n\">Ubuntu</span> <span class=\"mi\">20</span><span class=\"p\">.</span><span class=\"mo\">04</span><span class=\"p\">.</span><span class=\"mi\">3</span> <span class=\"n\">LTS</span> <span class=\"p\">(</span><span class=\"n\">GNU</span><span class=\"o\">/</span><span class=\"n\">Linux</span> <span class=\"mi\">5</span><span class=\"p\">.</span><span class=\"mi\">13</span><span class=\"p\">.</span><span class=\"mi\">0</span><span class=\"o\">-</span><span class=\"mi\">30</span><span class=\"o\">-</span><span class=\"n\">generic</span> <span class=\"n\">x86_64</span><span class=\"p\">)</span>\n\n <span class=\"o\">*</span> <span class=\"n\">Documentation</span><span class=\"o\">:</span>  <span class=\"n\">https</span><span class=\"o\">:</span><span class=\"c1\">//help.ubuntu.com</span>\n <span class=\"o\">*</span> <span class=\"n\">Management</span><span class=\"o\">:</span>     <span class=\"n\">https</span><span class=\"o\">:</span><span class=\"c1\">//landscape.canonical.com</span>\n <span class=\"o\">*</span> <span class=\"n\">Support</span><span class=\"o\">:</span>        <span class=\"n\">https</span><span class=\"o\">:</span><span class=\"c1\">//ubuntu.com/advantage</span>\n<span class=\"err\">$</span>\n<span class=\"err\">$</span>\n</code></pre></div></div>\n\n<p>It is easy to make bash as default. Run <code class=\"highlighter-rouge\">chsh -s /bin/bash</code> or do below:</p>\n\n<div class=\"language-c highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"n\">chsh</span>\n<span class=\"n\">Password</span><span class=\"o\">:</span>\n<span class=\"n\">Changing</span> <span class=\"n\">the</span> <span class=\"n\">login</span> <span class=\"n\">shell</span> <span class=\"k\">for</span> <span class=\"o\">&lt;</span><span class=\"n\">usernme</span><span class=\"o\">&gt;</span>\n<span class=\"n\">Enter</span> <span class=\"n\">the</span> <span class=\"n\">new</span> <span class=\"n\">value</span><span class=\"p\">,</span> <span class=\"n\">or</span> <span class=\"n\">press</span> <span class=\"n\">ENTER</span> <span class=\"k\">for</span> <span class=\"n\">the</span> <span class=\"k\">default</span>\n\t<span class=\"n\">Login</span> <span class=\"n\">Shell</span> <span class=\"p\">[</span><span class=\"o\">/</span><span class=\"n\">bin</span><span class=\"o\">/</span><span class=\"n\">sh</span><span class=\"p\">]</span><span class=\"o\">:</span> <span class=\"o\">/</span><span class=\"n\">bin</span><span class=\"o\">/</span><span class=\"n\">bash</span>\n<span class=\"err\">$</span>\n</code></pre></div></div>\n\n<p>Tada! It is done. you can exit and re-login to confirm.</p>\n"
+
+    } ,
+  
+    {
+
       "title"    : "English++",
       "url"      : "/blog/english.html",
       "category" : "",
