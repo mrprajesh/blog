@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>Rajesh's Blog</title>
- <link href="http://localhost:4000/blog/atom.xml" rel="self"/>
- <link href="http://localhost:4000/blog/"/>
- <updated>2022-03-03T17:45:05+05:30</updated>
- <id>http://localhost:4000</id>
+ <link href="https://mrprajesh.co.in/blog/atom.xml" rel="self"/>
+ <link href="https://mrprajesh.co.in/blog/"/>
+ <updated>2022-03-03T18:08:49+05:30</updated>
+ <id>https://mrprajesh.co.in</id>
  <author>
    <name>Rajesh Pandian M</name>
    <email></email>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>change default login shell to bash without root access</title>
-   <link href="http://localhost:4000/blog/change-default-login-shell-without-root.html"/>
+   <link href="https://mrprajesh.co.in/blog/change-default-login-shell-without-root.html"/>
    <updated>2022-03-03T11:05:41+05:30</updated>
-   <id>http://localhost:4000/change-default-login-shell-without-root</id>
+   <id>https://mrprajesh.co.in/change-default-login-shell-without-root</id>
    <content type="html">&lt;p&gt;Somehow our admin did not make &lt;code class=&quot;highlighter-rouge&quot;&gt;bash&lt;/code&gt; as a default shell during user creation.
 I had to type every time &lt;code class=&quot;highlighter-rouge&quot;&gt;bash&lt;/code&gt; after login to enable bash like below:&lt;/p&gt;
 
@@ -45,9 +45,9 @@ I had to type every time &lt;code class=&quot;highlighter-rouge&quot;&gt;bash&lt
  
  <entry>
    <title>English++</title>
-   <link href="http://localhost:4000/blog/english.html"/>
+   <link href="https://mrprajesh.co.in/blog/english.html"/>
    <updated>2022-01-12T13:58:02+05:30</updated>
-   <id>http://localhost:4000/english</id>
+   <id>https://mrprajesh.co.in/english</id>
    <content type="html">&lt;p&gt;Some more English words.&lt;/p&gt;
 
 &lt;ul&gt;
@@ -70,9 +70,9 @@ I had to type every time &lt;code class=&quot;highlighter-rouge&quot;&gt;bash&lt
  
  <entry>
    <title>Good programming practices</title>
-   <link href="http://localhost:4000/blog/good-programming-practices.html"/>
+   <link href="https://mrprajesh.co.in/blog/good-programming-practices.html"/>
    <updated>2022-01-11T13:39:09+05:30</updated>
-   <id>http://localhost:4000/good-programming-practices</id>
+   <id>https://mrprajesh.co.in/good-programming-practices</id>
    <content type="html">&lt;p&gt;Okay, let’s reiterate it again.&lt;/p&gt;
 
 &lt;h3 id=&quot;good-for-me-programming-practices-esp-c-cpp-or-cplusplus&quot;&gt;Good (for me!) programming practices (esp. #c++ #cpp or #cplusplus)&lt;/h3&gt;
@@ -110,9 +110,9 @@ I had to type every time &lt;code class=&quot;highlighter-rouge&quot;&gt;bash&lt
  
  <entry>
    <title>new year 2022</title>
-   <link href="http://localhost:4000/blog/new-year-2022.html"/>
+   <link href="https://mrprajesh.co.in/blog/new-year-2022.html"/>
    <updated>2022-01-11T12:26:45+05:30</updated>
-   <id>http://localhost:4000/new-year-2022</id>
+   <id>https://mrprajesh.co.in/new-year-2022</id>
    <content type="html">&lt;p&gt;Happy new year 2022. Hopefully I will complete my PhD this year!&lt;/p&gt;
 
 &lt;h3 id=&quot;new-habits&quot;&gt;New habits&lt;/h3&gt;
@@ -159,9 +159,9 @@ I had to type every time &lt;code class=&quot;highlighter-rouge&quot;&gt;bash&lt
  
  <entry>
    <title>Run program with inputs and write output files</title>
-   <link href="http://localhost:4000/blog/run-program-with-inputs-files.html"/>
+   <link href="https://mrprajesh.co.in/blog/run-program-with-inputs-files.html"/>
    <updated>2021-12-22T09:59:47+05:30</updated>
-   <id>http://localhost:4000/run-program-with-inputs-files</id>
+   <id>https://mrprajesh.co.in/run-program-with-inputs-files</id>
    <content type="html">&lt;p&gt;Most of the time, We wanted to run an executable on several input
 instances and store the corresponding results using a shell script.
 The location of input and output folders are specified in the script. However, we wanted
@@ -190,9 +190,9 @@ depth of the folder location.&lt;/p&gt;
  
  <entry>
    <title>cpp loop fusion and fission</title>
-   <link href="http://localhost:4000/blog/cpp-20-loop-fusion.html"/>
+   <link href="https://mrprajesh.co.in/blog/cpp-20-loop-fusion.html"/>
    <updated>2021-10-18T12:13:46+05:30</updated>
-   <id>http://localhost:4000/cpp-20-loop-fusion</id>
+   <id>https://mrprajesh.co.in/cpp-20-loop-fusion</id>
    <content type="html">&lt;p&gt;After seeing the below tweet.&lt;/p&gt;
 
 &lt;blockquote class=&quot;twitter-tweet&quot; data-theme=&quot;dark&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;IMO the two most important transformations for performant code are Array of Structs to Struct of Arrays and Loop Fusion to Loop Fission. The 1st is essential for cache perf and the 2nd breaks data dependencies and often unlocks more optimizations that were not obvious before. &lt;a href=&quot;https://t.co/hjLvzusExz&quot;&gt;pic.twitter.com/hjLvzusExz&lt;/a&gt;&lt;/p&gt;&amp;mdash; Daniel Holden (@anorangeduck) &lt;a href=&quot;https://twitter.com/anorangeduck/status/1449420737895440393?ref_src=twsrc%5Etfw&quot;&gt;October 16,
@@ -205,9 +205,9 @@ depth of the folder location.&lt;/p&gt;
  
  <entry>
    <title>Print Vector function</title>
-   <link href="http://localhost:4000/blog/print-vector-function.html"/>
+   <link href="https://mrprajesh.co.in/blog/print-vector-function.html"/>
    <updated>2021-10-15T11:36:26+05:30</updated>
-   <id>http://localhost:4000/print-vector-function</id>
+   <id>https://mrprajesh.co.in/print-vector-function</id>
    <content type="html">&lt;p&gt;Note the comments in-line. This is how my &lt;code class=&quot;highlighter-rouge&quot;&gt;print vector&lt;/code&gt; function refined
 over the years.&lt;/p&gt;
 
@@ -275,9 +275,9 @@ over the years.&lt;/p&gt;
  
  <entry>
    <title>cpp20 features</title>
-   <link href="http://localhost:4000/blog/cpp20-features.html"/>
+   <link href="https://mrprajesh.co.in/blog/cpp20-features.html"/>
    <updated>2021-10-04T13:21:58+05:30</updated>
-   <id>http://localhost:4000/cpp20-features</id>
+   <id>https://mrprajesh.co.in/cpp20-features</id>
    <content type="html">&lt;p&gt;With advent to range-based  for loop we begin to write the below loop&lt;/p&gt;
 &lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vec&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//vec is just for sample&lt;/span&gt;
   &lt;span class=&quot;c1&quot;&gt;// use vec[i]&lt;/span&gt;
@@ -312,9 +312,9 @@ over the years.&lt;/p&gt;
  
  <entry>
    <title>CPP STL Enlightenment</title>
-   <link href="http://localhost:4000/blog/cpp-stl-enlightment.html"/>
+   <link href="https://mrprajesh.co.in/blog/cpp-stl-enlightment.html"/>
    <updated>2021-09-30T12:56:28+05:30</updated>
-   <id>http://localhost:4000/cpp-stl-enlightment</id>
+   <id>https://mrprajesh.co.in/cpp-stl-enlightment</id>
    <content type="html">&lt;p&gt;C++ is moving so fast especially in the recent decade. I learned C++ without STL (in 2010’s)
 and only learned about STL containers much after 2014 (during my PG). There were
 lot of useful data structure such a set, map, vector, etc.&lt;/p&gt;
@@ -346,9 +346,9 @@ You can solve most of the competitive programming problems in just 1 or 2 lines.
  
  <entry>
    <title>Creating Good Images for research papers</title>
-   <link href="http://localhost:4000/blog/creating-images-for-research-papers.html"/>
+   <link href="https://mrprajesh.co.in/blog/creating-images-for-research-papers.html"/>
    <updated>2021-09-30T12:40:41+05:30</updated>
-   <id>http://localhost:4000/creating-images-for-research-papers</id>
+   <id>https://mrprajesh.co.in/creating-images-for-research-papers</id>
    <content type="html">&lt;p&gt;It is a 3-step process I follow from &lt;a href=&quot;http://faculty.iitr.ac.in/~sparshfec/&quot;&gt;Sparsh Mittal&lt;/a&gt;
 ‘s talk.&lt;/p&gt;
 
@@ -379,9 +379,9 @@ You can solve most of the competitive programming problems in just 1 or 2 lines.
  
  <entry>
    <title>Building GaloisGPU on CentOS</title>
-   <link href="http://localhost:4000/blog/building-galoisgpu.html"/>
+   <link href="https://mrprajesh.co.in/blog/building-galoisgpu.html"/>
    <updated>2021-09-01T10:45:17+05:30</updated>
-   <id>http://localhost:4000/building-GaloisGPU</id>
+   <id>https://mrprajesh.co.in/building-GaloisGPU</id>
    <content type="html">&lt;h2 id=&quot;wip-building-galoisgpulonestargpu-on-linux&quot;&gt;[WIP] Building GaloisGPU/LonestarGPU on Linux&lt;/h2&gt;
 
 &lt;ul&gt;
@@ -507,9 +507,9 @@ CUDA_ARCH := &lt;br /&gt;
  
  <entry>
    <title>Install/build Gunrock on CentOS</title>
-   <link href="http://localhost:4000/blog/install-gunrock-on-centos.html"/>
+   <link href="https://mrprajesh.co.in/blog/install-gunrock-on-centos.html"/>
    <updated>2021-07-03T19:44:23+05:30</updated>
-   <id>http://localhost:4000/install-gunrock-on-centos</id>
+   <id>https://mrprajesh.co.in/install-gunrock-on-centos</id>
    <content type="html">&lt;p&gt;This post is in continuation of with my earlier  &lt;a href=&quot;https://mrprajesh.blogspot.com/2019/12/building-gunrock-on-redhatcentos.html&quot;&gt;blog post&lt;/a&gt;.
 The recent version (v1.2) of gunrock requires &lt;code class=&quot;highlighter-rouge&quot;&gt;std=c++14&lt;/code&gt; for building. We have modified some of the steps there. Let’s build &lt;code class=&quot;highlighter-rouge&quot;&gt;SSSP&lt;/code&gt;.
 Do check out the &lt;a href=&quot;#short-5-min-video&quot;&gt;5 minute-video&lt;/a&gt; at the end.&lt;/p&gt;
@@ -558,9 +558,9 @@ Do check out the &lt;a href=&quot;#short-5-min-video&quot;&gt;5 minute-video&lt;
  
  <entry>
    <title>Thinks To Note in C Language</title>
-   <link href="http://localhost:4000/blog/thinks-to-note-c-language.html"/>
+   <link href="https://mrprajesh.co.in/blog/thinks-to-note-c-language.html"/>
    <updated>2021-06-19T17:08:54+05:30</updated>
-   <id>http://localhost:4000/Thinks-To-Note-C-Language</id>
+   <id>https://mrprajesh.co.in/Thinks-To-Note-C-Language</id>
    <content type="html">&lt;p&gt;Back in those days as I started as a teaching assistant (TA) we TAs would
 learn things which we never knew before. I am going add few things that I
 have learnt in TAing CS1111 this semester Apr-Jun 2021.&lt;/p&gt;
@@ -597,9 +597,9 @@ eg &lt;code class=&quot;highlighter-rouge&quot;&gt;scanf(&quot;%d%c&quot;, num, 
  
  <entry>
    <title>bool in C language</title>
-   <link href="http://localhost:4000/blog/bool-in-c-language.html"/>
+   <link href="https://mrprajesh.co.in/blog/bool-in-c-language.html"/>
    <updated>2021-05-16T00:01:01+05:30</updated>
-   <id>http://localhost:4000/bool-in-c-language</id>
+   <id>https://mrprajesh.co.in/bool-in-c-language</id>
    <content type="html">&lt;p&gt;For long time I was under an impression that &lt;code class=&quot;highlighter-rouge&quot;&gt;bool&lt;/code&gt; data type is present
 only in C++ and not in C language. I just got to know that it is there
 in C however it is not enabled default. So, we have to include it. It is
@@ -633,9 +633,9 @@ very surprising that it is present there from C99 standard.&lt;/p&gt;
  
  <entry>
    <title>My encounters with nvprof metrics</title>
-   <link href="http://localhost:4000/blog/my-encounters-with-nvprof.html"/>
+   <link href="https://mrprajesh.co.in/blog/my-encounters-with-nvprof.html"/>
    <updated>2021-01-12T01:58:18+05:30</updated>
-   <id>http://localhost:4000/my-encounters-with-nvprof</id>
+   <id>https://mrprajesh.co.in/my-encounters-with-nvprof</id>
    <content type="html">&lt;p&gt;My objective is plain and simple. I wanted &lt;code class=&quot;highlighter-rouge&quot;&gt;nvprof&lt;/code&gt; to output
 the metrics as I had mentioned in &lt;a href=&quot;https://gist.github.com/mrprajesh/352cbe661ee27a6b4627ae72d89479e6&quot;&gt;my gist&lt;/a&gt;&lt;/p&gt;
 
@@ -658,9 +658,9 @@ We got some weird errors which even google had no answers.&lt;/p&gt;
  
  <entry>
    <title>Checker for DIMACS</title>
-   <link href="http://localhost:4000/blog/checker-for-dimacs.html"/>
+   <link href="https://mrprajesh.co.in/blog/checker-for-dimacs.html"/>
    <updated>2021-01-07T18:36:07+05:30</updated>
-   <id>http://localhost:4000/checker-for-dimacs</id>
+   <id>https://mrprajesh.co.in/checker-for-dimacs</id>
    <content type="html">&lt;p&gt;Created a checker for DIMACS
 &lt;a href=&quot;https://mrprajesh.co.in/blog/cvrp.html&quot;&gt;is here&lt;/a&gt; or
 &lt;a href=&quot;https://mrprajesh.co.in/cvrp.html&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
@@ -669,9 +669,9 @@ We got some weird errors which even google had no answers.&lt;/p&gt;
  
  <entry>
    <title>Use standard date and time format</title>
-   <link href="http://localhost:4000/blog/use-date-and-time-format.html"/>
+   <link href="https://mrprajesh.co.in/blog/use-date-and-time-format.html"/>
    <updated>2021-01-06T17:59:37+05:30</updated>
-   <id>http://localhost:4000/Use-date-and-time-format</id>
+   <id>https://mrprajesh.co.in/Use-date-and-time-format</id>
    <content type="html">&lt;h4 id=&quot;date&quot;&gt;Date&lt;/h4&gt;
 &lt;p&gt;My brother’s birth day is &lt;code class=&quot;highlighter-rouge&quot;&gt;11-04-1994&lt;/code&gt;. It is natural to
 get confused as &lt;code class=&quot;highlighter-rouge&quot;&gt;04-Nov&lt;/code&gt; if are an US/Europen citizen. :open_mouth: His birthday is  on &lt;code class=&quot;highlighter-rouge&quot;&gt;11-April&lt;/code&gt;. :yum: So, it is always better write (or store in system)
@@ -719,9 +719,9 @@ So, let’s follow a 24 hours standard time along with mentioning your shift or 
  
  <entry>
    <title>Do you want a smart &quot;git log&quot;</title>
-   <link href="http://localhost:4000/blog/smart-git-log.html"/>
+   <link href="https://mrprajesh.co.in/blog/smart-git-log.html"/>
    <updated>2020-12-23T14:13:35+05:30</updated>
-   <id>http://localhost:4000/smart-git-log</id>
+   <id>https://mrprajesh.co.in/smart-git-log</id>
    <content type="html">&lt;p&gt;Many at times &lt;code class=&quot;highlighter-rouge&quot;&gt;git log&lt;/code&gt; is more difficult to read and scroll. Here is a
 smart solution for it. Do you want some thing like below?&lt;/p&gt;
 
@@ -741,9 +741,9 @@ smart solution for it. Do you want some thing like below?&lt;/p&gt;
  
  <entry>
    <title>Enable recent gcc version using devtoolset on centOs</title>
-   <link href="http://localhost:4000/blog/devtoolset-on-centos.html"/>
+   <link href="https://mrprajesh.co.in/blog/devtoolset-on-centos.html"/>
    <updated>2020-12-23T13:37:55+05:30</updated>
-   <id>http://localhost:4000/devtoolset-on-centos</id>
+   <id>https://mrprajesh.co.in/devtoolset-on-centos</id>
    <content type="html">&lt;p&gt;This is a trick we use for using various &lt;code class=&quot;highlighter-rouge&quot;&gt;gcc&lt;/code&gt; version on the same machine.
 The machine my advisor runs on centOs. Everyone has a different
 requirement for gcc. So, they have this wonderful option of devtoolset.
@@ -781,9 +781,9 @@ installed. Lets see how to enable it.&lt;/p&gt;
  
  <entry>
    <title>Enable Nvidia or Intel GPUs command line for display in Ubuntu/Linux Mint</title>
-   <link href="http://localhost:4000/blog/set-nvidia-gpu-as-default-cmd-line.html"/>
+   <link href="https://mrprajesh.co.in/blog/set-nvidia-gpu-as-default-cmd-line.html"/>
    <updated>2020-12-19T03:06:07+05:30</updated>
-   <id>http://localhost:4000/set-nvidia-gpu-as-default-cmd-line</id>
+   <id>https://mrprajesh.co.in/set-nvidia-gpu-as-default-cmd-line</id>
    <content type="html">&lt;p&gt;Do you want to set the preferred GPU if &lt;code class=&quot;highlighter-rouge&quot;&gt;nvidia x server setting&lt;/code&gt; is not displayed
 in the tray icon. Let’s go command line.&lt;/p&gt;
 
@@ -803,9 +803,9 @@ Reboot to see the changes.&lt;/p&gt;
  
  <entry>
    <title>Terminal and shell prompt customization</title>
-   <link href="http://localhost:4000/blog/terminal-and-shell-prompt-customization.html"/>
+   <link href="https://mrprajesh.co.in/blog/terminal-and-shell-prompt-customization.html"/>
    <updated>2020-12-17T13:40:46+05:30</updated>
-   <id>http://localhost:4000/terminal-and-shell-prompt-customization</id>
+   <id>https://mrprajesh.co.in/terminal-and-shell-prompt-customization</id>
    <content type="html">&lt;p&gt;Do you want your terminal prompt to look like a pro?&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;images/terminal.png&quot; alt=&quot;sample pic! Not loaded&quot; /&gt;&lt;/p&gt;
@@ -920,9 +920,9 @@ Cheers,&lt;/p&gt;
  
  <entry>
    <title>Resolving nvidia/cuda driver conflicts</title>
-   <link href="http://localhost:4000/blog/resolving-nvidia-driver-conflicts.html"/>
+   <link href="https://mrprajesh.co.in/blog/resolving-nvidia-driver-conflicts.html"/>
    <updated>2020-12-16T14:17:15+05:30</updated>
-   <id>http://localhost:4000/resolving-nvidia-driver-conflicts</id>
+   <id>https://mrprajesh.co.in/resolving-nvidia-driver-conflicts</id>
    <content type="html">&lt;p&gt;Recently on my advisor’s server machine, some automatic updates has messed
 up with the installed drivers. So, this resulted in the following:&lt;/p&gt;
 
@@ -958,9 +958,9 @@ the GPUs connected.&lt;/p&gt;
  
  <entry>
    <title>DIMACS and PACE Implementation challenges</title>
-   <link href="http://localhost:4000/blog/implementation-challenges.html"/>
+   <link href="https://mrprajesh.co.in/blog/implementation-challenges.html"/>
    <updated>2020-12-06T14:52:47+05:30</updated>
-   <id>http://localhost:4000/implementation-challenges</id>
+   <id>https://mrprajesh.co.in/implementation-challenges</id>
    <content type="html">&lt;p&gt;There are two implementations challenges currently accepting submissions.&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;http://dimacs.rutgers.edu/programs/challenge/vrp/&quot;&gt;12th DIMACS &lt;/a&gt;&lt;/li&gt;
@@ -994,9 +994,9 @@ the GPUs connected.&lt;/p&gt;
  
  <entry>
    <title>Back on track</title>
-   <link href="http://localhost:4000/blog/back-on-track.html"/>
+   <link href="https://mrprajesh.co.in/blog/back-on-track.html"/>
    <updated>2020-11-23T09:20:53+05:30</updated>
-   <id>http://localhost:4000/back-on-track</id>
+   <id>https://mrprajesh.co.in/back-on-track</id>
    <content type="html">&lt;p&gt;Many at times one’s &lt;strong&gt;life&lt;/strong&gt; take too many quick turns. Lately,&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;Preethi’s Pregnancy and other complications&lt;/li&gt;
@@ -1018,9 +1018,9 @@ Of course, new role father is added to it.&lt;/p&gt;
  
  <entry>
    <title>Github renames master branch to main</title>
-   <link href="http://localhost:4000/blog/github-renames-master-branch-to-main.html"/>
+   <link href="https://mrprajesh.co.in/blog/github-renames-master-branch-to-main.html"/>
    <updated>2020-10-29T00:29:07+05:30</updated>
-   <id>http://localhost:4000/github-renames-master-branch-to-main</id>
+   <id>https://mrprajesh.co.in/github-renames-master-branch-to-main</id>
    <content type="html">&lt;p&gt;I happen to know this pretty late. Github is set the rename the master branch
 as main branch. So, why does Github do so?&lt;/p&gt;
 
@@ -1049,9 +1049,9 @@ Bye&lt;/p&gt;
  
  <entry>
    <title>Card game play - Rummy</title>
-   <link href="http://localhost:4000/blog/card-game-playing-tips-rummy.html"/>
+   <link href="https://mrprajesh.co.in/blog/card-game-playing-tips-rummy.html"/>
    <updated>2020-04-29T13:41:09+05:30</updated>
-   <id>http://localhost:4000/card-game-playing-tips-rummy</id>
+   <id>https://mrprajesh.co.in/card-game-playing-tips-rummy</id>
    <content type="html">&lt;p&gt;Indian Rummy; 13 Cards Rummy or Points Rummy.&lt;/p&gt;
 
 &lt;h3 id=&quot;types&quot;&gt;Types&lt;/h3&gt;
@@ -1124,9 +1124,9 @@ Note a set is 3 or 4!&lt;/p&gt;
  
  <entry>
    <title>Learning coronavirus</title>
-   <link href="http://localhost:4000/blog/learning-coronavirus.html"/>
+   <link href="https://mrprajesh.co.in/blog/learning-coronavirus.html"/>
    <updated>2020-04-16T20:44:32+05:30</updated>
-   <id>http://localhost:4000/learning-coronavirus</id>
+   <id>https://mrprajesh.co.in/learning-coronavirus</id>
    <content type="html">&lt;p&gt;Instead of keeping myself busy with work and am keepking busy with COVID work!&lt;/p&gt;
 
 &lt;p&gt;Since the &lt;a href=&quot;/blog/corono-virus-pedia.html&quot;&gt;last post&lt;/a&gt;, just wanted put the timeline of instances that we keep leaning.
@@ -1189,9 +1189,9 @@ There are a lot we do not know about this new virus. &lt;em&gt;SARS-COV-2&lt;/em
  
  <entry>
    <title>Self realization</title>
-   <link href="http://localhost:4000/blog/self-realization.html"/>
+   <link href="https://mrprajesh.co.in/blog/self-realization.html"/>
    <updated>2020-04-11T13:58:12+05:30</updated>
-   <id>http://localhost:4000/self-realization</id>
+   <id>https://mrprajesh.co.in/self-realization</id>
    <content type="html">&lt;p&gt;&lt;strong&gt;TL;DR&lt;/strong&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -1257,9 +1257,9 @@ But, instead perform over large period. More about this on a later post.&lt;/p&g
  
  <entry>
    <title>Securing email servers</title>
-   <link href="http://localhost:4000/blog/securing-email-servers.html"/>
+   <link href="https://mrprajesh.co.in/blog/securing-email-servers.html"/>
    <updated>2020-04-10T16:08:45+05:30</updated>
-   <id>http://localhost:4000/securing-email-servers</id>
+   <id>https://mrprajesh.co.in/securing-email-servers</id>
    <content type="html">&lt;p&gt;To get a background on the issue,
 read &lt;a href=&quot;https://www.vox.com/recode/2020/4/2/21202852/coronavirus-scam-email-who-spoofing-domain-dmarc&quot;&gt;this&lt;/a&gt; or see the video from vox. :sunglasses:
 We had a similar issues in our department as well.
@@ -1297,9 +1297,9 @@ As said in this &lt;a href=&quot;https://www.dmarcanalyzer.com/how-to-create-a-d
  
  <entry>
    <title>List the order of calls from installed packages/commands</title>
-   <link href="http://localhost:4000/blog/list-the-order-of-calls-from-installed.html"/>
+   <link href="https://mrprajesh.co.in/blog/list-the-order-of-calls-from-installed.html"/>
    <updated>2020-04-02T19:45:14+05:30</updated>
-   <id>http://localhost:4000/list-the-order-of-calls-from-installed</id>
+   <id>https://mrprajesh.co.in/list-the-order-of-calls-from-installed</id>
    <content type="html">&lt;ul&gt;
   &lt;li&gt;I had a ruby 2.7 version but system was using 2.5 (an older version came by default).&lt;/li&gt;
   &lt;li&gt;How did I managed to find out  using &lt;code class=&quot;highlighter-rouge&quot;&gt;which&lt;/code&gt; command?&lt;/li&gt;
@@ -1323,9 +1323,9 @@ As said in this &lt;a href=&quot;https://www.dmarcanalyzer.com/how-to-create-a-d
  
  <entry>
    <title>GSuite tools for online teaching</title>
-   <link href="http://localhost:4000/blog/gsuite-tools-for-online-teaching.html"/>
+   <link href="https://mrprajesh.co.in/blog/gsuite-tools-for-online-teaching.html"/>
    <updated>2020-04-01T17:14:10+05:30</updated>
-   <id>http://localhost:4000/gSuite-tools-for-online-teaching</id>
+   <id>https://mrprajesh.co.in/gSuite-tools-for-online-teaching</id>
    <content type="html">&lt;p&gt;Google had a lot of tools like hangout on air and many others. But, many
 because unavailable now. In this COVID19 season below tool see a surge.&lt;/p&gt;
 
@@ -1366,9 +1366,9 @@ There is a nice presentation &lt;a href=&quot;https://storage.googleapis.com/tea
  
  <entry>
    <title>How to keep ssh session alive longer</title>
-   <link href="http://localhost:4000/blog/how-to-keep-ssh-session-alive-longer.html"/>
+   <link href="https://mrprajesh.co.in/blog/how-to-keep-ssh-session-alive-longer.html"/>
    <updated>2020-04-01T13:40:44+05:30</updated>
-   <id>http://localhost:4000/how-to-keep-ssh-session-alive-longer</id>
+   <id>https://mrprajesh.co.in/how-to-keep-ssh-session-alive-longer</id>
    <content type="html">&lt;ul&gt;
   &lt;li&gt;More often &lt;code class=&quot;highlighter-rouge&quot;&gt;ssh&lt;/code&gt; times out when the user is not using the terminal for a few minutes.&lt;/li&gt;
   &lt;li&gt;The remote server disconnects the silent clients; Annoying! :angry:&lt;/li&gt;
@@ -1416,9 +1416,9 @@ There is a nice presentation &lt;a href=&quot;https://storage.googleapis.com/tea
  
  <entry>
    <title>How to add badges to your git repo or website</title>
-   <link href="http://localhost:4000/blog/add-badges-to-your-git-repo-site.html"/>
+   <link href="https://mrprajesh.co.in/blog/add-badges-to-your-git-repo-site.html"/>
    <updated>2020-04-01T01:35:26+05:30</updated>
-   <id>http://localhost:4000/add-badges-to-your-git-repo-site</id>
+   <id>https://mrprajesh.co.in/add-badges-to-your-git-repo-site</id>
    <content type="html">&lt;ul&gt;
   &lt;li&gt;How to add badges to your Git repo like &lt;a href=&quot;https://github.com/jekyll/jekyll#jekyll&quot;&gt;this&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;There are multiple ways to add badges.&lt;/li&gt;
@@ -1447,9 +1447,9 @@ There is a nice presentation &lt;a href=&quot;https://storage.googleapis.com/tea
  
  <entry>
    <title>Enable latex/mathjax in your post only if needed</title>
-   <link href="http://localhost:4000/blog/include-mathjax-only-if-needed.html"/>
+   <link href="https://mrprajesh.co.in/blog/include-mathjax-only-if-needed.html"/>
    <updated>2020-04-01T00:19:04+05:30</updated>
-   <id>http://localhost:4000/include-mathjax-only-if-needed</id>
+   <id>https://mrprajesh.co.in/include-mathjax-only-if-needed</id>
    <content type="html">&lt;ul&gt;
   &lt;li&gt;Assuming this is an extension of my earlier &lt;a href=&quot;/blog/latex-jekyll.html&quot;&gt;mathjax post&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;This post contains &lt;code class=&quot;highlighter-rouge&quot;&gt;latex&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;math&lt;/code&gt; mode symbols.&lt;/li&gt;
@@ -1490,9 +1490,9 @@ There is a nice presentation &lt;a href=&quot;https://storage.googleapis.com/tea
  
  <entry>
    <title>Skype - How to make someone admin</title>
-   <link href="http://localhost:4000/blog/skype-how-to-make-someone-admin.html"/>
+   <link href="https://mrprajesh.co.in/blog/skype-how-to-make-someone-admin.html"/>
    <updated>2020-03-31T12:32:56+05:30</updated>
-   <id>http://localhost:4000/skype-how-to-make-someone-admin</id>
+   <id>https://mrprajesh.co.in/skype-how-to-make-someone-admin</id>
    <content type="html">&lt;p&gt;How to make someone admin in skype. i.e How to update the role of
 a particular person in a group chat.&lt;/p&gt;
 
@@ -1514,9 +1514,9 @@ window!&lt;/p&gt;
  
  <entry>
    <title>How to write bikeshed</title>
-   <link href="http://localhost:4000/blog/how-to-bikeshed.html"/>
+   <link href="https://mrprajesh.co.in/blog/how-to-bikeshed.html"/>
    <updated>2020-03-30T13:59:10+05:30</updated>
-   <id>http://localhost:4000/how-to-bikeshed</id>
+   <id>https://mrprajesh.co.in/how-to-bikeshed</id>
    <content type="html">&lt;h3 id=&quot;install&quot;&gt;Install&lt;/h3&gt;
 &lt;p&gt;As installation required Py3.7, decided not to install locally.&lt;/p&gt;
 
@@ -1587,9 +1587,9 @@ clean:
  
  <entry>
    <title>Rajesh tinkers</title>
-   <link href="http://localhost:4000/blog/rajesh-tinkers.html"/>
+   <link href="https://mrprajesh.co.in/blog/rajesh-tinkers.html"/>
    <updated>2020-03-30T12:52:09+05:30</updated>
-   <id>http://localhost:4000/rajesh-tinkers</id>
+   <id>https://mrprajesh.co.in/rajesh-tinkers</id>
    <content type="html">&lt;p&gt;Instead of doing work (needs to be done!) Rajesh keeps tinkering.&lt;/p&gt;
 
 &lt;h3 id=&quot;bikeshed&quot;&gt;Bikeshed&lt;/h3&gt;
@@ -1638,9 +1638,9 @@ Everyone liked it because of its simplicity and usability. Even Reddit and GitHu
  
  <entry>
    <title>apt-get error in linux mint</title>
-   <link href="http://localhost:4000/blog/apt-get-error-in-linux-mint.html"/>
+   <link href="https://mrprajesh.co.in/blog/apt-get-error-in-linux-mint.html"/>
    <updated>2020-03-29T17:46:41+05:30</updated>
-   <id>http://localhost:4000/apt-get-error-in-linux-mint</id>
+   <id>https://mrprajesh.co.in/apt-get-error-in-linux-mint</id>
    <content type="html">&lt;p&gt;The last time when I went to my relatives home which had a good internet connection.
 I had faced some issues with &lt;code class=&quot;highlighter-rouge&quot;&gt;apt-get&lt;/code&gt;.&lt;/p&gt;
 
@@ -1696,9 +1696,9 @@ I had faced some issues with &lt;code class=&quot;highlighter-rouge&quot;&gt;apt
  
  <entry>
    <title>New technologies in web/mobile/GUI Application development</title>
-   <link href="http://localhost:4000/blog/new-tech-mobile-web-app.html"/>
+   <link href="https://mrprajesh.co.in/blog/new-tech-mobile-web-app.html"/>
    <updated>2020-03-29T17:09:54+05:30</updated>
-   <id>http://localhost:4000/new-tech-mobile-web-app</id>
+   <id>https://mrprajesh.co.in/new-tech-mobile-web-app</id>
    <content type="html">&lt;p&gt;There is angular js and node js – java script based front-end web/GUI apps.
 Similarly, on mobile we need separated development environment for Android and iOS.
 Devs use Android studio and Apple’s Software etc.But, then there were apps which does both but it is not very flexible as native tools.&lt;/p&gt;
@@ -1723,9 +1723,9 @@ web, desktop, mobile (andriod+ios) in a single development, open-source mobile a
  
  <entry>
    <title>Searching jekyll posts and enabling tags in GitHub pages</title>
-   <link href="http://localhost:4000/blog/search-jekyll-post-content.html"/>
+   <link href="https://mrprajesh.co.in/blog/search-jekyll-post-content.html"/>
    <updated>2020-03-29T16:42:59+05:30</updated>
-   <id>http://localhost:4000/search-jekyll-post-content</id>
+   <id>https://mrprajesh.co.in/search-jekyll-post-content</id>
    <content type="html">&lt;h3 id=&quot;search-post&quot;&gt;Search Post&lt;/h3&gt;
 
 &lt;p&gt;Ronv’s Sidey theme already had the search ability; But, was not searching post’s content.
@@ -1748,9 +1748,9 @@ It has nice &lt;a href=&quot;https://github.com/christian-fei/Simple-Jekyll-Sear
  
  <entry>
    <title>War against corona virus disease (COVID) 2019</title>
-   <link href="http://localhost:4000/blog/stop-corono-tn.html"/>
+   <link href="https://mrprajesh.co.in/blog/stop-corono-tn.html"/>
    <updated>2020-03-29T15:10:24+05:30</updated>
-   <id>http://localhost:4000/stop-corono-tn</id>
+   <id>https://mrprajesh.co.in/stop-corono-tn</id>
    <content type="html">&lt;p&gt;We are entering stage 3.The is a call for volunteers at various levels
 namely India, Tamil Nadu, Chennai, and even IT volunteers.&lt;/p&gt;
 
@@ -1797,9 +1797,9 @@ namely India, Tamil Nadu, Chennai, and even IT volunteers.&lt;/p&gt;
  
  <entry>
    <title>Corona, origin, story, and some links</title>
-   <link href="http://localhost:4000/blog/corono-virus-pedia.html"/>
+   <link href="https://mrprajesh.co.in/blog/corono-virus-pedia.html"/>
    <updated>2020-03-19T22:52:50+05:30</updated>
-   <id>http://localhost:4000/corono-virus-pedia</id>
+   <id>https://mrprajesh.co.in/corono-virus-pedia</id>
    <content type="html">&lt;h2 id=&quot;originated&quot;&gt;Originated&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;The 2019 novel coronavirus was identified in Wuhan, Hubei province of China&lt;/li&gt;
@@ -1902,9 +1902,9 @@ For that reason and others, WHO has begun referring to the virus as “the virus
  
  <entry>
    <title>Hovering anchor tag heading in Jekyll</title>
-   <link href="http://localhost:4000/blog/hovering-anchor-tags-headings.html"/>
+   <link href="https://mrprajesh.co.in/blog/hovering-anchor-tags-headings.html"/>
    <updated>2020-03-19T20:23:24+05:30</updated>
-   <id>http://localhost:4000/hovering-anchor-tags-headings</id>
+   <id>https://mrprajesh.co.in/hovering-anchor-tags-headings</id>
    <content type="html">&lt;p&gt;I like when (sub)heading has anchor links on a long blog post.&lt;/p&gt;
 
 &lt;h2 id=&quot;this-is-an-example&quot;&gt;This is an example&lt;/h2&gt;
@@ -1960,9 +1960,9 @@ For that reason and others, WHO has begun referring to the virus as “the virus
  
  <entry>
    <title>using &quot;raw&quot; tag in jekyll to view liquid tags</title>
-   <link href="http://localhost:4000/blog/raw-tag-jekyll.html"/>
+   <link href="https://mrprajesh.co.in/blog/raw-tag-jekyll.html"/>
    <updated>2020-03-19T19:44:39+05:30</updated>
-   <id>http://localhost:4000/raw-tag-jekyll</id>
+   <id>https://mrprajesh.co.in/raw-tag-jekyll</id>
    <content type="html">&lt;ul&gt;
   &lt;li&gt;For example in a &lt;a href=&quot;/blog/latex-jekyll.html&quot;&gt;post&lt;/a&gt;
  I mentioned how to enable &lt;script type=&quot;math/tex&quot;&gt;\LaTeX&lt;/script&gt; in jekyll&lt;/li&gt;
@@ -1992,9 +1992,9 @@ For that reason and others, WHO has begun referring to the virus as “the virus
  
  <entry>
    <title>How to add mins to read in jekyll post like medium</title>
-   <link href="http://localhost:4000/blog/add-min-read-to-jekyll.html"/>
+   <link href="https://mrprajesh.co.in/blog/add-min-read-to-jekyll.html"/>
    <updated>2020-03-19T18:53:53+05:30</updated>
-   <id>http://localhost:4000/add-min-read-to-jekyll</id>
+   <id>https://mrprajesh.co.in/add-min-read-to-jekyll</id>
    <content type="html">&lt;p&gt;Edit the &lt;code class=&quot;highlighter-rouge&quot;&gt;_layouts/post.html&lt;/code&gt; and place below lines appropriately.&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -2038,9 +2038,9 @@ For that reason and others, WHO has begun referring to the virus as “the virus
  
  <entry>
    <title>Thrust library and CUDA API</title>
-   <link href="http://localhost:4000/blog/thrust.html"/>
+   <link href="https://mrprajesh.co.in/blog/thrust.html"/>
    <updated>2020-03-18T15:49:47+05:30</updated>
-   <id>http://localhost:4000/thrust</id>
+   <id>https://mrprajesh.co.in/thrust</id>
    <content type="html">&lt;p&gt;For long time, I was under the impression that thrust functions can be
 invoked only from the main function/Host device. Just got to know that thrust
 (v1.8+) fucntion can be invocked inside the kernel&lt;/p&gt;
@@ -2057,9 +2057,9 @@ invoked only from the main function/Host device. Just got to know that thrust
  
  <entry>
    <title>CUDA and its questions</title>
-   <link href="http://localhost:4000/blog/cuda.html"/>
+   <link href="https://mrprajesh.co.in/blog/cuda.html"/>
    <updated>2020-03-18T15:49:43+05:30</updated>
-   <id>http://localhost:4000/cuda</id>
+   <id>https://mrprajesh.co.in/cuda</id>
    <content type="html">&lt;p&gt;There we were some question raised during Rupesh’s GPU class today.&lt;/p&gt;
 
 &lt;ul&gt;
@@ -2142,9 +2142,9 @@ Also, threadblock dimensions of 0 in any position are not legal.&lt;/li&gt;
  
  <entry>
    <title>How to use Latex / MathJax in Jekyll</title>
-   <link href="http://localhost:4000/blog/latex-jekyll.html"/>
+   <link href="https://mrprajesh.co.in/blog/latex-jekyll.html"/>
    <updated>2020-03-17T16:12:01+05:30</updated>
-   <id>http://localhost:4000/latex-jekyll</id>
+   <id>https://mrprajesh.co.in/latex-jekyll</id>
    <content type="html">&lt;ul&gt;
   &lt;li&gt;create &lt;code class=&quot;highlighter-rouge&quot;&gt;_include/mathjax.html&lt;/code&gt;&lt;/li&gt;
   &lt;li&gt;add the below code&lt;/li&gt;
@@ -2223,9 +2223,9 @@ Also, threadblock dimensions of 0 in any position are not legal.&lt;/li&gt;
  
  <entry>
    <title>Some new words - inspired by COVID-19</title>
-   <link href="http://localhost:4000/blog/new-words.html"/>
+   <link href="https://mrprajesh.co.in/blog/new-words.html"/>
    <updated>2020-03-11T19:17:59+05:30</updated>
-   <id>http://localhost:4000/new-words</id>
+   <id>https://mrprajesh.co.in/new-words</id>
    <content type="html">&lt;p&gt;In this novel coronavirus season learnt some new words.&lt;/p&gt;
 
 &lt;ol&gt;
@@ -2259,9 +2259,9 @@ Also, threadblock dimensions of 0 in any position are not legal.&lt;/li&gt;
  
  <entry>
    <title>Same spelling but different pronunciation.</title>
-   <link href="http://localhost:4000/blog/overseas-pronounciation.html"/>
+   <link href="https://mrprajesh.co.in/blog/overseas-pronounciation.html"/>
    <updated>2020-03-11T10:53:15+05:30</updated>
-   <id>http://localhost:4000/overseas-pronounciation</id>
+   <id>https://mrprajesh.co.in/overseas-pronounciation</id>
    <content type="html">&lt;p&gt;So, we know homonyms. Same pronunciation but different spelling/meaning.&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -2293,9 +2293,9 @@ It seems like. Are there more?&lt;/p&gt;
  
  <entry>
    <title>Ready, get-set, and go!</title>
-   <link href="http://localhost:4000/blog/check-code-blocks.html"/>
+   <link href="https://mrprajesh.co.in/blog/check-code-blocks.html"/>
    <updated>2020-03-09T18:58:11+05:30</updated>
-   <id>http://localhost:4000/check-code-blocks</id>
+   <id>https://mrprajesh.co.in/check-code-blocks</id>
    <content type="html">&lt;p&gt;This is to check if the syntax highlighting is working fine.&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-cpp&quot; data-lang=&quot;cpp&quot;&gt;  &lt;span class=&quot;cp&quot;&gt;#include &amp;lt;iostream&amp;gt;
@@ -2309,9 +2309,9 @@ It seems like. Are there more?&lt;/p&gt;
  
  <entry>
    <title>Hello World</title>
-   <link href="http://localhost:4000/blog/helloworld.html"/>
+   <link href="https://mrprajesh.co.in/blog/helloworld.html"/>
    <updated>2020-03-09T12:39:20+05:30</updated>
-   <id>http://localhost:4000/helloworld</id>
+   <id>https://mrprajesh.co.in/helloworld</id>
    <content type="html">&lt;p&gt;This is my first post in &lt;a href=&quot;https://mrprajesh.github.io/blog&quot;&gt;Github.io&lt;/a&gt;
 blog.&lt;/p&gt;
 </content>
