@@ -4,7 +4,7 @@
  <title>Rajesh's Blog</title>
  <link href="https://mrprajesh.co.in/blog/atom.xml" rel="self"/>
  <link href="https://mrprajesh.co.in/blog/"/>
- <updated>2022-03-05T04:46:07+05:30</updated>
+ <updated>2022-03-05T11:52:22+05:30</updated>
  <id>https://mrprajesh.co.in</id>
  <author>
    <name>Rajesh Pandian M</name>
@@ -531,7 +531,7 @@ You can solve most of the competitive programming problems in just 1 or 2 lines.
   &lt;li&gt;Get the v4 and its prerequsites mgpu and cub.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone -b release-4.0 https://github.com/IntelligentSoftwareSystems/GaloisGPU
+&lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;git&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clone&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;release&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;https&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//github.com/IntelligentSoftwareSystems/GaloisGPU&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Follow below steps&lt;/p&gt;

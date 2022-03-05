@@ -20,7 +20,7 @@ module load gcc640
 
 - Get the v4 and its prerequsites mgpu and cub.
 
-```
+```c
 git clone -b release-4.0 https://github.com/IntelligentSoftwareSystems/GaloisGPU
 ```
 
