@@ -45,3 +45,8 @@ for(int index{0}; auto v: vec){
   ++index;
 }
 ```
+
+
+### Refs
+
+- [P0614R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0614r1.html)
