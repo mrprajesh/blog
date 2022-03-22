@@ -2,7 +2,7 @@
   
     {
 
-      "title"    : "install gcc",
+      "title"    : "building and install gcc from source on linux",
       "url"      : "/blog/install-gcc.html",
       "category" : "",
       "tags"     : "gcc, c, cpp, c++, install",

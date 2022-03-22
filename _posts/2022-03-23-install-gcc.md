@@ -1,6 +1,6 @@
 ---
 layout: post
-title: install gcc
+title: building and install gcc from source on linux
 date: 23-03-2022 02:59:27 +05:30
 tags: [gcc,c,cpp,c++,install]
 description:
