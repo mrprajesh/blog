@@ -2,6 +2,18 @@
   
     {
 
+      "title"    : "build gpu graph libraries Graphit, GSwitch and SepGraph",
+      "url"      : "/blog/build-gpu-graph-libraries.html",
+      "category" : "",
+      "tags"     : "GraphIt, GSwitch",
+      "date"     : "2022-03-23 08:57:52 +0530",
+      "discription" : "",
+      "content" : "<p>On AQUA.</p>\n\n<h3 id=\"gpu-graphit-g2\">Gpu Graphit G2</h3>\n\n<p>module load cmake3.18\nmodule load gcc640\nmkdir GraphItG2; cd GraphItG2; git clone –recursive -b gpu-merge https://github.com/GraphIt-DSL/graphit.git .\nmkdir build; cd build\ncmake ..\nmake -j 32</p>\n\n<p>cd ../graphit_eval/g2_cgo2021_eval/dataset\nmake small # or just make\npython3 gen_table7.py small &lt; input</p>\n\n<p>input\n/lfs/usrhome/phd/cs16d003/install/GraphItG2/graphit_eval/g2_cgo2021_eval/table7_outputs\n/lfs/usrhome/phd/cs16d003/install/GraphItG2/graphit_eval/g2_cgo2021_eval/../../build\n/lfs/usrhome/phd/cs16d003/install/GraphItG2/graphit_eval/g2_cgo2021_eval/dataset\n/lfs/sware/cuda-10.1/bin/nvcc\n/lfs/sware/gcc640/bin/g++\n0</p>\n\n<p>//TODO make it run via qsub</p>\n\n<h3 id=\"gswitch\">GSwitch</h3>\n\n<div class=\"highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code>module load cmake3.18\nmodule load gcc640\ncmake ..\nmake -j 32\nScanning dependencies of target gswitch\n[  7%] Linking CXX static library libgswitch.a\n[  7%] Built target gswitch\n[ 30%] Building NVCC (Device) object application/CMakeFiles/GC.dir/GC_generated_gc.cu.o\n[ 38%] Building NVCC (Device) object application/CMakeFiles/SSSP.dir/SSSP_generated_sssp.cu.o\n[ 38%] Building NVCC (Device) object application/CMakeFiles/PageRank.dir/PageRank_generated_pagerank.cu.o\n[ 38%] Building NVCC (Device) object application/CMakeFiles/BC.dir/BC_generated_bc.cu.o\n[ 53%] Building NVCC (Device) object application/CMakeFiles/CC.dir/CC_generated_cc.cu.o\n[ 53%] Building NVCC (Device) object application/CMakeFiles/BFS.dir/BFS_generated_bfs.cu.o\n..\nScanning dependencies of target PageRank\n[ 69%] Linking CXX executable PageRank\n[ 69%] Built target PageRank\nScanning dependencies of target SSSP\n[ 76%] Linking CXX executable SSSP\nScanning dependencies of target BFS\n[ 84%] Linking CXX executable BFS\nScanning dependencies of target GC\n[ 92%] Linking CXX executable GC\n[ 92%] Built target SSSP\n[ 92%] Built target BFS\n[ 92%] Built target GC\nScanning dependencies of target BC\n[100%] Linking CXX executable BC\n[100%] Built target BC\n\n</code></pre></div></div>\n\n<h3 id=\"sep-graph\">SEP-Graph</h3>\n\n<div class=\"highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code>module load cmake3.18\nmodule load cuda-9.2\n</code></pre></div></div>\n<p><a href=\"https://mrprajesh.co.in/blog/install-gcc.html\">src build gcc 5.4.0</a> at install prefix <code class=\"highlighter-rouge\">/lfs/usrhome/phd/cs16d003/install/gcc54/bin</code></p>\n\n<p><code class=\"highlighter-rouge\">cmake .. -DCUDA_TOOLKIT_ROOT_DIR=/lfs/sware/cuda-9.2 -DCMAKE_C_COMPILER=/lfs/usrhome/phd/cs16d003/install/gcc54/bin/gcc-5.4 -DCMAKE_CXX_COMPILER=/lfs/usrhome/phd/cs16d003/install/gcc54/bin/g++-5.4</code></p>\n\n<p><a href=\"https://github.com/mrprajesh/sep-graph/issues/1#issuecomment-1075839359\">Git Issue</a></p>\n"
+
+    } ,
+  
+    {
+
       "title"    : "building and install gcc from source on linux",
       "url"      : "/blog/install-gcc.html",
       "category" : "",

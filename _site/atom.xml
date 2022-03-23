@@ -4,13 +4,90 @@
  <title>Rajesh's Blog</title>
  <link href="https://mrprajesh.co.in/blog/atom.xml" rel="self"/>
  <link href="https://mrprajesh.co.in/blog/"/>
- <updated>2022-03-23T07:28:15+05:30</updated>
+ <updated>2022-03-23T10:00:08+05:30</updated>
  <id>https://mrprajesh.co.in</id>
  <author>
    <name>Rajesh Pandian M</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>build gpu graph libraries Graphit, GSwitch and SepGraph</title>
+   <link href="https://mrprajesh.co.in/blog/build-gpu-graph-libraries.html"/>
+   <updated>2022-03-23T08:57:52+05:30</updated>
+   <id>https://mrprajesh.co.in/build-gpu-graph-libraries</id>
+   <content type="html">&lt;p&gt;On AQUA.&lt;/p&gt;
+
+&lt;h3 id=&quot;gpu-graphit-g2&quot;&gt;Gpu Graphit G2&lt;/h3&gt;
+
+&lt;p&gt;module load cmake3.18
+module load gcc640
+mkdir GraphItG2; cd GraphItG2; git clone –recursive -b gpu-merge https://github.com/GraphIt-DSL/graphit.git .
+mkdir build; cd build
+cmake ..
+make -j 32&lt;/p&gt;
+
+&lt;p&gt;cd ../graphit_eval/g2_cgo2021_eval/dataset
+make small # or just make
+python3 gen_table7.py small &amp;lt; input&lt;/p&gt;
+
+&lt;p&gt;input
+/lfs/usrhome/phd/cs16d003/install/GraphItG2/graphit_eval/g2_cgo2021_eval/table7_outputs
+/lfs/usrhome/phd/cs16d003/install/GraphItG2/graphit_eval/g2_cgo2021_eval/../../build
+/lfs/usrhome/phd/cs16d003/install/GraphItG2/graphit_eval/g2_cgo2021_eval/dataset
+/lfs/sware/cuda-10.1/bin/nvcc
+/lfs/sware/gcc640/bin/g++
+0&lt;/p&gt;
+
+&lt;p&gt;//TODO make it run via qsub&lt;/p&gt;
+
+&lt;h3 id=&quot;gswitch&quot;&gt;GSwitch&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;module load cmake3.18
+module load gcc640
+cmake ..
+make -j 32
+Scanning dependencies of target gswitch
+[  7%] Linking CXX static library libgswitch.a
+[  7%] Built target gswitch
+[ 30%] Building NVCC (Device) object application/CMakeFiles/GC.dir/GC_generated_gc.cu.o
+[ 38%] Building NVCC (Device) object application/CMakeFiles/SSSP.dir/SSSP_generated_sssp.cu.o
+[ 38%] Building NVCC (Device) object application/CMakeFiles/PageRank.dir/PageRank_generated_pagerank.cu.o
+[ 38%] Building NVCC (Device) object application/CMakeFiles/BC.dir/BC_generated_bc.cu.o
+[ 53%] Building NVCC (Device) object application/CMakeFiles/CC.dir/CC_generated_cc.cu.o
+[ 53%] Building NVCC (Device) object application/CMakeFiles/BFS.dir/BFS_generated_bfs.cu.o
+..
+Scanning dependencies of target PageRank
+[ 69%] Linking CXX executable PageRank
+[ 69%] Built target PageRank
+Scanning dependencies of target SSSP
+[ 76%] Linking CXX executable SSSP
+Scanning dependencies of target BFS
+[ 84%] Linking CXX executable BFS
+Scanning dependencies of target GC
+[ 92%] Linking CXX executable GC
+[ 92%] Built target SSSP
+[ 92%] Built target BFS
+[ 92%] Built target GC
+Scanning dependencies of target BC
+[100%] Linking CXX executable BC
+[100%] Built target BC
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;sep-graph&quot;&gt;SEP-Graph&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;module load cmake3.18
+module load cuda-9.2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;https://mrprajesh.co.in/blog/install-gcc.html&quot;&gt;src build gcc 5.4.0&lt;/a&gt; at install prefix &lt;code class=&quot;highlighter-rouge&quot;&gt;/lfs/usrhome/phd/cs16d003/install/gcc54/bin&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;cmake .. -DCUDA_TOOLKIT_ROOT_DIR=/lfs/sware/cuda-9.2 -DCMAKE_C_COMPILER=/lfs/usrhome/phd/cs16d003/install/gcc54/bin/gcc-5.4 -DCMAKE_CXX_COMPILER=/lfs/usrhome/phd/cs16d003/install/gcc54/bin/g++-5.4&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/mrprajesh/sep-graph/issues/1#issuecomment-1075839359&quot;&gt;Git Issue&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>building and install gcc from source on linux</title>
