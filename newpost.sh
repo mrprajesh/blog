@@ -5,6 +5,11 @@ DIR=_posts
 FILE=$(date +'%Y-%m-%d')-new-post.md
 TITLE="Edit this to a new title" # This will be the default title
 
+if [ $# -lt 1 ]; then
+  echo "Usage: ./newpost.sh title-of-the-post"
+  exit 1;
+fi
+
 if [ $# -ge 1 ] # if given with 1st args (assumes 1st arg is hyphenated)
 then
   FILE=$(date +'%Y-%m-%d')-"$1".md
