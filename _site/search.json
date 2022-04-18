@@ -2,6 +2,18 @@
   
     {
 
+      "title"    : "build moderngpu",
+      "url"      : "/blog/build-moderngpu.html",
+      "category" : "",
+      "tags"     : "jekyll, coding",
+      "date"     : "2022-03-31 11:45:52 +0530",
+      "discription" : "",
+      "content" : "<p>I have</p>\n<ul>\n  <li>Mint/Ubuntu 18.04 running GCC 7.4, CUDA 10.0 and Driver 410.73</li>\n  <li>cmake-3.22.3 binary.</li>\n  <li>GeForce 840M with Compute Capability (CC) 5.0</li>\n</ul>\n\n<p>I could build it but not run it. Because\n<a href=\"https://github.com/moderngpu/moderngpu/blob/master/CMakeLists.txt#L53\">CUDA_ARCHITECTURES</a>\nis set higher. Let’s change it to <code class=\"highlighter-rouge\">50</code></p>\n<div class=\"highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code>git clone https://github.com/moderngpu/moderngpu.git\ncd moderngpu\nmkdir build &amp;&amp; cd build\n~/install/cmake-3.22.3-linux-x86_64/bin/cmake ..\nmake\n./bin/test_segreduce\n</code></pre></div></div>\n\n<p>On P100.</p>\n<ul>\n  <li>Not working with cmake 3.23</li>\n  <li>Just use 3.19</li>\n  <li><code class=\"highlighter-rouge\">scl enable devtoolset-6 bash</code></li>\n  <li>and it should work.</li>\n</ul>\n\n"
+
+    } ,
+  
+    {
+
       "title"    : "build gpu graph libraries Graphit, GSwitch and SepGraph",
       "url"      : "/blog/build-gpu-graph-libraries.html",
       "category" : "",

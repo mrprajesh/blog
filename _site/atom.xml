@@ -4,13 +4,47 @@
  <title>Rajesh's Blog</title>
  <link href="https://mrprajesh.co.in/blog/atom.xml" rel="self"/>
  <link href="https://mrprajesh.co.in/blog/"/>
- <updated>2022-03-23T10:00:08+05:30</updated>
+ <updated>2022-04-18T15:19:34+05:30</updated>
  <id>https://mrprajesh.co.in</id>
  <author>
    <name>Rajesh Pandian M</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>build moderngpu</title>
+   <link href="https://mrprajesh.co.in/blog/build-moderngpu.html"/>
+   <updated>2022-03-31T11:45:52+05:30</updated>
+   <id>https://mrprajesh.co.in/build-moderngpu</id>
+   <content type="html">&lt;p&gt;I have&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Mint/Ubuntu 18.04 running GCC 7.4, CUDA 10.0 and Driver 410.73&lt;/li&gt;
+  &lt;li&gt;cmake-3.22.3 binary.&lt;/li&gt;
+  &lt;li&gt;GeForce 840M with Compute Capability (CC) 5.0&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I could build it but not run it. Because
+&lt;a href=&quot;https://github.com/moderngpu/moderngpu/blob/master/CMakeLists.txt#L53&quot;&gt;CUDA_ARCHITECTURES&lt;/a&gt;
+is set higher. Let’s change it to &lt;code class=&quot;highlighter-rouge&quot;&gt;50&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone https://github.com/moderngpu/moderngpu.git
+cd moderngpu
+mkdir build &amp;amp;&amp;amp; cd build
+~/install/cmake-3.22.3-linux-x86_64/bin/cmake ..
+make
+./bin/test_segreduce
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;On P100.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Not working with cmake 3.23&lt;/li&gt;
+  &lt;li&gt;Just use 3.19&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;scl enable devtoolset-6 bash&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;and it should work.&lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>build gpu graph libraries Graphit, GSwitch and SepGraph</title>

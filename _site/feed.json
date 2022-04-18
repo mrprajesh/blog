@@ -17,6 +17,25 @@
 "items": [
     
         {
+            "id": "https://mrprajesh.co.in/blog/build-moderngpu.html",
+            "title": "build moderngpu",
+            "summary": null,
+            "content_text": "I have  Mint/Ubuntu 18.04 running GCC 7.4, CUDA 10.0 and Driver 410.73  cmake-3.22.3 binary.  GeForce 840M with Compute Capability (CC) 5.0I could build it but not run it. BecauseCUDA_ARCHITECTURESis set higher. Let’s change it to 50git clone https://github.com/moderngpu/moderngpu.gitcd moderngpumkdir build &amp;&amp; cd build~/install/cmake-3.22.3-linux-x86_64/bin/cmake ..make./bin/test_segreduceOn P100.  Not working with cmake 3.23  Just use 3.19  scl enable devtoolset-6 bash  and it should work.",
+            "content_html": "<p>I have</p><ul>  <li>Mint/Ubuntu 18.04 running GCC 7.4, CUDA 10.0 and Driver 410.73</li>  <li>cmake-3.22.3 binary.</li>  <li>GeForce 840M with Compute Capability (CC) 5.0</li></ul><p>I could build it but not run it. Because<a href=\"https://github.com/moderngpu/moderngpu/blob/master/CMakeLists.txt#L53\">CUDA_ARCHITECTURES</a>is set higher. Let’s change it to <code class=\"highlighter-rouge\">50</code></p><div class=\"highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code>git clone https://github.com/moderngpu/moderngpu.gitcd moderngpumkdir build &amp;&amp; cd build~/install/cmake-3.22.3-linux-x86_64/bin/cmake ..make./bin/test_segreduce</code></pre></div></div><p>On P100.</p><ul>  <li>Not working with cmake 3.23</li>  <li>Just use 3.19</li>  <li><code class=\"highlighter-rouge\">scl enable devtoolset-6 bash</code></li>  <li>and it should work.</li></ul>",
+            "url": "https://mrprajesh.co.in/blog/build-moderngpu.html",
+            
+            
+            
+            "tags": ["jekyll","coding"],
+            
+            "date_published": "2022-03-31T11:45:52+05:30",
+            "date_modified": "2022-03-31T11:45:52+05:30",
+            
+                "author": "Rajesh Pandian M"
+            
+        },
+    
+        {
             "id": "https://mrprajesh.co.in/blog/build-gpu-graph-libraries.html",
             "title": "build gpu graph libraries Graphit, GSwitch and SepGraph",
             "summary": null,
@@ -676,25 +695,6 @@
             
             "date_published": "2020-04-01T13:40:44+05:30",
             "date_modified": "2020-04-01T13:40:44+05:30",
-            
-                "author": "Rajesh Pandian M"
-            
-        },
-    
-        {
-            "id": "https://mrprajesh.co.in/blog/add-badges-to-your-git-repo-site.html",
-            "title": "How to add badges to your git repo or website",
-            "summary": null,
-            "content_text": "  How to add badges to your Git repo like this  There are multiple ways to add badges.  one such service is by shield, see examples  put the below in your readme.md![Jekyll Logo](https://img.shields.io/badge/powered_by-Jekyll-blue.svg)  It should look like this  the .svg at end of the url is optional.  shows last commit of this blog.![Last commit](https://img.shields.io/github/last-commit/mrprajesh/blog)",
-            "content_html": "<ul>  <li>How to add badges to your Git repo like <a href=\"https://github.com/jekyll/jekyll#jekyll\">this</a></li>  <li>There are multiple ways to add badges.</li>  <li>one such service is by <a href=\"https://shields.io/\">shield</a>, see examples</li>  <li>put the below in your <code class=\"highlighter-rouge\">readme.md</code></li></ul><div class=\"language-c highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"o\">!</span><span class=\"p\">[</span><span class=\"n\">Jekyll</span> <span class=\"n\">Logo</span><span class=\"p\">](</span><span class=\"n\">https</span><span class=\"o\">:</span><span class=\"c1\">//img.shields.io/badge/powered_by-Jekyll-blue.svg)</span></code></pre></div></div><ul>  <li>It should look like this</li></ul><p><img src=\"https://img.shields.io/badge/powered_by-Jekyll-blue.svg\" alt=\"Jekyll Logo\" /></p><ul>  <li>the <code class=\"highlighter-rouge\">.svg</code> at end of the url is optional.</li>  <li>shows last commit of this blog.</li></ul><p><img src=\"https://img.shields.io/github/last-commit/mrprajesh/blog\" alt=\"Last commit\" /></p><div class=\"language-c highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"o\">!</span><span class=\"p\">[</span><span class=\"n\">Last</span> <span class=\"n\">commit</span><span class=\"p\">](</span><span class=\"n\">https</span><span class=\"o\">:</span><span class=\"c1\">//img.shields.io/github/last-commit/mrprajesh/blog)</span></code></pre></div></div>",
-            "url": "https://mrprajesh.co.in/blog/add-badges-to-your-git-repo-site.html",
-            
-            
-            
-            "tags": ["jekyll","github"],
-            
-            "date_published": "2020-04-01T01:35:26+05:30",
-            "date_modified": "2020-04-01T01:35:26+05:30",
             
                 "author": "Rajesh Pandian M"
             
