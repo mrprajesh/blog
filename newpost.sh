@@ -37,6 +37,23 @@ echo ""                                 >> $DIR/$FILE
 echo "This is sample content post."     >> $DIR/$FILE
 echo "Edit this to a new post content!" >> $DIR/$FILE
 
+
+
+#~ echo "Title: $TITLE"                    >> $DIR/$FILE
+#~ echo "Date: $(date +'%d-%b-%Y %T %:z')" >> $DIR/$FILE
+#~ echo "Category: News"                   >> $DIR/$FILE
+#~ echo "tags: [jekyll, coding]"           >> $DIR/$FILE
+#~ echo "description:"                     >> $DIR/$FILE
+#~ echo "summary:"                         >> $DIR/$FILE
+#~ echo "comments: false"                  >> $DIR/$FILE
+#~ echo "author: Rajesh Pandian M"         >> $DIR/$FILE
+#~ echo "mathjax: false"                   >> $DIR/$FILE
+#~ echo "render_with_liquid: true"         >> $DIR/$FILE
+#~ echo "---"                              >> $DIR/$FILE
+#~ echo ""                                 >> $DIR/$FILE
+#~ echo "This is sample content post."     >> $DIR/$FILE
+#~ echo "Edit this to a new post content!" >> $DIR/$FILE
+
 echo $DIR/$FILE - created!
 
 geany $DIR/$FILE
