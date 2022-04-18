@@ -19,7 +19,8 @@ I have
 I could build it but not run it. Because
 [CUDA_ARCHITECTURES](https://github.com/moderngpu/moderngpu/blob/master/CMakeLists.txt#L53)
 is set higher. Let's change it to `50`
-```
+
+```c
 git clone https://github.com/moderngpu/moderngpu.git
 cd moderngpu
 mkdir build && cd build

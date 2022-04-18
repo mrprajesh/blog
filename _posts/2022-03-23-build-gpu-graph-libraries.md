@@ -38,7 +38,7 @@ input
 
 ### GSwitch
 
-```
+```c
 module load cmake3.18
 module load gcc640
 cmake ..
@@ -74,13 +74,14 @@ Scanning dependencies of target BC
 ### SEP-Graph
 
 
-```
+```c
 module load cmake3.18
 module load cuda-9.2
 ```
 [src build gcc 5.4.0](https://mrprajesh.co.in/blog/install-gcc.html) at install prefix `/lfs/usrhome/phd/cs16d003/install/gcc54/bin`
 
-```cmake .. -DCUDA_TOOLKIT_ROOT_DIR=/lfs/sware/cuda-9.2 -DCMAKE_C_COMPILER=/lfs/usrhome/phd/cs16d003/install/gcc54/bin/gcc-5.4 -DCMAKE_CXX_COMPILER=/lfs/usrhome/phd/cs16d003/install/gcc54/bin/g++-5.4```
+```c
+cmake .. -DCUDA_TOOLKIT_ROOT_DIR=/lfs/sware/cuda-9.2 -DCMAKE_C_COMPILER=/lfs/usrhome/phd/cs16d003/install/gcc54/bin/gcc-5.4 -DCMAKE_CXX_COMPILER=/lfs/usrhome/phd/cs16d003/install/gcc54/bin/g++-5.4```
 
 
 [Git Issue](https://github.com/mrprajesh/sep-graph/issues/1#issuecomment-1075839359)
