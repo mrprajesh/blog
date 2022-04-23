@@ -17,6 +17,25 @@
 "items": [
     
         {
+            "id": "https://mrprajesh.co.in/blog/cmake-build.html",
+            "title": "cmake build is easy now.",
+            "summary": null,
+            "content_text": "Generally in many repo using cmake. We do the followinggit clone &lt;repo&gt;cd &lt;repo&gt;mkdir buildcd buildcmake .. # may be with more args. For now, KISS!makeNow in the recent cmake version. We can do the last 4 steps in 2 lines.# starting with CMake 3.13, use a simpler form:cmake -S . -B \"build\" # -DCMAKE_BUILD_TYPE=Release# Build the library.cmake --build \"build\" # --config Release",
+            "content_html": "<p>Generally in many repo using <code class=\"highlighter-rouge\">cmake</code>. We do the following</p><div class=\"language-c highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"n\">git</span> <span class=\"n\">clone</span> <span class=\"o\">&lt;</span><span class=\"n\">repo</span><span class=\"o\">&gt;</span><span class=\"n\">cd</span> <span class=\"o\">&lt;</span><span class=\"n\">repo</span><span class=\"o\">&gt;</span><span class=\"n\">mkdir</span> <span class=\"n\">build</span><span class=\"n\">cd</span> <span class=\"n\">build</span><span class=\"n\">cmake</span> <span class=\"p\">..</span> <span class=\"err\">#</span> <span class=\"n\">may</span> <span class=\"n\">be</span> <span class=\"n\">with</span> <span class=\"n\">more</span> <span class=\"n\">args</span><span class=\"p\">.</span> <span class=\"n\">For</span> <span class=\"n\">now</span><span class=\"p\">,</span> <span class=\"n\">KISS</span><span class=\"o\">!</span><span class=\"n\">make</span></code></pre></div></div><p>Now in the recent <code class=\"highlighter-rouge\">cmake</code> version. We can do the last 4 steps in 2 lines.</p><div class=\"language-c highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"cp\"># starting with CMake 3.13, use a simpler form:</span><span class=\"n\">cmake</span> <span class=\"o\">-</span><span class=\"n\">S</span> <span class=\"p\">.</span> <span class=\"o\">-</span><span class=\"n\">B</span> <span class=\"s\">\"build\"</span> <span class=\"err\">#</span> <span class=\"o\">-</span><span class=\"n\">DCMAKE_BUILD_TYPE</span><span class=\"o\">=</span><span class=\"n\">Release</span><span class=\"cp\"># Build the library.</span><span class=\"n\">cmake</span> <span class=\"o\">--</span><span class=\"n\">build</span> <span class=\"s\">\"build\"</span> <span class=\"err\">#</span> <span class=\"o\">--</span><span class=\"n\">config</span> <span class=\"n\">Release</span></code></pre></div></div>",
+            "url": "https://mrprajesh.co.in/blog/cmake-build.html",
+            
+            
+            
+            "tags": ["cmake","coding"],
+            
+            "date_published": "2022-04-23T16:09:19+05:30",
+            "date_modified": "2022-04-23T16:09:19+05:30",
+            
+                "author": "Rajesh Pandian M"
+            
+        },
+    
+        {
             "id": "https://mrprajesh.co.in/blog/build-moderngpu.html",
             "title": "build moderngpu",
             "summary": null,
@@ -676,25 +695,6 @@
             
             "date_published": "2020-04-01T17:14:10+05:30",
             "date_modified": "2020-04-01T17:14:10+05:30",
-            
-                "author": "Rajesh Pandian M"
-            
-        },
-    
-        {
-            "id": "https://mrprajesh.co.in/blog/how-to-keep-ssh-session-alive-longer.html",
-            "title": "How to keep ssh session alive longer",
-            "summary": "How to keep ssh session alive longer",
-            "content_text": "  More often ssh times out when the user is not using the terminal for a few minutes.  The remote server disconnects the silent clients; Annoying! :angry:  Two ways to resolve from client-side on Linux Mint/Ubuntu/AnyWay 1 (works great!)  while connecting via ssh add few flags  ssh -o ServerAliveInterval=60 &lt;myname&gt;@&lt;myremote-host-or-ip-address&gt;Way 2  nano $HOME/.ssh/config    Host *  ServerAliveInterval 240        chmod 600 $HOME/.ssh/configAlias ssh - Way 1  In ~/.bashrc, towards the endalias sshlive='ssh -o ServerAliveInterval=60'  Open a new terminal or run source ~/.bashrc  See, list of aliases that are set. Type alias  Next time, when I want ssh we need not remember the long command.  Just type sshlive user@hostname.  Thanks to aliasThanksCheers and thanks to SO!",
-            "content_html": "<ul>  <li>More often <code class=\"highlighter-rouge\">ssh</code> times out when the user is not using the terminal for a few minutes.</li>  <li>The remote server disconnects the silent clients; Annoying! :angry:</li>  <li>Two ways to resolve from client-side on Linux Mint/Ubuntu/Any</li></ul><h3 id=\"way-1-works-great\">Way 1 (works great!)</h3><ul>  <li>while connecting via ssh add few flags</li>  <li><code class=\"highlighter-rouge\">ssh -o ServerAliveInterval=60 &lt;myname&gt;@&lt;myremote-host-or-ip-address&gt;</code></li></ul><h3 id=\"way-2\">Way 2</h3><ul>  <li><code class=\"highlighter-rouge\">nano $HOME/.ssh/config</code>    <div class=\"language-c highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"n\">Host</span> <span class=\"o\">*</span>  <span class=\"n\">ServerAliveInterval</span> <span class=\"mi\">240</span></code></pre></div>    </div>  </li>  <li>chmod 600 $HOME/.ssh/config</li></ul><h4 id=\"alias-ssh---way-1\">Alias ssh - Way 1</h4><ul>  <li>In <code class=\"highlighter-rouge\">~/.bashrc</code>, towards the end</li></ul><div class=\"language-c highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"n\">alias</span> <span class=\"n\">sshlive</span><span class=\"o\">=</span><span class=\"err\">'</span><span class=\"n\">ssh</span> <span class=\"o\">-</span><span class=\"n\">o</span> <span class=\"n\">ServerAliveInterval</span><span class=\"o\">=</span><span class=\"mi\">60</span><span class=\"err\">'</span></code></pre></div></div><ul>  <li>Open a new terminal or run <code class=\"highlighter-rouge\">source ~/.bashrc</code></li>  <li>See, list of aliases that are set. Type <code class=\"highlighter-rouge\">alias</code></li>  <li>Next time, when I want ssh we need not remember the long command.</li>  <li>Just type <code class=\"highlighter-rouge\">sshlive user@hostname</code>.</li>  <li>Thanks to <code class=\"highlighter-rouge\">alias</code></li></ul><h4 id=\"thanks\">Thanks</h4><p>Cheers and thanks to <a href=\"https://stackoverflow.com/questions/25084288/keep-ssh-session-alive\">SO!</a></p>",
-            "url": "https://mrprajesh.co.in/blog/how-to-keep-ssh-session-alive-longer.html",
-            
-            
-            
-            "tags": ["ssh","linux"],
-            
-            "date_published": "2020-04-01T13:40:44+05:30",
-            "date_modified": "2020-04-01T13:40:44+05:30",
             
                 "author": "Rajesh Pandian M"
             

@@ -2,6 +2,18 @@
   
     {
 
+      "title"    : "cmake build is easy now.",
+      "url"      : "/blog/cmake-build.html",
+      "category" : "",
+      "tags"     : "cmake, coding",
+      "date"     : "2022-04-23 16:09:19 +0530",
+      "discription" : "",
+      "content" : "<p>Generally in many repo using <code class=\"highlighter-rouge\">cmake</code>. We do the following</p>\n<div class=\"language-c highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"n\">git</span> <span class=\"n\">clone</span> <span class=\"o\">&lt;</span><span class=\"n\">repo</span><span class=\"o\">&gt;</span>\n<span class=\"n\">cd</span> <span class=\"o\">&lt;</span><span class=\"n\">repo</span><span class=\"o\">&gt;</span>\n<span class=\"n\">mkdir</span> <span class=\"n\">build</span>\n<span class=\"n\">cd</span> <span class=\"n\">build</span>\n<span class=\"n\">cmake</span> <span class=\"p\">..</span> <span class=\"err\">#</span> <span class=\"n\">may</span> <span class=\"n\">be</span> <span class=\"n\">with</span> <span class=\"n\">more</span> <span class=\"n\">args</span><span class=\"p\">.</span> <span class=\"n\">For</span> <span class=\"n\">now</span><span class=\"p\">,</span> <span class=\"n\">KISS</span><span class=\"o\">!</span>\n<span class=\"n\">make</span>\n</code></pre></div></div>\n<p>Now in the recent <code class=\"highlighter-rouge\">cmake</code> version. We can do the last 4 steps in 2 lines.</p>\n\n<div class=\"language-c highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"cp\"># starting with CMake 3.13, use a simpler form:\n</span><span class=\"n\">cmake</span> <span class=\"o\">-</span><span class=\"n\">S</span> <span class=\"p\">.</span> <span class=\"o\">-</span><span class=\"n\">B</span> <span class=\"s\">\"build\"</span> <span class=\"err\">#</span> <span class=\"o\">-</span><span class=\"n\">DCMAKE_BUILD_TYPE</span><span class=\"o\">=</span><span class=\"n\">Release</span>\n<span class=\"cp\"># Build the library.\n</span><span class=\"n\">cmake</span> <span class=\"o\">--</span><span class=\"n\">build</span> <span class=\"s\">\"build\"</span> <span class=\"err\">#</span> <span class=\"o\">--</span><span class=\"n\">config</span> <span class=\"n\">Release</span>\n</code></pre></div></div>\n"
+
+    } ,
+  
+    {
+
       "title"    : "build moderngpu",
       "url"      : "/blog/build-moderngpu.html",
       "category" : "",
