@@ -39,7 +39,7 @@ make install
 ```
 
 
-```
+```c
 ----------------------------------------------------------------------
 Libraries have been installed in:
    /lfs/usrhome/phd/cs16d003/install/gcc54/lib/../lib64
