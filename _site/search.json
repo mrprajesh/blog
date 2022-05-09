@@ -2,7 +2,7 @@
   
     {
 
-      "title"    : "alter for battery low  and high",
+      "title"    : "Audible alert for battery low and high",
       "url"      : "/blog/alert-for-battery-low-and-high.html",
       "category" : "",
       "tags"     : "linux, shell",

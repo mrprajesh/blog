@@ -1,6 +1,6 @@
 ---
 layout: post
-title: alter for battery low  and high
+title: Audible alert for battery low and high
 date: 09-05-2022 19:02:06 +05:30
 tags: [linux, shell]
 description:
