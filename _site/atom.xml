@@ -4,13 +4,102 @@
  <title>Rajesh's Blog</title>
  <link href="https://mrprajesh.co.in/blog/atom.xml" rel="self"/>
  <link href="https://mrprajesh.co.in/blog/"/>
- <updated>2022-04-24T02:23:29+05:30</updated>
+ <updated>2022-05-09T19:10:45+05:30</updated>
  <id>https://mrprajesh.co.in</id>
  <author>
    <name>Rajesh Pandian M</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>alter for battery low  and high</title>
+   <link href="https://mrprajesh.co.in/blog/alert-for-battery-low-and-high.html"/>
+   <updated>2022-05-09T19:02:06+05:30</updated>
+   <id>https://mrprajesh.co.in/alert-for-battery-low--and-high</id>
+   <content type="html">&lt;p&gt;As both prolonged usage with AC power on the laptop and critically low battery degreades battery life;
+I decided to write a script that give an audio alert to disconnec/connect the charger.
+I have scheduled this script on &lt;code class=&quot;highlighter-rouge&quot;&gt;cron&lt;/code&gt;. Now, both my life and battery life is better.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;alert-on-full-battery.sh&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;#!/bin/bash
+## ALL STATS OF BATTERY
+#~ find /sys/class/power_supply/BAT0/ -type f | xargs -tn1 cat
+&lt;/span&gt;
+&lt;span class=&quot;cp&quot;&gt;## BATTERY LOW LEVE ALERT
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;LOW_LEVEL&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;15&lt;/span&gt;
+
+&lt;span class=&quot;cp&quot;&gt;## DEFAULT ALERT ON 95
+## USER CAN SPECIFY 1st ARG AS custom  threshold level
+&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;THRESHOLD&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;95&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$#&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ge&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;then&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ge&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;  &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lt&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;##&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;means&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;then&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;THRESHOLD&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;fi&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;fi&lt;/span&gt;
+
+
+&lt;span class=&quot;cp&quot;&gt;# post 4.2 keernel (see using uaname -a)  recommended usage to get batter percent /sys/class/power_supply/BAT0
+# ll /sys/class/power_supply/BAT*
+# cat /sys/class/power_supply/BAT0/capacity #in my machine  somtime it might in BAT1 !? :|
+&lt;/span&gt;
+&lt;span class=&quot;cp&quot;&gt;## GET CURRENT BATTERY STATE
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CURRENT_LEVEL&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cat&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sys&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;power_supply&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;BAT0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;capacity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;$(date +&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-%&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-%&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;T&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Z&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;), $(cat /sys/class/power_supply/BAT0/status), current battery level: $CURRENT_LEVEL, threshold: $THRESHOLD&quot;&lt;/span&gt;
+
+
+&lt;span class=&quot;cp&quot;&gt;## if current battery level is more than threahhold
+&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CURRENT_LEVEL&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ge&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;THRESHOLD&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;then&lt;/span&gt;
+  &lt;span class=&quot;cp&quot;&gt;#~ LOUD
+&lt;/span&gt;  &lt;span class=&quot;cp&quot;&gt;#~ paplay /usr/share/sounds/LinuxMint/stereo/phone-incoming-call.ogg
+&lt;/span&gt;
+  &lt;span class=&quot;cp&quot;&gt;#~ MILD
+&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;paplay&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;usr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;share&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sounds&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;freedesktop&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stereo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;complete&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;oga&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;save power&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;espeak&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;, HIGH ALERT&quot;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;fi&lt;/span&gt;
+
+
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CURRENT_LEVEL&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lt&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;LOW_LEVEL&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;then&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;paplay&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;usr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;share&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sounds&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;freedesktop&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stereo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;complete&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;oga&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;connect charger&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;espeak&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;, LOW ALERT&quot;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;fi&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;
+
+&lt;span class=&quot;cp&quot;&gt;## CRON: crontab -e
+#~ XDG_RUNTIME_DIR=/run/user/1000
+#~ */5 * * * * /home/rajz/auto-scripts/alert-on-full-battery.sh 95 &amp;gt;&amp;gt; /tmp/alert-on-full-battery.log
+&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;schedule-on-cron&quot;&gt;schedule on cron&lt;/h3&gt;
+
+&lt;p&gt;```c
+crontab -e&lt;/p&gt;
+
+&lt;h2 id=&quot;append-the-below-line-towards-the-end-and-save-it-is-set-to-run-every-5-mins&quot;&gt;append the below line towards the end and save. It is set to run every 5 mins.&lt;/h2&gt;
+&lt;p&gt;XDG_RUNTIME_DIR=/run/user/1000
+*/5 * * * * /home/rajz/auto-scripts/alert-on-full-battery.sh 95 » /tmp/alert-on-full-battery.log
+``&lt;/p&gt;
+
+&lt;p&gt;The above self explanatory.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;It alerts when there is low batter.&lt;/li&gt;
+  &lt;li&gt;It alerts when the battery is almost full. You can give a custom threshold. Default is 95.&lt;/li&gt;
+  &lt;li&gt;It also has speaks!&lt;/li&gt;
+  &lt;li&gt;This must help the bettery life.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
  
  <entry>
    <title>cmake build is easy now.</title>
