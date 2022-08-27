@@ -31,7 +31,7 @@ THRESHOLD=95
 
 if [ $# -ge 1 ]
 then
-  if [ $1 -ge 0 -a  $1 -lt 100 ] ## -a means and condition
+    if [ $1 -ge 0 -a  $1 -lt 100 ] ## -a means and condition
   then
     THRESHOLD=$1
   fi
