@@ -37,8 +37,15 @@ Basically, if we can solve problems with a the sequence of STL algorithms then t
 I am in :heart: with STL algorithms, recently.
 
 
-There is new language called [APL](https://en.wikipedia.org/wiki/APL_(programming_language)). WHAT! Yes. I have spelled it right.
+There is new language called [APL](https://en.wikipedia.org/wiki/APL_(programming_language)). WHAT! Yes. I have spelled it right. 
 You can solve most of the competitive programming problems in just 1 or 2 lines. Watch more of his videos [here](https://www.youtube.com/watch?v=8Njxgy4itts) OMG! :open_mouth:
 
 
 Cheers, more later!
+
+
+Head over the learn [hello world APL]({% link _posts/2022-09-09-hello-world-apl.md %}) 
+
+__Updated__: 09-Sep-2022 19:53:35
+
+
