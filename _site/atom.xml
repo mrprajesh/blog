@@ -4,7 +4,7 @@
  <title>Rajesh's Blog</title>
  <link href="https://mrprajesh.co.in/blog/atom.xml" rel="self"/>
  <link href="https://mrprajesh.co.in/blog/"/>
- <updated>2022-09-09T19:15:12+05:30</updated>
+ <updated>2022-09-09T19:19:53+05:30</updated>
  <id>https://mrprajesh.co.in</id>
  <author>
    <name>Rajesh Pandian M</name>
@@ -76,7 +76,7 @@
   &lt;li&gt;&lt;a href=&quot;https://www.dyalog.com/uploads/documents/MasteringDyalogAPL.pdf&quot;&gt;Mastering APL&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;my-vision-is&quot;&gt;My Vision is&lt;/h2&gt;
+&lt;h2 id=&quot;my-future-vision-is&quot;&gt;My Future Vision is&lt;/h2&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;If you can think in APL for your program, you can write better parallel codes in OMP or CUDA.&lt;/p&gt;
