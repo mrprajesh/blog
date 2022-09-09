@@ -63,7 +63,7 @@ render_with_liquid: true
 - [Mastering APL](https://www.dyalog.com/uploads/documents/MasteringDyalogAPL.pdf)
 
 
-## My Future Vision is
+## My Vision 
 
 > If you can think in APL for your program, you can write better parallel codes in OMP or CUDA.
 
