@@ -18,8 +18,8 @@ render_with_liquid: true
       # install dependencies
       sudo apt install libncurses5
 
-      # Append this to your ~/.bashrc file at the end and restart the terminal.
-      export DYALOG_SERIAL= <WITH YOUR SERIALNUMBER>
+      # Add you serial number to this file.
+      vim $HOME/.dyalog/serial
 
       ```
 3. Download and install RIDE [package](https://github.com/Dyalog/ride/releases) 
