@@ -32,3 +32,28 @@ Instead of last 3 steps use `./publish.sh [nameOfcommit]` due the [generated tag
 - [x] Added syntax highlight from jekyll-pygments using `monokai` theme.
 - [x] Added grouping post year wise.
 - [ ] Figure out last modified from the last modified date of `md` file?
+
+
+## One time setup
+
+
+```
+# dependencies
+sudo apt-get install ruby-full build-essential zlib1g-dev
+
+# set install folder
+echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc
+echo 'export GEM_HOME="$HOME/gems"' >> ~/.bashrc
+echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
+
+#install jekyll. And more gems.
+gem install jekyll bundler
+gem install safe_yaml liquid forwardable-extended  colorator 
+
+#install the required gems
+cd blograjz && bundle install
+
+
+
+```

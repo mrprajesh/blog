@@ -4,7 +4,7 @@
  <title>Rajesh's Blog</title>
  <link href="https://mrprajesh.co.in/blog/atom.xml" rel="self"/>
  <link href="https://mrprajesh.co.in/blog/"/>
- <updated>2022-05-09T19:14:39+05:30</updated>
+ <updated>2022-09-09T18:22:06+05:30</updated>
  <id>https://mrprajesh.co.in</id>
  <author>
    <name>Rajesh Pandian M</name>
@@ -13,13 +13,105 @@
 
  
  <entry>
+   <title>Hello world APL language</title>
+   <link href="https://mrprajesh.co.in/blog/hello-world-apl.html"/>
+   <updated>2022-09-09T16:56:02+05:30</updated>
+   <id>https://mrprajesh.co.in/hello-world-apl</id>
+   <content type="html">&lt;ol&gt;
+  &lt;li&gt;Download &lt;a href=&quot;https://www.dyalog.com/download-zone.htm&quot;&gt;Dyalog&lt;/a&gt; from here with email (SERIALNUMBER will be sent to your email).&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;As mentioned in &lt;a href=&quot;https://help.dyalog.com/latest/Content/UNIX_IUG/Dyalog%20Serial%20Number.htm&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+    &lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;   &lt;span class=&quot;cp&quot;&gt;# install dependencies
+&lt;/span&gt;   &lt;span class=&quot;n&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;apt&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;libncurses5&lt;/span&gt;
+
+   &lt;span class=&quot;cp&quot;&gt;# Append this to your ~/.bashrc file at the end and restart the terminal.
+&lt;/span&gt;   &lt;span class=&quot;n&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DYALOG_SERIAL&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;WITH&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;YOUR&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SERIALNUMBER&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Download and install RIDE &lt;a href=&quot;https://github.com/Dyalog/ride/releases&quot;&gt;package&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Run from installed programs. Look for Dyalog APL (not Dyalog APL TTY)  or run the below.&lt;/p&gt;
+
+    &lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;      &lt;span class=&quot;n&quot;&gt;env&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RIDE_SPAWN&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;usr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dyalog&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;usr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ride&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;hello-world&quot;&gt;Hello World&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;type tick i.e. ~ without shift. It means &lt;a href=&quot;https://en.cppreference.com/w/cpp/algorithm/iota&quot;&gt;iota&lt;/a&gt;. Infact, C++ got that name from APL.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;err&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;
+
+&lt;span class=&quot;cp&quot;&gt;# displays 1 to 10 both inclusive.
+&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;⍳&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;
+
+&lt;span class=&quot;cp&quot;&gt;# this is reduce operation
+&lt;/span&gt;      &lt;span class=&quot;o&quot;&gt;+/&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;⍳&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;55&lt;/span&gt;
+
+&lt;span class=&quot;cp&quot;&gt;# this is a scan operation.
+&lt;/span&gt;
+      &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\⍳&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;15&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;21&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;28&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;36&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;45&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;55&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;online-on-a-browser&quot;&gt;Online on a browser&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://tryapl.org/&quot;&gt;https://tryapl.org/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;gettting-started&quot;&gt;Gettting started.&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.dyalog.com/getting-started.htm&quot;&gt;https://www.dyalog.com/getting-started.htm&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.dyalog.com/uploads/documents/MasteringDyalogAPL.pdf&quot;&gt;Mastering APL&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;my-vision-is&quot;&gt;My Vision is&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;If you can think in APL for your program, you can write better parallel codes in OMP or CUDA.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>cloud storage</title>
+   <link href="https://mrprajesh.co.in/blog/cloud-storage.html"/>
+   <updated>2022-08-27T15:58:36+05:30</updated>
+   <id>https://mrprajesh.co.in/cloud-storage</id>
+   <content type="html">&lt;p&gt;As my dropbox is getting full soon. I have to resort to some other free
+cloud storage provider for saving and syncing my local files on linux.&lt;/p&gt;
+
+&lt;p&gt;I have downloaded&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;MegaSync&lt;/li&gt;
+  &lt;li&gt;pCloud&lt;/li&gt;
+  &lt;li&gt;Internxt&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;All seems working fine for now.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
    <title>Audible alert for battery low and high</title>
    <link href="https://mrprajesh.co.in/blog/alert-for-battery-low-and-high.html"/>
    <updated>2022-05-09T19:02:06+05:30</updated>
    <id>https://mrprajesh.co.in/alert-for-battery-low--and-high</id>
    <content type="html">&lt;p&gt;As both prolonged usage with AC power on the laptop and critically low battery degreades battery life;
 I decided to write a script that give an audio alert to disconnec/connect the charger.
-I have scheduled this script on &lt;code class=&quot;highlighter-rouge&quot;&gt;cron&lt;/code&gt;. Now, both my life and battery life is better.&lt;/p&gt;
+I have scheduled this script on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cron&lt;/code&gt;. Now, both my life and battery life is better.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;alert-on-full-battery.sh&lt;/strong&gt;&lt;/p&gt;
 &lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;#!/bin/bash
@@ -36,7 +128,7 @@ I have scheduled this script on &lt;code class=&quot;highlighter-rouge&quot;&gt;
 
 &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$#&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ge&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;then&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ge&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;  &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lt&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;##&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;means&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ge&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;  &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lt&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;##&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;means&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;
   &lt;span class=&quot;n&quot;&gt;then&lt;/span&gt;
     &lt;span class=&quot;n&quot;&gt;THRESHOLD&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
   &lt;span class=&quot;n&quot;&gt;fi&lt;/span&gt;
@@ -106,7 +198,7 @@ crontab -e&lt;/p&gt;
    <link href="https://mrprajesh.co.in/blog/cmake-build.html"/>
    <updated>2022-04-23T16:09:19+05:30</updated>
    <id>https://mrprajesh.co.in/cmake-build</id>
-   <content type="html">&lt;p&gt;Generally in many repo using &lt;code class=&quot;highlighter-rouge&quot;&gt;cmake&lt;/code&gt;. We do the following&lt;/p&gt;
+   <content type="html">&lt;p&gt;Generally in many repo using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cmake&lt;/code&gt;. We do the following&lt;/p&gt;
 &lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;git&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clone&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;repo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;cd&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;repo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;mkdir&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;build&lt;/span&gt;
@@ -114,7 +206,7 @@ crontab -e&lt;/p&gt;
 &lt;span class=&quot;n&quot;&gt;cmake&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;..&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;#&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;may&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;be&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;more&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;For&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;now&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;KISS&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;make&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Now in the recent &lt;code class=&quot;highlighter-rouge&quot;&gt;cmake&lt;/code&gt; version. We can do the last 4 steps in 2 lines.&lt;/p&gt;
+&lt;p&gt;Now in the recent &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cmake&lt;/code&gt; version. We can do the last 4 steps in 2 lines.&lt;/p&gt;
 
 &lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;# starting with CMake 3.13, use a simpler form:
 &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cmake&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;S&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;B&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;build&quot;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;#&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;DCMAKE_BUILD_TYPE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Release&lt;/span&gt;
@@ -138,7 +230,7 @@ crontab -e&lt;/p&gt;
 
 &lt;p&gt;I could build it but not run it. Because
 &lt;a href=&quot;https://github.com/moderngpu/moderngpu/blob/master/CMakeLists.txt#L53&quot;&gt;CUDA_ARCHITECTURES&lt;/a&gt;
-is set higher. Let’s change it to &lt;code class=&quot;highlighter-rouge&quot;&gt;50&lt;/code&gt;&lt;/p&gt;
+is set higher. Let’s change it to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;50&lt;/code&gt;&lt;/p&gt;
 
 &lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;git&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clone&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;https&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//github.com/moderngpu/moderngpu.git&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;cd&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;moderngpu&lt;/span&gt;
@@ -152,7 +244,7 @@ is set higher. Let’s change it to &lt;code class=&quot;highlighter-rouge&quot;
 &lt;ul&gt;
   &lt;li&gt;Not working with cmake 3.23&lt;/li&gt;
   &lt;li&gt;Just use 3.19&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;scl enable devtoolset-6 bash&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;scl enable devtoolset-6 bash&lt;/code&gt;&lt;/li&gt;
   &lt;li&gt;and it should work.&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -228,9 +320,9 @@ python3 gen_table7.py small &amp;lt; input&lt;/p&gt;
 &lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;module&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;load&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cmake3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;18&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;module&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;load&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cuda&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;a href=&quot;https://mrprajesh.co.in/blog/install-gcc.html&quot;&gt;src build gcc 5.4.0&lt;/a&gt; at install prefix &lt;code class=&quot;highlighter-rouge&quot;&gt;/lfs/usrhome/phd/cs16d003/install/gcc54/bin&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://mrprajesh.co.in/blog/install-gcc.html&quot;&gt;src build gcc 5.4.0&lt;/a&gt; at install prefix &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/lfs/usrhome/phd/cs16d003/install/gcc54/bin&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;c
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;c
 cmake .. -DCUDA_TOOLKIT_ROOT_DIR=/lfs/sware/cuda-9.2 -DCMAKE_C_COMPILER=/lfs/usrhome/phd/cs16d003/install/gcc54/bin/gcc-5.4 -DCMAKE_CXX_COMPILER=/lfs/usrhome/phd/cs16d003/install/gcc54/bin/g++-5.4&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/mrprajesh/sep-graph/issues/1#issuecomment-1075839359&quot;&gt;Git Issue&lt;/a&gt;&lt;/p&gt;
@@ -442,8 +534,8 @@ cmake .. -DCUDA_TOOLKIT_ROOT_DIR=/lfs/sware/cuda-9.2 -DCMAKE_C_COMPILER=/lfs/usr
    <link href="https://mrprajesh.co.in/blog/change-default-login-shell-without-root.html"/>
    <updated>2022-03-03T11:05:41+05:30</updated>
    <id>https://mrprajesh.co.in/change-default-login-shell-without-root</id>
-   <content type="html">&lt;p&gt;Somehow our admin did not make &lt;code class=&quot;highlighter-rouge&quot;&gt;bash&lt;/code&gt; as a default shell during user creation.
-I had to type every time &lt;code class=&quot;highlighter-rouge&quot;&gt;bash&lt;/code&gt; after login to enable bash like below:&lt;/p&gt;
+   <content type="html">&lt;p&gt;Somehow our admin did not make &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bash&lt;/code&gt; as a default shell during user creation.
+I had to type every time &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bash&lt;/code&gt; after login to enable bash like below:&lt;/p&gt;
 
 &lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;Welcome&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Ubuntu&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mo&quot;&gt;04&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;LTS&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GNU&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Linux&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;13&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;generic&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x86_64&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 
@@ -454,7 +546,7 @@ I had to type every time &lt;code class=&quot;highlighter-rouge&quot;&gt;bash&lt
 &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;It is easy to make bash as default. Run &lt;code class=&quot;highlighter-rouge&quot;&gt;chsh -s /bin/bash&lt;/code&gt; or do below:&lt;/p&gt;
+&lt;p&gt;It is easy to make bash as default. Run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;chsh -s /bin/bash&lt;/code&gt; or do below:&lt;/p&gt;
 
 &lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;chsh&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;Password&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
@@ -511,21 +603,21 @@ I had to type every time &lt;code class=&quot;highlighter-rouge&quot;&gt;bash&lt
 &lt;/ul&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;Have a snipets for &lt;code class=&quot;highlighter-rouge&quot;&gt;cpp&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;c&lt;/code&gt; starting template. i.e. I type cpp [HIT TAB] to get main function.&lt;/li&gt;
-  &lt;li&gt;Have a snippet for autocompleting &lt;code class=&quot;highlighter-rouge&quot;&gt;std::&lt;/code&gt; . e.g &lt;code class=&quot;highlighter-rouge&quot;&gt;cout&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;vector&lt;/code&gt; [TAB].&lt;/li&gt;
-  &lt;li&gt;Have a two space for tab. Why? deeper nesting will look back if &lt;code class=&quot;highlighter-rouge&quot;&gt;tab&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;4 spaces&lt;/code&gt; is used.&lt;/li&gt;
-  &lt;li&gt;filenames: put it meaniful. I prefer &lt;code class=&quot;highlighter-rouge&quot;&gt;hypen&lt;/code&gt;  over &lt;code class=&quot;highlighter-rouge&quot;&gt;underscore&lt;/code&gt; if &lt;code class=&quot;highlighter-rouge&quot;&gt;camelcase&lt;/code&gt; is not allowed.&lt;/li&gt;
+  &lt;li&gt;Have a snipets for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cpp&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;c&lt;/code&gt; starting template. i.e. I type cpp [HIT TAB] to get main function.&lt;/li&gt;
+  &lt;li&gt;Have a snippet for autocompleting &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;std::&lt;/code&gt; . e.g &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cout&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;vector&lt;/code&gt; [TAB].&lt;/li&gt;
+  &lt;li&gt;Have a two space for tab. Why? deeper nesting will look back if &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tab&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;4 spaces&lt;/code&gt; is used.&lt;/li&gt;
+  &lt;li&gt;filenames: put it meaniful. I prefer &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hypen&lt;/code&gt;  over &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;underscore&lt;/code&gt; if &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;camelcase&lt;/code&gt; is not allowed.&lt;/li&gt;
   &lt;li&gt;variable and functionNames: Begin with a lower-case and camel-case if more words. functionName will have a verb in it.&lt;/li&gt;
   &lt;li&gt;ClassName: Singular and begin with a upper-case.&lt;/li&gt;
   &lt;li&gt;CONSTANTS: Use all upper-case letters. so as enums&lt;/li&gt;
-  &lt;li&gt;Use a good option (say &lt;code class=&quot;highlighter-rouge&quot;&gt;-d&lt;/code&gt;) to print debug info than meare print statements which require (un)commenting every time.&lt;/li&gt;
-  &lt;li&gt;If the program, is going to be used less (2 days or lesser) and needs quick run, you may use &lt;code class=&quot;highlighter-rouge&quot;&gt;using namespace std;&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;#include &amp;lt;bits/stdc++.h&amp;gt;&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Use a good option (say &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-d&lt;/code&gt;) to print debug info than meare print statements which require (un)commenting every time.&lt;/li&gt;
+  &lt;li&gt;If the program, is going to be used less (2 days or lesser) and needs quick run, you may use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;using namespace std;&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#include &amp;lt;bits/stdc++.h&amp;gt;&lt;/code&gt;&lt;/li&gt;
   &lt;li&gt;If the program, is going to be a library or some large project might use it in future, then ignore the above suggestion.&lt;/li&gt;
   &lt;li&gt;Make sure every chunck (block or few lines) of the code you write is compile-able. DO NOT write and fix bug.&lt;/li&gt;
   &lt;li&gt;Comment the non-obvious items. Possible exceptions that you missed and change log.&lt;/li&gt;
   &lt;li&gt;Add compilation (or/and execution) commands at the top of the file if it is unusual&lt;/li&gt;
-  &lt;li&gt;Use &lt;code class=&quot;highlighter-rouge&quot;&gt;git&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;GitHub&lt;/code&gt; to track the issues, ideas and progress.&lt;/li&gt;
-  &lt;li&gt;Use your own file version numbering if &lt;code class=&quot;highlighter-rouge&quot;&gt;git&lt;/code&gt; is inapproriate.&lt;/li&gt;
+  &lt;li&gt;Use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GitHub&lt;/code&gt; to track the issues, ideas and progress.&lt;/li&gt;
+  &lt;li&gt;Use your own file version numbering if &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git&lt;/code&gt; is inapproriate.&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;// TODO&lt;/p&gt;
@@ -595,7 +687,7 @@ depth of the folder location.&lt;/p&gt;
 
 &lt;p&gt;Example:&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;some/folder/inputFileWith.ext&lt;/code&gt; to  &lt;code class=&quot;highlighter-rouge&quot;&gt;some/other/folder/outFileWithDifferent.extension&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;some/folder/inputFileWith.ext&lt;/code&gt; to  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;some/other/folder/outFileWithDifferent.extension&lt;/code&gt;&lt;/p&gt;
 
 &lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;#!/bin/bash
 &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;INPUT&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;some&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;folder&lt;/span&gt;            &lt;span class=&quot;err&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;no&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;need&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;suffix&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
@@ -624,7 +716,7 @@ depth of the folder location.&lt;/p&gt;
 2021&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
 
-&lt;p&gt;This is super cool! I sense a lot of value for whoever using &lt;code class=&quot;highlighter-rouge&quot;&gt;Thurst&lt;/code&gt; algorithms.&lt;/p&gt;
+&lt;p&gt;This is super cool! I sense a lot of value for whoever using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Thurst&lt;/code&gt; algorithms.&lt;/p&gt;
 </content>
  </entry>
  
@@ -633,12 +725,12 @@ depth of the folder location.&lt;/p&gt;
    <link href="https://mrprajesh.co.in/blog/print-vector-function.html"/>
    <updated>2021-10-15T11:36:26+05:30</updated>
    <id>https://mrprajesh.co.in/print-vector-function</id>
-   <content type="html">&lt;p&gt;Note the comments in-line. This is how my &lt;code class=&quot;highlighter-rouge&quot;&gt;print vector&lt;/code&gt; function refined
+   <content type="html">&lt;p&gt;Note the comments in-line. This is how my &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;print vector&lt;/code&gt; function refined
 over the years.&lt;/p&gt;
 
 &lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;//~~~START:Fri, 15-Oct-2021, 11:44:30 IST&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;//~~~Author:Rajesh Pandian M | mrprajesh.co.in&lt;/span&gt;
-&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;bits/stdc++.h&amp;gt;
+&lt;span class=&quot;cp&quot;&gt;#include&lt;/span&gt; &lt;span class=&quot;cpf&quot;&gt;&amp;lt;bits/stdc++.h&amp;gt;&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;
 &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 
 &lt;span class=&quot;c1&quot;&gt;// I used to print this way before I know range-based for loop&lt;/span&gt;
@@ -694,7 +786,7 @@ over the years.&lt;/p&gt;
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Can we template the &lt;code class=&quot;highlighter-rouge&quot;&gt;printVec4&lt;/code&gt;? &lt;s&gt; I still do not know &lt;s&gt; . Found it!&lt;/s&gt;&lt;/s&gt;&lt;/p&gt;
+&lt;p&gt;Can we template the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;printVec4&lt;/code&gt;? &lt;s&gt; I still do not know &lt;s&gt; . Found it!&lt;/s&gt;&lt;/s&gt;&lt;/p&gt;
 </content>
  </entry>
  
@@ -725,7 +817,7 @@ over the years.&lt;/p&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;But, we do not have to play on dirt now using &lt;code class=&quot;highlighter-rouge&quot;&gt;c++20&lt;/code&gt; we can declare variable inside the range for loop. :)&lt;/p&gt;
+&lt;p&gt;But, we do not have to play on dirt now using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;c++20&lt;/code&gt; we can declare variable inside the range for loop. :)&lt;/p&gt;
 
 &lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;auto&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vec&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
   &lt;span class=&quot;c1&quot;&gt;// use v&lt;/span&gt;
@@ -791,16 +883,16 @@ You can solve most of the competitive programming problems in just 1 or 2 lines.
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;Export as PDF.&lt;/li&gt;
-  &lt;li&gt;Use &lt;code class=&quot;highlighter-rouge&quot;&gt;pdfcrop sample.pdf&lt;/code&gt; to crop the extra white spaces around and directly include cropped file in begin figure on latex.&lt;/li&gt;
+  &lt;li&gt;Use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pdfcrop sample.pdf&lt;/code&gt; to crop the extra white spaces around and directly include cropped file in begin figure on latex.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;PS: We can do the same for &lt;code class=&quot;highlighter-rouge&quot;&gt;Openoffice Calc&lt;/code&gt; figures by exporting as &lt;code class=&quot;highlighter-rouge&quot;&gt;.eps&lt;/code&gt; format.&lt;/p&gt;
+&lt;p&gt;PS: We can do the same for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Openoffice Calc&lt;/code&gt; figures by exporting as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.eps&lt;/code&gt; format.&lt;/p&gt;
 
 &lt;h3 id=&quot;prerequsites&quot;&gt;Prerequsites&lt;/h3&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Need Open or Libre office which is a FOSS.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;pdfcrop&lt;/code&gt; which you could install using apt-get commands&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pdfcrop&lt;/code&gt; which you could install using apt-get commands&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;apt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;texlive&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;extra&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;utils&lt;/span&gt;
@@ -862,16 +954,16 @@ You can solve most of the competitive programming problems in just 1 or 2 lines.
 
 &lt;h3 id=&quot;file-commonmk&quot;&gt;File common.mk&lt;/h3&gt;
 &lt;ul&gt;
-  &lt;li&gt;cat &lt;code class=&quot;highlighter-rouge&quot;&gt;common.mk&lt;/code&gt;  #at line 6, Modify the below line&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;CUB_DIR   := $(TOPLEVEL)/cub-1.2.0&lt;/code&gt; #incorrect path&lt;/li&gt;
+  &lt;li&gt;cat &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;common.mk&lt;/code&gt;  #at line 6, Modify the below line&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CUB_DIR   := $(TOPLEVEL)/cub-1.2.0&lt;/code&gt; #incorrect path&lt;/li&gt;
   &lt;li&gt;to&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;CUB_DIR   := $(TOPLEVEL)/rt/include/cub&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;EXTRA := $(FLAGS) $(INCLUDES) $(LINKS) &lt;code class=&quot;highlighter-rouge&quot;&gt;-Wno-deprecated-declarations&lt;/code&gt;  #Line14 suffix added&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CUB_DIR   := $(TOPLEVEL)/rt/include/cub&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;EXTRA := $(FLAGS) $(INCLUDES) $(LINKS) &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-Wno-deprecated-declarations&lt;/code&gt;  #Line14 suffix added&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;file-archmk&quot;&gt;File arch.mk&lt;/h3&gt;
 &lt;ul&gt;
-  &lt;li&gt;cat &lt;code class=&quot;highlighter-rouge&quot;&gt;arch.mk&lt;/code&gt;
+  &lt;li&gt;cat &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;arch.mk&lt;/code&gt;
 CUDA_ARCH := &lt;br /&gt;
   -gencode arch=compute_35,code=sm_35 &lt;br /&gt;
   -gencode arch=compute_37,code=sm_37 &lt;br /&gt;
@@ -942,7 +1034,7 @@ CUDA_ARCH := &lt;br /&gt;
    <updated>2021-07-03T19:44:23+05:30</updated>
    <id>https://mrprajesh.co.in/install-gunrock-on-centos</id>
    <content type="html">&lt;p&gt;This post is in continuation of with my earlier  &lt;a href=&quot;https://mrprajesh.blogspot.com/2019/12/building-gunrock-on-redhatcentos.html&quot;&gt;blog post&lt;/a&gt;.
-The recent version (v1.2) of gunrock requires &lt;code class=&quot;highlighter-rouge&quot;&gt;std=c++14&lt;/code&gt; for building. We have modified some of the steps there. Let’s build &lt;code class=&quot;highlighter-rouge&quot;&gt;SSSP&lt;/code&gt;.
+The recent version (v1.2) of gunrock requires &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;std=c++14&lt;/code&gt; for building. We have modified some of the steps there. Let’s build &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SSSP&lt;/code&gt;.
 Do check out the &lt;a href=&quot;#short-5-min-video&quot;&gt;5 minute-video&lt;/a&gt; at the end.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Step 1: Setting up env&lt;/strong&gt;&lt;/p&gt;
@@ -997,14 +1089,14 @@ learn things which we never knew before. I am going add few things that I
 have learnt in TAing CS1111 this semester Apr-Jun 2021.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&quot; %c&quot;&lt;/code&gt; the space before the %c matters! it prevents storing white space char.
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot; %c&quot;&lt;/code&gt; the space before the %c matters! it prevents storing white space char.
     &lt;blockquote&gt;
-      &lt;p&gt;Otherwise it might consume the white space chars (such as &lt;code class=&quot;highlighter-rouge&quot;&gt;' ', '\t','\n'&lt;/code&gt;) of the previous input
-eg &lt;code class=&quot;highlighter-rouge&quot;&gt;scanf(&quot;%d%c&quot;, num, ch)&lt;/code&gt; taking input “11 a” implies &lt;code class=&quot;highlighter-rouge&quot;&gt;num=11&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;ch=' '&lt;/code&gt; i.e a space in &lt;code class=&quot;highlighter-rouge&quot;&gt;ch&lt;/code&gt; instead of intended &lt;code class=&quot;highlighter-rouge&quot;&gt;a&lt;/code&gt;&lt;/p&gt;
+      &lt;p&gt;Otherwise it might consume the white space chars (such as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;' ', '\t','\n'&lt;/code&gt;) of the previous input
+eg &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;scanf(&quot;%d%c&quot;, num, ch)&lt;/code&gt; taking input “11 a” implies &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;num=11&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ch=' '&lt;/code&gt; i.e a space in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ch&lt;/code&gt; instead of intended &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;a&lt;/code&gt;&lt;/p&gt;
     &lt;/blockquote&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;n=2i&lt;/code&gt; assignment is valid in C because the newer compilers have a complex constants as well.
-    &lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;stdio.h&amp;gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;n=2i&lt;/code&gt; assignment is valid in C because the newer compilers have a complex constants as well.
+    &lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;#include&lt;/span&gt; &lt;span class=&quot;cpf&quot;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;
 &lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
 &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
@@ -1015,10 +1107,10 @@ eg &lt;code class=&quot;highlighter-rouge&quot;&gt;scanf(&quot;%d%c&quot;, num, 
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
     &lt;blockquote&gt;
-      &lt;p&gt;So, this will not result in a compiler error as &lt;code class=&quot;highlighter-rouge&quot;&gt;i&lt;/code&gt; undefined.&lt;/p&gt;
+      &lt;p&gt;So, this will not result in a compiler error as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;i&lt;/code&gt; undefined.&lt;/p&gt;
     &lt;/blockquote&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;clang&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;gcc&lt;/code&gt; may produce different output on using of uninitialized variables. One defaults to zero and other uses garbage value.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;clang&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gcc&lt;/code&gt; may produce different output on using of uninitialized variables. One defaults to zero and other uses garbage value.&lt;/li&gt;
   &lt;li&gt;We used &lt;a href=&quot;replit.com&quot;&gt;Replit.com&lt;/a&gt; to running our labs. It can very much simulate a TA monitoring the students while coding. More about replt later.&lt;/li&gt;
   &lt;li&gt;Never assign 0 to char in the char array and print it. It will either not print or have trouble with the output.&lt;/li&gt;
   &lt;li&gt;Usage of bitwise-operator to make string of chars turn into: lower-case, upper-case and flip cases.&lt;/li&gt;
@@ -1031,13 +1123,13 @@ eg &lt;code class=&quot;highlighter-rouge&quot;&gt;scanf(&quot;%d%c&quot;, num, 
    <link href="https://mrprajesh.co.in/blog/bool-in-c-language.html"/>
    <updated>2021-05-16T00:01:01+05:30</updated>
    <id>https://mrprajesh.co.in/bool-in-c-language</id>
-   <content type="html">&lt;p&gt;For long time I was under an impression that &lt;code class=&quot;highlighter-rouge&quot;&gt;bool&lt;/code&gt; data type is present
+   <content type="html">&lt;p&gt;For long time I was under an impression that &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bool&lt;/code&gt; data type is present
 only in C++ and not in C language. I just got to know that it is there
 in C however it is not enabled default. So, we have to include it. It is
 very surprising that it is present there from C99 standard.&lt;/p&gt;
 
-&lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;stdio.h&amp;gt;
-#include &amp;lt;stdbool.h&amp;gt;
+&lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;#include&lt;/span&gt; &lt;span class=&quot;cpf&quot;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;
+#include&lt;/span&gt; &lt;span class=&quot;cpf&quot;&gt;&amp;lt;stdbool.h&amp;gt;&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;
 &lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
   &lt;span class=&quot;n&quot;&gt;bool&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
   &lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;what's a? %d&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
@@ -1048,7 +1140,7 @@ very surprising that it is present there from C99 standard.&lt;/p&gt;
 &lt;h3 id=&quot;note&quot;&gt;Note&lt;/h3&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Uninitialized bool defaults to &lt;code class=&quot;highlighter-rouge&quot;&gt;false&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Uninitialized bool defaults to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;false&lt;/code&gt;.&lt;/li&gt;
   &lt;li&gt;There is &lt;strong&gt;no&lt;/strong&gt; format specifier in printf to specify bool type.&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -1067,7 +1159,7 @@ very surprising that it is present there from C99 standard.&lt;/p&gt;
    <link href="https://mrprajesh.co.in/blog/my-encounters-with-nvprof.html"/>
    <updated>2021-01-12T01:58:18+05:30</updated>
    <id>https://mrprajesh.co.in/my-encounters-with-nvprof</id>
-   <content type="html">&lt;p&gt;My objective is plain and simple. I wanted &lt;code class=&quot;highlighter-rouge&quot;&gt;nvprof&lt;/code&gt; to output
+   <content type="html">&lt;p&gt;My objective is plain and simple. I wanted &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nvprof&lt;/code&gt; to output
 the metrics as I had mentioned in &lt;a href=&quot;https://gist.github.com/mrprajesh/352cbe661ee27a6b4627ae72d89479e6&quot;&gt;my gist&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;We have two GPU P100 and GTX2080 which has 3 versions of CUDA installed: 8.0, 9.1 and 10.2 with driver 440.31.
@@ -1104,22 +1196,22 @@ We got some weird errors which even google had no answers.&lt;/p&gt;
    <updated>2021-01-06T17:59:37+05:30</updated>
    <id>https://mrprajesh.co.in/Use-date-and-time-format</id>
    <content type="html">&lt;h4 id=&quot;date&quot;&gt;Date&lt;/h4&gt;
-&lt;p&gt;My brother’s birth day is &lt;code class=&quot;highlighter-rouge&quot;&gt;11-04-1994&lt;/code&gt;. It is natural to
-get confused as &lt;code class=&quot;highlighter-rouge&quot;&gt;04-Nov&lt;/code&gt; if are an US/Europen citizen. :open_mouth: His birthday is  on &lt;code class=&quot;highlighter-rouge&quot;&gt;11-April&lt;/code&gt;. :yum: So, it is always better write (or store in system)
+&lt;p&gt;My brother’s birth day is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;11-04-1994&lt;/code&gt;. It is natural to
+get confused as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;04-Nov&lt;/code&gt; if are an US/Europen citizen. :open_mouth: His birthday is  on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;11-April&lt;/code&gt;. :yum: So, it is always better write (or store in system)
 date &lt;strong&gt;unambiguously&lt;/strong&gt; despite your locality. :thinking:&lt;/p&gt;
 
 &lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;DD&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Mon&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;YYYY&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;is my favourite for several reasons because it uses constant &lt;code class=&quot;highlighter-rouge&quot;&gt;11&lt;/code&gt; chars. Prefer to prefix &lt;code class=&quot;highlighter-rouge&quot;&gt;0&lt;/code&gt; if DD is single digit. You can do that to your pen signature as well. It is tamper proof. So,
-the right way is &lt;code class=&quot;highlighter-rouge&quot;&gt;11-Apr-1994&lt;/code&gt; :sunglasses:&lt;/p&gt;
+&lt;p&gt;is my favourite for several reasons because it uses constant &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;11&lt;/code&gt; chars. Prefer to prefix &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0&lt;/code&gt; if DD is single digit. You can do that to your pen signature as well. It is tamper proof. So,
+the right way is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;11-Apr-1994&lt;/code&gt; :sunglasses:&lt;/p&gt;
 
 &lt;h4 id=&quot;time&quot;&gt;Time&lt;/h4&gt;
 
 &lt;p&gt;Similar thing goes for time as well. I am in India and we follow IST. There might be others who are reading it from a different time zone.
 You might have responded to email the next minute. But
 based on how email clients are configure might show a different time of you reply/received time. It compounds with AM+PM thing.
-So, let’s follow a 24 hours standard time along with mentioning your shift or your time zone. e.g &lt;code class=&quot;highlighter-rouge&quot;&gt;GMT+0530&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;IST&lt;/code&gt;. That way it is unambiguous.&lt;/p&gt;
+So, let’s follow a 24 hours standard time along with mentioning your shift or your time zone. e.g &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GMT+0530&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IST&lt;/code&gt;. That way it is unambiguous.&lt;/p&gt;
 
 &lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nl&quot;&gt;HH:MM:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SS&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GMT&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+/-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hhss&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -1153,7 +1245,7 @@ So, let’s follow a 24 hours standard time along with mentioning your shift or 
    <link href="https://mrprajesh.co.in/blog/smart-git-log.html"/>
    <updated>2020-12-23T14:13:35+05:30</updated>
    <id>https://mrprajesh.co.in/smart-git-log</id>
-   <content type="html">&lt;p&gt;Many at times &lt;code class=&quot;highlighter-rouge&quot;&gt;git log&lt;/code&gt; is more difficult to read and scroll. Here is a
+   <content type="html">&lt;p&gt;Many at times &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git log&lt;/code&gt; is more difficult to read and scroll. Here is a
 smart solution for it. Do you want some thing like below?&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;images/rajz-git-log.png&quot; alt=&quot;image NOT lOaDeD&quot; /&gt;&lt;/p&gt;
@@ -1162,7 +1254,7 @@ smart solution for it. Do you want some thing like below?&lt;/p&gt;
 
 &lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;git&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;config&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;global&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;alias&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lg&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&amp;lt;%an&amp;gt;%Creset' --abbrev-commit&quot;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;This is just git pretty format and &lt;code class=&quot;highlighter-rouge&quot;&gt;lg&lt;/code&gt; alias for a bigger &lt;code class=&quot;highlighter-rouge&quot;&gt;cmd&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;This is just git pretty format and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lg&lt;/code&gt; alias for a bigger &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cmd&lt;/code&gt;.&lt;/p&gt;
 
 &lt;h3 id=&quot;ref&quot;&gt;Ref&lt;/h3&gt;
 
@@ -1175,10 +1267,10 @@ smart solution for it. Do you want some thing like below?&lt;/p&gt;
    <link href="https://mrprajesh.co.in/blog/devtoolset-on-centos.html"/>
    <updated>2020-12-23T13:37:55+05:30</updated>
    <id>https://mrprajesh.co.in/devtoolset-on-centos</id>
-   <content type="html">&lt;p&gt;This is a trick we use for using various &lt;code class=&quot;highlighter-rouge&quot;&gt;gcc&lt;/code&gt; version on the same machine.
+   <content type="html">&lt;p&gt;This is a trick we use for using various &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gcc&lt;/code&gt; version on the same machine.
 The machine my advisor runs on centOs. Everyone has a different
 requirement for gcc. So, they have this wonderful option of devtoolset.
-Must be installed by &lt;code class=&quot;highlighter-rouge&quot;&gt;root&lt;/code&gt; user. Assuming that appropriate version is
+Must be installed by &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;root&lt;/code&gt; user. Assuming that appropriate version is
 installed. Lets see how to enable it.&lt;/p&gt;
 
 &lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;g&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;version&lt;/span&gt;
@@ -1215,7 +1307,7 @@ installed. Lets see how to enable it.&lt;/p&gt;
    <link href="https://mrprajesh.co.in/blog/set-nvidia-gpu-as-default-cmd-line.html"/>
    <updated>2020-12-19T03:06:07+05:30</updated>
    <id>https://mrprajesh.co.in/set-nvidia-gpu-as-default-cmd-line</id>
-   <content type="html">&lt;p&gt;Do you want to set the preferred GPU if &lt;code class=&quot;highlighter-rouge&quot;&gt;nvidia x server setting&lt;/code&gt; is not displayed
+   <content type="html">&lt;p&gt;Do you want to set the preferred GPU if &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nvidia x server setting&lt;/code&gt; is not displayed
 in the tray icon. Let’s go command line.&lt;/p&gt;
 
 &lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;prime&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;select&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;status&lt;/span&gt;
@@ -1245,7 +1337,7 @@ Reboot to see the changes.&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Install &lt;a href=&quot;https://github.com/b-ryan/powerline-shell&quot;&gt;powerline-shell&lt;/a&gt;
- through &lt;code class=&quot;highlighter-rouge&quot;&gt;pip3 install powerline-shell&lt;/code&gt; (and maybe fonts?!)&lt;/li&gt;
+ through &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pip3 install powerline-shell&lt;/code&gt; (and maybe fonts?!)&lt;/li&gt;
   &lt;li&gt;Do this
     &lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;apt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fonts&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;powerline&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
@@ -1258,7 +1350,7 @@ Reboot to see the changes.&lt;/p&gt;
 &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cache&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;vf&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;local&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;share&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fonts&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;ol&gt;
-  &lt;li&gt;Append below contents to the end of &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.bashrc&lt;/code&gt; file.
+  &lt;li&gt;Append below contents to the end of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~/.bashrc&lt;/code&gt; file.
     &lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;_update_ps1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;PS1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;powerline&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shell&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
@@ -1267,7 +1359,7 @@ Reboot to see the changes.&lt;/p&gt;
 &lt;span class=&quot;n&quot;&gt;fi&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
-  &lt;li&gt;Restart terminal using &lt;code class=&quot;highlighter-rouge&quot;&gt;source ~/.bashrc&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Restart terminal using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;source ~/.bashrc&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h3 id=&quot;custom&quot;&gt;Custom&lt;/h3&gt;
@@ -1367,7 +1459,7 @@ up with the installed drivers. So, this resulted in the following:&lt;/p&gt;
 &lt;span class=&quot;n&quot;&gt;Result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;FAIL&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;However, &lt;code class=&quot;highlighter-rouge&quot;&gt;nvidia-smi&lt;/code&gt; was showing
+&lt;p&gt;However, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nvidia-smi&lt;/code&gt; was showing
 the GPUs connected.&lt;/p&gt;
 
 &lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;rajesh&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gpu&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p100&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dkms&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;status&lt;/span&gt;
@@ -1409,7 +1501,7 @@ the GPUs connected.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;TSP&lt;/strong&gt;
     &lt;ul&gt;
-      &lt;li&gt;Input: n points with unique ids on xy plane &lt;code class=&quot;highlighter-rouge&quot;&gt;i xi y1&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;Input: n points with unique ids on xy plane &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;i xi y1&lt;/code&gt;&lt;/li&gt;
       &lt;li&gt;Output: print a permutation of n&lt;/li&gt;
       &lt;li&gt;Goal: Minimizing the distance travelled from first point to all others point and back to first.&lt;/li&gt;
     &lt;/ul&gt;
@@ -1461,7 +1553,7 @@ as main branch. So, why does Github do so?&lt;/p&gt;
 
 &lt;p&gt;That’s good.&lt;/p&gt;
 
-&lt;p&gt;From 01-Oct-2020, all new repos created will have default branch as &lt;code class=&quot;highlighter-rouge&quot;&gt;main&lt;/code&gt;.
+&lt;p&gt;From 01-Oct-2020, all new repos created will have default branch as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;main&lt;/code&gt;.
 Github has provided &lt;a href=&quot;https://github.com/github/renaming&quot;&gt;details&lt;/a&gt; for older repos to migrate.
 So, should be fairly easy for old repos. Let’s see.&lt;/p&gt;
 
@@ -1733,8 +1825,8 @@ As said in this &lt;a href=&quot;https://www.dmarcanalyzer.com/how-to-create-a-d
    <id>https://mrprajesh.co.in/list-the-order-of-calls-from-installed</id>
    <content type="html">&lt;ul&gt;
   &lt;li&gt;I had a ruby 2.7 version but system was using 2.5 (an older version came by default).&lt;/li&gt;
-  &lt;li&gt;How did I managed to find out  using &lt;code class=&quot;highlighter-rouge&quot;&gt;which&lt;/code&gt; command?&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;which -a &amp;lt;cmd&amp;gt;&lt;/code&gt; lists the order of executable that is checked for a command&lt;/li&gt;
+  &lt;li&gt;How did I managed to find out  using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;which&lt;/code&gt; command?&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;which -a &amp;lt;cmd&amp;gt;&lt;/code&gt; lists the order of executable that is checked for a command&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;rajz&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;LordOfWarriors&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:~&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ruby&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;
@@ -1801,7 +1893,7 @@ There is a nice presentation &lt;a href=&quot;https://storage.googleapis.com/tea
    <updated>2020-04-01T13:40:44+05:30</updated>
    <id>https://mrprajesh.co.in/how-to-keep-ssh-session-alive-longer</id>
    <content type="html">&lt;ul&gt;
-  &lt;li&gt;More often &lt;code class=&quot;highlighter-rouge&quot;&gt;ssh&lt;/code&gt; times out when the user is not using the terminal for a few minutes.&lt;/li&gt;
+  &lt;li&gt;More often &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ssh&lt;/code&gt; times out when the user is not using the terminal for a few minutes.&lt;/li&gt;
   &lt;li&gt;The remote server disconnects the silent clients; Annoying! :angry:&lt;/li&gt;
   &lt;li&gt;Two ways to resolve from client-side on Linux Mint/Ubuntu/Any&lt;/li&gt;
 &lt;/ul&gt;
@@ -1810,13 +1902,13 @@ There is a nice presentation &lt;a href=&quot;https://storage.googleapis.com/tea
 
 &lt;ul&gt;
   &lt;li&gt;while connecting via ssh add few flags&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ssh -o ServerAliveInterval=60 &amp;lt;myname&amp;gt;@&amp;lt;myremote-host-or-ip-address&amp;gt;&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ssh -o ServerAliveInterval=60 &amp;lt;myname&amp;gt;@&amp;lt;myremote-host-or-ip-address&amp;gt;&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;way-2&quot;&gt;Way 2&lt;/h3&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;nano $HOME/.ssh/config&lt;/code&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nano $HOME/.ssh/config&lt;/code&gt;
     &lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;Host&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;
   &lt;span class=&quot;n&quot;&gt;ServerAliveInterval&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;240&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
@@ -1827,17 +1919,17 @@ There is a nice presentation &lt;a href=&quot;https://storage.googleapis.com/tea
 &lt;h4 id=&quot;alias-ssh---way-1&quot;&gt;Alias ssh - Way 1&lt;/h4&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;In &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.bashrc&lt;/code&gt;, towards the end&lt;/li&gt;
+  &lt;li&gt;In &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~/.bashrc&lt;/code&gt;, towards the end&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;alias&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sshlive&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ssh&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;o&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ServerAliveInterval&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;60&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;'&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;ul&gt;
-  &lt;li&gt;Open a new terminal or run &lt;code class=&quot;highlighter-rouge&quot;&gt;source ~/.bashrc&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;See, list of aliases that are set. Type &lt;code class=&quot;highlighter-rouge&quot;&gt;alias&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Open a new terminal or run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;source ~/.bashrc&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;See, list of aliases that are set. Type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;alias&lt;/code&gt;&lt;/li&gt;
   &lt;li&gt;Next time, when I want ssh we need not remember the long command.&lt;/li&gt;
-  &lt;li&gt;Just type &lt;code class=&quot;highlighter-rouge&quot;&gt;sshlive user@hostname&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;Thanks to &lt;code class=&quot;highlighter-rouge&quot;&gt;alias&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Just type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sshlive user@hostname&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Thanks to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;alias&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h4 id=&quot;thanks&quot;&gt;Thanks&lt;/h4&gt;
@@ -1854,7 +1946,7 @@ There is a nice presentation &lt;a href=&quot;https://storage.googleapis.com/tea
   &lt;li&gt;How to add badges to your Git repo like &lt;a href=&quot;https://github.com/jekyll/jekyll#jekyll&quot;&gt;this&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;There are multiple ways to add badges.&lt;/li&gt;
   &lt;li&gt;one such service is by &lt;a href=&quot;https://shields.io/&quot;&gt;shield&lt;/a&gt;, see examples&lt;/li&gt;
-  &lt;li&gt;put the below in your &lt;code class=&quot;highlighter-rouge&quot;&gt;readme.md&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;put the below in your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;readme.md&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Jekyll&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Logo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;](&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;https&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//img.shields.io/badge/powered_by-Jekyll-blue.svg)&lt;/span&gt;
@@ -1866,7 +1958,7 @@ There is a nice presentation &lt;a href=&quot;https://storage.googleapis.com/tea
 &lt;p&gt;&lt;img src=&quot;https://img.shields.io/badge/powered_by-Jekyll-blue.svg&quot; alt=&quot;Jekyll Logo&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;the &lt;code class=&quot;highlighter-rouge&quot;&gt;.svg&lt;/code&gt; at end of the url is optional.&lt;/li&gt;
+  &lt;li&gt;the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.svg&lt;/code&gt; at end of the url is optional.&lt;/li&gt;
   &lt;li&gt;shows last commit of this blog.&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -1883,18 +1975,18 @@ There is a nice presentation &lt;a href=&quot;https://storage.googleapis.com/tea
    <id>https://mrprajesh.co.in/include-mathjax-only-if-needed</id>
    <content type="html">&lt;ul&gt;
   &lt;li&gt;Assuming this is an extension of my earlier &lt;a href=&quot;/blog/latex-jekyll.html&quot;&gt;mathjax post&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;This post contains &lt;code class=&quot;highlighter-rouge&quot;&gt;latex&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;math&lt;/code&gt; mode symbols.&lt;/li&gt;
+  &lt;li&gt;This post contains &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;latex&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;math&lt;/code&gt; mode symbols.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;A_1 \times B_2 = C_3&lt;/script&gt;
+\[A_1 \times B_2 = C_3\]
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;mathjax.js&lt;/code&gt; is loaded from the &lt;code class=&quot;highlighter-rouge&quot;&gt;default.html&lt;/code&gt;, even for the post/page&lt;/li&gt;
-  &lt;li&gt;that was not using math/latex symbols it used load &lt;code class=&quot;highlighter-rouge&quot;&gt;mathjax.js&lt;/code&gt; unnecessarily.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mathjax.js&lt;/code&gt; is loaded from the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;default.html&lt;/code&gt;, even for the post/page&lt;/li&gt;
+  &lt;li&gt;that was not using math/latex symbols it used load &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mathjax.js&lt;/code&gt; unnecessarily.&lt;/li&gt;
   &lt;li&gt;23 HTTP page request vs 4 (with mathjax vs without)&lt;/li&gt;
   &lt;li&gt;So, decided to load (mathjax.js) only for post that has math symbols&lt;/li&gt;
   &lt;li&gt;Have added &lt;a href=&quot;https://jekyllrb.com/docs/front-matter/#custom-variables&quot;&gt;custom variable&lt;/a&gt; called
-&lt;code class=&quot;highlighter-rouge&quot;&gt;mathjax&lt;/code&gt;.&lt;/li&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mathjax&lt;/code&gt;.&lt;/li&gt;
   &lt;li&gt;But, should remember to set variable to true in post’s front matter&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -1928,9 +2020,9 @@ There is a nice presentation &lt;a href=&quot;https://storage.googleapis.com/tea
 a particular person in a group chat.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;First, find out the &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;username&amp;gt;&lt;/code&gt; of that person&lt;/li&gt;
+  &lt;li&gt;First, find out the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;username&amp;gt;&lt;/code&gt; of that person&lt;/li&gt;
   &lt;li&gt;View the current role&lt;/li&gt;
-  &lt;li&gt;Change the role for that user. valid roles: &lt;code class=&quot;highlighter-rouge&quot;&gt;Admin&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;User&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Change the role for that user. valid roles: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Admin&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;User&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Type the following skype chat commands on group’s chat
@@ -1969,7 +2061,7 @@ bikeshed/
 &lt;/pre&gt;
 
 &lt;h4 id=&quot;step-1&quot;&gt;Step 1&lt;/h4&gt;
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Makefile&lt;/code&gt; contents. &lt;a href=&quot;https://github.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/blob/master/Makefile&quot;&gt;Thanks&lt;/a&gt; Bryce.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Makefile&lt;/code&gt; contents. &lt;a href=&quot;https://github.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/blob/master/Makefile&quot;&gt;Thanks&lt;/a&gt; Bryce.&lt;/p&gt;
 
 &lt;pre&gt;
 BUILDDIR = build
@@ -1992,7 +2084,7 @@ clean:
 &lt;/pre&gt;
 
 &lt;h4 id=&quot;step-2&quot;&gt;Step 2&lt;/h4&gt;
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sample.bs&lt;/code&gt; contents. Thanks to quick start &lt;a href=&quot;https://github.com/tabatkins/bikeshed/blob/master/docs/quick-start.md#starting-the-spec&quot;&gt;guide&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sample.bs&lt;/code&gt; contents. Thanks to quick start &lt;a href=&quot;https://github.com/tabatkins/bikeshed/blob/master/docs/quick-start.md#starting-the-spec&quot;&gt;guide&lt;/a&gt;.&lt;/p&gt;
 
 &lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pre&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;metadata&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;Title&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Your&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Spec&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Title&lt;/span&gt;
@@ -2011,7 +2103,7 @@ clean:
 
 &lt;h4 id=&quot;step-3&quot;&gt;Step 3&lt;/h4&gt;
 
-&lt;p&gt;Run &lt;code class=&quot;highlighter-rouge&quot;&gt;make&lt;/code&gt; and open your &lt;code class=&quot;highlighter-rouge&quot;&gt;build/*.html&lt;/code&gt; file in browser to view it. Yay!&lt;/p&gt;
+&lt;p&gt;Run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;make&lt;/code&gt; and open your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;build/*.html&lt;/code&gt; file in browser to view it. Yay!&lt;/p&gt;
 
 </content>
  </entry>
@@ -2048,7 +2140,7 @@ BTW, I suspect this is generated using bikeshed!?&lt;/p&gt;
   &lt;p&gt;The HTML Living Standard, which is developed by WHATWG, is the official version, while W3C HTML5 is no longer separate from WHATWG&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Now &lt;code class=&quot;highlighter-rouge&quot;&gt;W3C == WHATWG&lt;/code&gt; as said in &lt;a href=&quot;https://en.wikipedia.org/wiki/HTML#WHATWG_HTML_versus_HTML5&quot;&gt;WIKI&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Now &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;W3C == WHATWG&lt;/code&gt; as said in &lt;a href=&quot;https://en.wikipedia.org/wiki/HTML#WHATWG_HTML_versus_HTML5&quot;&gt;WIKI&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;markdown&quot;&gt;Markdown&lt;/h3&gt;
 
@@ -2073,7 +2165,7 @@ Everyone liked it because of its simplicity and usability. Even Reddit and GitHu
    <updated>2020-03-29T17:46:41+05:30</updated>
    <id>https://mrprajesh.co.in/apt-get-error-in-linux-mint</id>
    <content type="html">&lt;p&gt;The last time when I went to my relatives home which had a good internet connection.
-I had faced some issues with &lt;code class=&quot;highlighter-rouge&quot;&gt;apt-get&lt;/code&gt;.&lt;/p&gt;
+I had faced some issues with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;apt-get&lt;/code&gt;.&lt;/p&gt;
 
 &lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;rajz&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;LordOfWarriors&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:~&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;apt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;update&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;Err&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//security.ubuntu.com/ubuntu bionic-security InRelease&lt;/span&gt;
@@ -2163,7 +2255,7 @@ web, desktop, mobile (andriod+ios) in a single development, open-source mobile a
 It is using the &lt;a href=&quot;https://github.com/christian-fei/Simple-Jekyll-Search&quot;&gt;Java script&lt;/a&gt; search.
 It has nice &lt;a href=&quot;https://github.com/christian-fei/Simple-Jekyll-Search/wiki#enabling-full-text-search&quot;&gt;wiki&lt;/a&gt; which listed all the options.&lt;/p&gt;
 
-&lt;p&gt;In the &lt;code class=&quot;highlighter-rouge&quot;&gt;search.json&lt;/code&gt; file add the below line to enable it!&lt;/p&gt;
+&lt;p&gt;In the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;search.json&lt;/code&gt; file add the below line to enable it!&lt;/p&gt;
 
 &lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
 &lt;span class=&quot;s&quot;&gt;&quot;content&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;content&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;jsonify&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;
@@ -2248,11 +2340,11 @@ namely India, Tamil Nadu, Chennai, and even IT volunteers.&lt;/p&gt;
 &lt;h2 id=&quot;naming&quot;&gt;Naming&lt;/h2&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;2019-nCOV&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;2019 novel coronavirus&lt;/code&gt; is initial temporary name&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;2019-nCOV&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;2019 novel coronavirus&lt;/code&gt; is initial temporary name&lt;/li&gt;
   &lt;li&gt;It is a novel type in human coronavirus &lt;a href=&quot;https://en.wikipedia.org/wiki/Coronavirus#Human_coronaviruses&quot;&gt;family&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;cornavirus is amoung the viruses that causes common cold&lt;/li&gt;
   &lt;li&gt;This is the 7th type&lt;/li&gt;
-  &lt;li&gt;On 11-Feb-2020 International Committee on Taxonomy of Viruses (ICTV) named virus a &lt;code class=&quot;highlighter-rouge&quot;&gt;SAR-COV-2&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;On 11-Feb-2020 International Committee on Taxonomy of Viruses (ICTV) named virus a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SAR-COV-2&lt;/code&gt;&lt;/li&gt;
   &lt;li&gt;due to the similarity with 2003 SARS virus&lt;/li&gt;
   &lt;li&gt;disease as coronavirus disease (COVID-19)&lt;/li&gt;
   &lt;li&gt;virus as Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2)&lt;/li&gt;
@@ -2343,7 +2435,7 @@ For that reason and others, WHO has begun referring to the virus as “the virus
 
 &lt;h3 id=&quot;how-to-achieve-it&quot;&gt;How to achieve it?&lt;/h3&gt;
 &lt;ul&gt;
-  &lt;li&gt;in &lt;code class=&quot;highlighter-rouge&quot;&gt;_layouts/default.html&lt;/code&gt; after html tag&lt;/li&gt;
+  &lt;li&gt;in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_layouts/default.html&lt;/code&gt; after html tag&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
@@ -2353,7 +2445,7 @@ For that reason and others, WHO has begun referring to the virus as “the virus
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;and just before &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;/body&amp;gt;&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;and just before &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;/body&amp;gt;&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;...
@@ -2384,7 +2476,7 @@ For that reason and others, WHO has begun referring to the virus as “the virus
 &lt;ul&gt;
   &lt;li&gt;As &lt;a href=&quot;https://github.com/allejo/jekyll-anchor-headings&quot;&gt;jekyll-anchor-heading&lt;/a&gt; did not work&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.bryanbraun.com/anchorjs/#installation&quot;&gt;AnchorJs&lt;/a&gt; helped me&lt;/li&gt;
-  &lt;li&gt;we can anchor &lt;code class=&quot;highlighter-rouge&quot;&gt;para&lt;/code&gt; as well.&lt;/li&gt;
+  &lt;li&gt;we can anchor &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;para&lt;/code&gt; as well.&lt;/li&gt;
 &lt;/ul&gt;
 </content>
  </entry>
@@ -2396,14 +2488,14 @@ For that reason and others, WHO has begun referring to the virus as “the virus
    <id>https://mrprajesh.co.in/raw-tag-jekyll</id>
    <content type="html">&lt;ul&gt;
   &lt;li&gt;For example in a &lt;a href=&quot;/blog/latex-jekyll.html&quot;&gt;post&lt;/a&gt;
- I mentioned how to enable &lt;script type=&quot;math/tex&quot;&gt;\LaTeX&lt;/script&gt; in jekyll&lt;/li&gt;
+ I mentioned how to enable \(\LaTeX\) in jekyll&lt;/li&gt;
   &lt;li&gt;at 4th step i said include the below tag.
     &lt;blockquote&gt;
       &lt;p&gt;{% include mathjax.html %}&lt;/p&gt;
     &lt;/blockquote&gt;
   &lt;/li&gt;
-  &lt;li&gt;jekyll did not allow me to &lt;code class=&quot;highlighter-rouge&quot;&gt;include&lt;/code&gt; above line into &lt;code class=&quot;highlighter-rouge&quot;&gt;code blocks&lt;/code&gt; in post.&lt;/li&gt;
-  &lt;li&gt;that is where I found this &lt;code class=&quot;highlighter-rouge&quot;&gt;raw&lt;/code&gt; tag to be very helpful. use as below&lt;/li&gt;
+  &lt;li&gt;jekyll did not allow me to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;include&lt;/code&gt; above line into &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;code blocks&lt;/code&gt; in post.&lt;/li&gt;
+  &lt;li&gt;that is where I found this &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;raw&lt;/code&gt; tag to be very helpful. use as below&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;raw&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
@@ -2413,7 +2505,7 @@ For that reason and others, WHO has begun referring to the virus as “the virus
 
 &lt;p&gt;Alternatively, we can disable liquid processing (jekyll v4.0+) in the post’s front matter use&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;render_with_liquid: false&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;render_with_liquid: false&lt;/code&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;see more &lt;a href=&quot;https://jekyllrb.com/docs/liquid/tags/&quot;&gt;here&lt;/a&gt;.&lt;/li&gt;
@@ -2426,7 +2518,7 @@ For that reason and others, WHO has begun referring to the virus as “the virus
    <link href="https://mrprajesh.co.in/blog/add-min-read-to-jekyll.html"/>
    <updated>2020-03-19T18:53:53+05:30</updated>
    <id>https://mrprajesh.co.in/add-min-read-to-jekyll</id>
-   <content type="html">&lt;p&gt;Edit the &lt;code class=&quot;highlighter-rouge&quot;&gt;_layouts/post.html&lt;/code&gt; and place below lines appropriately.&lt;/p&gt;
+   <content type="html">&lt;p&gt;Edit the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_layouts/post.html&lt;/code&gt; and place below lines appropriately.&lt;/p&gt;
 
 &lt;blockquote&gt;
 
@@ -2440,8 +2532,8 @@ For that reason and others, WHO has begun referring to the virus as “the virus
 
 &lt;ul&gt;
   &lt;li&gt;I got this idea from &lt;a href=&quot;https://carlosbecker.com/posts/jekyll-reading-time-without-plugins&quot;&gt;Carlos Becker’s post&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;He has used &lt;code class=&quot;highlighter-rouge&quot;&gt;if-else&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Whereas I have &lt;strong&gt;avoided&lt;/strong&gt; that using &lt;code class=&quot;highlighter-rouge&quot;&gt;ceil(words/180)&lt;/code&gt; i.e same as &lt;code class=&quot;highlighter-rouge&quot;&gt;(words+179)/180&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;He has used &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;if-else&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Whereas I have &lt;strong&gt;avoided&lt;/strong&gt; that using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ceil(words/180)&lt;/code&gt; i.e same as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;(words+179)/180&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;blockquote&gt;
@@ -2494,7 +2586,7 @@ invoked only from the main function/Host device. Just got to know that thrust
    <content type="html">&lt;p&gt;There we were some question raised during Rupesh’s GPU class today.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;what is sequence of actions for ‘D[1]=10’ in &lt;code class=&quot;highlighter-rouge&quot;&gt;cuda&lt;/code&gt;/&lt;code class=&quot;highlighter-rouge&quot;&gt;thrust&lt;/code&gt;
+  &lt;li&gt;what is sequence of actions for ‘D[1]=10’ in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cuda&lt;/code&gt;/&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;thrust&lt;/code&gt;
     &lt;blockquote&gt;
       &lt;ul&gt;
         &lt;li&gt;first the index operator&lt;/li&gt;
@@ -2520,12 +2612,12 @@ reference.inl at operator= &lt;a href=&quot;https://github.com/thrust/thrust/blo
 &lt;/blockquote&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Why is the &lt;code class=&quot;highlighter-rouge&quot;&gt;blockDim.z&lt;/code&gt; 64 whereas &lt;code class=&quot;highlighter-rouge&quot;&gt;x&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;y&lt;/code&gt; is 1024
+  &lt;li&gt;Why is the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;blockDim.z&lt;/code&gt; 64 whereas &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;x&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;y&lt;/code&gt; is 1024
     &lt;blockquote&gt;
       &lt;p&gt;That is how it is designed to be in cuda/GPU.&lt;/p&gt;
     &lt;/blockquote&gt;
   &lt;/li&gt;
-  &lt;li&gt;Why is &lt;code class=&quot;highlighter-rouge&quot;&gt;gridDim.y or z&lt;/code&gt; is not &lt;script type=&quot;math/tex&quot;&gt;2^{16}&lt;/script&gt; but &lt;script type=&quot;math/tex&quot;&gt;2^{16}-1&lt;/script&gt;
+  &lt;li&gt;Why is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gridDim.y or z&lt;/code&gt; is not \(2^{16}\) but \(2^{16}-1\)
     &lt;blockquote&gt;
       &lt;p&gt;Good question! unknown! Some curious people &lt;a href=&quot;https://forums.developer.nvidia.com/t/why-65535-instead-of-65536-at-maximum-size-for-each-griddimension-and-2d-tex-reference/24528&quot;&gt;1&lt;/a&gt;&lt;/p&gt;
       &lt;blockquote&gt;
@@ -2561,9 +2653,9 @@ Also, threadblock dimensions of 0 in any position are not legal.&lt;/li&gt;
 &lt;p&gt;Source &lt;a href=&quot;https://forums.developer.nvidia.com/t/maximum-number-of-threads-on-thread-block/46392/2&quot;&gt;Devtalk&lt;/a&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;dim3&lt;/code&gt; is actually a struct of &lt;code class=&quot;highlighter-rouge&quot;&gt;uint3&lt;/code&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dim3&lt;/code&gt; is actually a struct of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;uint3&lt;/code&gt;
     &lt;blockquote&gt;
-      &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;int3 make_int3(2,3,4);&lt;/code&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;int3 make_int3(2,3,4);&lt;/code&gt;&lt;/p&gt;
     &lt;/blockquote&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
@@ -2577,7 +2669,7 @@ Also, threadblock dimensions of 0 in any position are not legal.&lt;/li&gt;
    <updated>2020-03-17T16:12:01+05:30</updated>
    <id>https://mrprajesh.co.in/latex-jekyll</id>
    <content type="html">&lt;ul&gt;
-  &lt;li&gt;create &lt;code class=&quot;highlighter-rouge&quot;&gt;_include/mathjax.html&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;create &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_include/mathjax.html&lt;/code&gt;&lt;/li&gt;
   &lt;li&gt;add the below code&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -2621,7 +2713,7 @@ Also, threadblock dimensions of 0 in any position are not legal.&lt;/li&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;edit &lt;code class=&quot;highlighter-rouge&quot;&gt;_layouts/default.html&lt;/code&gt; add a include line before &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;/body&amp;gt;&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;edit &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_layouts/default.html&lt;/code&gt; add a include line before &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;/body&amp;gt;&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;blockquote&gt;
@@ -2635,12 +2727,12 @@ Also, threadblock dimensions of 0 in any position are not legal.&lt;/li&gt;
 &lt;/blockquote&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;that’s it. Enclose math symbols within &lt;code class=&quot;highlighter-rouge&quot;&gt;$$&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;e.g Some random &lt;script type=&quot;math/tex&quot;&gt;A_{m \times n} \cdot B^{n} = C_n&lt;/script&gt;
+  &lt;li&gt;that’s it. Enclose math symbols within &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$$&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;e.g Some random \(A_{m \times n} \cdot B^{n} = C_n\)
     &lt;div class=&quot;language-tex highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;$$&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;_{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;m &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\times&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\cdot&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; B&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;^{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; C&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;_&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;n &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;$$&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
-  &lt;li&gt;some text &lt;script type=&quot;math/tex&quot;&gt;\TeX&lt;/script&gt;&lt;/li&gt;
+  &lt;li&gt;some text \(\TeX\)&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;references&quot;&gt;References&lt;/h3&gt;
@@ -2729,7 +2821,7 @@ It seems like. Are there more?&lt;/p&gt;
    <id>https://mrprajesh.co.in/check-code-blocks</id>
    <content type="html">&lt;p&gt;This is to check if the syntax highlighting is working fine.&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-cpp&quot; data-lang=&quot;cpp&quot;&gt;  &lt;span class=&quot;cp&quot;&gt;#include &amp;lt;iostream&amp;gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-cpp&quot; data-lang=&quot;cpp&quot;&gt;  &lt;span class=&quot;cp&quot;&gt;#include&lt;/span&gt; &lt;span class=&quot;cpf&quot;&gt;&amp;lt;iostream&amp;gt;&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;
 &lt;/span&gt;  &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;argc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;argv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[]){&lt;/span&gt;
     &lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cout&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Hello There!&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;endl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;EXIT_SUCCESS&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
