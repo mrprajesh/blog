@@ -2,7 +2,7 @@
 layout: post
 title: How to add badges to your git repo or website
 date: 01-04-2020 01:35:26 +05:30
-tags: [jekyll, github]
+tags: [jekyll, git, github]
 description:
 summary:
 comments: false

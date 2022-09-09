@@ -2,7 +2,7 @@
 layout: post
 title: GSuite tools for online teaching
 date: 01-04-2020 17:14:10 +05:30
-tags: [jekyll, coding]
+tags: [Gsuite, online, teaching]
 description:
 summary:
 comments: false

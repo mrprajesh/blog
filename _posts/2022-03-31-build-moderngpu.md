@@ -2,7 +2,7 @@
 layout: post
 title: build moderngpu
 date: 31-03-2022 11:45:52 +05:30
-tags: [jekyll, coding]
+tags: [gpu, moderngpu]
 description:
 summary:
 comments: false

@@ -11,6 +11,8 @@ mathjax: false
 render_with_liquid: true
 ---
 
+Hope you remember I had mentioned about APL [before]({% link _posts/2021-09-30-cpp-stl-enlightment.md %}).
+
 1. Download [Dyalog](https://www.dyalog.com/download-zone.htm) from here with email (SERIALNUMBER will be sent to your email).
 2. As mentioned in [here](https://help.dyalog.com/latest/Content/UNIX_IUG/Dyalog%20Serial%20Number.htm)
 

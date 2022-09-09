@@ -4,7 +4,7 @@
  <title>Rajesh's Blog</title>
  <link href="https://mrprajesh.co.in/blog/atom.xml" rel="self"/>
  <link href="https://mrprajesh.co.in/blog/"/>
- <updated>2022-09-09T19:29:15+05:30</updated>
+ <updated>2022-09-09T19:45:56+05:30</updated>
  <id>https://mrprajesh.co.in</id>
  <author>
    <name>Rajesh Pandian M</name>
@@ -42,6 +42,7 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;You will see &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;verified&lt;/code&gt; badge as &lt;a href=&quot;https://github.com/mrprajesh/blog/commits/master&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
 </content>
  </entry>
  
@@ -50,7 +51,9 @@
    <link href="https://mrprajesh.co.in/blog/hello-world-apl.html"/>
    <updated>2022-09-09T16:56:02+05:30</updated>
    <id>https://mrprajesh.co.in/hello-world-apl</id>
-   <content type="html">&lt;ol&gt;
+   <content type="html">&lt;p&gt;Hope you remember I had mentioned about APL &lt;a href=&quot;/blog/cpp-stl-enlightment.html&quot;&gt;before&lt;/a&gt;.&lt;/p&gt;
+
+&lt;ol&gt;
   &lt;li&gt;Download &lt;a href=&quot;https://www.dyalog.com/download-zone.htm&quot;&gt;Dyalog&lt;/a&gt; from here with email (SERIALNUMBER will be sent to your email).&lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;As mentioned in &lt;a href=&quot;https://help.dyalog.com/latest/Content/UNIX_IUG/Dyalog%20Serial%20Number.htm&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
