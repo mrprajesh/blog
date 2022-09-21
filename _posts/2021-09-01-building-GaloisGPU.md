@@ -2,7 +2,7 @@
 layout: post
 title: Building GaloisGPU on CentOS
 date: 01-09-2021 10:45:17 +05:30
-tags: [install,Galois,GaloisGPU,LonestarGPU]
+tags: [install,galois,galoisGPU,lonestargpu]
 description:
 summary:
 comments: false
