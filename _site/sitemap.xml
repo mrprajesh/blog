@@ -2,19 +2,19 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://mrprajesh.co.in/blog/about.html</loc>
-<lastmod>2022-09-21T12:13:54+05:30</lastmod>
+<lastmod>2022-11-14T11:52:30+05:30</lastmod>
 </url>
 <url>
 <loc>https://mrprajesh.co.in/blog/sample.html</loc>
-<lastmod>2022-09-21T12:13:54+05:30</lastmod>
+<lastmod>2022-11-14T11:52:30+05:30</lastmod>
 </url>
 <url>
 <loc>https://mrprajesh.co.in/blog/search.html</loc>
-<lastmod>2022-09-21T12:13:54+05:30</lastmod>
+<lastmod>2022-11-14T11:52:30+05:30</lastmod>
 </url>
 <url>
 <loc>https://mrprajesh.co.in/blog/tags.html</loc>
-<lastmod>2022-09-21T12:13:54+05:30</lastmod>
+<lastmod>2022-11-14T11:52:30+05:30</lastmod>
 </url>
 <url>
 <loc>https://mrprajesh.co.in/blog/helloworld.html</loc>
@@ -261,6 +261,10 @@
 <lastmod>2022-09-09T19:24:20+05:30</lastmod>
 </url>
 <url>
+<loc>https://mrprajesh.co.in/blog/to-install-cuda-on-centos7.html</loc>
+<lastmod>2022-11-14T10:50:23+05:30</lastmod>
+</url>
+<url>
 <loc>https://mrprajesh.co.in/blog/</loc>
 </url>
 <url>
@@ -460,5 +464,11 @@
 </url>
 <url>
 <loc>https://mrprajesh.co.in/blog/tag/verified/</loc>
+</url>
+<url>
+<loc>https://mrprajesh.co.in/blog/tag/driver/</loc>
+</url>
+<url>
+<loc>https://mrprajesh.co.in/blog/tag/centos/</loc>
 </url>
 </urlset>
