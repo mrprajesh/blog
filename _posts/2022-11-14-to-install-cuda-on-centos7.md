@@ -13,7 +13,7 @@ render_with_liquid: true
 
 # How to install a newer CUDA On CentOS 7.
 
-```
+```c
 # Enable a better GCC (Do not use default -- GCC 4.8.5 in my case )
 
 scl enable devtoolset-9 bash
@@ -54,7 +54,7 @@ nvidia-smi
 
 ### REBOOT
 
-```
+```c
 reboot
 ```
 
@@ -63,7 +63,7 @@ reboot
 
 or write a HelloWorld.cu 
 
-```
+```c
 deviceQuery 
 nvidia-smi 
 ```
@@ -71,7 +71,7 @@ nvidia-smi
 
 ### To uninstall drivers
                 
-```
+```c
 nvidia-uninstall
 
 #no override backup x config
@@ -81,7 +81,7 @@ nvidia-uninstall
 
 ### To uninstall particular CUDA
 
-```
+```c
 /usr/local/cuda-11.8/bin/cuda-uninstaller
 ```
 
@@ -92,7 +92,7 @@ nvidia-uninstall
 ### blacklist-nouveau
 Ensure Step 1 is done. If not the do both 1 and 2.
 
-```
+```c
 Create a file at /etc/modprobe.d/blacklist-nouveau.conf with the following contents:
 blacklist nouveau
 options nouveau modeset=0
@@ -102,7 +102,7 @@ sudo dracut --force
 
 ### buiding and running deviceQuery
 
-```
+```c
 cd NVIDIA_CUDA-11.5_Samples/1_Utilities/deviceQuery
 [root@rn-gpu-p100 deviceQuery]# ll
 total 40
@@ -207,7 +207,7 @@ Result = PASS
 ```
 ### running nvidia-smi 
 
-```
+```c
 [root@rn-gpu-p100 deviceQuery]# nvidia-smi 
 Mon Nov 14 11:14:38 2022       
 +-----------------------------------------------------------------------------+
@@ -238,7 +238,7 @@ Mon Nov 14 11:14:38 2022
 
 ### Nvidia driver-GCC-Maping
 
-```
+```c
 cat /proc/driver/nvidia/version
 NVRM version: NVIDIA UNIX x86_64 Kernel Module  495.29.05  Thu Sep 30 16:00:29 UTC 2021
 GCC version:  gcc version 9.3.1 20200408 (Red Hat 9.3.1-2) (GCC)
