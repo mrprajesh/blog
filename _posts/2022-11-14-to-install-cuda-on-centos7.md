@@ -68,6 +68,12 @@ deviceQuery
 nvidia-smi 
 ```
 
+That's all.
+
+
+
+## For office use only.
+
 
 ### To uninstall drivers
                 
@@ -84,10 +90,6 @@ nvidia-uninstall
 ```c
 /usr/local/cuda-11.8/bin/cuda-uninstaller
 ```
-
-
-
-## for office use only.
 
 ### blacklist-nouveau
 Ensure Step 1 is done. If not the do both 1 and 2.
