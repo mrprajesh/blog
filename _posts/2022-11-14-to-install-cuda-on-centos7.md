@@ -95,10 +95,11 @@ nvidia-uninstall
 Ensure Step 1 is done. If not the do both 1 and 2.
 
 ```c
-Create a file at /etc/modprobe.d/blacklist-nouveau.conf with the following contents:
+# Step 1: Create a file at /etc/modprobe.d/blacklist-nouveau.conf with the following contents:
 blacklist nouveau
 options nouveau modeset=0
-Regenerate the kernel initramfs:
+
+# Step 2: Regenerate the kernel initramfs:
 sudo dracut --force
 ```
 
