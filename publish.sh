@@ -1,6 +1,6 @@
 #!/bin/bash
 
-GITHUB=../mrprajesh.github.io/blog
+GITHUB_BLOG=../mrprajesh.github.io/blog
 TSTAMP=$(date +'%d-%b-%Y-%T')
 MSG="Auto+Minor update! $TSTAMP"
 
@@ -17,14 +17,13 @@ git commit -m "$MSG"
 git push origin master
 
 
-
 # copy files to local repo then commit and push html files
-rsync -arvh  _site/ "$GITHUB" --delete
+rsync -arvh  _site/ "$GITHUB_BLOG" --delete
 
 # copy robots.txt to root of mrprajesh.github.io
-cp _site/robots.txt $GITHUB/../
+cp _site/robots.txt $GITHUB_BLOG/../
 
-cd "$GITHUB"
+cd "$GITHUB_BLOG/.."
 git add .
 git commit -m "$MSG - blog"
 git push origin master
