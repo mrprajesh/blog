@@ -20,7 +20,7 @@ git push origin master
 rsync -arvh  _site/ "$GITHUB" --delete
 cd "$GITHUB"
 git add .
-git commit -m "Auto updated! $TSTAMP - blog"
+git commit -m "$MSG - blog"
 git push origin master
 cd -
 
