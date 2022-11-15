@@ -85,7 +85,7 @@ crontab -e
 ## append the below line towards the end and save. It is set to run every 5 mins.
 XDG_RUNTIME_DIR=/run/user/1000
 */5 * * * * /home/rajz/auto-scripts/alert-on-full-battery.sh 95 >> /tmp/alert-on-full-battery.log
-``
+```
 
 The above self explanatory.
 - It alerts when there is low batter.
