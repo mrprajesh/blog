@@ -16,11 +16,14 @@ git add .
 git commit -m "$MSG"
 git push origin master
 
-# copy robots.txt to root of mrprajesh.github.io
-cp _site/robots.txt $GITHUB/../
+
 
 # copy files to local repo then commit and push html files
 rsync -arvh  _site/ "$GITHUB" --delete
+
+# copy robots.txt to root of mrprajesh.github.io
+cp _site/robots.txt $GITHUB/../
+
 cd "$GITHUB"
 git add .
 git commit -m "$MSG - blog"
