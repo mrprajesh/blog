@@ -1,6 +1,6 @@
 ---
 layout: post
-title: build moderngpu
+title: How to Build moderngpu
 date: 31-03-2022 11:45:52 +05:30
 tags: [gpu, moderngpu]
 description:

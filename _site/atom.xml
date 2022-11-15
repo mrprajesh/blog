@@ -4,7 +4,7 @@
  <title>Rajesh's Blog</title>
  <link href="https://mrprajesh.co.in/blog/atom.xml" rel="self"/>
  <link href="https://mrprajesh.co.in/blog/"/>
- <updated>2022-11-15T11:28:31+05:30</updated>
+ <updated>2022-11-15T11:37:03+05:30</updated>
  <id>https://mrprajesh.co.in</id>
  <author>
    <name>Rajesh Pandian M</name>
@@ -633,7 +633,7 @@ I have scheduled this script on &lt;code class=&quot;language-plaintext highligh
  </entry>
  
  <entry>
-   <title>build moderngpu</title>
+   <title>How to Build moderngpu</title>
    <link href="https://mrprajesh.co.in/blog/build-moderngpu.html"/>
    <updated>2022-03-31T11:45:52+05:30</updated>
    <id>https://mrprajesh.co.in/build-moderngpu</id>
