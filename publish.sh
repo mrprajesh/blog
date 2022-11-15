@@ -18,7 +18,7 @@ git push origin master
 
 
 # copy files to local repo then commit and push html files
-rsync -arvh  _site/ "$GITHUB_BLOG" --delete
+rsync -arvh  _site/ "$GITHUB_BLOG" #--delete   #caution if copied to root might delete .git or imp dirs
 
 # copy robots.txt to root of mrprajesh.github.io
 cp _site/robots.txt $GITHUB_BLOG/../

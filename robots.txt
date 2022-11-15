@@ -3,3 +3,4 @@ layout: none
 ---
 User-agent: *
 Sitemap: https://mrprajesh.co.in/blog/sitemap.xml
+Sitemap: https://mrprajesh.co.in/feeds/all.atom.xml
