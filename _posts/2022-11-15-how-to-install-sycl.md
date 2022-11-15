@@ -19,7 +19,7 @@ render_with_liquid: true
   - python
   - ninja 
   - C++ compiler GCC version 7.1.0+ (TLDR C++17 support)
-- CUDA Toolkit 11.5+ in default path
+- CUDA Toolkit 11.5+ in default path _(11.7 and 11.8 are only partially supported as on date!)_
 - I am using Ubuntu 20.04; should work any Linux which has all above.
 
 ### Build a C++ Complier for SYCL

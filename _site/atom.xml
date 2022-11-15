@@ -4,7 +4,7 @@
  <title>Rajesh's Blog</title>
  <link href="https://mrprajesh.co.in/blog/atom.xml" rel="self"/>
  <link href="https://mrprajesh.co.in/blog/"/>
- <updated>2022-11-15T10:53:38+05:30</updated>
+ <updated>2022-11-15T10:56:59+05:30</updated>
  <id>https://mrprajesh.co.in</id>
  <author>
    <name>Rajesh Pandian M</name>
@@ -29,7 +29,7 @@
       &lt;li&gt;C++ compiler GCC version 7.1.0+ (TLDR C++17 support)&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;CUDA Toolkit 11.5+ in default path&lt;/li&gt;
+  &lt;li&gt;CUDA Toolkit 11.5+ in default path &lt;em&gt;(11.7 and 11.8 are only partially supported as on date!)&lt;/em&gt;&lt;/li&gt;
   &lt;li&gt;I am using Ubuntu 20.04; should work any Linux which has all above.&lt;/li&gt;
 &lt;/ul&gt;
 
