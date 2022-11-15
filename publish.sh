@@ -6,7 +6,7 @@ MSG="Auto+Minor update! $TSTAMP"
 
 if [ $# -ge 1 ]
 then
-  MSG="$1"
+  MSG="$1 - $TSTAMP"
 fi
 
 JEKYLL_ENV=production bundle exec jekyll build
@@ -15,6 +15,9 @@ JEKYLL_ENV=production bundle exec jekyll build
 git add .
 git commit -m "$MSG"
 git push origin master
+
+# copy robots.txt to root of mrprajesh.github.io
+cp _site/robots.txt $GITHUB/../
 
 # copy files to local repo then commit and push html files
 rsync -arvh  _site/ "$GITHUB" --delete
