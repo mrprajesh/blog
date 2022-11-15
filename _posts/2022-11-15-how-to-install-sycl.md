@@ -143,3 +143,11 @@ clang++ -fsycl -fsycl-targets=nvptx64-nvidia-cuda simple-sycl-app.cpp -o simple-
 ```
 
 That's it. TATA.
+
+
+### References
+
+- [https://codeplay.com/solutions/oneapi/for-cuda/#getting-started](https://codeplay.com/solutions/oneapi/for-cuda/#getting-started)
+- [
+https://intel.github.io/llvm-docs/GetStartedGuide.html#build-dpc-toolchain-with-support-for-nvidia-cuda](
+https://intel.github.io/llvm-docs/GetStartedGuide.html#build-dpc-toolchain-with-support-for-nvidia-cuda)

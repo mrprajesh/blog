@@ -4,7 +4,7 @@
  <title>Rajesh's Blog</title>
  <link href="https://mrprajesh.co.in/blog/atom.xml" rel="self"/>
  <link href="https://mrprajesh.co.in/blog/"/>
- <updated>2022-11-15T10:52:23+05:30</updated>
+ <updated>2022-11-15T10:53:38+05:30</updated>
  <id>https://mrprajesh.co.in</id>
  <author>
    <name>Rajesh Pandian M</name>
@@ -153,6 +153,14 @@ Assuming SYCL to use this &lt;code class=&quot;language-plaintext highlighter-ro
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;That’s it. TATA.&lt;/p&gt;
+
+&lt;h3 id=&quot;references&quot;&gt;References&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://codeplay.com/solutions/oneapi/for-cuda/#getting-started&quot;&gt;https://codeplay.com/solutions/oneapi/for-cuda/#getting-started&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://intel.github.io/llvm-docs/GetStartedGuide.html#build-dpc-toolchain-with-support-for-nvidia-cuda&quot;&gt;
+https://intel.github.io/llvm-docs/GetStartedGuide.html#build-dpc-toolchain-with-support-for-nvidia-cuda&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </content>
  </entry>
  
