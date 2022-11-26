@@ -146,23 +146,16 @@ This sanity should work. Then, do `make $(nproc)` at penultimate step and run sp
 
 ```c
 $ git lg
-*   55b5e68 - (HEAD -> main, origin/main, origin/HEAD) Merge pull request #23 from neoblizz/dev (3 days ago) <Muhammad Osama>
+*   40a6719 - (HEAD, origin/main, origin/HEAD, main) [skip ci] Merge pull request #24 from neoblizz/dev (20 hours ago) <Muhammad Osama>
 |\  
-| * f348586 - [skip ci] forgot to mention ipynb. (3 days ago) <neoblizz>
-* |   c598aba - Merge pull request #22 from gunrock/dev (3 days ago) <Muhammad Osama>
+| * 4e99a28 - gitignore ignored the mtx file. (20 hours ago) <neoblizz>
+* |   55b5e68 - Merge pull request #23 from neoblizz/dev (4 days ago) <Muhammad Osama>
 |\ \  
-| * | 651da0c - (origin/dev) Merge pull request #21 from neoblizz/dev (3 days ago) <Muhammad Osama>
-| |\| 
-| | * b2f1b4b - Experimentation (reproduce results). (3 days ago) <neoblizz>
-| | * 6f8f473 - Scripts to generate final plots. (4 days ago) <neoblizz>
-* | | 859dea4 - Merge pull request #20 from gunrock/dev (6 days ago) <Muhammad Osama>
-|\| | 
-| * | f142ecc - Merge pull request #19 from neoblizz/dev (6 days ago) <Muhammad Osama>
-| |\| 
-| | * 0cda62e - Adding a dockerfile for ease-of-use. (6 days ago) <neoblizz>
-* | | 1de3e72 - Merge pull request #18 from gunrock/dev (7 days ago) <Muhammad Osama>
-|\| | 
-| * |   ca40b64 - Merge branch 'main' into dev (7 days ago) <Muhammad Osama>
+| |/  
+| * f348586 - [skip ci] forgot to mention ipynb. (4 days ago) <neoblizz>
+* |   c598aba - Merge pull request #22 from gunrock/dev (4 days ago) <Muhammad Osama>
+|\ \  
+| * \   651da0c - (origin/dev) Merge pull request #21 from neoblizz/dev (4 days ago) <Muhammad Osama>
 | |\ \  
 
 
