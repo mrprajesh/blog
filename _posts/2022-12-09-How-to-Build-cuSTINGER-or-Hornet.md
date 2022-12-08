@@ -11,6 +11,7 @@ mathjax: false
 render_with_liquid: true
 ---
 
+- On Ubuntu 20.04.
 - cuSTINGER is outdated. [Hornet](https://github.com/hornet-gt/hornet/) is comparitively active.
 - Tried the current master. SOA / AOS seems half baked.
 - Let's try from release. [Pre SOA](https://github.com/hornet-gt/hornet/archive/refs/tags/0.5.zip)

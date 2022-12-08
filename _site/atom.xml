@@ -4,7 +4,7 @@
  <title>Rajesh's Blog</title>
  <link href="https://mrprajesh.co.in/blog/atom.xml" rel="self"/>
  <link href="https://mrprajesh.co.in/blog/"/>
- <updated>2022-12-09T02:24:23+05:30</updated>
+ <updated>2022-12-09T02:25:23+05:30</updated>
  <id>https://mrprajesh.co.in</id>
  <author>
    <name>Rajesh Pandian M</name>
@@ -18,6 +18,7 @@
    <updated>2022-12-09T02:23:16+05:30</updated>
    <id>https://mrprajesh.co.in/How-to-Build-cuSTINGER-or-Hornet</id>
    <content type="html">&lt;ul&gt;
+  &lt;li&gt;On Ubuntu 20.04.&lt;/li&gt;
   &lt;li&gt;cuSTINGER is outdated. &lt;a href=&quot;https://github.com/hornet-gt/hornet/&quot;&gt;Hornet&lt;/a&gt; is comparitively active.&lt;/li&gt;
   &lt;li&gt;Tried the current master. SOA / AOS seems half baked.&lt;/li&gt;
   &lt;li&gt;Let’s try from release. &lt;a href=&quot;https://github.com/hornet-gt/hornet/archive/refs/tags/0.5.zip&quot;&gt;Pre SOA&lt;/a&gt;&lt;/li&gt;
