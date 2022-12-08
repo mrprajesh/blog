@@ -12,7 +12,7 @@ render_with_liquid: true
 ---
 
 - On Ubuntu 20.04/Mint 20.3.
-- [cuStinger](https://github.com/cuStinger/cuStinger) is outdated. [Hornet](https://github.com/hornet-gt/hornet/) is comparitively active.
+- [cuStinger](https://github.com/cuStinger/cuStinger) is outdated. [hornet](https://github.com/hornet-gt/hornet/) is comparitively active.
 - [cuHornet](https://github.com/rapidsai/cuhornet) seems the future. Too bad they have not edited readme steps. Let's fall back to `hornet` repo.
 - Tried the current master. SOA / AOS seems half baked.
 - Let's try from release v0.5. Dowload this .zip [Pre SOA](https://github.com/hornet-gt/hornet/archive/refs/tags/0.5.zip) and extract.
