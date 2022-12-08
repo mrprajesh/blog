@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Build cuSTINGER or Hornet
+title: How to Build cuStinger or Hornet
 date: 09-12-2022 02:23:16 +05:30
 tags: [cuda,hornet]
 description:
@@ -12,12 +12,13 @@ render_with_liquid: true
 ---
 
 - On Ubuntu 20.04/Mint 20.3.
-- cuSTINGER is outdated. [Hornet](https://github.com/hornet-gt/hornet/) is comparitively active.
+- [cuStinger](https://github.com/cuStinger/cuStinger) is outdated. [Hornet](https://github.com/hornet-gt/hornet/) is comparitively active.
 - [cuHornet](https://github.com/rapidsai/cuhornet) seems the future. Too bad they have not edited readme steps. Let's fall back to `hornet` repo.
 - Tried the current master. SOA / AOS seems half baked.
 - Let's try from release v0.5. Dowload this .zip [Pre SOA](https://github.com/hornet-gt/hornet/archive/refs/tags/0.5.zip) and extract.
 - rename in external folder, `cub-1.8.x` to `cub` folder as CUB+Thrust is bundled with CUDA Now.
 - CMake 23 had some error w.r.t cuda architecture. using 3.16
+- export CUDACXX=`which nvcc`
 - `cd hornet-0.5/hornet/build`
 - `rm -rf * ; cmake ..; make -j4`
 - will get an error as in office use.
