@@ -13,12 +13,14 @@ render_with_liquid: true
 
 - On Ubuntu 20.04.
 - cuSTINGER is outdated. [Hornet](https://github.com/hornet-gt/hornet/) is comparitively active.
+- [cuHornet](https://github.com/rapidsai/cuhornet) seems the future. Too bad they have not edited readme steps. Let's fall back to `hornet` repo.
 - Tried the current master. SOA / AOS seems half baked.
-- Let's try from release. [Pre SOA](https://github.com/hornet-gt/hornet/archive/refs/tags/0.5.zip)
+- Let's try from release v0.5. [Pre SOA](https://github.com/hornet-gt/hornet/archive/refs/tags/0.5.zip)
 - rename ext/cud folder as CUB is bundle with CUDA Now.
 - CMake 23 had some error w.r.t cuda architecture. using 3.16
 - `cd hornet-0.5/hornet/build`
 - `rm -rf * ; cmake ..; make -j4`
+- will get an error as in office use.
 - on `hornet-0.5/hornet/include/Core/DataLayout/DataLayoutDev.i.cuh`  make Line 43 as `AoSdev<TArgs...>::AoSdev(void* d_ptr):`
 removed the template parm pack for ctor
 - `rm -rf * ; cmake ..; make -j4`
