@@ -4,7 +4,7 @@
  <title>Rajesh's Blog</title>
  <link href="https://mrprajesh.co.in/blog/atom.xml" rel="self"/>
  <link href="https://mrprajesh.co.in/blog/"/>
- <updated>2022-12-09T02:34:33+05:30</updated>
+ <updated>2022-12-09T02:37:22+05:30</updated>
  <id>https://mrprajesh.co.in</id>
  <author>
    <name>Rajesh Pandian M</name>
@@ -22,16 +22,18 @@
   &lt;li&gt;cuSTINGER is outdated. &lt;a href=&quot;https://github.com/hornet-gt/hornet/&quot;&gt;Hornet&lt;/a&gt; is comparitively active.&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/rapidsai/cuhornet&quot;&gt;cuHornet&lt;/a&gt; seems the future. Too bad they have not edited readme steps. Let’s fall back to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hornet&lt;/code&gt; repo.&lt;/li&gt;
   &lt;li&gt;Tried the current master. SOA / AOS seems half baked.&lt;/li&gt;
-  &lt;li&gt;Let’s try from release v0.5. &lt;a href=&quot;https://github.com/hornet-gt/hornet/archive/refs/tags/0.5.zip&quot;&gt;Pre SOA&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;rename ext/cud folder as CUB is bundle with CUDA Now.&lt;/li&gt;
+  &lt;li&gt;Let’s try from release v0.5. Dowload this .zip &lt;a href=&quot;https://github.com/hornet-gt/hornet/archive/refs/tags/0.5.zip&quot;&gt;Pre SOA&lt;/a&gt; and extract.&lt;/li&gt;
+  &lt;li&gt;rename in external folder, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cub-1.8.x&lt;/code&gt; to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cub&lt;/code&gt; folder as CUB+Thrust is bundled with CUDA Now.&lt;/li&gt;
   &lt;li&gt;CMake 23 had some error w.r.t cuda architecture. using 3.16&lt;/li&gt;
   &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cd hornet-0.5/hornet/build&lt;/code&gt;&lt;/li&gt;
   &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rm -rf * ; cmake ..; make -j4&lt;/code&gt;&lt;/li&gt;
   &lt;li&gt;will get an error as in office use.&lt;/li&gt;
   &lt;li&gt;on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hornet-0.5/hornet/include/Core/DataLayout/DataLayoutDev.i.cuh&lt;/code&gt;  make Line 43 as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AoSdev&amp;lt;TArgs...&amp;gt;::AoSdev(void* d_ptr):&lt;/code&gt;
 removed the template parm pack for ctor&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rm -rf * ; cmake ..; make -j4&lt;/code&gt;
-    &lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;rm&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rf&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cmake&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;..;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;make&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j4&lt;/span&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rm -rf * ; cmake ..; make -j4&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;rm&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rf&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cmake&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;..;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;make&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j4&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;The&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CXX&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;compiler&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;identification&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GNU&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;The&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CUDA&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;compiler&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;identification&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NVIDIA&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;11&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;64&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Check&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;working&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CXX&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;compiler&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;usr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;
@@ -97,9 +99,7 @@ removed the template parm pack for ctor&lt;/li&gt;
 &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Linking&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CXX&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;executable&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hornet_test&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Built&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;target&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hornet_test&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ble&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;elapsed&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;36&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;194&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CPU&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;158&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rm&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rf&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cmake&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;..;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;make&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j4&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h1 id=&quot;office-use&quot;&gt;office use.&lt;/h1&gt;
 
