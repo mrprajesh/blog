@@ -18,10 +18,14 @@ render_with_liquid: true
 - Let's try from release v0.5. Dowload this .zip [Pre SOA](https://github.com/hornet-gt/hornet/archive/refs/tags/0.5.zip) and extract.
 - rename in external folder, `cub-1.8.x` to `cub` folder as CUB+Thrust is bundled with CUDA Now.
 - CMake 23 had some error w.r.t cuda architecture. using 3.16
-- export CUDACXX=`which nvcc`
-- `cd hornet-0.5/hornet/build`
-- `rm -rf * ; cmake ..; make -j4`
-- will get an error as in office use.
+
+```c
+export CUDACXX=`which nvcc`
+cd hornet-0.5/hornet/build
+rm -rf * ; cmake ..; make -j4
+
+```
+- will get an error as in office use below.
 - on `hornet-0.5/hornet/include/Core/DataLayout/DataLayoutDev.i.cuh`  make Line 43 as `AoSdev<TArgs...>::AoSdev(void* d_ptr):`
 removed the template parm pack for ctor
 - `rm -rf * ; cmake ..; make -j4`

@@ -4,7 +4,7 @@
  <title>Rajesh's Blog</title>
  <link href="https://mrprajesh.co.in/blog/atom.xml" rel="self"/>
  <link href="https://mrprajesh.co.in/blog/"/>
- <updated>2022-12-09T03:05:55+05:30</updated>
+ <updated>2022-12-09T03:31:18+05:30</updated>
  <id>https://mrprajesh.co.in</id>
  <author>
    <name>Rajesh Pandian M</name>
@@ -25,10 +25,15 @@
   &lt;li&gt;Let’s try from release v0.5. Dowload this .zip &lt;a href=&quot;https://github.com/hornet-gt/hornet/archive/refs/tags/0.5.zip&quot;&gt;Pre SOA&lt;/a&gt; and extract.&lt;/li&gt;
   &lt;li&gt;rename in external folder, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cub-1.8.x&lt;/code&gt; to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cub&lt;/code&gt; folder as CUB+Thrust is bundled with CUDA Now.&lt;/li&gt;
   &lt;li&gt;CMake 23 had some error w.r.t cuda architecture. using 3.16&lt;/li&gt;
-  &lt;li&gt;export CUDACXX=&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;which nvcc&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cd hornet-0.5/hornet/build&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rm -rf * ; cmake ..; make -j4&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;will get an error as in office use.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CUDACXX&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;which&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nvcc&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;`&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;cd&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hornet&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hornet&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;build&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;rm&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rf&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cmake&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;..;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;make&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j4&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;will get an error as in office use below.&lt;/li&gt;
   &lt;li&gt;on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hornet-0.5/hornet/include/Core/DataLayout/DataLayoutDev.i.cuh&lt;/code&gt;  make Line 43 as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AoSdev&amp;lt;TArgs...&amp;gt;::AoSdev(void* d_ptr):&lt;/code&gt;
 removed the template parm pack for ctor&lt;/li&gt;
   &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rm -rf * ; cmake ..; make -j4&lt;/code&gt;&lt;/li&gt;
