@@ -11,10 +11,10 @@ mathjax: false
 render_with_liquid: true
 ---
 
-[Click this Collab](https://colab.research.google.com/drive/10bGP2-M3Bh2ccgiwXh9Nygb--vchD-wh?usp=sharing) to try it out!
+[Click this Collab](https://colab.research.google.com/drive/10bGP2-M3Bh2ccgiwXh9Nygb--vchD-wh?usp=sharing) to try it out! You may need to signing using gmail account.
 
 1. Visit [Google Collab](https://colab.research.google.com/)
-2. Set the run time to GPU. On menubar, runtim> manage runtime > GPU drop down and hit Save.
+2. Set the run time to GPU. On menubar, Runtime > manage runtime > select GPU in drop down and hit Save.
 3. Connect if it did not connect automatically. You can see the status right top. Tick mark + RAM+DISK usage.
 4. Load the plugin by running the following. 
 
@@ -23,7 +23,6 @@ render_with_liquid: true
 %load_ext nvcc_plugin
 
 ```
-
 5. Write a CUDA Program and click run.
 
 ```c
@@ -39,6 +38,9 @@ int main(){
   return 0;
 }
 ```
+6. You see the Reference section below for an alternate way to run CUDA!
+
+### Office use.
 
 Last two steps should produce output something like this.
 ```c
@@ -109,4 +111,4 @@ Hi, I am Thread 31
 
 ### Reference 
 - My [video](url) on YouTube.
-- My [Google Collab page](https://colab.research.google.com/drive/1xv2sZbgOO-HlyjL4Mq3Lkf3D0kj-ARCy?usp=sharing) which also shows an alternate way to compile and run manually with the plugin. 
+- My [Google Collab page](https://colab.research.google.com/drive/1xv2sZbgOO-HlyjL4Mq3Lkf3D0kj-ARCy?usp=sharing) which also shows an alternate way to compile and run manually without the plugin. 

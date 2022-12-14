@@ -4,7 +4,7 @@
  <title>Rajesh's Blog</title>
  <link href="https://mrprajesh.co.in/blog/atom.xml" rel="self"/>
  <link href="https://mrprajesh.co.in/blog/"/>
- <updated>2022-12-15T01:32:57+05:30</updated>
+ <updated>2022-12-15T01:41:23+05:30</updated>
  <id>https://mrprajesh.co.in</id>
  <author>
    <name>Rajesh Pandian M</name>
@@ -17,11 +17,11 @@
    <link href="https://mrprajesh.co.in/blog/how-to-run-cuda-programs-on-google-collab.html"/>
    <updated>2022-12-15T01:22:06+05:30</updated>
    <id>https://mrprajesh.co.in/how-to-run-cuda-programs-on-google-collab</id>
-   <content type="html">&lt;p&gt;&lt;a href=&quot;https://colab.research.google.com/drive/10bGP2-M3Bh2ccgiwXh9Nygb--vchD-wh?usp=sharing&quot;&gt;Click this Collab&lt;/a&gt; to try it out!&lt;/p&gt;
+   <content type="html">&lt;p&gt;&lt;a href=&quot;https://colab.research.google.com/drive/10bGP2-M3Bh2ccgiwXh9Nygb--vchD-wh?usp=sharing&quot;&gt;Click this Collab&lt;/a&gt; to try it out! You may need to signing using gmail account.&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Visit &lt;a href=&quot;https://colab.research.google.com/&quot;&gt;Google Collab&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Set the run time to GPU. On menubar, runtim&amp;gt; manage runtime &amp;gt; GPU drop down and hit Save.&lt;/li&gt;
+  &lt;li&gt;Set the run time to GPU. On menubar, Runtime &amp;gt; manage runtime &amp;gt; select GPU in drop down and hit Save.&lt;/li&gt;
   &lt;li&gt;Connect if it did not connect automatically. You can see the status right top. Tick mark + RAM+DISK usage.&lt;/li&gt;
   &lt;li&gt;Load the plugin by running the following.&lt;/li&gt;
 &lt;/ol&gt;
@@ -30,7 +30,6 @@
 &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;load_ext&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nvcc_plugin&lt;/span&gt;
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
 &lt;ol&gt;
   &lt;li&gt;Write a CUDA Program and click run.&lt;/li&gt;
 &lt;/ol&gt;
@@ -47,6 +46,11 @@
   &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ol&gt;
+  &lt;li&gt;You see the Reference section below for an alternate way to run CUDA!&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;office-use&quot;&gt;Office use.&lt;/h3&gt;
 
 &lt;p&gt;Last two steps should produce output something like this.&lt;/p&gt;
 &lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pip&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;git&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;https&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//github.com/andreinechaev/nvcc4jupyter.git&lt;/span&gt;
@@ -117,7 +121,7 @@
 &lt;h3 id=&quot;reference&quot;&gt;Reference&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;My &lt;a href=&quot;url&quot;&gt;video&lt;/a&gt; on YouTube.&lt;/li&gt;
-  &lt;li&gt;My &lt;a href=&quot;https://colab.research.google.com/drive/1xv2sZbgOO-HlyjL4Mq3Lkf3D0kj-ARCy?usp=sharing&quot;&gt;Google Collab page&lt;/a&gt; which also shows an alternate way to compile and run manually with the plugin.&lt;/li&gt;
+  &lt;li&gt;My &lt;a href=&quot;https://colab.research.google.com/drive/1xv2sZbgOO-HlyjL4Mq3Lkf3D0kj-ARCy?usp=sharing&quot;&gt;Google Collab page&lt;/a&gt; which also shows an alternate way to compile and run manually without the plugin.&lt;/li&gt;
 &lt;/ul&gt;
 </content>
  </entry>
