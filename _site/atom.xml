@@ -4,7 +4,7 @@
  <title>Rajesh's Blog</title>
  <link href="https://mrprajesh.co.in/blog/atom.xml" rel="self"/>
  <link href="https://mrprajesh.co.in/blog/"/>
- <updated>2022-12-15T01:41:23+05:30</updated>
+ <updated>2022-12-15T01:43:24+05:30</updated>
  <id>https://mrprajesh.co.in</id>
  <author>
    <name>Rajesh Pandian M</name>
@@ -21,8 +21,8 @@
 
 &lt;ol&gt;
   &lt;li&gt;Visit &lt;a href=&quot;https://colab.research.google.com/&quot;&gt;Google Collab&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Set the run time to GPU. On menubar, Runtime &amp;gt; manage runtime &amp;gt; select GPU in drop down and hit Save.&lt;/li&gt;
-  &lt;li&gt;Connect if it did not connect automatically. You can see the status right top. Tick mark + RAM+DISK usage.&lt;/li&gt;
+  &lt;li&gt;Set the run time to GPU. On menubar, Runtime &amp;gt; manage runtime &amp;gt; select GPU and hit Save.&lt;/li&gt;
+  &lt;li&gt;Connect if it did not connect automatically. You can see the status right top. Tick mark + RAM+DISK.&lt;/li&gt;
   &lt;li&gt;Load the plugin by running the following.&lt;/li&gt;
 &lt;/ol&gt;
 
