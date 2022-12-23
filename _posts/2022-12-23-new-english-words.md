@@ -33,3 +33,5 @@ render_with_liquid: true
 7. **WTFPL.** [Do What The F-word You Want To Public License](https://en.wikipedia.org/wiki/WTFPL) 
 
 8. **Torricelli.**  Torricelli’s mercury [barometer](https://www.vacuumscienceworld.com/vacuum-science-facts/torricelli-mercury-barometer). //During my [training](https://twitter.com/mrprajesh/status/1602171621242195968)
+
+9. **Terse**.  brief, concise, to the point. Using few words, sometimes in a way that seems rude or unfriendly
