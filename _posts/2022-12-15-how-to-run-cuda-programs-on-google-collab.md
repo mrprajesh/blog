@@ -14,9 +14,9 @@ render_with_liquid: true
 [Click this Collab](https://colab.research.google.com/drive/10bGP2-M3Bh2ccgiwXh9Nygb--vchD-wh?usp=sharing) to try it out! You may need to signing using gmail account.
 
 1. Visit [Google Collab](https://colab.research.google.com/)
-2. Set the run time to GPU. On menubar, Runtime > manage runtime > select GPU and hit Save.
+2. Choose run time as GPU. On Menubar, Runtime > Change runtime > select GPU as accelerator & Save.
 3. Connect if it did not connect automatically. You can see the status right top. Tick mark + RAM+DISK.
-4. Load the plugin by running the following. 
+4. Install+Load the plugin by running the following. 
 
 ```c
 !pip install git+https://github.com/andreinechaev/nvcc4jupyter.git
