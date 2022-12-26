@@ -2,7 +2,7 @@
 layout: post
 title: How to run cpp on jupyter notebook
 date: 26-12-2022 13:42:46 +05:30
-tags: [jekyll, coding]
+tags: [cpp, jupyter, conda, cling]
 description:
 summary:
 comments: false

@@ -17,6 +17,25 @@
 "items": [
     
         {
+            "id": "https://mrprajesh.co.in/blog/set-a-default-devtool-set-in-centos.html",
+            "title": "How to set a default devtool set in CentOS.",
+            "summary": null,
+            "content_text": "We used to use this command to enable a particular gcc or devtoolsetscl enable devtoolset-9 bashUnfortunately, we can NOT put this into our .bashrc as it would trigger a forkbomb (infinite looping of sourcing bash).  It turns out a slightly modified command than the original produces intended effect avoiding forkbomb!source scl_source enable devtoolset-9Let’s append it into .bashrc.Reference  https://unix.stackexchange.com/a/195219/484734",
+            "content_html": "<p>We used to use this command to enable a particular <code class=\"language-plaintext highlighter-rouge\">gcc</code> or <code class=\"language-plaintext highlighter-rouge\">devtoolset</code></p><div class=\"language-c highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"n\">scl</span> <span class=\"n\">enable</span> <span class=\"n\">devtoolset</span><span class=\"o\">-</span><span class=\"mi\">9</span> <span class=\"n\">bash</span></code></pre></div></div><p>Unfortunately, we can NOT put this into our <code class=\"language-plaintext highlighter-rouge\">.bashrc</code> as it would trigger a forkbomb (infinite looping of sourcing bash).</p><blockquote>  <p>It turns out a slightly modified command than the original produces intended effect avoiding forkbomb!</p></blockquote><div class=\"language-c highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"n\">source</span> <span class=\"n\">scl_source</span> <span class=\"n\">enable</span> <span class=\"n\">devtoolset</span><span class=\"o\">-</span><span class=\"mi\">9</span></code></pre></div></div><p>Let’s append it into <code class=\"language-plaintext highlighter-rouge\">.bashrc</code>.</p><h2 id=\"reference\">Reference</h2><ul>  <li><a href=\"https://unix.stackexchange.com/a/195219/484734\">https://unix.stackexchange.com/a/195219/484734</a></li></ul>",
+            "url": "https://mrprajesh.co.in/blog/set-a-default-devtool-set-in-centos.html",
+            
+            
+            
+            "tags": ["cpp","linux"],
+            
+            "date_published": "2022-12-26T14:08:44+05:30",
+            "date_modified": "2022-12-26T14:08:44+05:30",
+            
+                "author": "Rajesh Pandian M"
+            
+        },
+    
+        {
             "id": "https://mrprajesh.co.in/blog/how-to-run-cpp-on-jupyter-notebook.html",
             "title": "How to run cpp on jupyter notebook",
             "summary": null,
@@ -26,7 +45,7 @@
             
             
             
-            "tags": ["jekyll","coding"],
+            "tags": ["cpp","jupyter","conda","cling"],
             
             "date_published": "2022-12-26T13:42:46+05:30",
             "date_modified": "2022-12-26T13:42:46+05:30",
@@ -676,25 +695,6 @@
             
             "date_published": "2020-12-23T13:37:55+05:30",
             "date_modified": "2020-12-23T13:37:55+05:30",
-            
-                "author": "Rajesh Pandian M"
-            
-        },
-    
-        {
-            "id": "https://mrprajesh.co.in/blog/set-nvidia-gpu-as-default-cmd-line.html",
-            "title": "Enable Nvidia or Intel GPUs command line for display in Ubuntu/Linux Mint",
-            "summary": null,
-            "content_text": "Do you want to set the preferred GPU if nvidia x server setting is not displayedin the tray icon. Let’s go command line.$ sudo prime-select statusUsage: /usr/bin/prime-select nvidia|intel|query$ sudo prime-select querynvidia$ sudo prime-select nvidiaInfo: the nvidia profile is already setOf course, mine is already set to nvidia!Reboot to see the changes.Peace!",
-            "content_html": "<p>Do you want to set the preferred GPU if <code class=\"language-plaintext highlighter-rouge\">nvidia x server setting</code> is not displayedin the tray icon. Let’s go command line.</p><div class=\"language-c highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"err\">$</span> <span class=\"n\">sudo</span> <span class=\"n\">prime</span><span class=\"o\">-</span><span class=\"n\">select</span> <span class=\"n\">status</span><span class=\"n\">Usage</span><span class=\"o\">:</span> <span class=\"o\">/</span><span class=\"n\">usr</span><span class=\"o\">/</span><span class=\"n\">bin</span><span class=\"o\">/</span><span class=\"n\">prime</span><span class=\"o\">-</span><span class=\"n\">select</span> <span class=\"n\">nvidia</span><span class=\"o\">|</span><span class=\"n\">intel</span><span class=\"o\">|</span><span class=\"n\">query</span><span class=\"err\">$</span> <span class=\"n\">sudo</span> <span class=\"n\">prime</span><span class=\"o\">-</span><span class=\"n\">select</span> <span class=\"n\">query</span><span class=\"n\">nvidia</span><span class=\"err\">$</span> <span class=\"n\">sudo</span> <span class=\"n\">prime</span><span class=\"o\">-</span><span class=\"n\">select</span> <span class=\"n\">nvidia</span><span class=\"n\">Info</span><span class=\"o\">:</span> <span class=\"n\">the</span> <span class=\"n\">nvidia</span> <span class=\"n\">profile</span> <span class=\"n\">is</span> <span class=\"n\">already</span> <span class=\"n\">set</span></code></pre></div></div><p>Of course, mine is already set to nvidia!Reboot to see the changes.</p><p>Peace!</p>",
-            "url": "https://mrprajesh.co.in/blog/set-nvidia-gpu-as-default-cmd-line.html",
-            
-            
-            
-            "tags": ["nvidia","sysadmin"],
-            
-            "date_published": "2020-12-19T03:06:07+05:30",
-            "date_modified": "2020-12-19T03:06:07+05:30",
             
                 "author": "Rajesh Pandian M"
             
