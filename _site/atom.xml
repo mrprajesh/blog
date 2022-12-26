@@ -4,13 +4,92 @@
  <title>Rajesh's Blog</title>
  <link href="https://mrprajesh.co.in/blog/atom.xml" rel="self"/>
  <link href="https://mrprajesh.co.in/blog/"/>
- <updated>2022-12-23T14:28:33+05:30</updated>
+ <updated>2022-12-26T13:57:10+05:30</updated>
  <id>https://mrprajesh.co.in</id>
  <author>
    <name>Rajesh Pandian M</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>How to run cpp on jupyter notebook</title>
+   <link href="https://mrprajesh.co.in/blog/how-to-run-cpp-on-jupyter-notebook.html"/>
+   <updated>2022-12-26T13:42:46+05:30</updated>
+   <id>https://mrprajesh.co.in/how-to-run-cpp-on-jupyter-notebook</id>
+   <content type="html">&lt;h1 id=&quot;requirements&quot;&gt;Requirements&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;Conda&lt;/li&gt;
+  &lt;li&gt;Works on Ubuntu 20.04&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We use &lt;a href=&quot;https://github.com/jupyter-xeus/xeus-cling&quot;&gt;xeus-cling&lt;/a&gt; to run cpp on jupyter notebook.
+Check out &lt;a href=&quot;https://github.com/mrprajesh/run-cpp-on-jupyter&quot;&gt;My GitHub repo&lt;/a&gt; &amp;amp; &lt;a href=&quot;https://mybinder.org/v2/gh/mrprajesh/run-cpp-on-jupyter/HEAD?labpath=HelloCppJupyter.ipynb&quot;&gt;&lt;img src=&quot;https://mybinder.org/badge_logo.svg&quot; alt=&quot;Binder&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;#Download minconda 
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Download&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;run&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;file&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;linux&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x64&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;https&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//docs.conda.io/en/latest/miniconda.html &lt;/span&gt;
+                       
+&lt;span class=&quot;cp&quot;&gt;# DO NOT ENABLE BY DEFAULT
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;conda&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;config&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;auto_activate_base&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;false&lt;/span&gt;
+
+&lt;span class=&quot;cp&quot;&gt;# HAVE A DEFAULT
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;conda&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;update&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;base&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;defaults&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;conda&lt;/span&gt;
+
+&lt;span class=&quot;cp&quot;&gt;# CREATE ONE FOR CLING
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;conda&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;create&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cling&lt;/span&gt;
+
+&lt;span class=&quot;cp&quot;&gt;#INSTALL THE REQUIRED
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;conda&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;jupyter&lt;/span&gt; 
+&lt;span class=&quot;n&quot;&gt;conda&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;notebook&lt;/span&gt;
+
+&lt;span class=&quot;cp&quot;&gt;#ACTIVATE
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;conda&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;activate&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cling&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;okay&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;
+
+&lt;span class=&quot;cp&quot;&gt;# INSTALL
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;conda&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;xeus&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cling&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;conda&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;forge&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;WORKING&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;?&lt;/span&gt;
+
+&lt;span class=&quot;cp&quot;&gt;#RUN
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;jupyter&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;notebook&lt;/span&gt; 
+
+&lt;span class=&quot;cp&quot;&gt;# Browse
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//localhost:8888/&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;Choose&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;C&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;11&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;14&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;17&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dropdown&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;based&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;on&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;requrement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;the-activate-and-run-step-is-what-we-require-after-installation&quot;&gt;The Activate and Run step is what we require after installation.&lt;/h3&gt;
+&lt;p&gt;Check out my &lt;a href=&quot;https://github.com/mrprajesh/run-cpp-on-jupyter&quot;&gt;github repo&lt;/a&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;git&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clone&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;https&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//github.com/mrprajesh/run-cpp-on-jupyter.git&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;cd&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cpp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;jupyter&lt;/span&gt;
+
+&lt;span class=&quot;cp&quot;&gt;#ACTIVATE
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;conda&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;activate&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cling&lt;/span&gt;   
+
+&lt;span class=&quot;cp&quot;&gt;#RUN
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;jupyter&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;notebook&lt;/span&gt; 
+
+&lt;span class=&quot;cp&quot;&gt;# Open Browser, Write and Run
+# Usually it is http://localhost:8888/
+&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;office-use&quot;&gt;Office use.&lt;/h3&gt;
+
+&lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;#ACTIVATE
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;source&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;activate&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cling&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;working&lt;/span&gt;
+
+
+&lt;span class=&quot;cp&quot;&gt;# LETS DOWNGRADE
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;conda&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;xeus&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cling&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;conda&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;forge&lt;/span&gt;
+
+&lt;span class=&quot;cp&quot;&gt;# NOT WORKING
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;jupyter&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;console&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kernel&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;xcpp14&lt;/span&gt; 
+&lt;span class=&quot;n&quot;&gt;jupyter&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;kernelspec&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PREFIX&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;share&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;jupyter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xcpp14&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sys&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;prefix&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</content>
+ </entry>
  
  <entry>
    <title>New english words</title>
