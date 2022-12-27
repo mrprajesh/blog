@@ -19,6 +19,9 @@ render_with_liquid: true
 We use [xeus-cling](https://github.com/jupyter-xeus/xeus-cling) to run cpp on jupyter notebook.
 Check out [My GitHub repo](https://github.com/mrprajesh/run-cpp-on-jupyter) & [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mrprajesh/run-cpp-on-jupyter/HEAD?labpath=HelloCppJupyter.ipynb)
 
+In case you have docker, you can do all the below in just 3 steps. Check out [my other post!](http://127.0.0.1:4000/blog/dockering-jupyter-notebook-for-cpp.html) :heart_eyes:
+Just in case, you want to learn more but suffer/sweat/bleed a little then follow the below. :yum: :joy:
+
 ```c
 #Download minconda 
 Download and run file for linux x64 https://docs.conda.io/en/latest/miniconda.html 
@@ -84,3 +87,4 @@ conda install xeus-cling==0.9.0 -c conda-forge
 jupyter console --kernel xcpp14 
 jupyter kernelspec install PREFIX/share/jupyter/xcpp14 --sys-prefix
 ```
+

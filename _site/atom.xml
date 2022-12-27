@@ -4,13 +4,50 @@
  <title>Rajesh's Blog</title>
  <link href="https://mrprajesh.co.in/blog/atom.xml" rel="self"/>
  <link href="https://mrprajesh.co.in/blog/"/>
- <updated>2022-12-27T16:49:10+05:30</updated>
+ <updated>2022-12-27T17:35:31+05:30</updated>
  <id>https://mrprajesh.co.in</id>
  <author>
    <name>Rajesh Pandian M</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Dockering Jupyter notebook for cpp</title>
+   <link href="https://mrprajesh.co.in/blog/dockering-jupyter-notebook-for-cpp.html"/>
+   <updated>2022-12-27T16:55:01+05:30</updated>
+   <id>https://mrprajesh.co.in/dockering-jupyter-notebook-for-cpp</id>
+   <content type="html">&lt;p&gt;In continuation to my earlier post about &lt;a href=&quot;https://mrprajesh.co.in/blog/how-to-run-cpp-on-jupyter-notebook.html&quot;&gt;running C++ Programs on Jypyter notebook&lt;/a&gt;.
+I just docker-ed those steps using my &lt;a href=&quot;https://github.com/mrprajesh/jupyter-for-cpp&quot;&gt;Github Repo&lt;/a&gt;. Cool! 
+:sunglasses:&lt;/p&gt;
+
+&lt;p&gt;We use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker&lt;/code&gt; :heart: to install &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xeus-cling&lt;/code&gt; underneath. Thanks to &lt;a href=&quot;https://github.com/jupyter-xeus/xeus-cling&quot;&gt;xeus-cling!&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;reqirements&quot;&gt;Reqirements&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Docker v20+ // &lt;a href=&quot;https://mrprajesh.co.in/blog/install-docker-on-linux.html&quot;&gt;My Docker Installation Post&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Diskspace upto 5 GB.&lt;/li&gt;
+  &lt;li&gt;Tested Ubuntu 20.04/Mint 20.3. Docker 20.10.22. Should work on similar OS or better.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;# Get my repo.
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;git&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clone&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;https&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//github.com/mrprajesh/jupyter-for-cpp.git&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;cd&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;jupyter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cpp&lt;/span&gt;
+
+&lt;span class=&quot;cp&quot;&gt;# Build. Get some Coffee!☕☕☕
+&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;docker&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;build&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;latest&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;  
+
+&lt;span class=&quot;cp&quot;&gt;# Run
+&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;docker&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;run&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;8888&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8888&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;latest&lt;/span&gt;
+
+&lt;span class=&quot;cp&quot;&gt;# open browser on the host machine: http://127.0.0.1:8888
+# You may run the last cell to see the output! 
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This understanding helped a lot. I can now docker my artifact of our papers.
+Let’s docker!  :cowboy_hat_face:&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>How to Install Docker on Linux Mint or Ubuntu</title>
@@ -128,6 +165,9 @@
 &lt;p&gt;We use &lt;a href=&quot;https://github.com/jupyter-xeus/xeus-cling&quot;&gt;xeus-cling&lt;/a&gt; to run cpp on jupyter notebook.
 Check out &lt;a href=&quot;https://github.com/mrprajesh/run-cpp-on-jupyter&quot;&gt;My GitHub repo&lt;/a&gt; &amp;amp; &lt;a href=&quot;https://mybinder.org/v2/gh/mrprajesh/run-cpp-on-jupyter/HEAD?labpath=HelloCppJupyter.ipynb&quot;&gt;&lt;img src=&quot;https://mybinder.org/badge_logo.svg&quot; alt=&quot;Binder&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
+&lt;p&gt;In case you have docker, you can do all the below in just 3 steps. Check out &lt;a href=&quot;http://127.0.0.1:4000/blog/dockering-jupyter-notebook-for-cpp.html&quot;&gt;my other post!&lt;/a&gt; :heart_eyes:
+Just in case, you want to learn more but suffer/sweat/bleed a little then follow the below. :yum: :joy:&lt;/p&gt;
+
 &lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;#Download minconda 
 &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Download&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;run&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;file&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;linux&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x64&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;https&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//docs.conda.io/en/latest/miniconda.html &lt;/span&gt;
                        
@@ -190,6 +230,7 @@ Check out &lt;a href=&quot;https://github.com/mrprajesh/run-cpp-on-jupyter&quot;
 &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;jupyter&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;console&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kernel&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;xcpp14&lt;/span&gt; 
 &lt;span class=&quot;n&quot;&gt;jupyter&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;kernelspec&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PREFIX&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;share&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;jupyter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xcpp14&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sys&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;prefix&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
 </content>
  </entry>
  
