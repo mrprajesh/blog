@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dockering Jupyter notebook for cpp
+title: Dockerizing Jupyter notebook for cpp
 date: 27-12-2022 16:55:01 +05:30
 tags: [cpp, jupyter, docker]
 description:
