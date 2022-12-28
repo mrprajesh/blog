@@ -11,12 +11,14 @@ mathjax: false
 render_with_liquid: true
 ---
 
-We used to use this command to enable a particular `gcc` or `devtoolset` as our [earlier post suggested.](https://mrprajesh.co.in/blog//devtoolset-on-centos.html)
-Assuming you have already installed devtoolset-9. If not install using the cmds from office use section.
+We used to use the below command to enable a particular `gcc` or `devtoolset` as our [earlier post suggested.](https://mrprajesh.co.in/blog//devtoolset-on-centos.html)
 
 ```c
 scl enable devtoolset-9 bash
 ```
+Assuming you have already installed devtoolset-9, if not, install using the cmds from office use section.
+
+
 Unfortunately, we can NOT put this into our `.bashrc` as it would trigger a forkbomb (infinite looping of sourcing bash).
 
 > It turns out a slightly modified command than the original produces intended effect avoiding forkbomb!
@@ -44,7 +46,7 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 ## Office use.
 
-```
+```c
 # Login as root and install the required version. 
 su -
 yum update #optional step.

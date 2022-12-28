@@ -4,7 +4,7 @@
  <title>Rajesh's Blog</title>
  <link href="https://mrprajesh.co.in/blog/atom.xml" rel="self"/>
  <link href="https://mrprajesh.co.in/blog/"/>
- <updated>2022-12-28T15:17:29+05:30</updated>
+ <updated>2022-12-28T15:20:35+05:30</updated>
  <id>https://mrprajesh.co.in</id>
  <author>
    <name>Rajesh Pandian M</name>
@@ -224,11 +224,12 @@ Let’s docker!  :cowboy_hat_face:&lt;/p&gt;
    <link href="https://mrprajesh.co.in/blog/set-a-default-devtool-set-in-centos.html"/>
    <updated>2022-12-26T14:08:44+05:30</updated>
    <id>https://mrprajesh.co.in/set-a-default-devtool-set-in-centos</id>
-   <content type="html">&lt;p&gt;We used to use this command to enable a particular &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gcc&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;devtoolset&lt;/code&gt; as our &lt;a href=&quot;https://mrprajesh.co.in/blog//devtoolset-on-centos.html&quot;&gt;earlier post suggested.&lt;/a&gt;
-Assuming you have already installed devtoolset-9. If not install using the cmds from office use section.&lt;/p&gt;
+   <content type="html">&lt;p&gt;We used to use the below command to enable a particular &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gcc&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;devtoolset&lt;/code&gt; as our &lt;a href=&quot;https://mrprajesh.co.in/blog//devtoolset-on-centos.html&quot;&gt;earlier post suggested.&lt;/a&gt;&lt;/p&gt;
 
 &lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;scl&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;enable&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;devtoolset&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bash&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Assuming you have already installed devtoolset-9, if not, install using the cmds from office use section.&lt;/p&gt;
+
 &lt;p&gt;Unfortunately, we can NOT put this into our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.bashrc&lt;/code&gt; as it would trigger a forkbomb (infinite looping of sourcing bash).&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -257,10 +258,10 @@ Assuming you have already installed devtoolset-9. If not install using the cmds 
 
 &lt;h2 id=&quot;office-use&quot;&gt;Office use.&lt;/h2&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# Login as root and install the required version. 
-su -
-yum update #optional step.
-yum install devtoolset-9
+&lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;# Login as root and install the required version. 
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;su&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;yum&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;update&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;optional&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;step&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;yum&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;devtoolset&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </content>
  </entry>
