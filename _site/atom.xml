@@ -4,13 +4,40 @@
  <title>Rajesh's Blog</title>
  <link href="https://mrprajesh.co.in/blog/atom.xml" rel="self"/>
  <link href="https://mrprajesh.co.in/blog/"/>
- <updated>2022-12-28T16:31:26+05:30</updated>
+ <updated>2022-12-29T02:04:55+05:30</updated>
  <id>https://mrprajesh.co.in</id>
  <author>
    <name>Rajesh Pandian M</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Resolving ProtonVPN on linuxmint</title>
+   <link href="https://mrprajesh.co.in/blog/resolving-protonvpn-on-linuxmint.html"/>
+   <updated>2022-12-29T01:52:22+05:30</updated>
+   <id>https://mrprajesh.co.in/resolving-protonvpn-on-linuxmint</id>
+   <content type="html">&lt;p&gt;Despite following ProtonVPN’s &lt;a href=&quot;https://protonvpn.com/support/official-linux-vpn-mint/&quot;&gt;official documentation&lt;/a&gt;
+I want not able to make the GUI app working (loading forever and said Network issue detected or Network error.) whereas the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;protonvpn-cli&lt;/code&gt; worked right out of the box.
+It turns out that it is due to some library mismatch but I couldn’t fix.&lt;/p&gt;
+
+&lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;n&quot;&gt;SystemError&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ffi_prep_closure&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bad&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;user_data&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;it&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;seems&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;that&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;version&lt;/span&gt;  \
+&lt;span class=&quot;n&quot;&gt;of&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;libffi&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;library&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;seen&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;at&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;runtime&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;different&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ffi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;'&lt;/span&gt;        \
+&lt;span class=&quot;n&quot;&gt;file&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;seen&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;at&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;compile&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;I sought the help of the support team and it resolved the problem – to remove some &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cffi&lt;/code&gt; packages.&lt;/p&gt;
+
+&lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;n&quot;&gt;python3&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pip&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;uninstall&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cffi&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;argon2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cffi&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;argon2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cffi&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bindings&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Let’s blaster! :wink:&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Understanding CUDA packages installed using pip -- errors &amp; fix</title>

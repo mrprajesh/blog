@@ -2,6 +2,18 @@
   
     {
 
+      "title"    : "Resolving ProtonVPN on linuxmint",
+      "url"      : "/blog/resolving-protonvpn-on-linuxmint.html",
+      "category" : "",
+      "tags"     : "protonvpn, vpn, linuxmint, ubuntu",
+      "date"     : "2022-12-29 01:52:22 +0530",
+      "discription" : "",
+      "content" : "<p>Despite following ProtonVPN’s <a href=\"https://protonvpn.com/support/official-linux-vpn-mint/\">official documentation</a>\nI want not able to make the GUI app working (loading forever and said Network issue detected or Network error.) whereas the <code class=\"language-plaintext highlighter-rouge\">protonvpn-cli</code> worked right out of the box.\nIt turns out that it is due to some library mismatch but I couldn’t fix.</p>\n\n<div class=\"language-c highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code>\n<span class=\"n\">SystemError</span><span class=\"o\">:</span> <span class=\"n\">ffi_prep_closure</span><span class=\"p\">()</span><span class=\"o\">:</span> <span class=\"n\">bad</span> <span class=\"n\">user_data</span> <span class=\"p\">(</span><span class=\"n\">it</span> <span class=\"n\">seems</span> <span class=\"n\">that</span> <span class=\"n\">the</span> <span class=\"n\">version</span>  \\\n<span class=\"n\">of</span> <span class=\"n\">the</span> <span class=\"n\">libffi</span> <span class=\"n\">library</span> <span class=\"n\">seen</span> <span class=\"n\">at</span> <span class=\"n\">runtime</span> <span class=\"n\">is</span> <span class=\"n\">different</span> <span class=\"n\">from</span> <span class=\"n\">the</span> <span class=\"err\">'</span><span class=\"n\">ffi</span><span class=\"p\">.</span><span class=\"n\">h</span><span class=\"err\">'</span>        \\\n<span class=\"n\">file</span> <span class=\"n\">seen</span> <span class=\"n\">at</span> <span class=\"n\">compile</span><span class=\"o\">-</span><span class=\"n\">time</span><span class=\"p\">)</span>\n\n</code></pre></div></div>\n\n<p>I sought the help of the support team and it resolved the problem – to remove some <code class=\"language-plaintext highlighter-rouge\">cffi</code> packages.</p>\n\n<div class=\"language-c highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code>\n<span class=\"n\">python3</span> <span class=\"o\">-</span><span class=\"n\">m</span> <span class=\"n\">pip</span> <span class=\"n\">uninstall</span> <span class=\"n\">cffi</span> <span class=\"n\">argon2</span><span class=\"o\">-</span><span class=\"n\">cffi</span>  <span class=\"n\">argon2</span><span class=\"o\">-</span><span class=\"n\">cffi</span><span class=\"o\">-</span><span class=\"n\">bindings</span>\n\n</code></pre></div></div>\n\n<p>Let’s blaster! :wink:</p>\n"
+
+    } ,
+  
+    {
+
       "title"    : "Understanding CUDA packages installed using pip -- errors &amp; fix",
       "url"      : "/blog/understand-cuda-packages-using-pip.html",
       "category" : "",
