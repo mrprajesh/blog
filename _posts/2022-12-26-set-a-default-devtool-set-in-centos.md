@@ -16,8 +16,6 @@ We used to use the below command to enable a particular `gcc` or `devtoolset` as
 ```c
 scl enable devtoolset-9 bash
 ```
-Assuming you have already installed devtoolset-9, if not, install using the cmds from office use section.
-
 
 Unfortunately, we can NOT put this into our `.bashrc` as it would trigger a forkbomb (infinite looping of sourcing bash).
 
@@ -39,6 +37,9 @@ This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 ```
+
+Assuming you have already installed devtoolset-9, if not, install using the cmds from office use section.
+
 
 ## Reference
  - [https://unix.stackexchange.com/a/195219/484734](https://unix.stackexchange.com/a/195219/484734)
