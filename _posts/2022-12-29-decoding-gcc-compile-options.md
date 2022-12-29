@@ -26,13 +26,14 @@ Most used options.
 - `.so` shared object/(dynamic) library
 - `.o` object file
 
+More advanced options
 
 ```c
 -shared -o libfoo.so 
 -lfoo
--I     // Check for the include headers in addtion to default
--L     // check for lib routing at link time
--rpath // check for lib routing at run  time
+-I     // Checks for dir of the include headers in addtion to default
+-L     // checks for lib dir for libraries (in addtion to default) at link time
+-rpath // checks for lib dir for libraries (in addtion to default) at run  time
 ```
 
 
