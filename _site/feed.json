@@ -17,6 +17,25 @@
 "items": [
     
         {
+            "id": "https://mrprajesh.co.in/blog/how-to-artifact.html",
+            "title": "How to (not) Artifact your code",
+            "summary": null,
+            "content_text": "Art of ArtifactingSome of my experience during my research work on building the artifact for our paper.  Disclaimer: Purely out of my own experiences which is likely to refine/modify as I go along!  List the requirements of software/OS/driver and hardware.  Any library dependencies, version, etc. You must mention the environment it is tested on!  Perform all the baseline computations on the same hardware platform.  Include all the testcases or input instances or have makefile to wget form URL.  Get instances from published work URLs. Eg. CVRP LIB, STEINLIB, TSPLIB, DIMACS.  Mostly, your code should handle different input formats (or parts) without editing inputs.  In the worst case, if we are modifying the inputs, we should have provided the converter  Executable should’ve help/man options – list all runtime args+their default values if not set.  The output should’ve meaningful labels than printing out just numbers.  We should print the time, solution value and solution (optional).  The validation routine can be included (in or separate) that prints if the solution is in/valid.  We can enable/disable via arg some or part of the output.  This holds for approx algorithms and parallelizing algorithms from sequential implementation to match/check the expected output.More points.  We must bundle the artifact after submission.  We must have git/zenodo URL with README.  Our README must have instructions to build and reproduce your/baseline results.  We must have a script that runs all the inputs.  We must have a script to run each/all baselines.Legends  Artifact. Source code of a research paper to get its plot/fig/times  baseline. Code/comparison paper  exe. Executable.  testcase. Input instances or file for the program.",
+            "content_html": "<h2 id=\"art-of-artifacting\">Art of Artifacting</h2><p>Some of my experience during my research work on building the artifact for our paper.</p><blockquote>  <p><strong>Disclaimer:</strong> Purely out of my own experiences which is likely to refine/modify as I go along!</p></blockquote><ol>  <li>List the requirements of software/OS/driver and hardware.</li>  <li>Any library dependencies, version, etc. You must mention the environment it is tested on!</li>  <li>Perform all the baseline computations on the same hardware platform.</li>  <li>Include all the testcases or input instances or have makefile to wget form URL.</li>  <li>Get instances from published work URLs. Eg. CVRP LIB, STEINLIB, TSPLIB, DIMACS.</li>  <li>Mostly, your code should handle different input formats (or parts) without editing inputs.</li>  <li>In the worst case, if we are modifying the inputs, we should have provided the converter</li>  <li>Executable should’ve help/man options – list all runtime args+their default values if not set.</li>  <li>The output should’ve meaningful labels than printing out just numbers.</li>  <li>We should print the time, solution value and solution (optional).</li>  <li>The validation routine can be included (in or separate) that prints if the solution is in/valid.</li>  <li>We can enable/disable via arg some or part of the output.</li>  <li>This holds for approx algorithms and parallelizing algorithms from sequential implementation to match/check the expected output.</li></ol><h2 id=\"more-points\">More points.</h2><ul>  <li>We must bundle the artifact after submission.</li>  <li>We must have git/zenodo URL with <code class=\"language-plaintext highlighter-rouge\">README</code>.</li>  <li>Our <code class=\"language-plaintext highlighter-rouge\">README</code> must have instructions to build and reproduce your/baseline results.</li>  <li>We must have a script that runs all the inputs.</li>  <li>We must have a script to run each/all baselines.</li></ul><h3 id=\"legends\">Legends</h3><ul>  <li>Artifact. Source code of a research paper to get its plot/fig/times</li>  <li>baseline. Code/comparison paper</li>  <li>exe. Executable.</li>  <li>testcase. Input instances or file for the program.</li></ul>",
+            "url": "https://mrprajesh.co.in/blog/how-to-artifact.html",
+            
+            
+            
+            "tags": ["reaseach","artifact"],
+            
+            "date_published": "2023-01-03T12:11:05+05:30",
+            "date_modified": "2023-01-03T12:11:05+05:30",
+            
+                "author": "Rajesh Pandian M"
+            
+        },
+    
+        {
             "id": "https://mrprajesh.co.in/blog/decoding-gcc-compile-options.html",
             "title": "Decoding gcc compile options",
             "summary": null,
@@ -676,25 +695,6 @@
             
             "date_published": "2021-06-19T17:08:54+05:30",
             "date_modified": "2021-06-19T17:08:54+05:30",
-            
-                "author": "Rajesh Pandian M"
-            
-        },
-    
-        {
-            "id": "https://mrprajesh.co.in/blog/bool-in-c-language.html",
-            "title": "bool in C language",
-            "summary": null,
-            "content_text": "For long time I was under an impression that bool data type is presentonly in C++ and not in C language. I just got to know that it is therein C however it is not enabled default. So, we have to include it. It isvery surprising that it is present there from C99 standard.#include &lt;stdio.h&gt;#include &lt;stdbool.h&gt;int main(){  bool a = true;  printf(\"what's a? %d\", a);  return 0;}Note  Uninitialized bool defaults to false.  There is no format specifier in printf to specify bool type.References  Wikibooks  SO",
-            "content_html": "<p>For long time I was under an impression that <code class=\"language-plaintext highlighter-rouge\">bool</code> data type is presentonly in C++ and not in C language. I just got to know that it is therein C however it is not enabled default. So, we have to include it. It isvery surprising that it is present there from C99 standard.</p><div class=\"language-c highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"cp\">#include</span> <span class=\"cpf\">&lt;stdio.h&gt;</span><span class=\"cp\">#include</span> <span class=\"cpf\">&lt;stdbool.h&gt;</span><span class=\"cp\"></span><span class=\"kt\">int</span> <span class=\"nf\">main</span><span class=\"p\">(){</span>  <span class=\"n\">bool</span> <span class=\"n\">a</span> <span class=\"o\">=</span> <span class=\"nb\">true</span><span class=\"p\">;</span>  <span class=\"n\">printf</span><span class=\"p\">(</span><span class=\"s\">\"what's a? %d\"</span><span class=\"p\">,</span> <span class=\"n\">a</span><span class=\"p\">);</span>  <span class=\"k\">return</span> <span class=\"mi\">0</span><span class=\"p\">;</span><span class=\"p\">}</span></code></pre></div></div><h3 id=\"note\">Note</h3><ul>  <li>Uninitialized bool defaults to <code class=\"language-plaintext highlighter-rouge\">false</code>.</li>  <li>There is <strong>no</strong> format specifier in printf to specify bool type.</li></ul><h3 id=\"references\">References</h3><ul>  <li><a href=\"https://en.wikibooks.org/wiki/C_Programming/stdbool.h\">Wikibooks</a></li>  <li><a href=\"https://stackoverflow.com/a/17307307/2712045\">SO</a></li></ul>",
-            "url": "https://mrprajesh.co.in/blog/bool-in-c-language.html",
-            
-            
-            
-            "tags": ["cpp","tricks"],
-            
-            "date_published": "2021-05-16T00:01:01+05:30",
-            "date_modified": "2021-05-16T00:01:01+05:30",
             
                 "author": "Rajesh Pandian M"
             

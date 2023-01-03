@@ -4,13 +4,64 @@
  <title>Rajesh's Blog</title>
  <link href="https://mrprajesh.co.in/blog/atom.xml" rel="self"/>
  <link href="https://mrprajesh.co.in/blog/"/>
- <updated>2022-12-29T05:48:29+05:30</updated>
+ <updated>2023-01-03T13:00:42+05:30</updated>
  <id>https://mrprajesh.co.in</id>
  <author>
    <name>Rajesh Pandian M</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>How to (not) Artifact your code</title>
+   <link href="https://mrprajesh.co.in/blog/how-to-artifact.html"/>
+   <updated>2023-01-03T12:11:05+05:30</updated>
+   <id>https://mrprajesh.co.in/how-to-artifact</id>
+   <content type="html">&lt;h2 id=&quot;art-of-artifacting&quot;&gt;Art of Artifacting&lt;/h2&gt;
+
+&lt;p&gt;Some of my experience during my research work on building the artifact for our paper.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Disclaimer:&lt;/strong&gt; Purely out of my own experiences which is likely to refine/modify as I go along!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;List the requirements of software/OS/driver and hardware.&lt;/li&gt;
+  &lt;li&gt;Any library dependencies, version, etc. You must mention the environment it is tested on!&lt;/li&gt;
+  &lt;li&gt;Perform all the baseline computations on the same hardware platform.&lt;/li&gt;
+  &lt;li&gt;Include all the testcases or input instances or have makefile to wget form URL.&lt;/li&gt;
+  &lt;li&gt;Get instances from published work URLs. Eg. CVRP LIB, STEINLIB, TSPLIB, DIMACS.&lt;/li&gt;
+  &lt;li&gt;Mostly, your code should handle different input formats (or parts) without editing inputs.&lt;/li&gt;
+  &lt;li&gt;In the worst case, if we are modifying the inputs, we should have provided the converter&lt;/li&gt;
+  &lt;li&gt;Executable should’ve help/man options – list all runtime args+their default values if not set.&lt;/li&gt;
+  &lt;li&gt;The output should’ve meaningful labels than printing out just numbers.&lt;/li&gt;
+  &lt;li&gt;We should print the time, solution value and solution (optional).&lt;/li&gt;
+  &lt;li&gt;The validation routine can be included (in or separate) that prints if the solution is in/valid.&lt;/li&gt;
+  &lt;li&gt;We can enable/disable via arg some or part of the output.&lt;/li&gt;
+  &lt;li&gt;This holds for approx algorithms and parallelizing algorithms from sequential implementation to match/check the expected output.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;more-points&quot;&gt;More points.&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;We must bundle the artifact after submission.&lt;/li&gt;
+  &lt;li&gt;We must have git/zenodo URL with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;README&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;README&lt;/code&gt; must have instructions to build and reproduce your/baseline results.&lt;/li&gt;
+  &lt;li&gt;We must have a script that runs all the inputs.&lt;/li&gt;
+  &lt;li&gt;We must have a script to run each/all baselines.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;legends&quot;&gt;Legends&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Artifact. Source code of a research paper to get its plot/fig/times&lt;/li&gt;
+  &lt;li&gt;baseline. Code/comparison paper&lt;/li&gt;
+  &lt;li&gt;exe. Executable.&lt;/li&gt;
+  &lt;li&gt;testcase. Input instances or file for the program.&lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>Decoding gcc compile options</title>
