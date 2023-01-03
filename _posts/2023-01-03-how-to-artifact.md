@@ -2,7 +2,7 @@
 layout: post
 title: How to (not) Artifact your code 
 date: 03-01-2023 12:11:05 +05:30
-tags: [reaseach, artifact]
+tags: [research, artifact]
 description:
 summary:
 comments: false
