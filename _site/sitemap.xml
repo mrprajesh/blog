@@ -2,19 +2,19 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://mrprajesh.co.in/blog/about.html</loc>
-<lastmod>2023-01-03T13:09:28+05:30</lastmod>
+<lastmod>2023-03-06T13:59:02+05:30</lastmod>
 </url>
 <url>
 <loc>https://mrprajesh.co.in/blog/sample.html</loc>
-<lastmod>2023-01-03T13:09:28+05:30</lastmod>
+<lastmod>2023-03-06T13:59:02+05:30</lastmod>
 </url>
 <url>
 <loc>https://mrprajesh.co.in/blog/search.html</loc>
-<lastmod>2023-01-03T13:09:28+05:30</lastmod>
+<lastmod>2023-03-06T13:59:02+05:30</lastmod>
 </url>
 <url>
 <loc>https://mrprajesh.co.in/blog/tags.html</loc>
-<lastmod>2023-01-03T13:09:28+05:30</lastmod>
+<lastmod>2023-03-06T13:59:02+05:30</lastmod>
 </url>
 <url>
 <loc>https://mrprajesh.co.in/blog/helloworld.html</loc>
@@ -317,6 +317,14 @@
 <lastmod>2023-01-03T12:11:05+05:30</lastmod>
 </url>
 <url>
+<loc>https://mrprajesh.co.in/blog/base-dir-names-realpath.html</loc>
+<lastmod>2023-01-15T19:51:48+05:30</lastmod>
+</url>
+<url>
+<loc>https://mrprajesh.co.in/blog/how-to-know-mint-version.html</loc>
+<lastmod>2023-03-06T13:49:59+05:30</lastmod>
+</url>
+<url>
 <loc>https://mrprajesh.co.in/blog/</loc>
 </url>
 <url>
@@ -591,5 +599,8 @@
 </url>
 <url>
 <loc>https://mrprajesh.co.in/blog/tag/artifact/</loc>
+</url>
+<url>
+<loc>https://mrprajesh.co.in/blog/tag/mint/</loc>
 </url>
 </urlset>

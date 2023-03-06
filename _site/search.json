@@ -2,6 +2,30 @@
   
     {
 
+      "title"    : "How to find Linux OS version details using terminal.",
+      "url"      : "/blog/how-to-know-mint-version.html",
+      "category" : "",
+      "tags"     : "linux, ubuntu, mint",
+      "date"     : "2023-03-06 13:49:59 +0530",
+      "discription" : "",
+      "content" : "<p>There are multiple GUI-ways to find the Linux OS versions. Here are some the might come handy</p>\n\n<div class=\"language-c highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"cp\"># Kernel Information.\n</span>\n<span class=\"err\">$</span> <span class=\"n\">uname</span> <span class=\"o\">-</span><span class=\"n\">a</span>\n<span class=\"n\">Linux</span> <span class=\"n\">g15warrior</span> <span class=\"mi\">5</span><span class=\"p\">.</span><span class=\"mi\">15</span><span class=\"p\">.</span><span class=\"mi\">0</span><span class=\"o\">-</span><span class=\"mi\">41</span><span class=\"o\">-</span><span class=\"n\">generic</span> <span class=\"err\">#</span><span class=\"mi\">44</span><span class=\"o\">~</span><span class=\"mi\">20</span><span class=\"p\">.</span><span class=\"mo\">04</span><span class=\"p\">.</span><span class=\"mi\">1</span><span class=\"o\">-</span><span class=\"n\">Ubuntu</span> <span class=\"n\">SMP</span> <span class=\"n\">Fri</span> <span class=\"n\">Jun</span> <span class=\"mi\">24</span> <span class=\"mi\">13</span><span class=\"o\">:</span><span class=\"mi\">27</span><span class=\"o\">:</span><span class=\"mi\">29</span> <span class=\"n\">UTC</span> <span class=\"mi\">2022</span> <span class=\"n\">x86_64</span> <span class=\"n\">x86_64</span> <span class=\"n\">x86_64</span> <span class=\"n\">GNU</span><span class=\"o\">/</span><span class=\"n\">Linux</span>\n\n<span class=\"err\">$</span> <span class=\"n\">lsb_release</span> <span class=\"o\">-</span><span class=\"n\">a</span>\n<span class=\"n\">No</span> <span class=\"n\">LSB</span> <span class=\"n\">modules</span> <span class=\"n\">are</span> <span class=\"n\">available</span><span class=\"p\">.</span>\n<span class=\"n\">Distributor</span> <span class=\"n\">ID</span><span class=\"o\">:</span>\t<span class=\"n\">Linuxmint</span>\n<span class=\"n\">Description</span><span class=\"o\">:</span>\t<span class=\"n\">Linux</span> <span class=\"n\">Mint</span> <span class=\"mi\">20</span><span class=\"p\">.</span><span class=\"mi\">3</span>\n<span class=\"n\">Release</span><span class=\"o\">:</span>\t<span class=\"mi\">20</span><span class=\"p\">.</span><span class=\"mi\">3</span>\n<span class=\"n\">Codename</span><span class=\"o\">:</span>\t<span class=\"n\">una</span>\n\n<span class=\"c1\">// $ cat /etc/*release</span>\n<span class=\"n\">DISTRIB_ID</span><span class=\"o\">=</span><span class=\"n\">LinuxMint</span>\n<span class=\"n\">DISTRIB_RELEASE</span><span class=\"o\">=</span><span class=\"mi\">20</span><span class=\"p\">.</span><span class=\"mi\">3</span>\n<span class=\"n\">DISTRIB_CODENAME</span><span class=\"o\">=</span><span class=\"n\">una</span>\n<span class=\"n\">DISTRIB_DESCRIPTION</span><span class=\"o\">=</span><span class=\"s\">\"Linux Mint 20.3 Una\"</span>\n<span class=\"n\">NAME</span><span class=\"o\">=</span><span class=\"s\">\"Linux Mint\"</span>\n<span class=\"n\">VERSION</span><span class=\"o\">=</span><span class=\"s\">\"20.3 (Una)\"</span>\n<span class=\"n\">ID</span><span class=\"o\">=</span><span class=\"n\">linuxmint</span>\n<span class=\"n\">ID_LIKE</span><span class=\"o\">=</span><span class=\"n\">ubuntu</span>\n<span class=\"n\">PRETTY_NAME</span><span class=\"o\">=</span><span class=\"s\">\"Linux Mint 20.3\"</span>\n<span class=\"n\">VERSION_ID</span><span class=\"o\">=</span><span class=\"s\">\"20.3\"</span>\n<span class=\"n\">HOME_URL</span><span class=\"o\">=</span><span class=\"s\">\"https://www.linuxmint.com/\"</span>\n<span class=\"n\">SUPPORT_URL</span><span class=\"o\">=</span><span class=\"s\">\"https://forums.linuxmint.com/\"</span>\n<span class=\"n\">BUG_REPORT_URL</span><span class=\"o\">=</span><span class=\"s\">\"http://linuxmint-troubleshooting-guide.readthedocs.io/en/latest/\"</span>\n<span class=\"n\">PRIVACY_POLICY_URL</span><span class=\"o\">=</span><span class=\"s\">\"https://www.linuxmint.com/\"</span>\n<span class=\"n\">VERSION_CODENAME</span><span class=\"o\">=</span><span class=\"n\">una</span>\n<span class=\"n\">UBUNTU_CODENAME</span><span class=\"o\">=</span><span class=\"n\">focal</span>\n\n\n<span class=\"c1\">// $ cat /etc/*/*release</span>\n<span class=\"p\">...</span>\n  \n<span class=\"n\">DISTRIB_ID</span><span class=\"o\">=</span><span class=\"n\">Ubuntu</span>\n<span class=\"n\">DISTRIB_RELEASE</span><span class=\"o\">=</span><span class=\"mi\">20</span><span class=\"p\">.</span><span class=\"mo\">04</span>\n<span class=\"n\">DISTRIB_CODENAME</span><span class=\"o\">=</span><span class=\"n\">focal</span>\n<span class=\"n\">DISTRIB_DESCRIPTION</span><span class=\"o\">=</span><span class=\"s\">\"Ubuntu Focal Fossa\"</span>\n\n\n</code></pre></div></div>\n"
+
+    } ,
+  
+    {
+
+      "title"    : "base dir names realpath",
+      "url"      : "/blog/base-dir-names-realpath.html",
+      "category" : "",
+      "tags"     : "linux, shell",
+      "date"     : "2023-01-15 19:51:48 +0530",
+      "discription" : "",
+      "content" : "\n"
+
+    } ,
+  
+    {
+
       "title"    : "How to (not) Artifact your code",
       "url"      : "/blog/how-to-artifact.html",
       "category" : "",

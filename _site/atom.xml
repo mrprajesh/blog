@@ -4,13 +4,73 @@
  <title>Rajesh's Blog</title>
  <link href="https://mrprajesh.co.in/blog/atom.xml" rel="self"/>
  <link href="https://mrprajesh.co.in/blog/"/>
- <updated>2023-01-03T13:09:28+05:30</updated>
+ <updated>2023-03-06T13:59:02+05:30</updated>
  <id>https://mrprajesh.co.in</id>
  <author>
    <name>Rajesh Pandian M</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>How to find Linux OS version details using terminal.</title>
+   <link href="https://mrprajesh.co.in/blog/how-to-know-mint-version.html"/>
+   <updated>2023-03-06T13:49:59+05:30</updated>
+   <id>https://mrprajesh.co.in/how-to-know-mint-version</id>
+   <content type="html">&lt;p&gt;There are multiple GUI-ways to find the Linux OS versions. Here are some the might come handy&lt;/p&gt;
+
+&lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;# Kernel Information.
+&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;uname&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Linux&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;g15warrior&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;15&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;41&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;generic&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;44&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mo&quot;&gt;04&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Ubuntu&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SMP&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Fri&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Jun&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;24&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;13&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;27&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;29&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;UTC&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2022&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x86_64&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x86_64&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x86_64&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GNU&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Linux&lt;/span&gt;
+
+&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lsb_release&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;No&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;LSB&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;modules&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;are&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;available&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Distributor&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ID&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;	&lt;span class=&quot;n&quot;&gt;Linuxmint&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Description&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;	&lt;span class=&quot;n&quot;&gt;Linux&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Mint&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Release&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;	&lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Codename&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;	&lt;span class=&quot;n&quot;&gt;una&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// $ cat /etc/*release&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;DISTRIB_ID&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;LinuxMint&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;DISTRIB_RELEASE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;DISTRIB_CODENAME&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;una&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;DISTRIB_DESCRIPTION&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Linux Mint 20.3 Una&quot;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;NAME&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Linux Mint&quot;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;VERSION&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;20.3 (Una)&quot;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;ID&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;linuxmint&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;ID_LIKE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ubuntu&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;PRETTY_NAME&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Linux Mint 20.3&quot;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;VERSION_ID&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;20.3&quot;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;HOME_URL&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://www.linuxmint.com/&quot;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;SUPPORT_URL&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://forums.linuxmint.com/&quot;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;BUG_REPORT_URL&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://linuxmint-troubleshooting-guide.readthedocs.io/en/latest/&quot;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;PRIVACY_POLICY_URL&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://www.linuxmint.com/&quot;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;VERSION_CODENAME&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;una&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;UBUNTU_CODENAME&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;focal&lt;/span&gt;
+
+
+&lt;span class=&quot;c1&quot;&gt;// $ cat /etc/*/*release&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;...&lt;/span&gt;
+  
+&lt;span class=&quot;n&quot;&gt;DISTRIB_ID&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Ubuntu&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;DISTRIB_RELEASE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mo&quot;&gt;04&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;DISTRIB_CODENAME&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;focal&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;DISTRIB_DESCRIPTION&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Ubuntu Focal Fossa&quot;&lt;/span&gt;
+
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>base dir names realpath</title>
+   <link href="https://mrprajesh.co.in/blog/base-dir-names-realpath.html"/>
+   <updated>2023-01-15T19:51:48+05:30</updated>
+   <id>https://mrprajesh.co.in/base-dir-names-realpath</id>
+   <content type="html">
+</content>
+ </entry>
  
  <entry>
    <title>How to (not) Artifact your code</title>
