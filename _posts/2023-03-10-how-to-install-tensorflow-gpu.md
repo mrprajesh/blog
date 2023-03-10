@@ -17,7 +17,7 @@ render_with_liquid: true
 - NVidia GPU
 - Ubuntu 20.04
 
-It was pretty straightforward from Official dos. 
+It was pretty straightforward from Official docs. 
 
 ```c
 
@@ -57,5 +57,6 @@ conda activate tf
 
 
 ### Refs
-[Official Docs](https://www.tensorflow.org/install/pip)
+- [Official Docs](https://www.tensorflow.org/install/pip)
+- [Issue](https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/5926#issuecomment-1445364980)
  

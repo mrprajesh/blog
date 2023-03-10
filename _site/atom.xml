@@ -4,7 +4,7 @@
  <title>Rajesh's Blog</title>
  <link href="https://mrprajesh.co.in/blog/atom.xml" rel="self"/>
  <link href="https://mrprajesh.co.in/blog/"/>
- <updated>2023-03-10T15:52:20+05:30</updated>
+ <updated>2023-03-10T16:14:22+05:30</updated>
  <id>https://mrprajesh.co.in</id>
  <author>
    <name>Rajesh Pandian M</name>
@@ -25,7 +25,7 @@
   &lt;li&gt;Ubuntu 20.04&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;It was pretty straightforward from Official dos.&lt;/p&gt;
+&lt;p&gt;It was pretty straightforward from Official docs.&lt;/p&gt;
 
 &lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
 &lt;span class=&quot;n&quot;&gt;conda&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;create&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;python&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;
@@ -63,7 +63,10 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;refs&quot;&gt;Refs&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.tensorflow.org/install/pip&quot;&gt;Official Docs&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.tensorflow.org/install/pip&quot;&gt;Official Docs&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/5926#issuecomment-1445364980&quot;&gt;Issue&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 </content>
  </entry>
