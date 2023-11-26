@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [2022] How to Install, Compile and Run SYCL using NVIDIA GPUs
+title: 2022 How to Install, Compile and Run SYCL using NVIDIA GPUs
 date: 15-11-2022 10:12:43 +05:30
 tags: [sycl, cuda, nvidia, intel, oneapi, dpcpp]
 description:
@@ -34,7 +34,7 @@ cd $HOME/install
 git clone https://github.com/intel/llvm.git -b sycl
 cd llvm
 
-# Warning LLVM undergoes a lot changes. 
+# OPTIONAL STEP. Warning LLVM undergoes a lot changes. 
 # In case, recent commit did not work, use the below that worked for me
 # 082cde6 - (HEAD, origin/sycl, origin/HEAD, sycl) [CI][1/3] Add Ubuntu 22 containers build (#7106) <Pavel Chupin>
 git checkout 082cde6
