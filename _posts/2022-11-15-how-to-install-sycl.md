@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Install, Compile and Run SYCL using NVIDIA GPUs
+title: [2022] How to Install, Compile and Run SYCL using NVIDIA GPUs
 date: 15-11-2022 10:12:43 +05:30
 tags: [sycl, cuda, nvidia, intel, oneapi, dpcpp]
 description:
@@ -33,6 +33,11 @@ cd $HOME/install
 # get sycl branch
 git clone https://github.com/intel/llvm.git -b sycl
 cd llvm
+
+# Warning LLVM undergoes a lot changes. 
+# In case, recent commit did not work, use the below that worked for me
+# 082cde6 - (HEAD, origin/sycl, origin/HEAD, sycl) [CI][1/3] Add Ubuntu 22 containers build (#7106) <Pavel Chupin>
+git checkout 082cde6
 
 # configure
 python ./buildbot/configure.py --cuda -t release --cmake-gen "Unix Makefiles"
@@ -151,3 +156,11 @@ That's it. TATA.
 - [
 https://intel.github.io/llvm-docs/GetStartedGuide.html#build-dpc-toolchain-with-support-for-nvidia-cuda](
 https://intel.github.io/llvm-docs/GetStartedGuide.html#build-dpc-toolchain-with-support-for-nvidia-cuda)
+
+
+
+### Update
+27NOV2023. 
+- [similar Err 1](https://github.com/intel/llvm/issues/11918#issuecomment-1815220117)
+- [similar Err 2](https://github.com/intel/llvm/issues/11918#issuecomment-1815220117)
+- NOTE: An installation of at least CUDA 11.6 due to this [issue](https://forums.developer.nvidia.com/t/libdevice-functions-causing-ptxas-segfault/193352)

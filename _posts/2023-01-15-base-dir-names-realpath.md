@@ -10,5 +10,3 @@ author: Rajesh Pandian M
 mathjax: false
 render_with_liquid: true
 ---
-
-
