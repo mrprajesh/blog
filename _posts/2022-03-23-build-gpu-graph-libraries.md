@@ -14,28 +14,31 @@ render_with_liquid: true
 On AQUA.
 
 ### Gpu Graphit G2
-
-module load cmake3.18
-module load gcc640
-mkdir GraphItG2; cd GraphItG2; git clone --recursive -b gpu-merge https://github.com/GraphIt-DSL/graphit.git .
+```c
+module load cmake3.18 gcc640 python385 cuda10.0
+mkdir GraphItG2; cd GraphItG2; 
+git clone -b gpu-merge https://github.com/GraphIt-DSL/graphit.git .
 mkdir build; cd build
 cmake ..
 make -j 32
 
 cd ../graphit_eval/g2_cgo2021_eval/dataset
 make small # or just make
+cd ..
 python3 gen_table7.py small < input
 
-input
+## input file edit accordingly on aqua
+
+cat input
 /lfs/usrhome/phd/cs16d003/install/GraphItG2/graphit_eval/g2_cgo2021_eval/table7_outputs
 /lfs/usrhome/phd/cs16d003/install/GraphItG2/graphit_eval/g2_cgo2021_eval/../../build
 /lfs/usrhome/phd/cs16d003/install/GraphItG2/graphit_eval/g2_cgo2021_eval/dataset
 /lfs/sware/cuda-10.1/bin/nvcc
 /lfs/sware/gcc640/bin/g++
-0
+
 
 //TODO make it run via qsub
-
+```
 ### GSwitch
 
 ```c
