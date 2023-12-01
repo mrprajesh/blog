@@ -25,6 +25,11 @@ make -j 32
 cd ../graphit_eval/g2_cgo2021_eval/dataset
 make small # or just make
 cd ..
+python3 gen_table7.py small    # without small it will run all dataset
+
+
+# ON AQUA
+
 python3 gen_table7.py small < input
 
 ## input file edit accordingly on aqua
@@ -39,6 +44,11 @@ cat input
 
 //TODO make it run via qsub
 ```
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/8f3b9e95847c4894b8f4c69aab45773f?sid=9dfd364b-ad1a-43d5-8f24-da6448bf0a12" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
+
 ### GSwitch
 
 ```c
