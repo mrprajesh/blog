@@ -4,7 +4,7 @@
  <title>Rajesh's Blog</title>
  <link href="https://mrprajesh.co.in/blog/atom.xml" rel="self"/>
  <link href="https://mrprajesh.co.in/blog/"/>
- <updated>2023-12-21T21:18:10+05:30</updated>
+ <updated>2023-12-21T21:21:13+05:30</updated>
  <id>https://mrprajesh.co.in</id>
  <author>
    <name>Rajesh Pandian M</name>
@@ -13,7 +13,7 @@
 
  
  <entry>
-   <title>How to install cuda on ubuntu 22.04 or Linux Mint 22.2</title>
+   <title>How to install cuda on ubuntu 22.04 or Linux Mint 21.2</title>
    <link href="https://mrprajesh.co.in/blog/how-to-install-cuda-ubuntu-22-04.html"/>
    <updated>2023-12-21T17:40:12+05:30</updated>
    <id>https://mrprajesh.co.in/how-to-install-cuda-ubuntu-22-04</id>
@@ -36,8 +36,7 @@
   &lt;li&gt;Unpon success. reboot.&lt;/li&gt;
   &lt;li&gt;Append in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~/.bashrc&lt;/code&gt;
     &lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;usr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;local&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cuda&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bin&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:+:&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PATH&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;LD_LIBRARY_PATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;usr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;local&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cuda&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lib64&lt;/span&gt;\
-                      &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;LD_LIBRARY_PATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:+:&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;LD_LIBRARY_PATH&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;LD_LIBRARY_PATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;usr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;local&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cuda&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lib64&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;LD_LIBRARY_PATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:+:&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;LD_LIBRARY_PATH&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
 &lt;/ol&gt;

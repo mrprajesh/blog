@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to install cuda on ubuntu 22.04 or Linux Mint 22.2
+title: How to install cuda on ubuntu 22.04 or Linux Mint 21.2
 date: 21-12-2023 17:40:12 +05:30
 tags: [cuda, ubuntu, linuxmint]
 description:
@@ -27,8 +27,7 @@ On fresh install of the OS, I did the following to get it working.
 9. Append in `~/.bashrc`
 ```c
 export PATH=/usr/local/cuda-12.2/bin${PATH:+:${PATH}}
-export LD_LIBRARY_PATH=/usr/local/cuda-12.2/lib64\
-                         ${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda-12.2/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 ```
 
 
