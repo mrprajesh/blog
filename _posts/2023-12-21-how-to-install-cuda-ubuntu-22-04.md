@@ -32,8 +32,19 @@ export LD_LIBRARY_PATH=/usr/local/cuda-12.2/lib64\
 ```
 
 
-nvidia-smi
+## Check the installation.
+
 ```c
+## Step 1
+
+$ nvcc --version
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2023 NVIDIA Corporation
+Built on Tue_Aug_15_22:02:13_PDT_2023
+Cuda compilation tools, release 12.2, V12.2.140
+Build cuda_12.2.r12.2/compiler.33191640_0
+
+## Step 2
 $ nvidia-smi 
 Thu Dec 21 17:51:50 2023       
 +---------------------------------------------------------------------------------------+
@@ -55,6 +66,8 @@ Thu Dec 21 17:51:50 2023
 |=======================================================================================|
 |    0   N/A  N/A      1143      G   /usr/lib/xorg/Xorg                           45MiB |
 +---------------------------------------------------------------------------------------+
+
+## Step 3
 
 $ git clone https://github.com/NVIDIA/cuda-samples.git
 $ cd cuda-samples/Samples/1_Utilities/deviceQuery
@@ -109,6 +122,7 @@ Result = PASS
 
 
 ```
+## Hello World CUDA!
 
 ```c
 
