@@ -11,7 +11,7 @@ mathjax: false
 render_with_liquid: true
 ---
 
-A fresh install of the OS.
+On fresh install of the OS, I did the following to get it working.
 
 1. Find the CUDA driver version required for your GPU. I saw 535 from my (3060 RTX)[https://www.nvidia.com/download/index.aspx]
 2. Find the CUDA version that has that driver. I found 12.2 which matched 535 driver version `xx.x.x_535.xx.xx_linux`
@@ -139,3 +139,8 @@ int main(void){
 }
 nvcc a.cu && ./a.out
 ```
+
+
+### Other thoughts.
+1. Install the driver version from driver manager
+2. While cuda install just deselect the driver
