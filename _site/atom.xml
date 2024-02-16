@@ -4,7 +4,7 @@
  <title>Rajesh's Blog</title>
  <link href="https://mrprajesh.co.in/blog/atom.xml" rel="self"/>
  <link href="https://mrprajesh.co.in/blog/"/>
- <updated>2023-12-21T21:21:13+05:30</updated>
+ <updated>2024-02-16T08:00:33+05:30</updated>
  <id>https://mrprajesh.co.in</id>
  <author>
    <name>Rajesh Pandian M</name>
@@ -152,16 +152,6 @@
   &lt;li&gt;Install the driver version from driver manager&lt;/li&gt;
   &lt;li&gt;While cuda install just deselect the driver&lt;/li&gt;
 &lt;/ol&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>How CUDA code works</title>
-   <link href="https://mrprajesh.co.in/blog/how-cuda-works.html"/>
-   <updated>2023-08-26T09:00:52+05:30</updated>
-   <id>https://mrprajesh.co.in/how-cuda-works</id>
-   <content type="html">&lt;p&gt;This is sample content post.
-Edit this to a new post content!&lt;/p&gt;
 </content>
  </entry>
  
