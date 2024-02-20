@@ -4,13 +4,47 @@
  <title>Rajesh's Blog</title>
  <link href="https://mrprajesh.co.in/blog/atom.xml" rel="self"/>
  <link href="https://mrprajesh.co.in/blog/"/>
- <updated>2024-02-16T08:00:33+05:30</updated>
+ <updated>2024-02-20T13:10:39+05:30</updated>
  <id>https://mrprajesh.co.in</id>
  <author>
    <name>Rajesh Pandian M</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>git commit sign gpg</title>
+   <link href="https://mrprajesh.co.in/blog/git-commit-sign-gpg.html"/>
+   <updated>2024-02-20T12:38:13+05:30</updated>
+   <id>https://mrprajesh.co.in/git-commit-sign-gpg</id>
+   <content type="html">&lt;p&gt;I have already added my GPG key to GitHub.&lt;/p&gt;
+
+&lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;cp&quot;&gt;# Check GPU key
+&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;   &lt;span class=&quot;n&quot;&gt;gpg&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;secret&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;keys&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;keyid&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;long&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;home&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rajesh&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gnupg&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pubring&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kbx&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;-------------------------------&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;sec&lt;/span&gt;   &lt;span class=&quot;n&quot;&gt;rsa2048&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;DD95F119EA64BABE&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2011&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mo&quot;&gt;02&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;11&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SCA&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+      &lt;span class=&quot;mi&quot;&gt;79&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;B36A390B6A4BBFA103483BDD95F119EA64BABE&lt;/span&gt;
+
+&lt;span class=&quot;cp&quot;&gt;# Tell Git about your signing key
+&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;git&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;config&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;global&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;signingkey&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DD95F119EA64BABE&lt;/span&gt;
+
+&lt;span class=&quot;cp&quot;&gt;# Instruct to sign every commit
+&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;git&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;config&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;global&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;commit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gpgsign&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;true&lt;/span&gt;
+
+&lt;span class=&quot;cp&quot;&gt;# Add to startup of terminal
+&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;  &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bashrc&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;e&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;&apos;\&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nexport&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GPG_TTY&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tty&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&apos;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bashrc&lt;/span&gt;
+
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&quot;reference&quot;&gt;Reference&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.github.com/en/authentication/managing-commit-signature-verification/telling-git-about-your-signing-key&quot;&gt;https://docs.github.com/en/authentication/managing-commit-signature-verification/telling-git-about-your-signing-key
+&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+ </entry>
  
  <entry>
    <title>How to install cuda on ubuntu 22.04 or Linux Mint 21.2</title>
@@ -152,6 +186,16 @@
   &lt;li&gt;Install the driver version from driver manager&lt;/li&gt;
   &lt;li&gt;While cuda install just deselect the driver&lt;/li&gt;
 &lt;/ol&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>How CUDA code works</title>
+   <link href="https://mrprajesh.co.in/blog/how-cuda-works.html"/>
+   <updated>2023-08-26T09:00:52+05:30</updated>
+   <id>https://mrprajesh.co.in/how-cuda-works</id>
+   <content type="html">&lt;p&gt;This is sample content post.
+Edit this to a new post content!&lt;/p&gt;
 </content>
  </entry>
  

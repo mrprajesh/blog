@@ -9,7 +9,7 @@ comments: false
 author: Rajesh Pandian M
 mathjax: false
 render_with_liquid: true
-published: false
+draft: true
 ---
 
 This is sample content post.
