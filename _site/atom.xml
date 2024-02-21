@@ -4,7 +4,7 @@
  <title>Rajesh's Blog</title>
  <link href="https://mrprajesh.co.in/blog/atom.xml" rel="self"/>
  <link href="https://mrprajesh.co.in/blog/"/>
- <updated>2024-02-20T13:10:39+05:30</updated>
+ <updated>2024-02-21T09:07:26+05:30</updated>
  <id>https://mrprajesh.co.in</id>
  <author>
    <name>Rajesh Pandian M</name>
@@ -13,11 +13,12 @@
 
  
  <entry>
-   <title>git commit sign gpg</title>
+   <title>Git commit signature</title>
    <link href="https://mrprajesh.co.in/blog/git-commit-sign-gpg.html"/>
    <updated>2024-02-20T12:38:13+05:30</updated>
    <id>https://mrprajesh.co.in/git-commit-sign-gpg</id>
-   <content type="html">&lt;p&gt;I have already added my GPG key to GitHub.&lt;/p&gt;
+   <content type="html">&lt;p&gt;In case you need sign your commit - a verified signature on GitHub commit history. Here it is. 
+I have already added my GPG key to GitHub.&lt;/p&gt;
 
 &lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
 &lt;span class=&quot;cp&quot;&gt;# Check GPU key

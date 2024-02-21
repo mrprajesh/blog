@@ -1,6 +1,6 @@
 ---
 layout: post
-title: git commit sign gpg
+title: Git commit signature 
 date: 20-02-2024 12:38:13 +05:30
 tags: [git, gpg]
 description:
@@ -11,6 +11,7 @@ mathjax: false
 render_with_liquid: true
 ---
 
+In case you need sign your commit - a verified signature on GitHub commit history. Here it is. 
 I have already added my GPG key to GitHub.
 
 ```c
