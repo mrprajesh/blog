@@ -2,19 +2,19 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://mrprajesh.co.in/blog/about.html</loc>
-<lastmod>2024-02-21T09:07:26+05:30</lastmod>
+<lastmod>2024-02-26T18:26:52+05:30</lastmod>
 </url>
 <url>
 <loc>https://mrprajesh.co.in/blog/sample.html</loc>
-<lastmod>2024-02-21T09:07:26+05:30</lastmod>
+<lastmod>2024-02-26T18:26:52+05:30</lastmod>
 </url>
 <url>
 <loc>https://mrprajesh.co.in/blog/search.html</loc>
-<lastmod>2024-02-21T09:07:26+05:30</lastmod>
+<lastmod>2024-02-26T18:26:52+05:30</lastmod>
 </url>
 <url>
 <loc>https://mrprajesh.co.in/blog/tags.html</loc>
-<lastmod>2024-02-21T09:07:26+05:30</lastmod>
+<lastmod>2024-02-26T18:26:52+05:30</lastmod>
 </url>
 <url>
 <loc>https://mrprajesh.co.in/blog/helloworld.html</loc>
@@ -331,10 +331,6 @@
 <url>
 <loc>https://mrprajesh.co.in/blog/how-to-install-tensorflow-gpu.html</loc>
 <lastmod>2023-03-10T15:40:51+05:30</lastmod>
-</url>
-<url>
-<loc>https://mrprajesh.co.in/blog/how-cuda-works.html</loc>
-<lastmod>2023-08-26T09:00:52+05:30</lastmod>
 </url>
 <url>
 <loc>https://mrprajesh.co.in/blog/how-to-install-cuda-ubuntu-22-04.html</loc>
