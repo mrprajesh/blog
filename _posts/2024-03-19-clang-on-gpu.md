@@ -37,7 +37,7 @@ y[3] = 8
 ```
 
 
-## Error before fixing it.
+## Errors before fixing it!
 
 ```
 /usr/lib/llvm-15/lib/clang/15.0.7/include/__clang_cuda_texture_intrinsics.h:696:13: error: no template named 'texture'
