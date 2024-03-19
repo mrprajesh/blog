@@ -2,19 +2,19 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://mrprajesh.co.in/blog/about.html</loc>
-<lastmod>2024-02-26T18:26:52+05:30</lastmod>
+<lastmod>2024-03-19T18:58:30+05:30</lastmod>
 </url>
 <url>
 <loc>https://mrprajesh.co.in/blog/sample.html</loc>
-<lastmod>2024-02-26T18:26:52+05:30</lastmod>
+<lastmod>2024-03-19T18:58:30+05:30</lastmod>
 </url>
 <url>
 <loc>https://mrprajesh.co.in/blog/search.html</loc>
-<lastmod>2024-02-26T18:26:52+05:30</lastmod>
+<lastmod>2024-03-19T18:58:30+05:30</lastmod>
 </url>
 <url>
 <loc>https://mrprajesh.co.in/blog/tags.html</loc>
-<lastmod>2024-02-26T18:26:52+05:30</lastmod>
+<lastmod>2024-03-19T18:58:30+05:30</lastmod>
 </url>
 <url>
 <loc>https://mrprajesh.co.in/blog/helloworld.html</loc>
@@ -341,6 +341,10 @@
 <lastmod>2024-02-20T12:38:13+05:30</lastmod>
 </url>
 <url>
+<loc>https://mrprajesh.co.in/blog/clang-on-gpu.html</loc>
+<lastmod>2024-03-19T16:33:36+05:30</lastmod>
+</url>
+<url>
 <loc>https://mrprajesh.co.in/blog/</loc>
 </url>
 <url>
@@ -624,5 +628,8 @@
 </url>
 <url>
 <loc>https://mrprajesh.co.in/blog/tag/gpg/</loc>
+</url>
+<url>
+<loc>https://mrprajesh.co.in/blog/tag/clang/</loc>
 </url>
 </urlset>

@@ -2,7 +2,7 @@
 layout: post
 title: CUDA clang running on GPU
 date: 19-03-2024 16:33:36 +05:30
-tags: [cuda, clang]
+tags: [cuda, clang, gpu]
 description:
 summary:
 comments: false
@@ -11,8 +11,13 @@ mathjax: false
 render_with_liquid: true
 ---
 
-1. After gaining a lot of insight from the talk [CppCon 2016: “Bringing Clang and C++ to GPUs: An Open-Source, CUDA-Compatible GPU C++ Compiler"]
-decided to try clang running on gpu code (https://youtu.be/KHa-OSrZPGo?si=852XDhqzVIsLBqme) [https://llvm.org/docs/CompileCudaWithLLVM.html](https://llvm.org/docs/CompileCudaWithLLVM.html)
+After gaining a lot of insights from a CppCon 2016 talk [Bringing Clang and C++ to GPUs](https://youtu.be/KHa-OSrZPGo?si=852XDhqzVIsLBqme) I
+decided to try clang code to run on GPU using  the [CUDA Clang docs](https://llvm.org/docs/CompileCudaWithLLVM.html)
+
+1. Use clang 17 (or 16 should work as well!)
+2. Installation of CUDA toolkit is assumed. Have drivers and a GPU
+3. file .cu 		-> .ptx 	->  .out 
+4. clang -> ptxas -> sass -> exe
 
 ```c
 
@@ -39,7 +44,7 @@ y[3] = 8
 
 ## Errors before fixing it!
 
-```
+```c
 /usr/lib/llvm-15/lib/clang/15.0.7/include/__clang_cuda_texture_intrinsics.h:696:13: error: no template named 'texture'
             texture<__DataT, __TexT, cudaReadModeNormalizedFloat> __handle,
             ^
