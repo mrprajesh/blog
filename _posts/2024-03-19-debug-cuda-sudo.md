@@ -12,6 +12,22 @@ render_with_liquid: true
 ---
 
 ```c
+# Add a conf
+sudo vim /etc/modprobe.d/debug-cuda-gpu.conf
+options nvidia NVreg_RestrictProfilingToAdminUsers=0 
+
+# update and reboot 
+sudo update-initramfs -u -k all
+reboot
+
+# open nsight compute using sudo 
+sudo /usr/local/cuda/bin/ncu-ui
+
+```
+
+## Error before fixing! 
+
+```c
 Launched process: ncu (pid: 112990)
 /usr/local/cuda-12.2/nsight-compute-2023.2.2/target/linux-desktop-glibc_2_11_3-x64/ncu --config-file off --export /home/rajesh/learn/saxpy/a.cu.profile --force-overwrite --set full /home/rajesh/learn/saxpy/axplusy.out
 Launch succeeded.
