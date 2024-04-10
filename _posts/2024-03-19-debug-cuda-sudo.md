@@ -1,6 +1,6 @@
 ---
 layout: post
-title: debug cuda sudo
+title: Troubleshoot Profiling of CUDA Programs using nsight Compute
 date: 19-03-2024 20:31:18 +05:30
 tags: [cuda, debug, compute]
 description:

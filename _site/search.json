@@ -2,7 +2,31 @@
   
     {
 
-      "title"    : "debug cuda sudo",
+      "title"    : "Tinkering With HelloWorld Vulkan!",
+      "url"      : "/blog/tinkering-vulkan.html",
+      "category" : "",
+      "tags"     : "vulkan",
+      "date"     : "2024-04-11 01:01:31 +0530",
+      "discription" : "",
+      "content" : "<p>While I could have installed a vulkan SDK with just one <code class=\"language-plaintext highlighter-rouge\">apt get install vulkan-sdk</code> \ncommand from the terminal, I somehow went for build from the <a href=\"https://vulkan.lunarg.com/sdk/home\">source</a>.</p>\n\n<div class=\"language-shell highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"c\"># https://vulkan.lunarg.com/doc/view/latest/linux/getting_started_ubuntu.html#ubuntu-2204-jammy-jellyfish</span>\nwget <span class=\"nt\">-qO-</span> https://packages.lunarg.com/lunarg-signing-key-pub.asc | <span class=\"nb\">sudo tee</span> /etc/apt/trusted.gpg.d/lunarg.asc\n<span class=\"nb\">sudo </span>wget <span class=\"nt\">-qO</span> /etc/apt/sources.list.d/lunarg-vulkan-jammy.list http://packages.lunarg.com/vulkan/lunarg-vulkan-jammy.list\n<span class=\"nb\">sudo </span>apt update\n<span class=\"nb\">sudo </span>apt <span class=\"nb\">install </span>vulkan-sdk\n\n<span class=\"c\">## TO VERIFY</span>\nvkvia\nvulkaninfo\nvkcube\n\n<span class=\"c\">## had to do this </span>\n\n<span class=\"nb\">sudo </span>apt-get <span class=\"nb\">install </span>libxrandr-dev python-is-python3 libwayland-dev <span class=\"c\">#xorg-all?</span>\n\n<span class=\"c\"># MINE WAS LINUX MINT SO KIND OF HACKED SCRIPT TO MAKE WORK FROM UBUNTU 22.04</span>\n\n<span class=\"nb\">sudo </span>apt-get <span class=\"nb\">install </span>libglm-dev cmake libxcb-dri3-0 libxcb-present0 libpciaccess0 <span class=\"se\">\\</span>\n             libpng-dev libxcb-keysyms1-dev libxcb-dri3-dev libx11-dev g++ gcc <span class=\"se\">\\</span>\n             libwayland-dev libxrandr-dev libxcb-randr0-dev libxcb-ewmh-dev <span class=\"se\">\\</span>\n             git python-is-python3 bison libx11-xcb-dev liblz4-dev libzstd-dev python3-distutils <span class=\"se\">\\</span>\n             ocaml-core ninja-build pkg-config libxml2-dev wayland-protocols python3-jsonschema\n \n</code></pre></div></div>\n\n"
+
+    } ,
+  
+    {
+
+      "title"    : "Geany snippets",
+      "url"      : "/blog/geany-snippets.html",
+      "category" : "",
+      "tags"     : "geany, snippets",
+      "date"     : "2024-04-10 00:58:37 +0530",
+      "discription" : "",
+      "content" : "<p>I love Geany for its simplicity and fast editors. Most of all because of them awesome snippets.\nSome of my snippets for later reference.</p>\n\n<div class=\"language-shell highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"o\">[</span>Default]\n<span class=\"nv\">c</span><span class=\"o\">=</span>//~~START:<span class=\"o\">{</span><span class=\"nb\">command</span>: <span class=\"nb\">date</span> +<span class=\"s1\">'%a, %d-%b-%Y, %T %Z'</span><span class=\"o\">}</span><span class=\"se\">\\n</span>//~~AuTHoR:Rajesh Pandian M | mrprajesh.co.in<span class=\"se\">\\n</span><span class=\"c\">#include &lt;bits/stdc++.h&gt; \\nusing namespace std; \\n \\nint main(int argc, char *argv[])  { \\n\tprintf(\"Hello There!\");%cursor%\\n\treturn 0; \\n} \\n</span>\n<span class=\"nv\">cpp</span><span class=\"o\">=</span>//~~START:<span class=\"o\">{</span><span class=\"nb\">command</span>: <span class=\"nb\">date</span> +<span class=\"s1\">'%a, %d-%b-%Y, %T %Z'</span><span class=\"o\">}</span><span class=\"se\">\\n</span>//~~AuTHoR:Rajesh Pandian M | mrprajesh.co.in<span class=\"se\">\\n</span><span class=\"c\">#include &lt;bits/stdc++.h&gt; \\nusing namespace std; \\n \\nint main(int argc, char *argv[])  { \\n\tcout &lt;&lt; \"Hello There %cursor%\" &lt;&lt; endl;\\n\treturn 0; \\n} \\n</span>\n<span class=\"nv\">cu</span><span class=\"o\">=</span>//~~START:<span class=\"o\">{</span><span class=\"nb\">command</span>: <span class=\"nb\">date</span> +<span class=\"s2\">\"%a, %d-%b-%Y, %T %Z\"</span><span class=\"o\">}</span><span class=\"se\">\\n</span>//~~AuTHoR:Rajesh Pandian M | mrprajesh.co.in<span class=\"se\">\\n</span><span class=\"c\">#include &lt;stdio.h&gt;\\n#include &lt;cuda.h&gt;\\n#include &lt;iostream&gt;\\n__global__ void k(){\\n\tprintf(\"hello %u!\\\\n\", threadIdx.x);\\n}\\nint main(int argc, char *argv[]){\\n\tk&lt;&lt;&lt;2,32&gt;&gt;&gt;();\\n\tcudaDeviceSynchronize();\\n\treturn 0;\\n}\\n</span>\n\n<span class=\"nv\">url</span><span class=\"o\">=[</span>%cursor%]<span class=\"o\">()</span>\n<span class=\"nv\">printme</span><span class=\"o\">=</span>void printme<span class=\"o\">(</span>const Container &amp;data<span class=\"o\">){</span><span class=\"se\">\\n</span>  std::copy<span class=\"o\">(</span>data.begin<span class=\"o\">()</span>,<span class=\"se\">\\n</span>    data.end<span class=\"o\">()</span>,<span class=\"se\">\\n</span>    std::ostream_iterator&lt;typename Container::value_type&gt;<span class=\"o\">(</span>std::cout, <span class=\"s2\">\" \"</span><span class=\"o\">))</span><span class=\"p\">;</span><span class=\"se\">\\n</span>  std::cout &lt;&lt; <span class=\"s1\">'\\\\n'</span><span class=\"p\">;</span><span class=\"se\">\\n</span><span class=\"o\">}</span>\n<span class=\"nv\">cout</span><span class=\"o\">=</span>std::cout&lt;&lt; <span class=\"s2\">\"%cursor%\"</span> <span class=\"o\">&lt;&lt;</span> <span class=\"no\">std</span><span class=\"sh\">::endl;\ncum=cudaMalloc(&amp;d%cursor, n*sizeof(int));\nh2d=cudaMemcpy(dest,src,sizeof(int)*%cursor%n,cudaMemcpyHostToDevice);\nd2h=cudaMemcpy(dest,src,sizeof(int)*%cursor%n,cudaMemcpyDeviceToHost);\ncds=cudaDeviceSynchronize();\n\n</span></code></pre></div></div>\n"
+
+    } ,
+  
+    {
+
+      "title"    : "Troubleshoot Profiling of CUDA Programs using nsight Compute",
       "url"      : "/blog/debug-cuda-sudo.html",
       "category" : "",
       "tags"     : "cuda, debug, compute",
