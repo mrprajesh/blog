@@ -4,13 +4,58 @@
  <title>Rajesh's Blog</title>
  <link href="https://mrprajesh.co.in/blog/atom.xml" rel="self"/>
  <link href="https://mrprajesh.co.in/blog/"/>
- <updated>2024-04-11T01:27:49+05:30</updated>
+ <updated>2024-04-11T05:20:21+05:30</updated>
  <id>https://mrprajesh.co.in</id>
  <author>
    <name>Rajesh Pandian M</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Installing and Hello World Go Lang!</title>
+   <link href="https://mrprajesh.co.in/blog/install-go-lang.html"/>
+   <updated>2024-04-11T04:59:46+05:30</updated>
+   <id>https://mrprajesh.co.in/install-go-lang</id>
+   <content type="html">&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;c&quot;&gt;# GO TO https://go.dev/dl/ find the stable AMD BINARY. Not ARM!? :D&lt;/span&gt;
+wget https://go.dev/dl/go1.22.2.linux-amd64.tar.gz
+
+&lt;span class=&quot;c&quot;&gt;# Extracted to my $HOME/install&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;tar&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-xzf&lt;/span&gt; go1.22.2.linux-amd64.tar.gz
+
+&lt;span class=&quot;c&quot;&gt;# Add it to path ~/.bashrc&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;PATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$PATH&lt;/span&gt;:&lt;span class=&quot;nv&quot;&gt;$HOME&lt;/span&gt;/install/go/bin
+
+&lt;span class=&quot;c&quot;&gt;# ctrl+T&lt;/span&gt;
+go version
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;go version go1.22.2 linux/amd64
+
+&lt;span class=&quot;c&quot;&gt;# File contents&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cat &lt;/span&gt;helloGo.go
+package main
+import &lt;span class=&quot;s2&quot;&gt;&quot;fmt&quot;&lt;/span&gt;
+func main&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  fmt.Println&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Hello World Rajz!&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# to compile&lt;/span&gt;
+go build helloGo.go
+
+&lt;span class=&quot;c&quot;&gt;# to run&lt;/span&gt;
+./helloGo
+Hello World Rajz!
+
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Some other housekeeping&lt;/p&gt;
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# gopls cribbing on vim with error&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# vim-go: could not find &apos;gopls&apos;. Run :GoInstallBinaries to fix it&lt;/span&gt;
+go &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;golang.org/x/tools/gopls@latest
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Tinkering With HelloWorld Vulkan!</title>
@@ -33,7 +78,8 @@ vkcube
 
 &lt;span class=&quot;c&quot;&gt;## had to do this &lt;/span&gt;
 
-&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;libxrandr-dev python-is-python3 libwayland-dev &lt;span class=&quot;c&quot;&gt;#xorg-all?&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;libxrandr-dev python-is-python3 libwayland-dev  xorg-dev
+
 
 &lt;span class=&quot;c&quot;&gt;# MINE WAS LINUX MINT SO KIND OF HACKED SCRIPT TO MAKE WORK FROM UBUNTU 22.04&lt;/span&gt;
 
@@ -43,7 +89,73 @@ vkcube
              git python-is-python3 bison libx11-xcb-dev liblz4-dev libzstd-dev python3-distutils &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
              ocaml-core ninja-build pkg-config libxml2-dev wayland-protocols python3-jsonschema
  
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;libglfw3-dev 
+ 
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cat &lt;/span&gt;main.cpp 
+&lt;span class=&quot;c&quot;&gt;#define GLFW_INCLUDE_VULKAN&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#include &amp;lt;GLFW/glfw3.h&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#include &amp;lt;iostream&amp;gt;&lt;/span&gt;
+
+int main&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    glfwInit&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    glfwWindowHint&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;GLFW_CLIENT_API, GLFW_NO_API&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    GLFWwindow&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; window &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; glfwCreateWindow&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;800, 600, &lt;span class=&quot;s2&quot;&gt;&quot;Vulkan Hello World&quot;&lt;/span&gt;, nullptr, nullptr&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+    uint32_t extensionCount &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 0&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    vkEnumerateInstanceExtensionProperties&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;nullptr, &amp;amp;extensionCount, nullptr&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+    std::cout &amp;lt;&amp;lt; &lt;span class=&quot;s2&quot;&gt;&quot;Vulkan Extensions Count: &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;extensionCount&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt; &amp;lt;&amp;lt; std::endl;
+
+    while (!glfwWindowShouldClose(window)) {
+        glfwPollEvents();
+    }
+
+    glfwDestroyWindow(window);
+    glfwTerminate();
+
+    return 0;
+}
+
+
+&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;cat CMakeLists.txt 
+cmake_minimum_required(VERSION 3.10)
+project(VulkanHelloWorld)
+
+find_package(Vulkan REQUIRED)
+find_package(glfw3 REQUIRED)
+
+add_executable(VulkanHelloWorld main.cpp)
+target_link_libraries(VulkanHelloWorld Vulkan::Vulkan glfw)
+ 
+ 
+ mkdir build
+ cmake ..
+ 
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Vulkan: /usr/lib/x86_64-linux-gnu/libvulkan.so (found version &quot;1.3.280&quot;) found components: glslc glslangValidator 
+-- Configuring done (0.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/rajesh/hellovulkan/build
+
+ make
+[ 50%] Building CXX object CMakeFiles/VulkanHelloWorld.dir/main.cpp.o
+[100%] Linking CXX executable VulkanHelloWorld
+[100%] Built target VulkanHelloWorld
+
+./VulkanHelloWorld
+
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 </content>
  </entry>

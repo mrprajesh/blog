@@ -11,7 +11,8 @@ vkcube
 
 <span class="c">## had to do this </span>
 
-<span class="nb">sudo </span>apt-get <span class="nb">install </span>libxrandr-dev python-is-python3 libwayland-dev <span class="c">#xorg-all?</span>
+<span class="nb">sudo </span>apt-get <span class="nb">install </span>libxrandr-dev python-is-python3 libwayland-dev  xorg-dev
+
 
 <span class="c"># MINE WAS LINUX MINT SO KIND OF HACKED SCRIPT TO MAKE WORK FROM UBUNTU 22.04</span>
 
@@ -21,4 +22,70 @@ vkcube
              git python-is-python3 bison libx11-xcb-dev liblz4-dev libzstd-dev python3-distutils <span class="se">\</span>
              ocaml-core ninja-build pkg-config libxml2-dev wayland-protocols python3-jsonschema
  
-</code></pre></div></div><span class="meta"> ★ 1 min read &middot; <a href="/" > Rajesh Pandian M</a> &middot; <time datetime="2024-04-11T01:01:31+05:30">11-Apr-2024 01:01:31 (IST)</time> <!-- date: "%d-%b-%Y %T %Z (UTC%z)" --> ★ <a href="/blog/tag/vulkan"> vulkan </a> </span> <script src="https://utteranc.es/client.js" repo="mrprajesh/blog" issue-term="pathname" label="comments" theme="github-light" crossorigin="anonymous" async> </script> <!--<span class="meta"><time datetime="2024-04-11T01:01:31+05:30">April 11, 2024</time> &middot; <a class="post" href="/tag/vulkan">vulkan</a></span> --></section></main><footer id="footer" class="body"><p> Made with ❤ <a href="https://jekyllrb.com//">Jekyll</a> &nbsp;&nbsp; &nbsp; | &nbsp; Customized <a href="https://github.com/ronv/sidey"> «Sidey» </a> theme &nbsp; | &nbsp; Fork/Star <a href="https://github.com/mrprajesh/blog">on GitHub </a></p><p id="LDate">Last Modified On: Thursday, 11 April 2024 01:27:49 IST</p></footer><script> anchors.options.placement = 'left'; anchors.add(); </script></body></html>
+<span class="nb">sudo </span>apt-get <span class="nb">install </span>libglfw3-dev 
+ 
+<span class="nv">$ </span><span class="nb">cat </span>main.cpp 
+<span class="c">#define GLFW_INCLUDE_VULKAN</span>
+<span class="c">#include &lt;GLFW/glfw3.h&gt;</span>
+<span class="c">#include &lt;iostream&gt;</span>
+
+int main<span class="o">()</span> <span class="o">{</span>
+    glfwInit<span class="o">()</span><span class="p">;</span>
+    glfwWindowHint<span class="o">(</span>GLFW_CLIENT_API, GLFW_NO_API<span class="o">)</span><span class="p">;</span>
+    GLFWwindow<span class="k">*</span> window <span class="o">=</span> glfwCreateWindow<span class="o">(</span>800, 600, <span class="s2">"Vulkan Hello World"</span>, nullptr, nullptr<span class="o">)</span><span class="p">;</span>
+
+    uint32_t extensionCount <span class="o">=</span> 0<span class="p">;</span>
+    vkEnumerateInstanceExtensionProperties<span class="o">(</span>nullptr, &amp;extensionCount, nullptr<span class="o">)</span><span class="p">;</span>
+
+    std::cout &lt;&lt; <span class="s2">"Vulkan Extensions Count: "</span> <span class="o">&lt;&lt;</span> <span class="no">extensionCount</span><span class="sh"> &lt;&lt; std::endl;
+
+    while (!glfwWindowShouldClose(window)) {
+        glfwPollEvents();
+    }
+
+    glfwDestroyWindow(window);
+    glfwTerminate();
+
+    return 0;
+}
+
+
+</span><span class="nv">$ </span><span class="sh">cat CMakeLists.txt 
+cmake_minimum_required(VERSION 3.10)
+project(VulkanHelloWorld)
+
+find_package(Vulkan REQUIRED)
+find_package(glfw3 REQUIRED)
+
+add_executable(VulkanHelloWorld main.cpp)
+target_link_libraries(VulkanHelloWorld Vulkan::Vulkan glfw)
+ 
+ 
+ mkdir build
+ cmake ..
+ 
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Vulkan: /usr/lib/x86_64-linux-gnu/libvulkan.so (found version "1.3.280") found components: glslc glslangValidator 
+-- Configuring done (0.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/rajesh/hellovulkan/build
+
+ make
+[ 50%] Building CXX object CMakeFiles/VulkanHelloWorld.dir/main.cpp.o
+[100%] Linking CXX executable VulkanHelloWorld
+[100%] Built target VulkanHelloWorld
+
+./VulkanHelloWorld
+
+</span></code></pre></div></div><span class="meta"> ★ 3 min read &middot; <a href="/" > Rajesh Pandian M</a> &middot; <time datetime="2024-04-11T01:01:31+05:30">11-Apr-2024 01:01:31 (IST)</time> <!-- date: "%d-%b-%Y %T %Z (UTC%z)" --> ★ <a href="/blog/tag/vulkan"> vulkan </a> </span> <script src="https://utteranc.es/client.js" repo="mrprajesh/blog" issue-term="pathname" label="comments" theme="github-light" crossorigin="anonymous" async> </script> <!--<span class="meta"><time datetime="2024-04-11T01:01:31+05:30">April 11, 2024</time> &middot; <a class="post" href="/tag/vulkan">vulkan</a></span> --></section></main><footer id="footer" class="body"><p> Made with ❤ <a href="https://jekyllrb.com//">Jekyll</a> &nbsp;&nbsp; &nbsp; | &nbsp; Customized <a href="https://github.com/ronv/sidey"> «Sidey» </a> theme &nbsp; | &nbsp; Fork/Star <a href="https://github.com/mrprajesh/blog">on GitHub </a></p><p id="LDate">Last Modified On: Thursday, 11 April 2024 05:20:21 IST</p></footer><script> anchors.options.placement = 'left'; anchors.add(); </script></body></html>

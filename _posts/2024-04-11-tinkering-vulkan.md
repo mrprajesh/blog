@@ -28,7 +28,8 @@ vkcube
 
 ## had to do this 
 
-sudo apt-get install libxrandr-dev python-is-python3 libwayland-dev #xorg-all?
+sudo apt-get install libxrandr-dev python-is-python3 libwayland-dev  xorg-dev
+
 
 # MINE WAS LINUX MINT SO KIND OF HACKED SCRIPT TO MAKE WORK FROM UBUNTU 22.04
 
@@ -38,5 +39,71 @@ sudo apt-get install libglm-dev cmake libxcb-dri3-0 libxcb-present0 libpciaccess
              git python-is-python3 bison libx11-xcb-dev liblz4-dev libzstd-dev python3-distutils \
              ocaml-core ninja-build pkg-config libxml2-dev wayland-protocols python3-jsonschema
  
+sudo apt-get install libglfw3-dev 
+ 
+$ cat main.cpp 
+#define GLFW_INCLUDE_VULKAN
+#include <GLFW/glfw3.h>
+#include <iostream>
+
+int main() {
+    glfwInit();
+    glfwWindowHint(GLFW_CLIENT_API, GLFW_NO_API);
+    GLFWwindow* window = glfwCreateWindow(800, 600, "Vulkan Hello World", nullptr, nullptr);
+
+    uint32_t extensionCount = 0;
+    vkEnumerateInstanceExtensionProperties(nullptr, &extensionCount, nullptr);
+
+    std::cout << "Vulkan Extensions Count: " << extensionCount << std::endl;
+
+    while (!glfwWindowShouldClose(window)) {
+        glfwPollEvents();
+    }
+
+    glfwDestroyWindow(window);
+    glfwTerminate();
+
+    return 0;
+}
+
+
+$ cat CMakeLists.txt 
+cmake_minimum_required(VERSION 3.10)
+project(VulkanHelloWorld)
+
+find_package(Vulkan REQUIRED)
+find_package(glfw3 REQUIRED)
+
+add_executable(VulkanHelloWorld main.cpp)
+target_link_libraries(VulkanHelloWorld Vulkan::Vulkan glfw)
+ 
+ 
+ mkdir build
+ cmake ..
+ 
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Vulkan: /usr/lib/x86_64-linux-gnu/libvulkan.so (found version "1.3.280") found components: glslc glslangValidator 
+-- Configuring done (0.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/rajesh/hellovulkan/build
+
+ make
+[ 50%] Building CXX object CMakeFiles/VulkanHelloWorld.dir/main.cpp.o
+[100%] Linking CXX executable VulkanHelloWorld
+[100%] Built target VulkanHelloWorld
+
+./VulkanHelloWorld
+
 ```
 
