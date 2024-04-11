@@ -4,13 +4,18 @@ title: About
 ---
 
 Hello World WWW,
-this is [Rajesh Pandian M](https://mrprajesh.github.io). This is my online dairy or memory where I document my Technical encourters. 
+
+This is [Rajesh Pandian M](https://mrprajesh.github.io). 
+
+This is my online dairy or memory where I document my Technical encourters. 
 
 
-## Preface
+#### Preface
 This blog uses
 Sidey theme. Sidey is a simple, fast and minimalistic jekyll blogging
-theme. Among [all](https://sidey-jekyll.netlify.com/about) I like the
+theme. 
+
+Among [all](https://sidey-jekyll.netlify.com/about) I like the
 following features.
 
 ### Theme's Features
