@@ -3,9 +3,21 @@ layout: default
 ---
 
 <section class="post">
-
-  <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/monokai.css">
-  <!-- I do not want monokai at time where I can not see text with dark bg; thinking of alternatives, let me see! -->
+  <!-- 
+  https://pygments.org/styles/
+  monokai
+  perldoc //GOOD
+  gruvbox-light
+  friendly
+  -->
+  <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/perldoc.css"> 
+  
+  <!-- I do not want monokai at time where I can not see text with dark bg; thinking of alternatives, let me see! YAY perldoc is cool! Fri, 12-Apr-2024, 01:52:27 IST
+  DOWNLOAD TO BLOG ROOT. USE FROM https://github.com/richleland/pygments-css
+  
+  gruvbox-light was not working pygments 2.2 did not have that style
+  pip install pygments=2.17
+  -->
   <h2>{{ page.title }}</h2>
 
 
