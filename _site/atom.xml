@@ -4,13 +4,343 @@
  <title>Rajesh's Blog</title>
  <link href="https://mrprajesh.co.in/blog/atom.xml" rel="self"/>
  <link href="https://mrprajesh.co.in/blog/"/>
- <updated>2024-04-12T05:24:01+05:30</updated>
+ <updated>2024-04-16T13:53:53+05:30</updated>
  <id>https://mrprajesh.co.in</id>
  <author>
    <name>Rajesh Pandian M</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Encounters with Adaptive cpp (formerly hipSYCL) to run NVIDIA GPU</title>
+   <link href="https://mrprajesh.co.in/blog/adaptive-cpp.html"/>
+   <updated>2024-04-16T02:38:17+05:30</updated>
+   <id>https://mrprajesh.co.in/adaptive-cpp</id>
+   <content type="html">&lt;p&gt;Warning. This is a notes for my later reading. Not an clear document!&lt;/p&gt;
+
+&lt;h3 id=&quot;prereq&quot;&gt;Prereq&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;Assumes default CUDA install location&lt;/li&gt;
+  &lt;li&gt;Nvidia GPU&lt;/li&gt;
+  &lt;li&gt;Understand &lt;a href=&quot;https://github.com/AdaptiveCpp/AdaptiveCpp/blob/develop/doc/compilation.md#summary-of-supported-compilation-targets&quot;&gt;TARGETS&lt;/a&gt; and &lt;a href=&quot;https://github.com/AdaptiveCpp/AdaptiveCpp/blob/develop/doc/installing.md#advanced-installation&quot;&gt;LLVM versioning&lt;/a&gt;, also see doc/install*md compilation.md&lt;/li&gt;
+  &lt;li&gt;LLVM installed using &lt;a href=&quot;#llvm&quot;&gt;this steps&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;generic&lt;/code&gt; - creates a binary that can run on all backends – creates the fastest binaries.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;If you use a very recent CUDA version, you might get a warning when compiling with AdaptiveCpp that clang does not support your CUDA version and treats like an older version. This warning can usually safely be ignored.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;update&quot;&gt;Update&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;WORKING OPTION: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cuda-nvcxx&lt;/code&gt;	NVIDIA GPUs	Library-only&lt;/li&gt;
+  &lt;li&gt;TRYING! &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cuda.integrated-multipass&lt;/code&gt;	NVIDIA GPUs&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# GET IT
+
+git clone https://github.com/AdaptiveCpp/AdaptiveCpp adap-cpp
+cd AdaptiveCpp
+mkdir build install
+cd build
+
+cmake -DCMAKE_INSTALL_PREFIX=`pwd`/install .. # default deductions
+
+cmake -DCUDA_TOOLKIT_ROOT_DIR=/usr/local/cuda -DWITH_CUDA_BACKEND=ON -DCMAKE_INSTALL_PREFIX=`pwd`/install .. # explicit cuda. it is picking llvm 14 instead of 17
+
+cmake -DCMAKE_INSTALL_PREFIX=/home/rajesh/temp/adap-cpp/install  -DLLVM_DIR=/usr/lib/llvm-17/cmake  -DCLANG_INCLUDE_PATH=/usr/lib/llvm-17/lib/clang/17/include   ..  # my try llvm 17; mention explicit?
+make -j4  install
+
+
+cmake -DCMAKE_INSTALL_PREFIX=`pwd`/install  -DLLVM_DIR=/home/rajesh/install/llvm15-src-install/lib/cmake  -DCLANG_INCLUDE_PATH=/home/rajesh/install/llvm15-src-install/include   ..
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&quot;to-test&quot;&gt;to test&lt;/h3&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cat test.cpp # https://github.com/AdaptiveCpp/AdaptiveCpp/blob/develop/doc/examples.md
+# /home/rajesh/temp/adap-cpp/install/bin/acpp test.cpp -o test.out -O3 --acpp-targets=generic
+
+#include &amp;lt;cassert&amp;gt;
+#include &amp;lt;iostream&amp;gt;
+
+#include &amp;lt;CL/sycl.hpp&amp;gt;
+
+using data_type = float;
+
+std::vector&amp;lt;data_type&amp;gt; add(cl::sycl::queue&amp;amp; q,
+                           const std::vector&amp;lt;data_type&amp;gt;&amp;amp; a,
+                           const std::vector&amp;lt;data_type&amp;gt;&amp;amp; b)
+{
+  std::vector&amp;lt;data_type&amp;gt; c(a.size());
+
+  assert(a.size() == b.size());
+  cl::sycl::range&amp;lt;1&amp;gt; work_items{a.size()};
+
+  {
+    cl::sycl::buffer&amp;lt;data_type&amp;gt; buff_a(a.data(), a.size());
+    cl::sycl::buffer&amp;lt;data_type&amp;gt; buff_b(b.data(), b.size());
+    cl::sycl::buffer&amp;lt;data_type&amp;gt; buff_c(c.data(), c.size());
+
+    q.submit([&amp;amp;](cl::sycl::handler&amp;amp; cgh){
+      auto access_a = buff_a.get_access&amp;lt;cl::sycl::access::mode::read&amp;gt;(cgh);
+      auto access_b = buff_b.get_access&amp;lt;cl::sycl::access::mode::read&amp;gt;(cgh);
+      auto access_c = buff_c.get_access&amp;lt;cl::sycl::access::mode::write&amp;gt;(cgh);
+
+      cgh.parallel_for&amp;lt;class vector_add&amp;gt;(work_items,
+                                         [=] (cl::sycl::id&amp;lt;1&amp;gt; tid) {
+        access_c[tid] = access_a[tid] + access_b[tid];
+      });
+    });
+  }
+  return c;
+}
+
+int main()
+{
+  cl::sycl::queue q;
+  std::vector&amp;lt;data_type&amp;gt; a = {1.f, 2.f, 3.f, 4.f, 5.f};
+  std::vector&amp;lt;data_type&amp;gt; b = {-1.f, 2.f, -3.f, 4.f, -5.f};
+  auto result = add(q, a, b);
+
+  std::cout &amp;lt;&amp;lt; &quot;Result: &quot; &amp;lt;&amp;lt; std::endl;
+  for(const auto x: result)
+    std::cout &amp;lt;&amp;lt; x &amp;lt;&amp;lt; std::endl;
+}
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h2 id=&quot;post-steps&quot;&gt;Post steps&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ls -lrt myinstall/bin
+total 324
+-rwxr-xr-x 1 rajesh rajesh 67339 Apr 16 02:25 syclcc-clang
+-rwxr-xr-x 1 rajesh rajesh 67339 Apr 16 02:25 syclcc
+-rwxr-xr-x 1 rajesh rajesh 67339 Apr 16 02:25 acpp
+-rwxr-xr-x 1 rajesh rajesh 71216 Apr 16 02:35 acpp-hcf-tool
+-rwxr-xr-x 1 rajesh rajesh 48040 Apr 16 02:35 acpp-info
+
+
+/acpp-info 
+=================Backend information===================
+Loaded backend 0: CUDA
+  Found device: NVIDIA GeForce RTX 3060 Laptop GPU
+Loaded backend 1: OpenCL
+  Found device: 12th Gen Intel(R) Core(TM) i7-12700H
+Loaded backend 2: OpenMP
+  Found device: hipSYCL OpenMP host device
+Loaded backend 3: HIP
+  (no devices found)
+  
+  ...
+  
+  
+
+## WORKING?
+ 
+/home/rajesh/temp/adap-cpp/install/bin/acpp test.cpp -o test.out -O3 --acpp-targets=generic
+ rajesh   g15warrior   ~  
+ 03:43   $   ./test.out 
+&apos;+ptx86&apos; is not a recognized feature for this target (ignoring feature)
+&apos;+ptx86&apos; is not a recognized feature for this target (ignoring feature)
+&apos;+ptx86&apos; is not a recognized feature for this target (ignoring feature)
+[AdaptiveCpp Warning] kernel_cache: This application run has resulted in new binaries being JIT-compiled. This indicates that the runtime optimization process has not yet reached peak performance. You may want to run the application again until this warning no longer appears to achieve optimal performance.
+Result: 
+0
+4
+0
+8
+0
+
+
+## LOOKS LIKE SOMETHING IS WRONG
+
+/home/rajesh/temp/adap-cpp/install/bin/acpp test.cpp -o test.out -O3 --acpp-targets=&quot;cuda&quot;
+/home/rajesh/temp/adap-cpp/install/bin/acpp test.cpp -o test.out -O3 --acpp-targets=&quot;cuda&quot;
+/home/rajesh/temp/adap-cpp/install/bin/acpp test.cpp -o test.out -O3 --acpp-targets=&quot;cuda:sm_70&quot;
+clang: warning: CUDA version is newer than the latest supported version 11.5 [-Wunknown-cuda-version]
+In file included from &amp;lt;built-in&amp;gt;:1:
+In file included from /usr/lib/llvm-14/lib/clang/14.0.0/include/__clang_cuda_runtime_wrapper.h:365:
+/usr/lib/llvm-14/lib/clang/14.0.0/include/__clang_cuda_texture_intrinsics.h:696:13: error: no template named &apos;texture&apos;
+            texture&amp;lt;__DataT, __TexT, cudaReadModeNormalizedFloat&amp;gt; __handle,
+            ^
+/usr/lib/llvm-14/lib/clang/14.0.0/include/__clang_cuda_texture_intrinsics.h:709:13: error: no template named &apos;texture&apos;
+            texture&amp;lt;__DataT, __TexT, cudaReadModeElementType&amp;gt; __handle,
+            ^
+2 errors generated when compiling for sm_70.
+
+
+## Let&apos;s try only nvc++
+   
+
+# https://github.com/AdaptiveCpp/AdaptiveCpp/blob/b61a18683cb66734b3d6a1d02ab3e3cb6f1d7d8d/.github/workflows/linux.yml#L172C9-L173C8
+
+cmake \
+-DNVCXX_COMPILER=/opt/nvidia/hpc_sdk/Linux_x86_64/24.3/compilers/bin/nvc++  \
+-DWITH_CUDA_BACKEND=ON -DWITH_CUDA_NVCXX_ONLY=ON \
+-DCMAKE_INSTALL_PREFIX=`pwd`/install \
+-DCUDA_TOOLKIT_ROOT_DIR=/opt/nvidia/hpc_sdk/Linux_x86_64/24.3/cuda/12.3 ..    
+ 
+home/rajesh/temp/adap-cpp/build-nvcpp/install/bin/acpp test.cpp -o test.out -O3 --acpp-targets=&quot;cuda-nvcxx&quot; &amp;amp;&amp;amp; ./test.out # great works!
+
+Result: 
+0
+4
+0
+8
+0
+WORKS!!!
+
+# below did not work
+/home/rajesh/temp/adap-cpp/build-nvcpp/install/bin/acpp test.cpp -o test.out -O3 --acpp-targets=&quot;generic&quot; &amp;amp;&amp;amp; ./test.out #Gives same warnings as before!
+/home/rajesh/temp/adap-cpp/build-nvcpp/install/bin/acpp test.cpp -o test.out -O3 --acpp-targets=&quot;cuda:sm_70&quot; &amp;amp;&amp;amp; ./test.out # same error 1
+
+ 
+## if above fails, check with llvm 17 
+
+https://github.com/AdaptiveCpp/AdaptiveCpp/blob/b61a18683cb66734b3d6a1d02ab3e3cb6f1d7d8d/.github/workflows/linux.yml#L84C179-L84C201 
+
+cmake -DCMAKE_CXX_COMPILER=/usr/bin/clang++-17 -DCLANG_EXECUTABLE_PATH=/usr/bin/clang++-17 -DLLVM_DIR=/usr/lib/llvm-17/cmake -DWITH_CUDA_BACKEND=ON -DWITH_ROCM_BACKEND=ON -DCMAKE_INSTALL_PREFIX=`pwd`/install -DCUDA_TOOLKIT_ROOT_DIR=/usr/local/cuda -DROCM_PATH=/opt/rocm ..
+    
+./install/bin/acpp test.cpp -o test.out -O3 --acpp-targets=&quot;cuda-nvcxx&quot; --acpp-nvcxx=/opt/nvidia/hpc_sdk/Linux_x86_64/24.3/compilers/bin/nvc++
+./test.out 
+Result: 
+0
+4
+0
+8
+0
+16
+
+WOW! nvc++ is the only way out!?
+
+
+15 did not work
+cmake -DCMAKE_CXX_COMPILER=/usr/bin/clang++-15 -DCLANG_EXECUTABLE_PATH=/usr/bin/clang++-15 -DLLVM_DIR=/usr/lib/llvm-15/cmake -DWITH_CUDA_BACKEND=ON -DWITH_ROCM_BACKEND=ON -DCMAKE_INSTALL_PREFIX=`pwd`/install -DCUDA_TOOLKIT_ROOT_DIR=/usr/local/cuda -DROCM_PATH=/opt/rocm ..
+
+./install/bin/acpp test.cpp -o test.out -O3 --acpp-targets=&quot;cuda:sm_70&quot;
+
+ 
+## if fails, build llvm from source
+https://github.com/AdaptiveCpp/AdaptiveCpp/issues/745
+https://github.com/AdaptiveCpp/AdaptiveCpp/blob/b61a18683cb66734b3d6a1d02ab3e3cb6f1d7d8d/doc/install-llvm.md
+
+git clone https://github.com/llvm/llvm-project -b release/15.x
+cd llvm-project
+mkdir -p build
+cd build
+
+INSTALL_PREFIX=/path/to/desired/llvm/installation/directory
+
+cmake -DCMAKE_C_COMPILER=`which gcc` -DCMAKE_CXX_COMPILER=`which g++` \
+      -DCMAKE_BUILD_TYPE=Release \
+      -DCMAKE_INSTALL_PREFIX=$INSTALL_PREFIX \
+      -DLLVM_ENABLE_PROJECTS=&quot;clang;compiler-rt;lld;openmp&quot; \
+      -DOPENMP_ENABLE_LIBOMPTARGET=OFF \
+      -DCMAKE_BUILD_TYPE=Release \
+      -DLLVM_ENABLE_ASSERTIONS=OFF \
+      -DLLVM_TARGETS_TO_BUILD=&quot;NVPTX;X86&quot; \  
+      -DCLANG_ANALYZER_ENABLE_Z3_SOLVER=0 \
+      -DLLVM_INCLUDE_BENCHMARKS=0 \
+      -DLLVM_INCLUDE_EXAMPLES=0 \
+      -DLLVM_INCLUDE_TESTS=0 \
+      -DCMAKE_INSTALL_RPATH_USE_LINK_PATH=ON \
+      -DCMAKE_INSTALL_RPATH=$INSTALL_PREFIX/lib \
+      -DLLVM_ENABLE_OCAMLDOC=OFF \
+      -DLLVM_ENABLE_BINDINGS=OFF \
+      -DLLVM_TEMPORARILY_ALLOW_OLD_TOOLCHAIN=OFF \
+      -DLLVM_BUILD_LLVM_DYLIB=ON \
+      -DLLVM_ENABLE_DUMP=OFF  ../llvm
+
+make -j8 install
+
+
+
+## 
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;llvm&quot;&gt;LLVM&lt;/h2&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget https://apt.llvm.org/llvm.sh #Convenience script that sets up the repositories
+chmod +x llvm.sh
+
+sudo ./llvm.sh 17 #Set up repositories for clang 17
+sudo apt install -y libclang-17-dev clang-tools-17 libomp-17-dev llvm-17-dev lld-17
+
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;errors-while-wip&quot;&gt;Errors while WIP&lt;/h3&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;## error-0
+/home/rajesh/temp/adap-cpp/build-cuda/install/bin/acpp test.cpp -o test.out -O3 --acpp-targets=&quot;cuda&quot;
+acpp error: fatal: No CUDA targets specified
+
+## error-1
+/home/rajesh/temp/adap-cpp/build-nvcpp/install/bin/acpp test.cpp -o test.out -O3 --acpp-targets=&quot;cuda:sm_70&quot;
+clang: warning: CUDA version is newer than the latest supported version 11.5 [-Wunknown-cuda-version]
+In file included from &amp;lt;built-in&amp;gt;:1:
+In file included from /usr/lib/llvm-14/lib/clang/14.0.0/include/__clang_cuda_runtime_wrapper.h:365:
+/usr/lib/llvm-14/lib/clang/14.0.0/include/__clang_cuda_texture_intrinsics.h:696:13: error: no template named &apos;texture&apos;
+            texture&amp;lt;__DataT, __TexT, cudaReadModeNormalizedFloat&amp;gt; __handle,
+            ^
+/usr/lib/llvm-14/lib/clang/14.0.0/include/__clang_cuda_texture_intrinsics.h:709:13: error: no template named &apos;texture&apos;
+            texture&amp;lt;__DataT, __TexT, cudaReadModeElementType&amp;gt; __handle,
+            ^
+In file included from &amp;lt;built-in&amp;gt;:1:
+/usr/lib/llvm-14/lib/clang/14.0.0/include/__clang_cuda_runtime_wrapper.h:486:10: fatal error: &apos;curand_mtgp32_kernel.h&apos; file not found
+#include &quot;curand_mtgp32_kernel.h&quot;
+         ^~~~~~~~~~~~~~~~~~~~~~~~
+3 errors generated when compiling for sm_70.
+
+## error-2
+ /home/rajesh/temp/adap-cpp/build-llvm17/install/bin/acpp test.cpp -o test.out -O3 --acpp-targets=&quot;cuda.integrated-multipass:sm_70&quot;
+clang++-17: warning: CUDA version is newer than the latest partially supported version 12.1 [-Wunknown-cuda-version]
+In file included from &amp;lt;built-in&amp;gt;:1:
+In file included from /usr/lib/llvm-17/lib/clang/17/include/__clang_cuda_runtime_wrapper.h:111:
+In file included from /usr/local/cuda/include/cuda_runtime.h:82:
+/usr/local/cuda/include/crt/host_config.h:151:2: error: -- unsupported clang version! clang version must be less than 16 and greater than 3.2 . The nvcc flag &apos;-allow-unsupported-compiler&apos; can be used to override this version check; however, using an unsupported host compiler may cause compilation failure or incorrect run time execution. Use at your own risk.
+  151 | #error -- unsupported clang version! clang version must be less than 16 and greater than 3.2 . The nvcc flag &apos;-allow-unsupported-compiler&apos; can be used to override this version check; however, using an unsupported host compiler may cause compilation failure or incorrect run time execution. Use at your own risk.
+      |  ^
+1 error generated when compiling for sm_70.
+
+## errror 3
+ /home/rajesh/temp/adap-cpp/build-llvm17/install/bin/acpp test.cpp -o test.out -O3 --acpp-targets=&quot;cuda:sm_70&quot; --acpp-cuda-path=/opt/nvidia/hpc_sdk/Linux_x86_64/24.3/cuda
+clang++-17: warning: CUDA version is newer than the latest partially supported version 12.1 [-Wunknown-cuda-version]
+In file included from &amp;lt;built-in&amp;gt;:1:
+In file included from /usr/lib/llvm-17/lib/clang/17/include/__clang_cuda_runtime_wrapper.h:111:
+In file included from /opt/nvidia/hpc_sdk/Linux_x86_64/24.3/cuda/include/cuda_runtime.h:82:
+/opt/nvidia/hpc_sdk/Linux_x86_64/24.3/cuda/include/crt/host_config.h:151:2: error: -- unsupported clang version! clang version must be less than 16 and greater than 3.2 . The nvcc flag &apos;-allow-unsupported-compiler&apos; can be used to override this version check; however, using an unsupported host compiler may cause compilation failure or incorrect run time execution. Use at your own risk.
+  151 | #error -- unsupported clang version! clang version must be less than 16 and greater than 3.2 . The nvcc flag &apos;-allow-unsupported-compiler&apos; can be used to override this version check; however, using an unsupported host compiler may cause compilation failure or incorrect run time execution. Use at your own risk.
+      |  ^
+In file included from &amp;lt;built-in&amp;gt;:1:
+/usr/lib/llvm-17/lib/clang/17/include/__clang_cuda_runtime_wrapper.h:486:10: fatal error: &apos;curand_mtgp32_kernel.h&apos; file not found
+  486 | #include &quot;curand_mtgp32_kernel.h&quot;
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+2 errors generated when compiling for sm_70.
+
+
+-- &amp;gt; IF BUILD SRC then we should go for LLVM 15?
+https://github.com/AdaptiveCpp/AdaptiveCpp/blob/develop/doc/install-llvm.md
+
+/home/rajesh/install/llvm-project/build
+
+INSTALL_PREFIX=/home/rajesh/install/llvm15-src-install
+
+
+cmake -DCMAKE_INSTALL_PREFIX=`pwd`/install  -DLLVM_CMAKE_DIR=/home/rajesh/install/llvm15-src-install/lib/cmake  -DCLANG_INCLUDE_PATH=/home/rajesh/install/llvm15-src-install/include/  .. 
+
+LLVM_ROOT did not work
+cmake/llvm # only builds but can not complie test
+
+cmake -DCMAKE_CXX_COMPILER=/home/rajesh/install/llvm15-src-install/bin/clang++ -DCLANG_EXECUTABLE_PATH=/home/rajesh/install/llvm15-src-install/bin/clang++ -DLLVM_DIR=/home/rajesh/install/llvm15-src-install/lib/cmake/llvm -DWITH_CUDA_BACKEND=ON -DWITH_ROCM_BACKEND=ON -DCMAKE_INSTALL_PREFIX=`pwd`/install -DCUDA_TOOLKIT_ROOT_DIR=/usr/local/cuda -DROCM_PATH=/opt/rocm ..
+
+MABE TRY LLVM 16 src
+https://github.com/AdaptiveCpp/AdaptiveCpp/issues/1013
+
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Installing and Hello World Go Lang!</title>

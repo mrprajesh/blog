@@ -2,7 +2,7 @@
 layout: post
 title: Print Vector function
 date: 15-10-2021 11:36:26 +05:30
-tags: [cpp,thrust,coding]
+tags: [cpp,print,coding]
 description:
 summary:
 comments: false
