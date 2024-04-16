@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Encounters with Adaptive cpp (formerly hipSYCL) to run NVIDIA GPU
+title: Adaptive cpp (formerly hipSYCL) to run NVIDIA GPUs
 date: 16-04-2024 02:38:17 +05:30
 tags: [cuda, adaptivecpp, acpp, sycl, hipSYCL]
 description:

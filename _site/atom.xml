@@ -4,7 +4,7 @@
  <title>Rajesh's Blog</title>
  <link href="https://mrprajesh.co.in/blog/atom.xml" rel="self"/>
  <link href="https://mrprajesh.co.in/blog/"/>
- <updated>2024-04-16T14:24:28+05:30</updated>
+ <updated>2024-04-16T14:37:30+05:30</updated>
  <id>https://mrprajesh.co.in</id>
  <author>
    <name>Rajesh Pandian M</name>
@@ -13,131 +13,53 @@
 
  
  <entry>
-   <title>Tinkering with HIPIFY</title>
-   <link href="https://mrprajesh.co.in/blog/hipify.html"/>
-   <updated>2024-04-16T13:55:52+05:30</updated>
-   <id>https://mrprajesh.co.in/HIPIFY</id>
-   <content type="html">&lt;p&gt;While HIP is designed for AMD GPUs. There is tool call HIPIFY which can be used to convert CUDA files to HIP files. 
-Then it can be complied and run on NVIDIA GPUs as well as AMD GPUs. Sweeet!&lt;/p&gt;
+   <title>Playing and tinkering with Mobile GPUs&apos;s tools</title>
+   <link href="https://mrprajesh.co.in/blog/tinkering-with-mobile-gpus.html"/>
+   <updated>2024-04-16T14:25:25+05:30</updated>
+   <id>https://mrprajesh.co.in/Tinkering-with-Mobile-GPUs</id>
+   <content type="html">&lt;p&gt;These tools use android SDK’s &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;adb&lt;/code&gt; tool underneath. Create an account to grab the tools. 
+Not much are available public to play around. However, one needs a Snapdragon/Adreno GPU to tinker with
+Those are available for high-end mobiles only presently which I do not have.&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1. Install RCOM 6.0 on via package manager. 
-[DOC](https://rocm.docs.amd.com/projects/install-on-linux/en/docs-6.0.0/how-to/native-install/ubuntu.html) 
-
-2. hipconfig
-
-HIP version  : 6.0.32830-d62f6a171
-
-== hipconfig
-HIP_PATH     : /opt/rocm-6.0.0
-ROCM_PATH    : /opt/rocm-6.0.0
-HIP_COMPILER : clang
-HIP_PLATFORM : amd
-HIP_RUNTIME  : rocclr
-CPP_CONFIG   :  -D__HIP_PLATFORM_HCC__= -D__HIP_PLATFORM_AMD__= -I/opt/rocm-6.0.0/include -I/opt/rocm-6.0.0/lib/llvm/lib/clang/17.0.0
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- qualcomm 
+1. profiler
+2. SDK
  
+$ sudo apt-get install libc++1
+$ sudo apt-get install libc++abi1
 
-== hip-clang
-HIP_CLANG_PATH   : /opt/rocm-6.0.0/llvm/bin
-AMD clang version 17.0.0 (https://github.com/RadeonOpenCompute/llvm-project roc-6.0.0 23483 7208e8d15fbf218deb74483ea8c549c67ca4985e)
-Target: x86_64-unknown-linux-gnu
-Thread model: posix
-InstalledDir: /opt/rocm-6.0.0/llvm/bin
-Configuration file: /opt/rocm-6.0.0/lib/llvm/bin/clang++.cfg
-AMD LLVM version 17.0.0git
-  Optimized build.
-  Default target: x86_64-unknown-linux-gnu
-  Host CPU: alderlake
+$ sudo apt-get install openjdk-19-jdk
+$ wget https://dl.google.com/android/repository/platform-tools-latest-linux.zip
 
-  Registered Targets:
-    amdgcn - AMD GCN GPUs
-    r600   - AMD GPUs HD2XXX-HD6XXX
-    x86    - 32-bit X86: Pentium-Pro and above
-    x86-64 - 64-bit X86: EM64T and AMD64
-hip-clang-cxxflags :  -isystem &quot;/opt/rocm-6.0.0/include&quot; -O3
-hip-clang-ldflags  : --driver-mode=g++ -O3 --hip-link --rtlib=compiler-rt -unwindlib=libgcc
+extact and add to path
 
-=== Environment Variables
-PATH=/home/rajesh/install/miniconda3/condabin:/home/rajesh/install/cmake-3.28.3-linux-x86_64/bin:/home/rajesh/install/platform-tools:/home/rajesh/install/mono/bin:/home/rajesh/gems/bin:/usr/local/cuda-12.2/bin:/home/rajesh/.cargo/bin:/home/rajesh/.local/bin:/opt/nvidia/cudaq/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/rocm-6.0/bin:/home/rajesh/install/cmake-3.28.3-linux-x86_64/bin:/home/rajesh/.local/bin:/usr/local/go/bin:/home/rajesh/.go/bin
-LD_LIBRARY_PATH=/usr/local/cuda-12.2/lib64:/opt/nvidia/cudaq/lib
-CUDA_QUANTUM_PATH=/opt/nvidia/cudaq
+https://www.mono-project.com/download/stable/#download-lin
+// no avilable for 22.04, sad!
+sudo apt install mono-complete
 
-== Linux Kernel
-Hostname     : g15warrior
-Linux g15warrior 5.15.0-91-generic #101-Ubuntu SMP Tue Nov 14 13:30:08 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
-No LSB modules are available.
-Distributor ID:	Linuxmint
-Description:	Linux Mint 21.3
-Release:	21.3
-Codename:	virginia
+build from src https://www.mono-project.com/docs/compiling-mono/linux/#building-mono-from-a-release-package
 
+PREFIX=/usr/local
+VERSION=4.2.1
+tar xvf mono-$VERSION.tar.xz
+cd mono-$VERSION
+./configure --prefix=$PREFIX
+make
+make install
 
-
-3. export HIP_PLATFORM=nvidia and run `hipconfig` used cuda install dirs
-
-IP version  : 6.0.32830-d62f6a171
-
-== hipconfig
-HIP_PATH     : /opt/rocm-6.0.0
-ROCM_PATH    : /opt/rocm-6.0.0
-HIP_COMPILER : clang
-HIP_PLATFORM : nvidia
-HIP_RUNTIME  : rocclr
-CPP_CONFIG   :  -D__HIP_PLATFORM_NVCC__= -D__HIP_PLATFORM_NVIDIA__= -I/opt/rocm-6.0.0/include -I/usr/local/cuda/include
-
-== nvcc
-CUDA_PATH   : /usr/local/cuda
-nvcc: NVIDIA (R) Cuda compiler driver
-Copyright (c) 2005-2023 NVIDIA Corporation
-Built on Tue_Aug_15_22:02:13_PDT_2023
-Cuda compilation tools, release 12.2, V12.2.140
-Build cuda_12.2.r12.2/compiler.33191640_0
-
-=== Environment Variables
-PATH=/home/rajesh/install/miniconda3/condabin:/home/rajesh/install/cmake-3.28.3-linux-x86_64/bin:/home/rajesh/install/platform-tools:/home/rajesh/install/mono/bin:/home/rajesh/gems/bin:/usr/local/cuda-12.2/bin:/home/rajesh/.cargo/bin:/home/rajesh/.local/bin:/opt/nvidia/cudaq/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/rocm-6.0/bin:/home/rajesh/install/cmake-3.28.3-linux-x86_64/bin:/home/rajesh/.local/bin:/usr/local/go/bin:/home/rajesh/.go/bin
-LD_LIBRARY_PATH=/usr/local/cuda-12.2/lib64:/opt/nvidia/cudaq/lib
-HIP_PLATFORM=nvidia
-CUDA_QUANTUM_PATH=/opt/nvidia/cudaq
+Go to https://www.nuget.org/downloads and download the recommended version of nuget.exe under 
+&quot;Windows x86 Commandline&quot; (this works with mono)
+$ mono nuget.exe install gtksourcesharp -Version 3.24.24.38 -OutputDirectory ~/.local/share/SDP
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;create a cuda file. and hipfy it&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cat a.cu
-#include &amp;lt;stdio.h&amp;gt;
-__global__ void k(){
-	printf(&quot;hello %u!\n&quot;, threadIdx.x);
-}
-int main(void){
-	k&amp;lt;&amp;lt;&amp;lt;2,32&amp;gt;&amp;gt;&amp;gt;();
-	cudaDeviceSynchronize();
-	return 0;
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;hipify-perl a.cu -o  a-perl.hip
-hipify-clang a.cu -o  a-clang.hip&lt;/p&gt;
+&lt;p&gt;Some tool which does not have linux support are run using wine-type environment from the windows exe files. That’s wired!&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cat a-perl.hip 
-#include &quot;hip/hip_runtime.h&quot;
-#include &amp;lt;stdio.h&amp;gt;
-__global__ void k(){
-	printf(&quot;hello %u!\n&quot;, threadIdx.x);
-}
-int main(void){
-	k&amp;lt;&amp;lt;&amp;lt;2,32&amp;gt;&amp;gt;&amp;gt;();
-	hipDeviceSynchronize();
-	return 0;
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hipcc a-perl.hip -o a-perl.out &amp;amp;&amp;amp; ./a-perl.out&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;both &lt;a href=&quot;https://rocmdocs.amd.com/projects/HIPIFY/en/latest/hipify-clang.html&quot;&gt;hipifiy-clang&lt;/a&gt; (AST-based translator w/ strict syntax checking) and &lt;a href=&quot;https://rocmdocs.amd.com/projects/HIPIFY/en/latest/hipify-perl.html&quot;&gt;hipifiy-perl&lt;/a&gt; (regular expression based. hipifys even erroring .cu files also) have their own advantages and disadvantages.  // read adv and disadv sections.&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;bit of compiler knowledge would help them understand better. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hipify&lt;/code&gt; tools are still under heavy development so there is no guarantee that it will produce correct code; sometimes one may have to edit as well. Compile hip files from both of them and see if it runs fine on AMD.&lt;/p&gt;
-&lt;/blockquote&gt;
-
+&lt;p&gt;update:20-Mar-2024, 14:35:07 IST&lt;/p&gt;
 </content>
  </entry>
  
  <entry>
-   <title>Encounters with Adaptive cpp (formerly hipSYCL) to run NVIDIA GPU</title>
+   <title>Adaptive cpp (formerly hipSYCL) to run NVIDIA GPUs</title>
    <link href="https://mrprajesh.co.in/blog/adaptive-cpp.html"/>
    <updated>2024-04-16T02:38:17+05:30</updated>
    <id>https://mrprajesh.co.in/adaptive-cpp</id>
@@ -646,6 +568,131 @@ d2h=cudaMemcpy(dest,src,sizeof(int)*%cursor%n,cudaMemcpyDeviceToHost);
 cds=cudaDeviceSynchronize();
 
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Tinkering with HIPIFY</title>
+   <link href="https://mrprajesh.co.in/blog/hipify.html"/>
+   <updated>2024-04-06T13:55:52+05:30</updated>
+   <id>https://mrprajesh.co.in/HIPIFY</id>
+   <content type="html">&lt;p&gt;While HIP is designed for AMD GPUs. There is tool call HIPIFY which can be used to convert CUDA files to HIP files. 
+Then it can be complied and run on NVIDIA GPUs as well as AMD GPUs. Sweeet!&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1. Install RCOM 6.0 on via package manager. 
+[DOC](https://rocm.docs.amd.com/projects/install-on-linux/en/docs-6.0.0/how-to/native-install/ubuntu.html) 
+
+2. hipconfig
+
+HIP version  : 6.0.32830-d62f6a171
+
+== hipconfig
+HIP_PATH     : /opt/rocm-6.0.0
+ROCM_PATH    : /opt/rocm-6.0.0
+HIP_COMPILER : clang
+HIP_PLATFORM : amd
+HIP_RUNTIME  : rocclr
+CPP_CONFIG   :  -D__HIP_PLATFORM_HCC__= -D__HIP_PLATFORM_AMD__= -I/opt/rocm-6.0.0/include -I/opt/rocm-6.0.0/lib/llvm/lib/clang/17.0.0
+ 
+
+== hip-clang
+HIP_CLANG_PATH   : /opt/rocm-6.0.0/llvm/bin
+AMD clang version 17.0.0 (https://github.com/RadeonOpenCompute/llvm-project roc-6.0.0 23483 7208e8d15fbf218deb74483ea8c549c67ca4985e)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /opt/rocm-6.0.0/llvm/bin
+Configuration file: /opt/rocm-6.0.0/lib/llvm/bin/clang++.cfg
+AMD LLVM version 17.0.0git
+  Optimized build.
+  Default target: x86_64-unknown-linux-gnu
+  Host CPU: alderlake
+
+  Registered Targets:
+    amdgcn - AMD GCN GPUs
+    r600   - AMD GPUs HD2XXX-HD6XXX
+    x86    - 32-bit X86: Pentium-Pro and above
+    x86-64 - 64-bit X86: EM64T and AMD64
+hip-clang-cxxflags :  -isystem &quot;/opt/rocm-6.0.0/include&quot; -O3
+hip-clang-ldflags  : --driver-mode=g++ -O3 --hip-link --rtlib=compiler-rt -unwindlib=libgcc
+
+=== Environment Variables
+PATH=/home/rajesh/install/miniconda3/condabin:/home/rajesh/install/cmake-3.28.3-linux-x86_64/bin:/home/rajesh/install/platform-tools:/home/rajesh/install/mono/bin:/home/rajesh/gems/bin:/usr/local/cuda-12.2/bin:/home/rajesh/.cargo/bin:/home/rajesh/.local/bin:/opt/nvidia/cudaq/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/rocm-6.0/bin:/home/rajesh/install/cmake-3.28.3-linux-x86_64/bin:/home/rajesh/.local/bin:/usr/local/go/bin:/home/rajesh/.go/bin
+LD_LIBRARY_PATH=/usr/local/cuda-12.2/lib64:/opt/nvidia/cudaq/lib
+CUDA_QUANTUM_PATH=/opt/nvidia/cudaq
+
+== Linux Kernel
+Hostname     : g15warrior
+Linux g15warrior 5.15.0-91-generic #101-Ubuntu SMP Tue Nov 14 13:30:08 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+No LSB modules are available.
+Distributor ID:	Linuxmint
+Description:	Linux Mint 21.3
+Release:	21.3
+Codename:	virginia
+
+
+
+3. export HIP_PLATFORM=nvidia and run `hipconfig` used cuda install dirs
+
+IP version  : 6.0.32830-d62f6a171
+
+== hipconfig
+HIP_PATH     : /opt/rocm-6.0.0
+ROCM_PATH    : /opt/rocm-6.0.0
+HIP_COMPILER : clang
+HIP_PLATFORM : nvidia
+HIP_RUNTIME  : rocclr
+CPP_CONFIG   :  -D__HIP_PLATFORM_NVCC__= -D__HIP_PLATFORM_NVIDIA__= -I/opt/rocm-6.0.0/include -I/usr/local/cuda/include
+
+== nvcc
+CUDA_PATH   : /usr/local/cuda
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2023 NVIDIA Corporation
+Built on Tue_Aug_15_22:02:13_PDT_2023
+Cuda compilation tools, release 12.2, V12.2.140
+Build cuda_12.2.r12.2/compiler.33191640_0
+
+=== Environment Variables
+PATH=/home/rajesh/install/miniconda3/condabin:/home/rajesh/install/cmake-3.28.3-linux-x86_64/bin:/home/rajesh/install/platform-tools:/home/rajesh/install/mono/bin:/home/rajesh/gems/bin:/usr/local/cuda-12.2/bin:/home/rajesh/.cargo/bin:/home/rajesh/.local/bin:/opt/nvidia/cudaq/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/rocm-6.0/bin:/home/rajesh/install/cmake-3.28.3-linux-x86_64/bin:/home/rajesh/.local/bin:/usr/local/go/bin:/home/rajesh/.go/bin
+LD_LIBRARY_PATH=/usr/local/cuda-12.2/lib64:/opt/nvidia/cudaq/lib
+HIP_PLATFORM=nvidia
+CUDA_QUANTUM_PATH=/opt/nvidia/cudaq
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;create a cuda file. and hipfy it&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cat a.cu
+#include &amp;lt;stdio.h&amp;gt;
+__global__ void k(){
+	printf(&quot;hello %u!\n&quot;, threadIdx.x);
+}
+int main(void){
+	k&amp;lt;&amp;lt;&amp;lt;2,32&amp;gt;&amp;gt;&amp;gt;();
+	cudaDeviceSynchronize();
+	return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;hipify-perl a.cu -o  a-perl.hip
+hipify-clang a.cu -o  a-clang.hip&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cat a-perl.hip 
+#include &quot;hip/hip_runtime.h&quot;
+#include &amp;lt;stdio.h&amp;gt;
+__global__ void k(){
+	printf(&quot;hello %u!\n&quot;, threadIdx.x);
+}
+int main(void){
+	k&amp;lt;&amp;lt;&amp;lt;2,32&amp;gt;&amp;gt;&amp;gt;();
+	hipDeviceSynchronize();
+	return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hipcc a-perl.hip -o a-perl.out &amp;amp;&amp;amp; ./a-perl.out&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;both &lt;a href=&quot;https://rocmdocs.amd.com/projects/HIPIFY/en/latest/hipify-clang.html&quot;&gt;hipifiy-clang&lt;/a&gt; (AST-based translator w/ strict syntax checking) and &lt;a href=&quot;https://rocmdocs.amd.com/projects/HIPIFY/en/latest/hipify-perl.html&quot;&gt;hipifiy-perl&lt;/a&gt; (regular expression based. hipifys even erroring .cu files also) have their own advantages and disadvantages.  // read adv and disadv sections.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;bit of compiler knowledge would help them understand better. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hipify&lt;/code&gt; tools are still under heavy development so there is no guarantee that it will produce correct code; sometimes one may have to edit as well. Compile hip files from both of them and see if it runs fine on AMD.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;update:06-Mar-2024, 14:35:07 IST&lt;/p&gt;
 </content>
  </entry>
  
