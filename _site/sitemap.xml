@@ -2,19 +2,19 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://mrprajesh.co.in/blog/about.html</loc>
-<lastmod>2024-04-16T13:53:53+05:30</lastmod>
+<lastmod>2024-04-16T14:24:28+05:30</lastmod>
 </url>
 <url>
 <loc>https://mrprajesh.co.in/blog/sample.html</loc>
-<lastmod>2024-04-16T13:53:53+05:30</lastmod>
+<lastmod>2024-04-16T14:24:28+05:30</lastmod>
 </url>
 <url>
 <loc>https://mrprajesh.co.in/blog/search.html</loc>
-<lastmod>2024-04-16T13:53:53+05:30</lastmod>
+<lastmod>2024-04-16T14:24:28+05:30</lastmod>
 </url>
 <url>
 <loc>https://mrprajesh.co.in/blog/tags.html</loc>
-<lastmod>2024-04-16T13:53:53+05:30</lastmod>
+<lastmod>2024-04-16T14:24:28+05:30</lastmod>
 </url>
 <url>
 <loc>https://mrprajesh.co.in/blog/helloworld.html</loc>
@@ -365,6 +365,10 @@
 <lastmod>2024-04-16T02:38:17+05:30</lastmod>
 </url>
 <url>
+<loc>https://mrprajesh.co.in/blog/hipify.html</loc>
+<lastmod>2024-04-16T13:55:52+05:30</lastmod>
+</url>
+<url>
 <loc>https://mrprajesh.co.in/blog/</loc>
 </url>
 <url>
@@ -684,5 +688,11 @@
 </url>
 <url>
 <loc>https://mrprajesh.co.in/blog/tag/hipSYCL/</loc>
+</url>
+<url>
+<loc>https://mrprajesh.co.in/blog/tag/hipify/</loc>
+</url>
+<url>
+<loc>https://mrprajesh.co.in/blog/tag/amd/</loc>
 </url>
 </urlset>
