@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Playing and tinkering with Mobile GPUs's tools
+title: Playing and tinkering with Mobile GPU's tools
 date: 16-04-2024 14:25:25 +05:30
 tags: [qualcomm, adreno, snapdragon]
 description:
@@ -49,4 +49,20 @@ $ mono nuget.exe install gtksourcesharp -Version 3.24.24.38 -OutputDirectory ~/.
 ```
 Some tool which does not have linux support are run using wine-type environment from the windows exe files. That's wired!
 
+[Snap's LLVM Compiler](https://developer.qualcomm.com/software/snapdragon-llvm-compiler-android/tools)
+
+
+1. Extract!
+2. Export path
+3. ndk-build # but we need a project
+
+
+4. snapdragon-llvm-8.0.6-linux64.tar.gz
+5. adrenosdk-linux-5_0.tar.gz
+6. opencl-sdk-2.0.zip
+7. snapdragonprofiler_external_linux
+8. QualcommPackageManager3.3.0.99.0.Linux-x86.deb
+9. adrenosdkvulkan1.05.zip
+10. adreno_opencl_ml_sdk_v3.0.zip
+11. adrenosdk_5_0-windows
 update:20-Mar-2024, 14:35:07 IST

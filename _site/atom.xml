@@ -4,7 +4,7 @@
  <title>Rajesh's Blog</title>
  <link href="https://mrprajesh.co.in/blog/atom.xml" rel="self"/>
  <link href="https://mrprajesh.co.in/blog/"/>
- <updated>2024-04-16T14:56:22+05:30</updated>
+ <updated>2024-04-24T15:36:55+05:30</updated>
  <id>https://mrprajesh.co.in</id>
  <author>
    <name>Rajesh Pandian M</name>
@@ -17,7 +17,10 @@
    <link href="https://mrprajesh.co.in/blog/profile-gpu-code-on-aqua-cluster.html"/>
    <updated>2024-04-16T14:38:14+05:30</updated>
    <id>https://mrprajesh.co.in/Profile-GPU-Code-On-AQUA-Cluster</id>
-   <content type="html">&lt;ol&gt;
+   <content type="html">&lt;p&gt;While is easier to code and profile on local machine. It involves some work on remote machines and ever more work on remote clusters. 
+Helped Smit profiling on Tensor cores codes on V100.&lt;/p&gt;
+
+&lt;ol&gt;
   &lt;li&gt;While profiling from a remote cluster (multiple hops) is challenging But we have a solution!&lt;/li&gt;
   &lt;li&gt;Always us &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-lineinfo&lt;/code&gt; while compiling &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nvcc&lt;/code&gt;. Use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-arch=sm_86&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-arch=sm_70&lt;/code&gt; for tensors.&lt;/li&gt;
   &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nsys profile ./a.out&lt;/code&gt; to profile&lt;/li&gt;
@@ -313,7 +316,7 @@ int main() {
  </entry>
  
  <entry>
-   <title>Playing and tinkering with Mobile GPUs&apos;s tools</title>
+   <title>Playing and tinkering with Mobile GPU&apos;s tools</title>
    <link href="https://mrprajesh.co.in/blog/tinkering-with-mobile-gpus.html"/>
    <updated>2024-04-16T14:25:25+05:30</updated>
    <id>https://mrprajesh.co.in/Tinkering-with-Mobile-GPUs</id>
@@ -354,7 +357,24 @@ $ mono nuget.exe install gtksourcesharp -Version 3.24.24.38 -OutputDirectory ~/.
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;Some tool which does not have linux support are run using wine-type environment from the windows exe files. That’s wired!&lt;/p&gt;
 
-&lt;p&gt;update:20-Mar-2024, 14:35:07 IST&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://developer.qualcomm.com/software/snapdragon-llvm-compiler-android/tools&quot;&gt;Snap’s LLVM Compiler&lt;/a&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Extract!&lt;/li&gt;
+  &lt;li&gt;Export path&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;ndk-build # but we need a project&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;snapdragon-llvm-8.0.6-linux64.tar.gz&lt;/li&gt;
+  &lt;li&gt;adrenosdk-linux-5_0.tar.gz&lt;/li&gt;
+  &lt;li&gt;opencl-sdk-2.0.zip&lt;/li&gt;
+  &lt;li&gt;snapdragonprofiler_external_linux&lt;/li&gt;
+  &lt;li&gt;QualcommPackageManager3.3.0.99.0.Linux-x86.deb&lt;/li&gt;
+  &lt;li&gt;adrenosdkvulkan1.05.zip&lt;/li&gt;
+  &lt;li&gt;adreno_opencl_ml_sdk_v3.0.zip&lt;/li&gt;
+  &lt;li&gt;adrenosdk_5_0-windows
+update:20-Mar-2024, 14:35:07 IST&lt;/li&gt;
+&lt;/ol&gt;
 </content>
  </entry>
  

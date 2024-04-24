@@ -11,6 +11,9 @@ mathjax: false
 render_with_liquid: true
 ---
 
+While is easier to code and profile on local machine. It involves some work on remote machines and ever more work on remote clusters. 
+Helped Smit profiling on Tensor cores codes on V100.
+
  0. While profiling from a remote cluster (multiple hops) is challenging But we have a solution!
  1. Always us `-lineinfo` while compiling `nvcc`. Use `-arch=sm_86` or `-arch=sm_70` for tensors.
  2. `nsys profile ./a.out` to profile
@@ -302,5 +305,6 @@ int main() {
 
  
  ```
+ 
  
 Tue, 16-Feb-2024, 14:55:46 IST
