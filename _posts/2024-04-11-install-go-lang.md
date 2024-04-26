@@ -11,18 +11,11 @@ mathjax: false
 render_with_liquid: true
 ---
 
+> Go lang - I vividly recall when the Lang was introduced in Google I/O ~2010 how their engineers made their programs (chrome+others) build/run
+blazing faster. 
 
-```c
-//~~START:Fri, 12-Apr-2024, 00:31:43 IST
-//~~AuTHoR:Rajesh Pandian M | mrprajesh.co.in
-#include <bits/stdc++.h> 
-using namespace std; 
- 
-int main(int argc, char *argv[])  { 
-  printf("Hello There!");_
-  return 0; 
-} 
 
+```
 
 # GO TO https://go.dev/dl/ find the stable AMD BINARY. Not ARM!? :D
 wget https://go.dev/dl/go1.22.2.linux-amd64.tar.gz
