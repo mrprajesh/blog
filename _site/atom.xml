@@ -4,7 +4,7 @@
  <title>Rajesh's Blog</title>
  <link href="https://mrprajesh.co.in/blog/atom.xml" rel="self"/>
  <link href="https://mrprajesh.co.in/blog/"/>
- <updated>2024-04-26T08:02:10+05:30</updated>
+ <updated>2024-04-26T08:11:47+05:30</updated>
  <id>https://mrprajesh.co.in</id>
  <author>
    <name>Rajesh Pandian M</name>
@@ -383,7 +383,16 @@ update:20-Mar-2024, 14:35:07 IST&lt;/li&gt;
    <link href="https://mrprajesh.co.in/blog/adaptive-cpp.html"/>
    <updated>2024-04-16T02:38:17+05:30</updated>
    <id>https://mrprajesh.co.in/adaptive-cpp</id>
-   <content type="html">&lt;p&gt;Warning. This is a notes for my later reading. Not an clear document!&lt;/p&gt;
+   <content type="html">&lt;blockquote&gt;
+  &lt;p&gt;I strongly think heterogeneous programming with be the future.
+&lt;strong&gt;AdaptiveCpp&lt;/strong&gt; was very much along those line – it C++-based heterogeneous programming models targeting CPUs and GPUs from all major vendors!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;However, &lt;strong&gt;Optimizing&lt;/strong&gt; for specific or generic hardware will the challenge to yield peak performance.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;Warning&lt;/strong&gt;. This is a notes for my later reading. Not an clear document!&lt;/p&gt;
 
 &lt;h3 id=&quot;prereq&quot;&gt;Prereq&lt;/h3&gt;
 &lt;ol&gt;

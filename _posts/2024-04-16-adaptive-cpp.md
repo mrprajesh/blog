@@ -11,7 +11,15 @@ mathjax: false
 render_with_liquid: true
 ---
 
-Warning. This is a notes for my later reading. Not an clear document! 
+
+> I strongly think heterogeneous programming with be the future.
+> **AdaptiveCpp** was very much along those line -- it C++-based heterogeneous programming models targeting CPUs and GPUs from all major vendors!
+
+>  However, **Optimizing** for specific or generic hardware will the challenge to yield peak performance. 
+
+
+**Warning**. This is a notes for my later reading. Not an clear document! 
+
 
 ### Prereq
 1. Assumes default CUDA install location
