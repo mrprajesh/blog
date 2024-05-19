@@ -2,19 +2,19 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://mrprajesh.co.in/blog/about.html</loc>
-<lastmod>2024-04-26T08:11:47+05:30</lastmod>
+<lastmod>2024-05-20T01:15:47+05:30</lastmod>
 </url>
 <url>
 <loc>https://mrprajesh.co.in/blog/sample.html</loc>
-<lastmod>2024-04-26T08:11:47+05:30</lastmod>
+<lastmod>2024-05-20T01:15:47+05:30</lastmod>
 </url>
 <url>
 <loc>https://mrprajesh.co.in/blog/search.html</loc>
-<lastmod>2024-04-26T08:11:47+05:30</lastmod>
+<lastmod>2024-05-20T01:15:47+05:30</lastmod>
 </url>
 <url>
 <loc>https://mrprajesh.co.in/blog/tags.html</loc>
-<lastmod>2024-04-26T08:11:47+05:30</lastmod>
+<lastmod>2024-05-20T01:15:47+05:30</lastmod>
 </url>
 <url>
 <loc>https://mrprajesh.co.in/blog/helloworld.html</loc>
@@ -377,6 +377,10 @@
 <lastmod>2024-04-16T14:38:14+05:30</lastmod>
 </url>
 <url>
+<loc>https://mrprajesh.co.in/blog/code-presentations.html</loc>
+<lastmod>2024-05-20T00:53:20+05:30</lastmod>
+</url>
+<url>
 <loc>https://mrprajesh.co.in/blog/</loc>
 </url>
 <url>
@@ -717,5 +721,11 @@
 </url>
 <url>
 <loc>https://mrprajesh.co.in/blog/tag/profile/</loc>
+</url>
+<url>
+<loc>https://mrprajesh.co.in/blog/tag/ppt/</loc>
+</url>
+<url>
+<loc>https://mrprajesh.co.in/blog/tag/windoz/</loc>
 </url>
 </urlset>
