@@ -11,7 +11,7 @@ mathjax: false
 render_with_liquid: true
 ---
 
-While is easier to code and profile on local machine. It involves some work on remote machines and ever more work on remote clusters. 
+While it is easier to code and profile on local machine/server. It involves some work on remote machines and ever more work on remote clusters. 
 Helped Smit profiling on Tensor cores codes on V100.
 
  0. While profiling from a remote cluster (multiple hops) is challenging But we have a solution!

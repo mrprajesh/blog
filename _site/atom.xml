@@ -4,7 +4,7 @@
  <title>Rajesh's Blog</title>
  <link href="https://mrprajesh.co.in/blog/atom.xml" rel="self"/>
  <link href="https://mrprajesh.co.in/blog/"/>
- <updated>2024-05-20T01:18:09+05:30</updated>
+ <updated>2024-05-22T03:49:31+05:30</updated>
  <id>https://mrprajesh.co.in</id>
  <author>
    <name>Rajesh Pandian M</name>
@@ -60,7 +60,7 @@ Steps are in a DIY-style.&lt;/p&gt;
    <link href="https://mrprajesh.co.in/blog/profile-gpu-code-on-aqua-cluster.html"/>
    <updated>2024-04-16T14:38:14+05:30</updated>
    <id>https://mrprajesh.co.in/Profile-GPU-Code-On-AQUA-Cluster</id>
-   <content type="html">&lt;p&gt;While is easier to code and profile on local machine. It involves some work on remote machines and ever more work on remote clusters. 
+   <content type="html">&lt;p&gt;While it is easier to code and profile on local machine/server. It involves some work on remote machines and ever more work on remote clusters. 
 Helped Smit profiling on Tensor cores codes on V100.&lt;/p&gt;
 
 &lt;ol&gt;
