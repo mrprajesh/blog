@@ -2,6 +2,18 @@
   
     {
 
+      "title"    : "How To Install CUDA 13 On Ubuntu 22.04 Linux Mint21.3",
+      "url"      : "/blog/how-to-install-cuda-13-on-ubuntu-22-04-linux-mint21-3.html",
+      "category" : "",
+      "tags"     : "cuda, gpu",
+      "date"     : "2025-08-12 22:14:15 +0530",
+      "discription" : "",
+      "content" : "<p>As I wanted to learn/try out the Tile Programming (which might be the future of MatMul Accelaration!). CuTe DSL and CUTLASS. I wanted to have CUDA 13 installed. \nI have installed on top my cuda 12 version which I <a href=\"https://mrprajesh.co.in/blog/how-to-install-cuda-ubuntu-22-04.html\">installed previously.</a></p>\n<ol>\n  <li>In grub press e and type <code class=\"language-plaintext highlighter-rouge\">nomodeset</code> before <code class=\"language-plaintext highlighter-rouge\">quite splash</code> //unsure</li>\n  <li><code class=\"language-plaintext highlighter-rouge\">sudo service lightdm stop</code></li>\n  <li><code class=\"language-plaintext highlighter-rouge\">wget https://developer.download.nvidia.com/compute/cuda/13.0.0/local_installers/cuda_13.0.0_580.65.06_linux.run</code></li>\n  <li><code class=\"language-plaintext highlighter-rouge\">sudo sh cuda_13.0.0_580.65.06_linux.run</code></li>\n  <li>ACCEPT. Untick driver and docs. Tick tool kit.</li>\n  <li>Unpon success. reboot.</li>\n  <li>Append in <code class=\"language-plaintext highlighter-rouge\">~/.bashrc</code>\n    <div class=\"language-c highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"n\">export</span> <span class=\"n\">PATH</span><span class=\"o\">=/</span><span class=\"n\">usr</span><span class=\"o\">/</span><span class=\"n\">local</span><span class=\"o\">/</span><span class=\"n\">cuda</span><span class=\"o\">-</span><span class=\"mi\">13</span><span class=\"p\">.</span><span class=\"mi\">0</span><span class=\"o\">/</span><span class=\"n\">bin</span><span class=\"err\">$</span><span class=\"p\">{</span><span class=\"n\">PATH</span><span class=\"o\">:+:</span><span class=\"err\">$</span><span class=\"p\">{</span><span class=\"n\">PATH</span><span class=\"p\">}}</span>\n<span class=\"n\">export</span> <span class=\"n\">LD_LIBRARY_PATH</span><span class=\"o\">=/</span><span class=\"n\">usr</span><span class=\"o\">/</span><span class=\"n\">local</span><span class=\"o\">/</span><span class=\"n\">cuda</span><span class=\"o\">-</span><span class=\"mi\">13</span><span class=\"p\">.</span><span class=\"mi\">0</span><span class=\"o\">/</span><span class=\"n\">lib64</span><span class=\"err\">$</span><span class=\"p\">{</span><span class=\"n\">LD_LIBRARY_PATH</span><span class=\"o\">:+:</span><span class=\"err\">$</span><span class=\"p\">{</span><span class=\"n\">LD_LIBRARY_PATH</span><span class=\"p\">}}</span>\n</code></pre></div>    </div>\n  </li>\n</ol>\n\n<p>ok, More CuTe Examples later. \nCheers :)</p>\n"
+
+    } ,
+  
+    {
+
       "title"    : "Creating beautiful code presentations",
       "url"      : "/blog/code-presentations.html",
       "category" : "",
